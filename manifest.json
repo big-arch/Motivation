@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "FOUNDER. Независимый бизнес-журнал",
+  "short_name": "FOUNDER.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#151613",
+  "theme_color": "#151613",
+  "icons": [
+    {"src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

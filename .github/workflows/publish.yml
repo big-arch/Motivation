@@ -1,0 +1,47 @@
+name: Publish FOUNDER
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: founder-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Refresh feeds using the last published snapshot as fallback
+        run: python scripts/update_feeds.py --previous-url https://big-arch.github.io/Motivation/
+      - name: Prepare static site
+        run: |
+          mkdir _site
+          cp index.html manifest.json sw.js _site/
+          cp -R assets css js data _site/
+          sed -i "s/founder-shell-dev/founder-shell-${GITHUB_SHA}/" _site/sw.js
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.publish.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: publish
+        uses: actions/deploy-pages@v4
