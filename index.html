@@ -14,6 +14,12 @@
   <link rel="preload" href="./assets/fonts/playfair-display-cyrillic-wght-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/content.js" defer></script>
+  <link rel="stylesheet" href="./css/edition.css">
+  <script src="./js/edition.js" defer></script>
+  <script src="./js/photos.js" defer></script>
+  <script src="./js/media.js" defer></script>
+  <script src="./js/cards.js" defer></script>
+  <script src="./js/motion.js" defer></script>
   <script src="./js/app.js" defer></script>
 </head>
 <body>
@@ -41,6 +47,7 @@
     <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
   </svg>
   <a class="skip" href="#main">Перейти к содержанию</a>
+  <div id="reading-progress" aria-hidden="true" hidden><i></i></div>
   <header class="masthead">
     <div class="shell mast-inner">
       <a href="#journal" class="wordmark" aria-label="FOUNDER. Главная">FOUNDER<span>.</span></a>
@@ -74,6 +81,20 @@
     <label class="search-box"><svg class="icon"><use href="#i-search"/></svg><input id="search-input" type="search" placeholder="Компания, книга или автор" aria-label="Поиск по названию, теме или автору" autocomplete="off"></label>
     <div id="search-results"></div></dialog>
   <dialog id="menu-dialog" class="dialog"><div class="dialog-head"><h2>Разделы журнала</h2><button class="icon-btn" data-close aria-label="Закрыть меню"><svg class="icon"><use href="#i-close"/></svg></button></div><nav id="menu-items" class="menu-items" aria-label="Все разделы"></nav></dialog>
+  <dialog id="media-dialog" class="dialog media-dialog" aria-labelledby="media-detail-title">
+    <div class="detail-bar"><span>FOUNDER<span class="title-dot">.</span> / Медиа</span><span class="play-state"><i aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></i>Сейчас играет</span><button type="button" class="icon-btn" data-close-media aria-label="Закрыть материал"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <div id="media-detail"></div>
+  </dialog>
+  <dialog id="thought-dialog" class="dialog studio" aria-labelledby="studio-heading">
+    <div class="dialog-head"><h2 id="studio-heading">Карточка мысли</h2><button type="button" class="icon-btn" data-close-thought aria-label="Закрыть редактор"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <div class="studio-body"><div class="card-preview" data-shape="square"><canvas width="1080" height="1080" role="img" aria-label="Оформление карточки"></canvas></div>
+    <div class="studio-controls"><fieldset><legend>Оформление</legend><div class="studio-options" data-theme-options></div></fieldset>
+    <fieldset><legend>Формат</legend><div class="studio-options"><button class="theme-choice" type="button" data-card-shape="square">Квадрат · 1:1</button><button class="theme-choice" type="button" data-card-shape="story">История · 9:16</button></div></fieldset>
+    <label class="note-label">Моя заметка <span>по желанию</span><textarea data-card-note maxlength="120" rows="2" placeholder="Что я хочу запомнить?"></textarea></label>
+    <div class="studio-buttons"><button class="button primary" type="button" data-card-save><svg class="icon"><use href="#i-bookmark"/></svg>В коллекцию</button><button class="button secondary" type="button" data-card-export><svg class="icon"><use href="#i-download"/></svg>Скачать PNG</button></div>
+    <div class="studio-links"><button class="text-link" type="button" data-card-copy>Копировать текст</button><button class="text-link" type="button" data-card-share hidden>Поделиться</button></div>
+    <p class="studio-status" data-studio-status role="status"></p></div></div>
+  </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

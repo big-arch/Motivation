@@ -183,11 +183,6 @@ const moods = [
   ]}
 ];
 
-const channels = [
-  ['Y Combinator', 'Startup School и разговоры о первых пользователях', 'https://www.youtube.com/@ycombinator'],
-  ['The Diary Of A CEO', 'Длинные интервью с основателями и авторами', 'https://www.youtube.com/@TheDiaryOfACEO'],
-  ['Computer History Museum', 'Архивные демонстрации и истории изобретателей', 'https://www.youtube.com/@ComputerHistory']
-];
 
 const resources = [
   ['Проверить идею', 'Startup School', 'Уроки и упражнения Y Combinator для работы над первым продуктом.', 'https://www.startupschool.org/'],

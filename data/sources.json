@@ -1,0 +1,722 @@
+{
+  "videos": [
+    {
+      "id": "23838056",
+      "name": "Школа управления СКОЛКОВО",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/23838056/"
+    },
+    {
+      "id": "14167677",
+      "name": "Мой бизнес | Возможности здесь",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/14167677/"
+    },
+    {
+      "id": "24209222",
+      "name": "Малый бизнес Москвы",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/24209222/"
+    },
+    {
+      "id": "23873201",
+      "name": "Банк России",
+      "topic": "Деньги",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/23873201/"
+    },
+    {
+      "id": "24161964",
+      "name": "РБК Инвестиции",
+      "topic": "Деньги",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/24161964/"
+    },
+    {
+      "id": "38420507",
+      "name": "MOEX - Московская биржа",
+      "topic": "Деньги",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/38420507/"
+    },
+    {
+      "id": "27045988",
+      "name": "Кадровый центр «Работа России» _ Тюменская область",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/27045988/"
+    },
+    {
+      "id": "23486710",
+      "name": "Россия — страна возможностей",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/23486710/"
+    },
+    {
+      "id": "UCcefcZRL2oaA_uBNeo5UOWg",
+      "name": "Y Combinator",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCcefcZRL2oaA_uBNeo5UOWg"
+    },
+    {
+      "id": "UCGwuxdEeCf0TIA2RbPOj-8g",
+      "name": "Stanford Graduate School of Business",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCGwuxdEeCf0TIA2RbPOj-8g"
+    },
+    {
+      "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "name": "London Business School",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ"
+    },
+    {
+      "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+      "name": "INSEAD",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA"
+    },
+    {
+      "id": "UCaUvoQTl3-vcwSgcHQlvGKg",
+      "name": "MIT Sloan School of Management",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCaUvoQTl3-vcwSgcHQlvGKg"
+    },
+    {
+      "id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "name": "a16z",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UC9cn0TuPq4dnbTY-CBsm8XA"
+    },
+    {
+      "id": "UC4bq21IPPbpu0Qrsl7LW0sw",
+      "name": "Slidebean",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UC4bq21IPPbpu0Qrsl7LW0sw"
+    },
+    {
+      "id": "UCyaN6mg5u8Cjy2ZI4ikWaug",
+      "name": "My First Million",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCyaN6mg5u8Cjy2ZI4ikWaug"
+    },
+    {
+      "id": "UCHDr4RtxwA1KqKGwxgdK4Vg",
+      "name": "Computer History Museum",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCHDr4RtxwA1KqKGwxgdK4Vg"
+    },
+    {
+      "id": "UCx32DZpDnOthjoWLNV48vrA",
+      "name": "Про Бизнес",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCx32DZpDnOthjoWLNV48vrA"
+    },
+    {
+      "id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "name": "Harvard Business Review",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g"
+    },
+    {
+      "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "name": "Wharton School",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w"
+    },
+    {
+      "id": "UCwAnu01qlnVg1Ai2AbtTMaA",
+      "name": "Jeff Su",
+      "topic": "Карьера",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCwAnu01qlnVg1Ai2AbtTMaA"
+    },
+    {
+      "id": "UCXUyg1vYSupswhi0zNeD-5w",
+      "name": "Linda Raynier",
+      "topic": "Карьера",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCXUyg1vYSupswhi0zNeD-5w"
+    },
+    {
+      "id": "UCrtPXCqjm9c7nqgJL-vBSZg",
+      "name": "CareerVidz",
+      "topic": "Карьера",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCrtPXCqjm9c7nqgJL-vBSZg"
+    },
+    {
+      "id": "UCeNm7lbfRg9wiBDSLQ-M8RA",
+      "name": "Self Made Millennial",
+      "topic": "Карьера",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCeNm7lbfRg9wiBDSLQ-M8RA"
+    },
+    {
+      "id": "UCM4d4vlR_63WQJv6UxTwZqg",
+      "name": "Work It Daily",
+      "topic": "Карьера",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCM4d4vlR_63WQJv6UxTwZqg"
+    },
+    {
+      "id": "UCIhJnsJ0IHlVNnYfp-gw_5Q",
+      "name": "Cal Newport",
+      "topic": "Карьера",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCIhJnsJ0IHlVNnYfp-gw_5Q"
+    },
+    {
+      "id": "UCH5_L3ytGbBziX0CLuYdQ1Q",
+      "name": "CNBC Make It",
+      "topic": "Карьера",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCH5_L3ytGbBziX0CLuYdQ1Q"
+    },
+    {
+      "id": "UCSPYNpQ2fHv9HJ-q6MIMaPw",
+      "name": "The Financial Diet",
+      "topic": "Деньги",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCSPYNpQ2fHv9HJ-q6MIMaPw"
+    },
+    {
+      "id": "UCFCEuCsyWP0YkP3CZ3Mr01Q",
+      "name": "The Plain Bagel",
+      "topic": "Деньги",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCFCEuCsyWP0YkP3CZ3Mr01Q"
+    },
+    {
+      "id": "UCDXTQ8nWmx_EhZ2v-kp7QxA",
+      "name": "Ben Felix",
+      "topic": "Деньги",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCDXTQ8nWmx_EhZ2v-kp7QxA"
+    },
+    {
+      "id": "UC9OIwUcx-Uss7xj7s1P5XGw",
+      "name": "PensionCraft",
+      "topic": "Деньги",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UC9OIwUcx-Uss7xj7s1P5XGw"
+    },
+    {
+      "id": "UCL8w_A8p8P1HWI3k6PR5Z6w",
+      "name": "Two Cents",
+      "topic": "Деньги",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCL8w_A8p8P1HWI3k6PR5Z6w"
+    },
+    {
+      "id": "UCGq-a57w-aPwyi3pW7XLiHw",
+      "name": "The Diary Of A CEO",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCGq-a57w-aPwyi3pW7XLiHw"
+    },
+    {
+      "id": "UCoOae5nYA7VqaXzerajD0lg",
+      "name": "Ali Abdaal",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCoOae5nYA7VqaXzerajD0lg"
+    },
+    {
+      "id": "UCJ24N4O0bP7LGLBDvye7oCA",
+      "name": "Matt D'Avella",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCJ24N4O0bP7LGLBDvye7oCA"
+    },
+    {
+      "id": "UCtUId5WFnN82GdDy7DgaQ7w",
+      "name": "Better Ideas",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCtUId5WFnN82GdDy7DgaQ7w"
+    },
+    {
+      "id": "UCk2U-Oqn7RXf-ydPqfSxG5g",
+      "name": "Mel Robbins",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCk2U-Oqn7RXf-ydPqfSxG5g"
+    },
+    {
+      "id": "UCPmfPl-BsCd3wmE8i45LAoA",
+      "name": "Simon Sinek",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCPmfPl-BsCd3wmE8i45LAoA"
+    },
+    {
+      "id": "UCFJnZHIusOlHr-pbYVHmr-A",
+      "name": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCFJnZHIusOlHr-pbYVHmr-A"
+    },
+    {
+      "id": "32407016",
+      "name": "Акселератор ТехноПитер",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/32407016/"
+    },
+    {
+      "id": "67891076",
+      "name": "ЖИВОЕ ДЕЛО Ленинградской области",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/67891076/"
+    },
+    {
+      "id": "25061544",
+      "name": "Сколково",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/25061544/"
+    },
+    {
+      "id": "33891991",
+      "name": "SKOLKOVO Programmes",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/33891991/"
+    },
+    {
+      "id": "44357506",
+      "name": "ТРУ БИЗНЕС СТОРИ",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/44357506/"
+    },
+    {
+      "id": "66065435",
+      "name": "Таисия Романова. Ген предпринимателя.",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/66065435/"
+    },
+    {
+      "id": "67828597",
+      "name": "Люди прибыли",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/67828597/"
+    },
+    {
+      "id": "36919980",
+      "name": "Фактор Продаж",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/36919980/"
+    },
+    {
+      "id": "42389626",
+      "name": "Рост бизнеса | Юлия Комарова",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/42389626/"
+    },
+    {
+      "id": "61750943",
+      "name": "Управление бизнесом и персоналом",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/61750943/"
+    },
+    {
+      "id": "60024369",
+      "name": "Неочевидная карьера",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/60024369/"
+    },
+    {
+      "id": "32130473",
+      "name": "Цифровой «Сенеж»",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/32130473/"
+    },
+    {
+      "id": "42562801",
+      "name": "Татьяна Минаева | КАРЬЕРА | РЕЗЮМЕ",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/42562801/"
+    },
+    {
+      "id": "25202353",
+      "name": "Ваши финансы",
+      "topic": "Деньги",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/25202353/"
+    },
+    {
+      "id": "23617327",
+      "name": "ВТБ Мои Инвестиции",
+      "topic": "Деньги",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/23617327/"
+    },
+    {
+      "id": "77097781",
+      "name": "БКС Мир инвестиций",
+      "topic": "Деньги",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/77097781/"
+    },
+    {
+      "id": "25869641",
+      "name": "Финансовый университет | Новороссийск",
+      "topic": "Деньги",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/25869641/"
+    },
+    {
+      "id": "12486282",
+      "name": "Деньги по правилам",
+      "topic": "Деньги",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/12486282/"
+    },
+    {
+      "id": "17943278",
+      "name": "Ксения Старостина - Бухгалтерия, налоги, финансы",
+      "topic": "Деньги",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/17943278/"
+    },
+    {
+      "id": "24236675",
+      "name": "C-level: мысли в режиме CEO",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/24236675/"
+    },
+    {
+      "id": "61493599",
+      "name": "ПСИХОЛОГИЯ РЕАЛИЗАЦИИ",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/61493599/"
+    },
+    {
+      "id": "38395796",
+      "name": "Бизнес и мышление",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/38395796/"
+    }
+  ],
+  "news": [
+    {
+      "name": "Коммерсантъ",
+      "feed": "https://www.kommersant.ru/RSS/section-business.xml",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "name": "RB.RU",
+      "feed": "https://rb.ru/feeds/news/",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "name": "vc.ru",
+      "feed": "https://vc.ru/rss",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "name": "Банк России",
+      "feed": "https://www.cbr.ru/rss/RssNews",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "name": "РБК",
+      "feed": "https://rssexport.rbc.ru/rbcnews/news/30/full.rss",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "name": "Ведомости",
+      "feed": "https://www.vedomosti.ru/rss/news",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "name": "Банки.ру",
+      "feed": "https://www.banki.ru/xml/news.rss",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "name": "Лента.ру · Экономика",
+      "feed": "https://lenta.ru/rss/news/economics",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "name": "Хабр · Карьера",
+      "feed": "https://habr.com/ru/rss/hubs/career/articles/?fl=ru",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "name": "3DNews",
+      "feed": "https://3dnews.ru/news/rss/",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "name": "CNews",
+      "feed": "https://www.cnews.ru/inc/rss/news.xml",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "name": "TechCrunch",
+      "feed": "https://techcrunch.com/feed/",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "name": "BBC Business",
+      "feed": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "The Guardian",
+      "feed": "https://www.theguardian.com/business/rss",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "Financial Times",
+      "feed": "https://www.ft.com/companies?format=rss",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "CNBC",
+      "feed": "https://www.cnbc.com/id/10001147/device/rss/rss.html",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "NPR Economy",
+      "feed": "https://feeds.npr.org/1017/rss.xml",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "name": "MarketWatch",
+      "feed": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "name": "The Wall Street Journal",
+      "feed": "https://feeds.content.dowjones.io/public/rss/WSJcomUSBusiness",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "The Economist",
+      "feed": "https://www.economist.com/business/rss.xml",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "The Conversation",
+      "feed": "https://theconversation.com/us/business/articles.atom",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "Fast Company",
+      "feed": "https://www.fastcompany.com/latest/rss",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
+      "name": "Entrepreneur",
+      "feed": "https://www.entrepreneur.com/latest.rss",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "Inc.",
+      "feed": "https://www.inc.com/rss/",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "MIT Sloan Management Review",
+      "feed": "https://sloanreview.mit.edu/feed/",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
+      "name": "Knowledge at Wharton",
+      "feed": "https://knowledge.wharton.upenn.edu/feed/",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "Crunchbase News",
+      "feed": "https://news.crunchbase.com/feed/",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "name": "Sifted",
+      "feed": "https://sifted.eu/feed/",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "GeekWire",
+      "feed": "https://www.geekwire.com/feed/",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "name": "Federal Reserve",
+      "feed": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "name": "European Central Bank",
+      "feed": "https://www.ecb.europa.eu/rss/press.html",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "name": "Retail Dive",
+      "feed": "https://www.retaildive.com/feeds/news/",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "Banking Dive",
+      "feed": "https://www.bankingdive.com/feeds/news/",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "name": "HR Dive",
+      "feed": "https://www.hrdive.com/feeds/news/",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
+      "name": "Fortune",
+      "feed": "https://fortune.com/feed/",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "name": "SiliconANGLE",
+      "feed": "https://siliconangle.com/feed/",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "name": "Gretchen Rubin",
+      "feed": "https://gretchenrubin.com/feed/",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
+      "name": "Zen Habits",
+      "feed": "https://zenhabits.net/feed/",
+      "topic": "Мотивация",
+      "lang": "en"
+    }
+  ]
+}
