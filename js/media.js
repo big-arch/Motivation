@@ -64,13 +64,31 @@ function createMedia({esc, icon, external}) {
       ${kind === 'videos' ? field('platform','Площадка',option('','Все площадки',state.platform)+option('rutube','RUTUBE',state.platform)+option('youtube','YouTube',state.platform)) : ''}
       <label class="fresh-filter"><input type="checkbox" data-media-field="fresh"${state.fresh?' checked':''}><span>Только новое</span></label></div></div>`;
   }
+  function newsIllustration(item) {
+    const words=item.title.toLocaleLowerCase();
+    if (item.source==='European Central Bank') return newsPhotos.bank;
+    if (/автомоб|автозавод|машиностро|кроссовер|ladа|lada|automaker|carmaker|auto industr|assembl(y|ies)/i.test(words)) return newsPhotos.factory;
+    if (/акци[яйию]|бирж|индекс|обыкновенн|котиров|фьючерс|shares|stock|listing|futures|bond market|equities/i.test(words)) return newsPhotos.markets;
+    if (/перевоз|контейнер|пошлин|экспорт|импорт|shipping|tariff|exports?|imports?|iron ore|customs/i.test(words)) return newsPhotos.trade;
+    if (/торгов[а-яё]* сет|ритейл|магазин|потребител|retail|stores?|shopper|shopping|supermarket/i.test(words)) return newsPhotos.retail;
+    if (item.topic==='Технологии' || /кибератак|смартфон|openai|artificial intelligence|\bai\b|data cent|smartphone|cyber|chipmaker/i.test(words)) return newsPhotos.tech;
+    if (item.topic==='Мотивация') return {...archivePhotos.habits[1],file:'./assets/archive/habits-2.webp'};
+    if (item.topic==='Карьера' || /наём|работодател|найм|employer|workplace|employee|workforce/i.test(words)) return newsPhotos.office;
+    return newsPhotos.press;
+  }
+  function newsCredit(photo) {
+    return `<figcaption class="context-credit"><b>Фото по теме.</b> ${esc(photo.caption)} <small>${esc(photo.credit)} · <a href="${esc(external(photo.licenseUrl))}" rel="noopener" target="_blank">${esc(photo.license)}</a> · <a href="${esc(external(photo.source))}" rel="noopener" target="_blank">Оригинал ↗</a></small></figcaption>`;
+  }
   function poster(item, kind, large = false) {
     const name = esc(item.source);
     const url = external(item.thumbnail);
     const time = duration(item.duration);
-    return `<span class="media-poster ${kind}" data-topic="${esc(item.topic)}">
+    const context = kind === 'news' ? newsIllustration(item) : null;
+    const imageUrl = url || context?.file;
+    return `<span class="media-poster ${kind}${!url && context ? ' is-context' : ''}" data-topic="${esc(item.topic)}">
       <span class="poster-lettering" aria-hidden="true"><small>${esc(item.topic)}</small><strong>${name}</strong></span>
-      ${url ? `<img data-media-image src="${esc(url)}" alt="" loading="${large?'eager':'lazy'}" decoding="async" referrerpolicy="no-referrer">` : ''}
+      ${imageUrl ? `<img data-media-image src="${esc(imageUrl)}" alt="${large && !url && context?esc(context.caption):''}" ${context?`data-context-src="${esc(context.file)}" data-context-alt="${large?esc(context.caption):''}"`:''} loading="${large?'eager':'lazy'}" decoding="async" referrerpolicy="no-referrer">` : ''}
+      ${context?'<span class="context-label">Фото по теме</span>':''}
       ${kind === 'videos' ? `<span class="poster-play" aria-hidden="true">▶</span><span class="platform-label">${nameOf(item.platform)}${time?' · '+time:''}</span>` : ''}</span>`;
   }
   function itemCard(item,kind,index) {
@@ -162,7 +180,7 @@ function createMedia({esc, icon, external}) {
     const video = kind === 'videos';
     const stage = document.getElementById('media-detail');
     const description = item.summary && item.summary !== item.title ? `<p class="detail-summary">${esc(item.summary)}</p>` : '';
-    stage.innerHTML = `${video && url ? `<div class="player-frame"><iframe title="${esc(item.title)}" src="${esc(url)}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>` : poster(item,kind,true)}
+    stage.innerHTML = `${video && url ? `<div class="player-frame"><iframe title="${esc(item.title)}" src="${esc(url)}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>` : `<figure class="news-detail-visual">${poster(item,kind,true)}${newsCredit(newsIllustration(item))}</figure>`}
       <div class="detail-copy"><p class="media-byline">${esc(item.source)} ${newMark(item,kind)}</p><h2 id="media-detail-title">${esc(item.title)}</h2>
       <p class="media-meta">Опубликовано ${instant(item.published)} · ${esc(item.topic)}</p>${description}
       <p class="player-status" role="status"></p><a class="button secondary" href="${esc(external(item.url))}" target="_blank" rel="noopener noreferrer">${video?'Открыть в '+nameOf(item.platform):'Читать у издателя'} ${icon('out')}</a>${item.platform==='youtube' ? `<button class="text-link related-rutube" data-related-rutube="${esc(item.topic)}">По этой теме на RUTUBE ${icon('arrow')}</button>` : ''}</div>`;
@@ -185,7 +203,14 @@ function createMedia({esc, icon, external}) {
     }
   });
   document.addEventListener('error',event=>{
-    if (event.target instanceof HTMLImageElement && event.target.hasAttribute('data-media-image')) event.target.remove();
+    const image=event.target;
+    if (!(image instanceof HTMLImageElement) || !image.hasAttribute('data-media-image')) return;
+    const poster=image.closest('.media-poster');
+    if (image.dataset.contextSrc && !poster.classList.contains('is-context')) {
+      poster.classList.add('is-context');
+      image.alt=image.dataset.contextAlt;
+      image.src=image.dataset.contextSrc;
+    } else { poster.classList.remove('is-context'); image.remove(); }
   },true);
   function releasePlayer() {
     dialog.dataset.playing='false';
