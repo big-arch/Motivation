@@ -212,6 +212,12 @@ figcaption { font-size:11px; color:var(--muted); margin-top:7px; }
 .feed-block,.toolbox { max-width:960px; margin-top:28px; }
 .feed-head { margin:26px 0 14px; display:flex; align-items:baseline; gap:15px; justify-content:space-between; flex-wrap:wrap; }
 .feed-head h2 { margin:0; }.feed-date { font-size:12px; color:var(--muted); }
+.more-feed summary { display:flex; align-items:center; gap:8px; width:fit-content; padding:13px 0; color:var(--soft-gold); font-weight:550; font-size:13px; cursor:pointer; list-style:none; }
+.more-feed summary::-webkit-details-marker { display:none; }
+.more-feed summary:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+.more-feed summary .icon { width:14px; height:14px; transform:rotate(90deg); }
+.more-feed .expanded-label,.more-feed[open] .collapsed-label { display:none; }
+.more-feed[open] .expanded-label { display:inline; }.more-feed[open] summary .icon { transform:rotate(-90deg); }
 .channel-grid { display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:14px; margin-top:16px; }
 .channel { display:block; border:1px solid var(--line); padding:18px; border-radius:7px; }
 .channel:hover { border-color:var(--gold); }.channel .icon { margin-bottom:12px; color:var(--gold); }

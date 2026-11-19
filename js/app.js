@@ -239,7 +239,7 @@
     const date = new Date(value);
     return Number.isFinite(date.getTime()) ? dateFormat.format(date).replace(/\s?г\.$/,'') : '';
   }
-  function feedList(kind, limit = 18) {
+  function feedList(kind, limit = 8) {
     const collection = feeds[kind];
     if (!collection) return '<p class="secondary-copy">Загружаем ленту…</p>';
     if (!collection.items.length) return '<p class="empty-state">Лента пока недоступна. Попробуйте открыть её позже.</p>';
@@ -253,7 +253,10 @@
       });
       entries = [...leads.filter(item => item.source !== 'TechCrunch'), ...leads.filter(item => item.source === 'TechCrunch')];
     }
-    return `<div class="link-list">${entries.slice(0,limit).map(item => `<a class="link-row" href="${esc(external(item.url))}" target="_blank" rel="noopener noreferrer"><div><span class="row-meta">${esc(item.source)}${item.published ? ' · ' + esc(formatDate(item.published)) : ''}</span><strong>${esc(item.title)}</strong></div>${icon('out')}</a>`).join('')}</div>`;
+    const rows = entries.map(item => `<a class="link-row" href="${esc(external(item.url))}" target="_blank" rel="noopener noreferrer"><div><span class="row-meta">${esc(item.source)}${item.published ? ' · ' + esc(formatDate(item.published)) : ''}</span><strong>${esc(item.title)}</strong></div>${icon('out')}</a>`);
+    const first = `<div class="link-list">${rows.slice(0,limit).join('')}</div>`;
+    if (limit === 3 || rows.length <= limit) return first;
+    return first + `<details class="more-feed"><summary><span class="collapsed-label">Показать ещё · ${rows.length-limit}</span><span class="expanded-label">Свернуть список</span>${icon('chevron')}</summary><div class="link-list">${rows.slice(limit).join('')}</div></details>`;
   }
   function mediaPanel(kind) {
     const data = feeds[kind];
@@ -422,6 +425,12 @@
     const button = event.target.closest('button,a');
     if (!button) return;
     if (button.classList.contains('skip')) { event.preventDefault(); main.focus(); return; }
+    if (button.matches('a.wordmark,a[data-nav],#menu-items a') && button.hash === location.hash && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
+      event.preventDefault();
+      main.focus({preventScroll:true});
+      window.scrollTo({top:0,behavior:'instant'});
+      return;
+    }
     if (button.hasAttribute('data-search')) return openSearch();
     if (button.hasAttribute('data-menu')) return menuDialog.showModal();
     if (button.hasAttribute('data-save')) return toggleSave(button.dataset.save,button);
