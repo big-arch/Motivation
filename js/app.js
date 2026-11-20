@@ -324,9 +324,10 @@
   }
   function render({focus = false} = {}) {
     const [section,param,subparam] = route();
+    const audioEdition = section==='media' && param==='podcasts' && subparam.startsWith('audio-') && creatorProfiles.find(p=>p.audioId===subparam);
     const mediaPath = section==='media' ? [param || 'news', subparam].join('/') : '';
     if (mediaPath !== activeMediaPath) {
-      const profile = creators.profile(subparam);
+      const profile = audioEdition || creators.profile(subparam);
       if (section==='media' && param==='videos') {
         if (profile) media.selectVideos({source:profile.name});
         else if (subparam.startsWith('rutube-')) media.selectVideos({platform:'rutube',topic:subparam.slice(7)});
@@ -367,8 +368,10 @@
     }
     const sameCatalog = activeRoute === section && (Object.hasOwn(descriptions,section) || (section === 'media' && activeMediaPath===mediaPath));
     activeRoute = section;
+    if (document.getElementById('audio-dialog').open && activeMediaPath!==mediaPath) document.getElementById('audio-dialog').close();
     activeMediaPath = mediaPath;
     main.innerHTML = view;
+    if (audioEdition) audio.openEpisode(audioEdition.audioId);
     const tabs = main.querySelector('.media-page>.media-tabs');
     if (tabs && tabs.scrollWidth > tabs.clientWidth) {
       const active = tabs.querySelector('[aria-current]');
@@ -399,7 +402,7 @@
       data.items = data.items.filter(item => item && typeof item.title === 'string' && external(item.url) &&
         (kind!=='audio' || external(item.audio)) && (kind!=='open-books' || external(item.embed)));
     } catch { data = {updated:null,items:[],sources:[]}; }
-    const [section, param] = route();
+    const [section, param, subparam] = route();
     if (['news','videos'].includes(kind)) {
       media.set(kind,data);
       if (section === 'journal' && kind === 'news') document.getElementById('home-news').innerHTML = media.homeNews();
@@ -407,7 +410,10 @@
     } else {
       audio.set(kind,data);
       if (section === 'journal' && kind === 'audio') document.getElementById('home-audio').innerHTML = audio.homeAudio();
-      if (section === 'media' && kind === 'audio' && ['lectures','podcasts','audiobooks'].includes(param)) document.getElementById('audio-panel').innerHTML = audio.panel(param);
+      if (section === 'media' && kind === 'audio' && ['lectures','podcasts','audiobooks'].includes(param)) {
+        document.getElementById('audio-panel').innerHTML = audio.panel(param);
+        if (param==='podcasts' && subparam.startsWith('audio-') && creatorProfiles.some(p=>p.audioId===subparam)) audio.openEpisode(subparam);
+      }
       if (section === 'library' && param === 'open' && kind === 'open-books') document.getElementById('audio-panel').innerHTML = audio.panel('open-books');
     }
   }

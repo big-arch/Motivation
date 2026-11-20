@@ -168,7 +168,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
     const isCurrent = current?.item.id===item.id && current.chapter===chapter;
     const playing = isCurrent && !engine.paused;
     detail.innerHTML = `<div class="audio-detail-layout"><div>${poster(item,true)}</div><div class="detail-copy"><p class="media-byline">${esc(item.source)} ${freshMark(item,item.kind)}</p><h2 id="audio-detail-title" lang="${item.lang==='ru'?'ru':'en'}">${esc(item.title)}</h2>
-      <p class="media-meta">${item.author?esc(item.author)+' · ':''}${esc(longDuration(item.duration)||'Аудио')} · ${esc(item.rights||item.topic)}</p>
+      <p class="media-meta">${item.author?esc(item.author)+' · ':''}${esc(longDuration(item.duration)||'Аудио')} · ${esc(item.rights||item.topic)} · ${item.chapters?'В подборке с ':''}${instant(item.published)}</p>
       ${item.summary?`<p class="detail-summary" lang="${item.lang==='ru'?'ru':'en'}">${esc(item.summary)}</p>`:''}
       <div class="action-row"><button type="button" class="button primary" data-audio-play="${esc(item.id)}" data-audio-chapter="${chapter}">${icon(playing?'pause':'play')}${playing?'Пауза':isCurrent?'Продолжить':'Слушать'}</button>
       <a class="button secondary" href="${esc(external(item.url))}" target="_blank" rel="noopener noreferrer">Оригинал ${icon('out')}</a></div><p class="player-status" role="status"></p></div></div>
@@ -349,7 +349,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
   });
   document.addEventListener('visibilitychange',()=>{ if (document.hidden) persistPosition(true); });
   window.addEventListener('pagehide',()=>persistPosition(true));
-  dialog.addEventListener('close',()=>detail.replaceChildren());
+  dialog.addEventListener('close',()=>{ if (!dialog.open) detail.replaceChildren(); });
   dialog.addEventListener('click',event=>{
     if (event.target===dialog || event.target.closest('[data-close-audio]')) dialog.close();
   });
@@ -406,6 +406,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
   }
   return {
     panel, homeAudio, savedMarkup, resumeMarkup,
+    openEpisode:openItem,
     selectPodcast(name) { delete filters.podcasts; settings('podcasts').source = name || ''; },
     hasSaved(){ return Boolean(audioState().saved?.length); },
     set(kind,data){

@@ -177,12 +177,13 @@ function createMedia({esc, icon, external}) {
     if (!item) return;
     const url = playerUrl(item, start);
     const video = kind === 'videos';
+    const audioId = video && creatorProfiles.find(profile=>profile.episode.id===item.id)?.audioId;
     const stage = document.getElementById('media-detail');
     const description = item.summary && item.summary !== item.title ? `<p class="detail-summary">${esc(item.summary)}</p>` : '';
     stage.innerHTML = `${video && url ? `<div class="player-frame"><iframe title="${esc(item.title)}" src="${esc(url)}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>` : `<figure class="news-detail-visual">${poster(item,kind,true)}${newsCredit(newsIllustration(item))}</figure>`}
       <div class="detail-copy"><p class="media-byline">${esc(item.source)} ${newMark(item,kind)}</p><h2 id="media-detail-title">${esc(item.title)}</h2>
       <p class="media-meta">Опубликовано ${instant(item.published)} · ${esc(item.topic)}</p>${description}
-      <p class="player-status" role="status"></p><a class="button secondary" href="${esc(external(start ? item.url+'&t='+start+'s' : item.url))}" target="_blank" rel="noopener noreferrer">${video?'Открыть в '+nameOf(item.platform):'Читать у издателя'} ${icon('out')}</a>${item.platform==='youtube' ? `<button class="text-link related-rutube" data-related-rutube="${esc(item.topic)}">По этой теме на RUTUBE ${icon('arrow')}</button>` : ''}</div>`;
+      <p class="player-status" role="status"></p>${audioId ? `<a class="button secondary" href="#media/podcasts/${esc(audioId)}" data-audio-edition>${icon('audio')} Аудиоверсия этого выпуска</a>` : ''} <a class="button secondary" href="${esc(external(start ? item.url+'&t='+start+'s' : item.url))}" target="_blank" rel="noopener noreferrer">${video?'Открыть в '+nameOf(item.platform):'Читать у издателя'} ${icon('out')}</a>${item.platform==='youtube' ? `<button class="text-link related-rutube" data-related-rutube="${esc(item.topic)}">По этой теме на RUTUBE ${icon('arrow')}</button>` : ''}</div>`;
     dialog.dataset.playing='false';
     if (video) document.getElementById('audio-engine')?.pause();
     dialog.showModal();
@@ -226,7 +227,7 @@ function createMedia({esc, icon, external}) {
       location.hash = 'media/videos/rutube-' + encodeURIComponent(related.dataset.relatedRutube);
       return;
     }
-    if (event.target === dialog || event.target.closest('[data-close-media]')) { releasePlayer(); dialog.close(); }
+    if (event.target === dialog || event.target.closest('[data-close-media],[data-audio-edition]')) { releasePlayer(); dialog.close(); }
   });
   document.addEventListener('change',event=>{
     const control = event.target.closest('[data-media-field]');

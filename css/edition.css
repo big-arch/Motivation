@@ -364,6 +364,7 @@ a.route-card:hover { border-color:var(--gold); }
 .creator-feature-copy>p,.creator-profile-spread p,.creator-notes p { max-width:63ch; color:var(--text); }
 .creator-feature-copy>.creator-meta { margin-top:15px; }
 .creator-profile-spread .button { margin-top:18px; }
+.creator-audio-link { display:flex; width:fit-content; min-height:42px; margin-top:5px; }
 .creator-detail-meta { justify-content:space-between; margin:18px 0; color:var(--soft-gold); font-size:13px; }
 .creator-notes { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:clamp(25px,5vw,84px); margin:clamp(28px,4vw,60px) 0 26px; }
 .creator-notes h2,.creator-related h2 { font-size:clamp(24px,2.4vw,36px); letter-spacing:-.035em; line-height:1.2; margin-bottom:14px; }

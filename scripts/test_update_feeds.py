@@ -9,6 +9,16 @@ import update_feeds as feeds
 
 
 class CollectionRefreshTest(unittest.TestCase):
+    def test_podcast_uses_show_artwork_and_plain_text(self):
+        rss = b'''<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel>
+          <itunes:image href="https://example.org/cover.jpg"/><item><title>Episode</title>
+          <pubDate>Fri, 20 Nov 2026 08:00:00 GMT</pubDate><link>https://example.org/episode</link>
+          <description><![CDATA[&lt;b&gt;Guest&lt;/b&gt;&lt;br&gt;Career plans]]></description>
+          <enclosure type="audio/mpeg" url="https://example.org/show.mp3"/></item></channel></rss>'''
+        row, = feeds.audio_entries(rss, {"feed": "https://example.org/feed"})
+        self.assertEqual(row["summary"], "Guest Career plans")
+        self.assertEqual(row["thumbnail"], "https://example.org/cover.jpg")
+
     def test_release_and_previous_deployment_survive_rotation(self):
         source = {"name": "Journal", "topic": "Career", "lang": "en"}
         def item(name):

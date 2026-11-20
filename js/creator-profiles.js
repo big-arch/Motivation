@@ -319,7 +319,8 @@ const creatorProfiles = [
       "start": 114,
       "label": "Как меняется поиск работы"
     },
-    "podcast": "Подкаст Соколовского"
+    "podcast": "Подкаст Соколовского",
+    "audioId": "audio-89eb210bfec7a32f"
   },
   {
     "handle": "JayShettyPodcast.",
@@ -416,7 +417,8 @@ const creatorProfiles = [
       "start": 1944,
       "label": "Какие навыки обсуждает Мо Гавдат"
     },
-    "podcast": "Подкаст Глеба Соломина"
+    "podcast": "Подкаст Глеба Соломина",
+    "audioId": "audio-70b3c10771fd0c7a"
   },
   {
     "handle": "grebenukm",

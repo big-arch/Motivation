@@ -41,7 +41,8 @@ function createCreatorDesk({esc, icon, media, byId}) {
     const ep = profile.episode, chapter = profile.chapter;
     return `<article class="creator-detail"><div class="creator-detail-meta"><span>${esc(profile.format)} · ${esc(profile.topic)} · ${profile.lang==='ru'?'На русском':'На английском'}</span>${metadata(profile)}</div>
       <div class="creator-profile-spread">${preview(profile,true)}<div><h2>${esc(profile.headline)}</h2><p>${esc(profile.intro)}</p>
-      <button class="button primary" type="button" data-creator-play="${handle}">${icon('play')} Смотреть с начала · ${media.duration(ep.duration)}</button></div></div>
+      <button class="button primary" type="button" data-creator-play="${handle}">${icon('play')} Смотреть с начала · ${media.duration(ep.duration)}</button>
+      ${profile.audioId ? `<a class="text-link creator-audio-link" href="#media/podcasts/${profile.audioId}">${icon('audio')} Аудиоверсия этого выпуска</a>` : ''}</div></div>
       <div class="creator-notes"><section><h2>На что обратить внимание</h2><p>${esc(ep.summary)}</p>
       ${chapter ? `<button class="chapter-link" type="button" data-creator-play="${handle}" data-creator-chapter><b>${media.duration(chapter.start)}</b>${esc(chapter.label)} ${icon('play')}</button>` : ''}
       <p class="creator-source">Название у автора · <a href="${esc(ep.url)}" target="_blank" rel="noopener noreferrer" lang="${profile.lang}">${esc(ep.title)} ↗</a></p></section>

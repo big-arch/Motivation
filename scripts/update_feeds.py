@@ -216,9 +216,19 @@ def seconds(value: str) -> int:
     return round(result)
 
 
+def audio_summary(markup: str) -> str:
+    # Some podcast publishers entity-encode the HTML inside RSS CDATA.
+    return Excerpt(html.unescape(markup or "")).text(700)
+
+
 def audio_entries(data: bytes, source: dict) -> list[dict]:
     entries = []
-    for node in ET.fromstring(data).findall("./channel/item"):
+    channel = ET.fromstring(data).find("channel")
+    if channel is None:
+        return entries
+    cover = channel.find(ITUNES + "image")
+    artwork = (cover.get("href", "") if cover is not None else "") or channel.findtext("image/url", "")
+    for node in channel.findall("item"):
         page_url = public_url(node.findtext("link") or "", source["feed"])
         title = clean_text(node.findtext("title") or "", 260)
         published = stamp(node.findtext("pubDate") or node.findtext(DC + "date") or "")
@@ -227,12 +237,12 @@ def audio_entries(data: bytes, source: dict) -> list[dict]:
         url = page_url or audio
         if not (url and title and published and audio) or "�" in title:
             continue
-        summary = Excerpt(node.findtext("description") or node.findtext(ITUNES + "summary") or
-                          node.findtext(CONTENT + "encoded") or "").text(700)
+        summary = audio_summary(node.findtext("description") or node.findtext(ITUNES + "summary") or
+                                node.findtext(CONTENT + "encoded") or "")
         image = node.find(ITUNES + "image")
         media_image = node.find(MEDIA + "thumbnail")
         thumbnail = public_url((image.get("href", "") if image is not None else "") or
-                               (media_image.get("url", "") if media_image is not None else ""), url)
+                               (media_image.get("url", "") if media_image is not None else "") or artwork, url)
         entries.append({
             "id": "audio-" + hashlib.sha1(url.encode("utf-8")).hexdigest()[:16],
             "title": title, "url": url, "audio": audio, "published": published,
@@ -407,6 +417,9 @@ def refresh(kind: str, sources: list[dict], base_url: str) -> None:
                 print(f"{name}: retaining last snapshot ({error})", file=sys.stderr)
                 backup = previous.get(name, {})
                 rows, checked = backup.get("items", []), backup.get("checked", "")
+            if kind == "audio":
+                for row in rows:
+                    row["summary"] = audio_summary(row.get("summary", ""))
             items.extend(rows)
             directory.append({**{k: v for k, v in source.items() if k not in {"feed", "query", "genre"}},
                               "count": len(rows), "checked": checked})
