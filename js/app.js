@@ -602,6 +602,6 @@
   render();
   loadFeed('news'); loadFeed('videos'); loadFeed('audio'); loadFeed('open-books');
   if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
-    window.addEventListener('load',() => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
   }
 })();
