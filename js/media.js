@@ -8,6 +8,14 @@ function createMedia({esc, icon, external}) {
   const day = 86400000;
   const pageSize = 9;
   let current = 'news';
+  let mineOnly=false, channel='', openVideo=null;
+  const authorsById=new Map(creatorProfiles.map(p=>[p.id,p]));
+  const authorsByName=new Map(creatorProfiles.map(p=>[p.name,p]));
+  let sourceAuthors=new Map();
+  const authorOf=item=>item.platform==='youtube' && sourceAuthors.get(item.source);
+  function sourcesFor(kind) {
+    return (feeds[kind]?.sources||[]).filter(s=>kind!=='videos'||((!mineOnly||sourceAuthors.has(s.name)) && (!channel||s.name===channel)));
+  }
   let youtubeReady;
   let youtubePlayer;
 
@@ -20,7 +28,7 @@ function createMedia({esc, icon, external}) {
   }
   function isNew(item, kind) {
     const age = Date.now() - Date.parse(item.published);
-    return age >= 0 && age < (kind === 'videos' ? 7 : 2) * day;
+    return age >= 0 && age < (kind === 'videos' ? 7 : 1) * day;
   }
   function newMark(item, kind) {
     return isNew(item,kind) ? '<span class="fresh-mark">Новое</span>' : '';
@@ -37,6 +45,7 @@ function createMedia({esc, icon, external}) {
   function available(kind, omitSource = false) {
     const state = settings(kind);
     return (feeds[kind]?.items || []).filter(item =>
+      (kind !== 'videos' || ((!mineOnly || authorOf(item)) && (!channel || item.source===channel))) &&
       (!state.topic || item.topic === state.topic) && (omitSource || !state.source || item.source === state.source) &&
       (!state.lang || item.lang === state.lang) && (!state.platform || item.platform === state.platform) &&
       (!state.fresh || isNew(item,kind)));
@@ -48,20 +57,21 @@ function createMedia({esc, icon, external}) {
     return `<label class="media-select"><span>${label}</span><select data-media-field="${key}">${options}</select></label>`;
   }
   function directory(kind) {
-    const rows = feeds[kind].sources || [];
+    const rows = sourcesFor(kind);
     return `<details class="source-directory"><summary>${icon(kind === 'videos' ? 'film' : 'layers')}${kind === 'videos' ? 'Все каналы' : 'Все источники'} <b>${rows.length}</b>${icon('chevron')}</summary><div class="source-index">${rows.map(source =>
       `<button type="button" data-media-source="${esc(source.name)}"><strong>${esc(source.name)}</strong><small>${esc(source.topic)} · ${source.lang === 'ru' ? 'Русский' : 'Английский'}${source.platform ? ' · '+nameOf(source.platform) : ''}</small></button>`).join('')}</div></details>`;
   }
   function filtersMarkup(kind) {
     const state = settings(kind);
-    const rows = feeds[kind].sources || [];
+    const rows = sourcesFor(kind);
     const topics = [...new Set(rows.map(row => row.topic))];
     const names = new Set(available(kind,true).map(row=>row.source));
+    const pinned=kind==='videos' && channel;
     return `<div class="media-filters"><div class="topic-row" role="group" aria-label="Тема">${['',...topics].map(t=>
       `<button type="button" class="chip" aria-pressed="${state.topic === t}" data-media-topic="${esc(t)}">${esc(t || 'Все темы')}</button>`).join('')}</div>
-      <div class="media-tools">${field('source',kind === 'videos' ? 'Канал' : 'Редакция',option('',kind === 'videos' ? 'Все каналы' : 'Все источники',state.source)+rows.filter(s=>names.has(s.name) || s.name === state.source).map(s=>option(s.name,s.name,state.source)).join(''))}
+      <div class="media-tools">${pinned?'':field('source',kind === 'videos' ? 'Канал' : 'Редакция',option('',kind === 'videos' ? 'Все каналы' : 'Все источники',state.source)+rows.filter(s=>names.has(s.name) || s.name === state.source).map(s=>option(s.name,s.name,state.source)).join(''))}
       ${field('lang','Язык',option('','Все языки',state.lang)+option('ru','Русский',state.lang)+option('en','Английский',state.lang))}
-      ${kind === 'videos' ? field('platform','Площадка',option('','Все площадки',state.platform)+option('rutube','RUTUBE',state.platform)+option('youtube','YouTube',state.platform)) : ''}
+      ${kind === 'videos' && !pinned ? field('platform','Площадка',option('','Все площадки',state.platform)+option('rutube','RUTUBE',state.platform)+option('youtube','YouTube',state.platform)) : ''}
       <label class="fresh-filter"><input type="checkbox" data-media-field="fresh"${state.fresh?' checked':''}><span>Только новое</span></label></div></div>`;
   }
   function newsIllustration(item) {
@@ -93,7 +103,7 @@ function createMedia({esc, icon, external}) {
   }
   function itemCard(item,kind,index) {
     return `<article class="media-card"><button type="button" class="media-story" data-media-open="${index}" data-kind="${kind}" aria-label="${kind === 'videos'?'Смотреть':'Открыть'} · ${esc(item.title)}">
-      ${poster(item,kind)}<span class="media-byline"><span>${esc(item.source)}</span>${newMark(item,kind)}</span>
+      ${poster(item,kind)}<span class="media-byline"><span>${esc(item.source)}</span>${newMark(item,kind)}</span>${kind==='videos' && authorOf(item)?'<span class="chosen-channel">Из моих каналов</span>':''}
       <span class="media-title" lang="${item.lang==='ru'?'ru':'en'}">${esc(item.title)}</span></button>
       <div class="media-meta">${instant(item.published)}<span>·</span>${esc(item.topic)}</div></article>`;
   }
@@ -107,24 +117,15 @@ function createMedia({esc, icon, external}) {
         '<div class="empty-state"><p>По выбранным условиям материалов пока нет.</p><button class="button secondary" data-media-reset>Сбросить фильтры</button></div>'}
       ${count<rows.length ? `<div class="load-row"><button class="button secondary" data-media-more>Показать ещё ${Math.min(pageSize,rows.length-count)} ${icon('arrow')}</button><span>${count} из ${rows.length}</span></div>` : ''}`;
   }
-  function leadVideo() {
-    const rows=feeds.videos.items;
-    const index=rows.findIndex(item=>item.platform==='rutube' && item.lang==='ru' && item.duration>=180);
-    if(index<0) return '';
-    const item=rows[index];
-    return `<article class="media-lead"><button type="button" data-media-open="${index}" data-kind="videos" aria-label="Смотреть выпуск · ${esc(item.title)}">
-      ${poster(item,'videos',true)}<span class="lead-copy"><span class="lead-kicker">${icon('film')} Смотреть на русском</span>
-      <strong>${esc(item.title)}</strong><span class="lead-credit">${esc(item.source)} ${newMark(item,'videos')}</span>
-      <span class="lead-time">${instant(item.published)}</span><span class="lead-cta">Смотреть на сайте ${icon('arrow')}</span></span></button></article>`;
-  }
   function panel(kind) {
     current = kind;
     if (!feeds[kind]) return '<p class="secondary-copy" role="status">Загружаем ленту…</p>';
     if (!feeds[kind].items.length) return '<p class="empty-state">Не удалось загрузить ленту. Обновите страницу, когда появится связь.</p>';
     const state = settings(kind);
-    const showLead = kind === 'videos' && !state.source && !state.lang && !state.topic && !state.platform && !state.fresh;
-    return `${showLead ? leadVideo() : ''}${directory(kind)}${filtersMarkup(kind)}
-      <p class="feed-window">Метка «Новое» · ${kind==='videos'?'за последние 7 дней':'за последние 48 часов'}. Обновлено ${instant(feeds[kind].updated)}.</p>
+    const active=[state.topic,state.source,state.lang,state.platform,state.fresh].filter(Boolean).length;
+    return `<details class="filter-drawer" ${state.drawer?'open':''}><summary>${icon('layers')} Фильтры${active?' · '+active:''}${icon('chevron')}</summary>
+      ${filtersMarkup(kind)}${kind==='videos' && channel?'':directory(kind)}</details>
+      <p class="feed-window">${kind==='videos'?'Новое за 7 дней':'Новое за 24 часа'} · Лента обновлена ${instant(feeds[kind].updated)}</p>
       <div id="media-results">${results(kind)}</div>`;
   }
   function change(field, value, focusSelector) {
@@ -134,21 +135,21 @@ function createMedia({esc, icon, external}) {
     if (field !== 'source' && state.source && !available(current,true).some(item=>item.source === state.source)) state.source = '';
     const target = document.getElementById('media-panel');
     if (!target) return;
+    state.drawer=Boolean(target.querySelector('.filter-drawer[open]'));
     target.innerHTML = panel(current);
     target.querySelector(focusSelector)?.focus({preventScroll:true});
   }
   function homeNews() {
     const data = feeds.news;
     if (!data?.items?.length) return `<p class="secondary-copy">${data?'Новости временно недоступны.':'Загружаем новости…'}</p>`;
-    const seen = new Set();
-    const rows = [];
+    const seen = new Set(), rows=[];
     for (const [i,item] of data.items.entries()) {
-      if (seen.has(item.source) || item.lang !== 'ru') continue;
+      if (seen.has(item.source)) continue;
       seen.add(item.source);
-      rows.push(`<button type="button" class="link-row" data-media-open="${i}" data-kind="news"><span><span class="row-meta">${esc(item.source)} · ${instant(item.published)}</span><strong>${esc(item.title)}</strong></span>${icon('arrow')}</button>`);
-      if (rows.length === 3) break;
+      rows.push(`<article class="wire-item"><button type="button" data-media-open="${i}" data-kind="news"><span class="wire-date">${instant(item.published)} ${newMark(item,'news')}</span><strong lang="${item.lang==='ru'?'ru':'en'}">${esc(item.title)}</strong><span class="wire-source">${esc(item.source)} ${icon('arrow')}</span></button></article>`);
+      if (rows.length===3) break;
     }
-    return rows.length ? `<div class="link-list">${rows.join('')}</div>` : '<a class="text-link" href="#media">Открыть ленту новостей</a>';
+    return `<div class="wire-grid">${rows.join('')}</div>`;
   }
   function playerUrl(item, start = 0) {
     if (item.platform==='rutube' && /^[a-f0-9]{32}$/.test(item.id)) return `https://rutube.ru/play/embed/${item.id}?autostart=true`;
@@ -177,13 +178,14 @@ function createMedia({esc, icon, external}) {
     if (!item) return;
     const url = playerUrl(item, start);
     const video = kind === 'videos';
+    openVideo=video?item:null;
     const audioId = video && creatorProfiles.find(profile=>profile.episode.id===item.id)?.audioId;
     const stage = document.getElementById('media-detail');
     const description = item.summary && item.summary !== item.title ? `<p class="detail-summary">${esc(item.summary)}</p>` : '';
     stage.innerHTML = `${video && url ? `<div class="player-frame"><iframe title="${esc(item.title)}" src="${esc(url)}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>` : `<figure class="news-detail-visual">${poster(item,kind,true)}${newsCredit(newsIllustration(item))}</figure>`}
       <div class="detail-copy"><p class="media-byline">${esc(item.source)} ${newMark(item,kind)}</p><h2 id="media-detail-title">${esc(item.title)}</h2>
       <p class="media-meta">Опубликовано ${instant(item.published)} · ${esc(item.topic)}</p>${description}
-      <p class="player-status" role="status"></p>${audioId ? `<a class="button secondary" href="#media/podcasts/${esc(audioId)}" data-audio-edition>${icon('audio')} Аудиоверсия этого выпуска</a>` : ''} <a class="button secondary" href="${esc(external(start ? item.url+'&t='+start+'s' : item.url))}" target="_blank" rel="noopener noreferrer">${video?'Открыть в '+nameOf(item.platform):'Читать у издателя'} ${icon('out')}</a>${item.platform==='youtube' ? `<button class="text-link related-rutube" data-related-rutube="${esc(item.topic)}">По этой теме на RUTUBE ${icon('arrow')}</button>` : ''}</div>`;
+      <p class="player-status" role="status"></p>${audioId ? `<a class="button secondary" href="#audio/podcasts/${esc(audioId)}" data-audio-edition>${icon('audio')} Аудиоверсия этого выпуска</a>` : ''} ${video?`<button type="button" class="button secondary" data-video-note>${icon('write')} Записать вывод</button>`:''} <a class="button secondary" href="${esc(external(start ? item.url+'&t='+start+'s' : item.url))}" target="_blank" rel="noopener noreferrer">${video?'Открыть в '+nameOf(item.platform):'Читать у издателя'} ${icon('out')}</a>${item.platform==='youtube' ? `<button class="text-link related-rutube" data-related-rutube="${esc(item.topic)}">По этой теме на RUTUBE ${icon('arrow')}</button>` : ''}</div>`;
     dialog.dataset.playing='false';
     if (video) document.getElementById('audio-engine')?.pause();
     dialog.showModal();
@@ -215,6 +217,7 @@ function createMedia({esc, icon, external}) {
   },true);
   function releasePlayer() {
     dialog.dataset.playing='false';
+    openVideo=null;
     if (youtubePlayer) { youtubePlayer.destroy(); youtubePlayer=null; }
     document.getElementById('media-detail').replaceChildren();
   }
@@ -224,11 +227,14 @@ function createMedia({esc, icon, external}) {
     const related=event.target.closest('[data-related-rutube]');
     if (related) {
       releasePlayer(); dialog.close();
-      location.hash = 'media/videos/rutube-' + encodeURIComponent(related.dataset.relatedRutube);
+      location.hash = 'video/rutube/' + encodeURIComponent(related.dataset.relatedRutube);
       return;
     }
     if (event.target === dialog || event.target.closest('[data-close-media],[data-audio-edition]')) { releasePlayer(); dialog.close(); }
   });
+  document.addEventListener('toggle',event=>{
+    if (event.target.isConnected && event.target.matches('#media-panel .filter-drawer')) settings(current).drawer=event.target.open;
+  },true);
   document.addEventListener('change',event=>{
     const control = event.target.closest('[data-media-field]');
     if (control) change(control.dataset.mediaField,control.type==='checkbox'?control.checked:control.value,`[data-media-field="${control.dataset.mediaField}"]`);
@@ -255,8 +261,17 @@ function createMedia({esc, icon, external}) {
   });
   return {
     panel, homeNews, poster, instant, duration, newMark,
+    currentVideo:()=>openVideo,
     watch(item, start = 0) { openItem('videos', item, Math.max(0, Math.floor(Number(start) || 0))); },
-    selectVideos(values) { delete filters.videos; Object.assign(settings('videos'), values); },
-    set(kind, data) { feeds[kind] = data; }
+    selectVideos({mine=false,source='',...values}={}) {
+      mineOnly=mine;channel=source;delete filters.videos;Object.assign(settings('videos'),values);
+    },
+    set(kind,data) {
+      if (kind==='videos') {
+        sourceAuthors=new Map((data.sources||[]).filter(s=>s.platform==='youtube').map(s=>[s.name,authorsById.get(s.id)||authorsByName.get(s.name)]).filter(([,profile])=>profile));
+        for (const profile of creatorProfiles) if (!sourceAuthors.has(profile.name)) sourceAuthors.set(profile.name,profile);
+      }
+      feeds[kind]=data;
+    }
   };
 }

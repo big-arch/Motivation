@@ -60,7 +60,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
   }
   function settings(kind) { return filters[kind] ||= {topic:'',source:'',lang:'',fresh:false,limit:pageSize}; }
   function rowsFor(kind) {
-    return kind === 'open-books' ? feeds['open-books'].items : allAudio().filter(item=>item.kind===kind);
+    return kind === 'open-books' ? feeds['open-books'].items : kind==='all-audio'?allAudio():allAudio().filter(item=>item.kind===kind);
   }
   function available(kind,omitSource = false) {
     const state = settings(kind);
@@ -98,7 +98,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
     return `<article class="media-card audio-card">${savedButton(item)}<button type="button" class="media-story" data-audio-open="${esc(item.id)}" aria-label="Открыть · ${esc(item.title)}">
       ${poster(item)}<span class="media-byline"><span>${esc(item.source)}</span>${freshMark(item,item.kind)}</span>
       <span class="media-title" lang="${item.lang==='ru'?'ru':'en'}">${esc(item.title)}</span></button>
-      <div class="media-meta">${instant(item.published)}<span>·</span>${esc(item.topic)}${item.chapters?`<span>·</span><span>${item.chapters.length} глав</span>`:''}</div>
+      <div class="media-meta">${instant(item.published)}<span>·</span>${esc(({lectures:'Лекция',podcasts:'Подкаст',audiobooks:'Аудиокнига'})[item.kind]||item.topic)}${item.chapters?`<span>·</span><span>${item.chapters.length} глав</span>`:''}</div>
       ${percent?`<span class="listen-progress" aria-label="Прослушано ${percent}%"><i style="width:${percent}%"></i></span>`:''}</article>`;
   }
   function directory(kind) {
@@ -134,7 +134,27 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
     const ready = kind === 'open-books' ? feeds['open-books'].updated !== null : feeds.audio.updated !== null;
     if (!ready) return '<p class="secondary-copy" role="status">Загружаем каталог…</p>';
     if (!rowsFor(kind).length) return '<p class="empty-state">Каталог временно недоступен. Прошлая подборка появится после восстановления связи.</p>';
-    return `${directory(kind)}${filtersMarkup(kind)}<p class="feed-window">Метка «Новое» · ${kind==='open-books'?'30 дней с появления в подборке':'7 дней'}. Обновлено ${instant(feeds[kind==='open-books'?'open-books':'audio'].updated)}.</p><div id="audio-results">${results(kind)}</div>`;
+    const state=settings(kind);
+    const active=[state.topic,state.source,state.lang,state.fresh].filter(Boolean).length;
+    const controls=kind==='open-books'?directory(kind)+filtersMarkup(kind):`<details class="filter-drawer" ${state.drawer?'open':''}><summary>${icon('layers')} Фильтры${active?' · '+active:''}${icon('chevron')}</summary>${filtersMarkup(kind)}${directory(kind)}</details>`;
+    return `${controls}<p class="feed-window">Метка «Новое» · ${kind==='open-books'?'30 дней с появления в подборке':'7 дней'}. Обновлено ${instant(feeds[kind==='open-books'?'open-books':'audio'].updated)}.</p><div id="audio-results">${results(kind)}</div>`;
+  }
+  function homeServices() {
+    return `<div class="home-services">${[...services].reverse().map(service=>{
+      const index=services.indexOf(service),id='home-service-'+index;
+      return `<article class="home-service ${index===0?'on-spotify':'on-yandex'}"><div class="service-top"><span>${service.platform}</span>${icon('audio')}</div><h3>${esc(service.title)}</h3>
+        <div class="service-actions"><button type="button" data-home-service="${index}" aria-expanded="false" aria-controls="${id}">${icon('play')} Включить плеер</button><a href="${esc(external(service.url))}" target="_blank" rel="noopener noreferrer">На площадке ${icon('out')}</a></div>
+        <div class="home-service-frame" id="${id}" hidden></div></article>`;
+    }).join('')}</div>`;
+  }
+  function toggleService(button) {
+    const service=services[Number(button.dataset.homeService)];
+    const frame=document.getElementById(button.getAttribute('aria-controls'));
+    if (!service||!frame) return;
+    const open=frame.hidden;
+    frame.hidden=!open;button.setAttribute('aria-expanded',String(open));
+    button.innerHTML=open?icon('close')+' Закрыть плеер':icon('play')+' Включить плеер';
+    frame.innerHTML=open?`<iframe title="${esc(service.title)} · ${esc(service.platform)}" src="${esc(service.embed)}" height="${service.height}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>`:'';
   }
   function servicesPanel() {
     return `<div class="service-intro"><p>Официальные виджеты площадок. Выпуски обновляются авторами шоу; для полного прослушивания сервис может попросить войти в аккаунт.</p></div><div class="service-grid">${services.map(service=>
@@ -171,7 +191,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
       <p class="media-meta">${item.author?esc(item.author)+' · ':''}${esc(longDuration(item.duration)||'Аудио')} · ${esc(item.rights||item.topic)} · ${item.chapters?'В подборке с ':''}${instant(item.published)}</p>
       ${item.summary?`<p class="detail-summary" lang="${item.lang==='ru'?'ru':'en'}">${esc(item.summary)}</p>`:''}
       <div class="action-row"><button type="button" class="button primary" data-audio-play="${esc(item.id)}" data-audio-chapter="${chapter}">${icon(playing?'pause':'play')}${playing?'Пауза':isCurrent?'Продолжить':'Слушать'}</button>
-      <a class="button secondary" href="${esc(external(item.url))}" target="_blank" rel="noopener noreferrer">Оригинал ${icon('out')}</a></div><p class="player-status" role="status"></p></div></div>
+      <a class="button secondary" href="${esc(external(item.url))}" target="_blank" rel="noopener noreferrer">Оригинал ${icon('out')}</a><button type="button" class="button secondary" data-listening-note="${esc(item.id)}">${icon('write')} Записать вывод</button></div><p class="player-status" role="status"></p></div></div>
       ${chapterList(item)}${practice(item)}`;
     dialog.dataset.playing=String(playing);
     if (!dialog.open) dialog.showModal();
@@ -292,7 +312,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
   function planItem(id,book = false) {
     const item = findItem(id);
     if (!item) return;
-    onPlan?.({text:book?`Прочитать фрагмент книги «${item.title}» и записать одну применимую идею`:(item.action || `Послушать «${item.title}» и записать одно действие`),sourceId:id,sourceTitle:item.title,href:book?'#library/open':`#media/${item.kind}`});
+    onPlan?.({text:book?`Прочитать фрагмент книги «${item.title}» и записать одну применимую идею`:(item.action || `Послушать «${item.title}» и записать одно действие`),sourceId:id,sourceTitle:item.title,href:book?'#library/open':`#audio/${item.kind}`});
   }
   function updateReading(id,value) {
     const state = readingState();
@@ -306,7 +326,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
     state.limit = pageSize;
     if (field!=='source' && state.source && !available(currentKind,true).some(item=>item.source===state.source)) state.source='';
     const target = document.getElementById('audio-panel');
-    if (target) target.innerHTML = panel(currentKind);
+    if (target) {state.drawer=Boolean(target.querySelector('.filter-drawer[open]'));target.innerHTML=panel(currentKind);}
     target?.querySelector(selector)?.focus({preventScroll:true});
   }
   function homeAudio() {
@@ -370,7 +390,8 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
   document.addEventListener('click',event=>{
     const button = event.target.closest('button');
     if (!button) return;
-    if (button.hasAttribute('data-audio-open')) openItem(button.dataset.audioOpen);
+    if (button.hasAttribute('data-home-service')) toggleService(button);
+    else if (button.hasAttribute('data-audio-open')) openItem(button.dataset.audioOpen);
     else if (button.hasAttribute('data-book-open')) openBook(button.dataset.bookOpen);
     else if (button.hasAttribute('data-audio-play')) playItem(button.dataset.audioPlay,button.dataset.audioChapter||0);
     else if (button.hasAttribute('data-audio-chapter') && button.hasAttribute('data-audio-id')) playItem(button.dataset.audioId,button.dataset.audioChapter);
@@ -391,6 +412,9 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
       target.querySelectorAll('.media-story,.open-book-cover')[next]?.focus({preventScroll:true});
     }
   });
+  document.addEventListener('toggle',event=>{
+    if (event.target.isConnected && event.target.matches('#audio-panel .filter-drawer')) settings(currentKind).drawer=event.target.open;
+  },true);
   document.addEventListener('change',event=>{
     const control = event.target;
     if (control.matches('[data-audio-field]')) changeFilter(control.dataset.audioField,control.type==='checkbox'?control.checked:control.value,`[data-audio-field="${control.dataset.audioField}"]`);
@@ -419,7 +443,8 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
     if (item) { current={item,chapter:recent.chapter||0,key:itemKey(item,recent.chapter||0)}; showCurrent(); }
   }
   return {
-    panel, homeAudio, savedMarkup, resumeMarkup,
+    panel, homeAudio, homeServices, servicesPanel, savedMarkup, resumeMarkup,
+    itemById:findItem,
     openEpisode:openItem,
     selectPodcast(name) { delete filters.podcasts; settings('podcasts').source = name || ''; },
     hasSaved(){ return Boolean(audioState().saved?.length); },

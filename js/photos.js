@@ -1101,5 +1101,125 @@ const archivePhotos = {
       "width": 943,
       "height": 1040
     }
+  ],
+  "waymo": [
+    {
+      "caption": "Роботакси Waymo на набережной Эмбаркадеро в Сан-Франциско, январь 2026 года.",
+      "credit": "4300streetcar",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Waymo_Jaguar_I-Pace_in_San_Francisco_January_2026.jpg",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "caption": "Салон Jaguar I-Pace во время поездки Waymo по Сан-Франциско. Водительское кресло свободно.",
+      "credit": "9yz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Waymo_Jaguar_I-Pace_Interior_In_Motion.jpg",
+      "width": 960,
+      "height": 626
+    }
+  ],
+  "nvidia-cuda": [
+    {
+      "caption": "Дженсен Хуанг на выставке Computex в Тайбэе в 2016 году.",
+      "credit": "NVIDIA Taiwan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Jensen_Huang_at_Computex_Taipei_20160531c.jpg",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "caption": "Стойка NVIDIA GB200 с жидкостным охлаждением. В одной системе объединены процессоры и ускорители.",
+      "credit": "Pokiiri",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nvidia_DGX_GB200.jpg",
+      "width": 383,
+      "height": 1100
+    }
+  ],
+  "mistral-ai": [
+    {
+      "caption": "Артур Менш, сооснователь Mistral AI, на конференции Techarena в 2026 году.",
+      "credit": "Jan2342342423",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Arthur_Mensch.png",
+      "width": 825,
+      "height": 1100
+    },
+    {
+      "caption": "Саммит по искусственному интеллекту в парижском Гран-Пале, февраль 2025 года. В том же месяце вышла мобильная версия Le Chat.",
+      "credit": "© European Union, 2026",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Artificial_Intelligence_Action_Summit_at_the_Grand_Palais,_Paris_-_2025_01.jpg",
+      "width": 960,
+      "height": 639
+    }
+  ],
+  "hugging-face": [
+    {
+      "caption": "Клеман Деланг рассказывает о Hugging Face в интервью theCUBE.",
+      "credit": "SiliconANGLE theCUBE",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Delangue_on_SiliconANGLE_theCUBE.jpg",
+      "width": 888,
+      "height": 640
+    },
+    {
+      "caption": "Сооснователь Hugging Face Томас Вольф на конференции Slush 2024.",
+      "credit": "Slush",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Thomas_Wolf_at_Slush_2024.jpg",
+      "width": 948,
+      "height": 1047
+    }
+  ],
+  "duolingo-ai": [
+    {
+      "caption": "Луис фон Ан выступает на Wikimania в Мехико в 2015 году.",
+      "credit": "MadriCR",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Wikiman%C3%ADa_2015_-_Day_4_-_Luis_von_Ahn_conference_-_LMM_(22).JPG",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "caption": "Главная страница Duolingo через увеличительное стекло. Снимок цифрового продукта.",
+      "credit": "Jernej Furman from Slovenia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Homepage_of_DUOLINGO_Website_magnified_on_logo_with_magnifying_glass_(53147449323).jpg",
+      "width": 960,
+      "height": 640
+    }
+  ],
+  "yandex-alice": [
+    {
+      "caption": "Колонки «Станция Лайт» в музее и магазине Яндекса в Санкт-Петербурге.",
+      "credit": "Stolbovsky",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Yandex.Station_01.jpg",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "caption": "Презентация первой Яндекс Станции на конференции YaC в 2018 году.",
+      "credit": "putnik",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:YaC_2018_3206.jpg",
+      "width": 825,
+      "height": 1100
+    }
   ]
 };

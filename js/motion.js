@@ -49,3 +49,67 @@ function createJournalMotion(main) {
   preference.addEventListener('change',()=>{for(const animation of animations) animation.cancel();scan();});
   return {route,cover,scan};
 }
+function createCoverRotation(advance) {
+  const preference=matchMedia('(prefers-reduced-motion: reduce)');
+  const hover=matchMedia('(hover: hover)');
+  let choice='';
+  try {choice=localStorage.getItem('founder.cover.rotation')||'';} catch {}
+  let root=null,visible=false,timer=0;
+  const enabled=()=>choice==='on'||(choice!=='off'&&!preference.matches);
+
+  function canAdvance() {
+    if (!root?.isConnected || !visible || !enabled() || document.hidden || document.querySelector('dialog[open]')) return false;
+    const control=root.querySelector('[data-cover-rotation]');
+    if (root.contains(document.activeElement) && !(choice==='on' && control===document.activeElement)) return false;
+    return !hover.matches || !root.matches(':hover') || (choice==='on' && control.matches(':hover'));
+  }
+  function schedule() {
+    clearTimeout(timer);
+    if (canAdvance()) timer=setTimeout(()=>{
+      if (canAdvance()) advance(document.activeElement?.hasAttribute('data-cover-rotation'));
+    },11000);
+  }
+  const observer='IntersectionObserver' in window?new IntersectionObserver(([entry])=>{
+    if (entry.target!==root) return;
+    visible=entry.isIntersecting && entry.intersectionRatio>=.25;
+    schedule();
+  },{threshold:.25}):null;
+
+  function mount() {
+    observer?.disconnect();
+    root=document.getElementById('feature');
+    visible=Boolean(root&&!observer);
+    if (root) {
+      observer?.observe(root);
+      root.addEventListener('pointerover',schedule);
+      root.addEventListener('pointerleave',schedule);
+      root.addEventListener('focusin',schedule);
+      root.addEventListener('focusout',()=>queueMicrotask(schedule));
+    }
+    schedule();
+  }
+  function updateControl() {
+    const control=root?.querySelector('[data-cover-rotation]');
+    if (!control) return;
+    control.setAttribute('aria-label',enabled()?'Приостановить автосмену обложки':'Включить автосмену обложки');
+    control.title=enabled()?'Пауза':'Автосмена';
+    control.querySelector('use').setAttribute('href',enabled()?'#i-pause':'#i-play');
+  }
+  function toggle() {
+    choice=enabled()?'off':'on';
+    try {localStorage.setItem('founder.cover.rotation',choice);} catch {}
+    updateControl();
+    schedule();
+  }
+  preference.addEventListener('change',()=>{
+    if (preference.matches && choice==='on') {
+      choice='';
+      try {localStorage.removeItem('founder.cover.rotation');} catch {}
+    }
+    updateControl();
+    schedule();
+  });
+  document.addEventListener('visibilitychange',schedule);
+  document.addEventListener('close',schedule,true);
+  return {enabled,toggle,mount,schedule};
+}

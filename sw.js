@@ -9,7 +9,9 @@ const fontFiles = ['inter-cyrillic-wght-normal','inter-latin-wght-normal',
   'playfair-display-cyrillic-wght-normal','playfair-display-cyrillic-wght-italic'];
 const assets = [
   'index.html','css/style.css','css/edition.css','js/app.js','js/content.js','js/edition.js','js/creator-edition.js','js/creator-profiles.js','js/creators.js','js/photos.js','js/news-photos.js','js/media.js','js/journey-data.js','js/journey.js','js/audio.js','js/cards.js','js/motion.js','manifest.json','data/news.json','data/videos.json','data/audio.json','data/open-books.json',
-  'css/cabinet.css','js/planner-data.js','js/notebook.js','js/google-calendar-config.js','js/google-calendar.js','js/calendar.js',
+  'css/issue.css','js/ai-stories.js','css/cabinet.css','js/planner-data.js','js/notebook.js','js/google-calendar-config.js','js/google-calendar.js','js/calendar.js',
+  ...['waymo','yandex-alice','nvidia-cuda'].map(id=>'assets/archive/'+id+'-1.webp'),
+  ...['waymo','yandex-alice','mistral-ai'].map(id=>'assets/archive/'+id+'-card.webp'),
   ...['markets','bank','trade','factory','press','office','tech','retail'].map(id=>'assets/news/'+id+'.webp'),
   ...photos.flatMap(name => ['-sm',''].map(size => 'assets/photos/' + name + size + '.webp')),
   ...fontFiles.map(name => 'assets/fonts/' + name + '.woff2'),

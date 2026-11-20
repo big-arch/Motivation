@@ -5,11 +5,11 @@
   const searchDialog = document.getElementById('search-dialog');
   const menuDialog = document.getElementById('menu-dialog');
   const searchInput = document.getElementById('search-input');
-  const items = [...creatorArticles, ...articles, ...editionArticles, ...books];
+  const items = [...aiStories, ...creatorArticles, ...articles, ...editionArticles, ...books];
   const byId = new Map(items.map(item => [item.id, item]));
   const sections = {
     journal: ['Журнал', 'grid'], stories: ['Истории', 'layers'], museum: ['Музей провалов', 'archive'],
-    library: ['Библиотека', 'book'], media: ['Медиа', 'film'], support: ['Точка опоры', 'sun'],
+    library: ['Библиотека', 'book'], news:['Новости','news'], video:['Видео','film'], audio:['Аудио','audio'], support: ['Точка опоры', 'sun'],
     journey: ['Мой путь', 'check'], saved: ['Личный кабинет', 'bookmark'], resources: ['Ресурсы', 'write'], archive: ['Все материалы', 'layers'], about: ['О журнале', 'star']
   };
   const descriptions = {
@@ -18,9 +18,11 @@
     library: 'Короткие конспекты книг о работе, деньгах и мышлении. В каждом есть главные мысли и одно упражнение.',
     archive: 'Все истории, разборы и книжные конспекты журнала.'
   };
-  const featureIds = ['patagonia', 'nike', 'kodak'];
+  const featureIds = ['waymo','patagonia','yandex-alice','nike','nvidia-cuda','kodak'];
   const featuredDetails = {
-    patagonia: ['История номера', 'Фицрой, Аргентина'], nike: ['Из архива брендов', 'Орегон, США'], kodak: ['Музей провалов', 'Рочестер, США']
+    waymo:['Бизнес и ИИ','Сан-Франциско, США'], patagonia:['История номера','Фицрой, Аргентина'],
+    'yandex-alice':['Бизнес и ИИ','Санкт-Петербург, Россия'], nike:['Из архива брендов','Орегон, США'],
+    'nvidia-cuda':['Бизнес и ИИ','Тайбэй, Тайвань'], kodak:['Музей провалов','Рочестер, США']
   };
   const storageKeys = {saved:'founder.saved.v1', steps:'founder.steps.v1', thoughts:'founder.thoughts.v1',
     plan:'founder.plan.v1', journey:'founder.journey.v1', reading:'founder.reading.v1', audio:'founder.audio.v1'};
@@ -36,11 +38,13 @@
   const motion = createJournalMotion(main);
   const studio = createThoughtStudio({esc,icon,readState,writeState,notify,onCollectionChange:refreshShelf});
   const planner = createPlannerData({esc,icon,dateKey,notify});
-  const notebook = createNotebook(planner,{byId,studio,onChange:()=>calendar.paint()});
+  const notebook = createNotebook(planner,{byId,studio,onPlan:task=>journey.add(task),onChange:()=>{calendar.paint();const door=document.getElementById('home-cabinet');if (door) door.innerHTML=cabinetDoor();if (route()[0]==='saved'&&!route()[1]) render();}});
   const calendar = createCabinetCalendar(planner,notebook);
   journey = createJourney({esc,icon,readState,writeState,notify,byId,moods,audio,
     onUpdate:()=>render(),syncStep,completeStep});
-  let featureIndex = 0;
+  let featureDay = dateKey();
+  let featureIndex = dailyCoverIndex();
+  const rotation = createCoverRotation(keepFocus=>showCover((featureIndex+1)%featureIds.length,keepFocus?'[data-cover-rotation]':undefined));
   let moodIndex = 0;
   let noteIndex = 0;
   let toastTimer;
@@ -146,22 +150,37 @@
   function sectionHead(title, label, route, star = false) {
     return `<div class="section-head"><div class="section-title">${star ? icon('star') : ''}<h2>${esc(title)}</h2></div><a class="section-link" href="#${route}">${esc(label)} ${icon('out')}</a></div>`;
   }
+  function dailyCoverIndex() {
+    return Math.floor(Date.parse(featureDay+'T12:00:00Z')/86400000)%featureIds.length;
+  }
+  function showCover(index,focusSelector) {
+    const root=document.getElementById('feature');
+    if (!root) return;
+    featureIndex=index;
+    root.innerHTML=cover();
+    motion.cover();
+    if (focusSelector) root.querySelector(focusSelector)?.focus({preventScroll:true});
+    rotation.schedule();
+  }
   function cover() {
     const id = featureIds[featureIndex];
     const item = byId.get(id);
     const [rubric, place] = featuredDetails[id];
-    const filename = `./assets/photos/${item.image}`;
+    const documentary=!item.image;
+    const filename=documentary?`./assets/archive/${id}-1`:`./assets/photos/${item.image}`;
+    const alt=documentary?archivePhotos[id][0].caption:item.alt;
+    const sources=documentary?'':`srcset="${filename}-sm.webp 800w, ${filename}.webp ${id==='patagonia'?2048:1440}w" sizes="(max-width: 820px) 96vw, 70vw"`;
     return `<section class="cover" data-id="${id}" aria-label="Материалы номера" aria-roledescription="карусель">
-      <img class="cover-art" alt="${esc(item.alt)}" src="${filename}.webp" srcset="${filename}-sm.webp 800w, ${filename}.webp ${id === 'patagonia' ? 2048 : 1440}w" sizes="(max-width: 600px) 96vw, 84vw" fetchpriority="high">
+      <img class="cover-art" alt="${esc(alt)}" src="${filename}.webp" ${sources} fetchpriority="high">
       <div class="cover-shade"></div>${saveButton(item)}
       <div class="cover-content"><div class="rubric">${rubric}</div>
         <h1>${esc(item.cover[0].slice(0,-1))}<span class="title-dot">.</span><em>${esc(item.cover[1])}</em></h1>
         <p class="cover-dek">${esc(item.intro)}</p>
         <div class="cover-actions"><a href="#read/${id}" class="button primary">Читать историю ${icon('arrow')}</a>${readTime(item,true)}</div>
       </div>
-      <div class="cover-foot"><div class="slide-meter"><span class="folio-count"><b>0${featureIndex+1}</b><span> / 03</span></span>
+      <div class="cover-foot"><div class="slide-meter"><span class="folio-count"><b>0${featureIndex+1}</b><span> / ${String(featureIds.length).padStart(2,'0')}</span></span>
         <div class="slide-tabs" role="group" aria-label="Выбрать материал">${featureIds.map((key,n) => `<button class="slide-tab" data-slide="${n}" aria-label="Показать материал ${n+1}: ${esc(byId.get(key).title)}" aria-pressed="${n === featureIndex}"></button>`).join('')}</div></div>
-        <div class="cover-paging"><span class="cover-location">${icon('pin')}${place}</span><button class="round-btn" data-shift="-1" aria-label="Предыдущая история">${icon('back')}</button><button class="round-btn" data-shift="1" aria-label="Следующая история">${icon('arrow')}</button></div>
+        <div class="cover-paging"><button type="button" class="round-btn cover-rotation" data-cover-rotation aria-label="${rotation.enabled()?'Приостановить автосмену обложки':'Включить автосмену обложки'}" title="${rotation.enabled()?'Пауза':'Автосмена'}">${icon(rotation.enabled()?'pause':'play')}</button><span class="cover-location">${icon('pin')}${place}</span><button class="round-btn" data-shift="-1" aria-label="Предыдущая история">${icon('back')}</button><button class="round-btn" data-shift="1" aria-label="Следующая история">${icon('arrow')}</button></div>
       </div></section>`;
   }
   function stepBox() {
@@ -180,19 +199,32 @@
     const now = new Date();
     return all[Math.floor(Date.UTC(now.getFullYear(),now.getMonth(),now.getDate())/86400000) % all.length];
   }
+  function cabinetDoor() {
+    const count=notebook.entries().length;
+    return `<aside class="cabinet-door" aria-label="Личный кабинет"><div class="door-top"><span class="door-emblem">${icon('person')}</span><span>В этом браузере</span></div>
+      <h2><a href="#saved">Мой кабинет</a></h2><p>Идеи, цитаты и планы из журнала.</p>
+      <nav class="door-links" aria-label="Быстрый вход в кабинет">
+        <a href="#saved/diary">${icon('write')}<span>Дневник</span><small>${count||''}</small>${icon('chevron')}</a>
+        <a href="#saved/calendar">${icon('calendar')}<span>Календарь</span>${icon('chevron')}</a>
+        <a href="#journey">${icon('check')}<span>Мой путь</span>${icon('chevron')}</a>
+      </nav><div class="door-foot"><button class="button" type="button" data-entry-new="note">${icon('plus')} Новая запись</button><a href="#saved">Моя полка ${icon('arrow')}</a></div></aside>`;
+  }
   function home() {
-    const now = new Date();
-    const date = now.toLocaleDateString('ru', {day:'numeric',month:'long',year:'numeric'}).replace(/\s?г\.$/,'');
+    const now=new Date();
+    const date=now.toLocaleDateString('ru',{day:'numeric',month:'long',year:'numeric'}).replace(/\s?г\.$/,'');
     return `<div class="topline"><span><i class="folio-diamond"></i>Независимый бизнес-журнал</span><time datetime="${dateKey(now)}">${esc(date)}</time></div>
-      <div id="feature">${cover()}</div>
+      <div class="issue-opening"><div id="feature">${cover()}</div>
+      <section class="home-wire" aria-label="Последние новости"><div class="wire-heading"><h2>Новости</h2><a class="section-link" href="#news">Вся лента ${icon('arrow')}</a></div><div id="home-news">${media.homeNews()}</div></section>
+      <div id="home-cabinet">${cabinetDoor()}</div></div>
+      <section class="home-section" id="home-players" tabindex="-1"><div class="section-head"><div class="section-title"><h2>Подкасты на площадках</h2></div><a class="section-link" href="#audio">Всё аудио ${icon('arrow')}</a></div>${audio.homeServices()}</section>
+      <section class="home-section home-ai">${sectionHead('Как строят бизнес с ИИ','Все истории об ИИ','stories/'+encodeURIComponent('ИИ'))}
+        <div class="card-grid">${[aiStories[0],aiStories[1],aiStories[4]].map(item=>card(item)).join('')}</div></section>
       <section class="home-section home-picks">${sectionHead('Выбор редакции','Все материалы','archive',true)}
-      <div class="card-grid">${['nike','kodak','habits'].map(id => card(byId.get(id),true)).join('')}</div></section>
+        <div class="card-grid">${['nike','kodak','habits'].map(id=>card(byId.get(id),true)).join('')}</div></section>
       <div class="home-section personal"><section class="thought"><div class="panel-label">${icon('sun')} Мысль дня</div><blockquote>${esc(dailyNote()[0])}</blockquote>
         <div class="thought-actions"><button class="text-link" data-daily-card>${icon('layers')} Карточка мысли</button><a href="#support" class="text-link">К точке опоры ${icon('arrow')}</a></div></section>${stepBox()}</div>
-      <section class="home-section">${sectionHead('Авторы в эфире','Все 16 каналов','media/authors')}${creators.home()}</section>
-      <section class="home-section home-audio">${sectionHead('Слушать и действовать','Аудиотека','media/lectures')}<div id="home-audio">${audio.homeAudio()}</div></section>
-      <section class="home-path"><div><div class="panel-label">${icon('check')} Не только вдохновение</div><h2>Соберите свой путь изменений</h2><p>Цель на неделю, задания из материалов и маршрут с маленькими шагами. Без регистрации и штрафов за паузы.</p></div><a class="button primary" href="#journey">Перейти в «Мой путь» ${icon('arrow')}</a></section>
-      <section class="home-section feed-home">${sectionHead('Деловая лента','Все новости','media')}<div id="home-news">${media.homeNews()}</div></section>`;
+      <section class="home-section">${sectionHead('Авторы в эфире','Мои 16 каналов','video/channels')}${creators.home()}</section>
+      <section class="home-section home-audio">${sectionHead('Слушать в журнале','Всё аудио','audio')}<div id="home-audio">${audio.homeAudio()}</div></section>`;
   }
   function breadcrumb(title, route = 'journal', parent = 'Журнал') {
     return `<nav class="breadcrumb" aria-label="Путь по журналу"><a href="#${route}">${esc(parent)}</a>${icon('chevron')}<span>${esc(title)}</span></nav>`;
@@ -201,7 +233,7 @@
     return `<header class="page-heading">${breadcrumb(title)}<h1>${esc(title)}</h1>${desc ? `<p>${esc(desc)}</p>` : ''}</header>`;
   }
   function libraryTabs(selected = '') {
-    return `<nav class="media-tabs chips" aria-label="Виды книг"><a href="#library" ${!selected?'aria-current="page"':''}>${icon('book')} Конспекты</a><a href="#library/open" ${selected==='open'?'aria-current="page"':''}>${icon('layers')} Открытая полка</a><a href="#media/audiobooks">${icon('audio')} Аудиокниги</a></nav>`;
+    return `<nav class="media-tabs chips" aria-label="Виды книг"><a href="#library" ${!selected?'aria-current="page"':''}>${icon('book')} Конспекты</a><a href="#library/open" ${selected==='open'?'aria-current="page"':''}>${icon('layers')} Открытая полка</a><a href="#audio/audiobooks">${icon('audio')} Аудиокниги</a></nav>`;
   }
   function openBooksPage() {
     return `<div class="page-main">${pageHeading('Открытая полка','Открытые издания из Open Library и Internet Archive. Новые книги подтягиваются автоматически; чтение доступно в официальной читалке.')}${libraryTabs('open')}<section id="audio-panel" aria-label="Открытая книжная полка">${audio.panel('open-books')}</section></div>`;
@@ -246,6 +278,12 @@
       <img src="${file}" width="${photo.width}" height="${photo.height}" alt="${esc(photo.caption)}" loading="${index?'lazy':'eager'}" decoding="async"></a>
       <figcaption><span>${esc(photo.caption)}</span><small>${esc(photo.credit)} · ${license ? `<a href="${esc(license)}" target="_blank" rel="noopener noreferrer">${esc(photo.license)}</a>` : esc(photo.license)} · <a href="${esc(external(photo.source))}" target="_blank" rel="noopener noreferrer">Оригинал ↗</a></small></figcaption></figure>`;
   }
+  function pairedReading(item) {
+    const ai=item.pair?item:aiStories.find(story=>story.pair[0]===item.id);
+    if (!ai) return '';
+    const partner=ai===item?byId.get(ai.pair[0]):ai;
+    return `<aside class="paired-reading"><small>Читать в паре</small><h2><a href="#read/${esc(partner.id)}">${esc(partner.title)} ↗</a></h2><p>${esc(ai.pair[1])}</p></aside>`;
+  }
   function readArticle(item) {
     const parent = sections[item.section][0];
     const inlineImage = photoFigure(item,1);
@@ -261,15 +299,18 @@
     const next = family[(family.indexOf(item)+1)%family.length];
     return `<article class="article-top">${breadcrumb(item.topic, item.section, parent)}
       <div class="article-spread"><header class="article-intro"><div class="card-meta"><span class="kind">${esc(item.author || item.tag)}</span><span class="meta-sep">·</span>${readTime(item,true)}</div>
-      <h1>${esc(item.title)}</h1><p class="page-dek">${esc(item.intro)}</p>${saveButton(item,true)}</header>
+      <h1>${esc(item.title)}</h1><p class="page-dek">${esc(item.intro)}</p><div class="article-response">${saveButton(item,true)}<button class="button primary" type="button" data-material-note="${esc(item.id)}">${icon('write')} ${item.ideas?'Записать идею':item.section==='museum'?'Разобрать урок':'Разобрать идею'}</button></div></header>
       ${photoFigure(item,0)}</div>
       <div class="reading">${body}${journey.practice(item,actionFor(item),challengeFor(item))}${item.ideas?journey.bookProgress(item):''}<section class="sources"><h2>${item.ideas ? 'Об издании' : 'Источники'}</h2>
       ${item.sources.map(([label,url]) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`).join('')}</section>
-      ${creators.related(item.id)}<div class="article-next"><a class="text-link" href="#${item.section}">${icon('back')} ${parent}</a><a class="text-link next-story" href="#read/${next.id}">${esc(next.title)} ${icon('arrow')}</a></div></div></article>`;
+      ${pairedReading(item)}${creators.related(item.id)}<div class="article-next"><a class="text-link" href="#${item.section}">${icon('back')} ${parent}</a><a class="text-link next-story" href="#read/${next.id}">${esc(next.title)} ${icon('arrow')}</a></div></div></article>`;
   }
   function savedPage() {
     const ids = Array.from(savedIds()).reverse();
-    return `<div class="page-main cabinet cabinet-shelf">${planner.header('','Личный кабинет','Здесь ваша полка, дневник и календарь.')}
+    return `<div class="page-main cabinet cabinet-shelf">${planner.header('','Личный кабинет','Ваша личная подборка материалов и действий.',`<button class="button primary" data-entry-new="note">${icon('plus')} Новая запись</button>`)}
+      <div class="cab-portals"><a href="#saved/diary">${icon('write')}<span><b>Мой дневник</b><small>Записей · ${notebook.entries().length}</small></span>${icon('arrow')}</a>
+      <a href="#saved/calendar">${icon('calendar')}<span><b>Календарь</b><small>${esc(planner.dayLabel(dateKey(),{weekday:'long',day:'numeric',month:'long'}))}</small></span>${icon('arrow')}</a>
+      <a href="#journey">${icon('check')}<span><b>Мой путь</b><small>Действия и результаты</small></span>${icon('arrow')}</a></div>
       <div class="section-head"><div class="section-title"><h2>Мои закладки</h2></div></div>
       ${ids.length ? `<div class="card-grid">${ids.map(id => card(byId.get(id))).join('')}</div>` :
         `<div class="empty-state"><h2>Пока пусто</h2><p>Нажмите на закладку у любой истории или книги, чтобы вернуться к ней здесь.</p><a class="button secondary" href="#archive">Найти материал ${icon('arrow')}</a></div>`}
@@ -303,28 +344,35 @@
       <h2>Изображения</h2><p>В каждой статье есть две документальные фотографии. Под снимками указаны автор, лицензия и ссылка на оригинал. Файлы уменьшены и переведены в WebP для быстрой загрузки. Фотография Фицроя на обложке взята с Unsplash. Предметные обложки Nike, Kodak и книги Джеймса Клира на главной созданы с помощью ImageGen.</p>
       <div class="sources"><a href="https://unsplash.com/photos/150fZ07GQqs">Фицрой на рассвете · Andrew Svk ↗</a><a href="https://unsplash.com/photos/B5BTFxsZ92M">Компьютер Apple · Marissa Lewis ↗</a><a href="https://unsplash.com/photos/KN9FYaoAAik">Пицца в печи · Brad ↗</a><a href="https://unsplash.com/photos/lIipHR8mi3o">Офис · Fer Troulik ↗</a></div></div></div>`;
   }
-  const mediaTitles = {news:'Новости',videos:'Видео',authors:'Авторы',lectures:'Лекции',podcasts:'Подкасты',audiobooks:'Аудиокниги',services:'Яндекс и Spotify'};
-  function mediaPage(kind, handle) {
-    if (!Object.hasOwn(mediaTitles,kind)) kind='news';
-    const profile = creators.profile(handle);
-    const title = kind==='authors' && profile ? profile.name : mediaTitles[kind];
-    const heading = kind==='authors' && profile
-      ? `<header class="page-heading">${breadcrumb(profile.name,'media/authors','Все авторы')}<h1>${esc(profile.name)}</h1></header>`
-      : pageHeading(title, kind==='authors' ? 'С какого выпуска начать, какую главу посмотреть и что прочитать после. Выберите интересующую тему.' : 'Лекции, подкасты, аудиокниги и видео о бизнесе, деньгах и мотивации.');
-    const tabs=`<nav class="media-tabs chips" aria-label="Вид медиа">${Object.entries(mediaTitles).map(([key,label])=>`<a href="#media${key==='news'?'':'/'+key}" ${kind===key?'aria-current="page"':''}>${icon(['lectures','podcasts','audiobooks'].includes(key)?'audio':key==='videos'?'film':key==='services'?'play':'layers')} ${label}</a>`).join('')}</nav>`;
+  const mediaTitles = {news:'Новости',videos:'Видео',authors:'Гид по авторам','all-audio':'Аудио',lectures:'Лекции',podcasts:'Подкасты',audiobooks:'Аудиокниги',services:'Яндекс Музыка и Spotify'};
+  function mediaPage(kind,handle) {
+    if (kind==='news') return `<div class="page-main media-page">${pageHeading('Новости','Деловая лента по времени публикации. Новое за последние сутки.')}<section id="media-panel" aria-label="Новости">${media.panel('news')}</section></div>`;
+    if (kind==='services') return `<div class="page-main media-page">${pageHeading(mediaTitles.services,'')}${audio.servicesPanel()}</div>`;
+    const isVideo=kind==='videos' || kind==='authors';
+    const profile=isVideo && creators.profile(handle);
+    const mine=kind==='authors'||handle==='channels'||Boolean(profile);
+    const title=isVideo?'Видео':'Аудио';
+    const options=isVideo?[['#video','Все видео',!mine],['#video/channels','Мои 16 каналов',mine]]:
+      [['#audio','Всё аудио',kind==='all-audio'],['#audio/lectures','Лекции',kind==='lectures'],['#audio/podcasts','Подкасты',kind==='podcasts'],['#audio/audiobooks','Аудиокниги',kind==='audiobooks']];
+    const tabs=`<nav class="format-tabs" aria-label="Выбор подборки">${options.map(([url,label,active])=>`<a href="${url}" ${active?'aria-current="page"':''}>${label}</a>`).join('')}</nav>`;
     let panel;
-    if (kind==='authors') panel = profile ? creators.detail(profile) : creators.index(handle);
-    else if (kind==='news' || kind==='videos') panel=`<section id="media-panel" aria-label="${mediaTitles[kind]}">${media.panel(kind)}</section>`;
-    else panel=`<section id="audio-panel" aria-label="${mediaTitles[kind]}">${audio.panel(kind)}</section>`;
-    const selection = kind==='podcasts'
-      ? `<a class="creator-catalog-link" href="#media/authors/podcasts">${icon('film')} Интервью и подкасты в видеоформате ${icon('arrow')}</a>`
-      : kind==='videos' ? `<a class="creator-catalog-link" href="#media/authors">${icon('layers')} С какого канала начать ${icon('arrow')}</a>` : '';
-    return `<div class="page-main media-page">${heading}${tabs}${selection}${panel}</div>`;
+    if (kind==='authors') panel=profile?`<h2 class="channel-heading">${esc(profile.name)}</h2>${creators.detail(profile)}`:creators.index(handle);
+    else if (isVideo) panel=`${mine?creators.channelList(profile):''}<section id="media-panel" aria-label="Выпуски">${media.panel('videos')}</section>`;
+    else panel=`<section id="audio-panel" aria-label="${esc(mediaTitles[kind])}">${audio.panel(kind)}</section>`;
+    return `<div class="page-main media-page format-page">${pageHeading(title,isVideo?'Свежие выпуски на YouTube и RUTUBE.':'Лекции, разговоры и книги в одном плеере.')}${isVideo?tabs:`<div class="format-desk">${tabs}<a class="text-link" href="#journal/players">Яндекс Музыка и Spotify ${icon('arrow')}</a></div>`}${panel}</div>`;
   }
   function route() {
-    const parts = location.hash.slice(1).split('/');
-    try { return [parts[0] || 'journal', decodeURIComponent(parts[1] || ''), decodeURIComponent(parts[2] || '')]; }
-    catch { return ['missing','','']; }
+    try {
+      const [section,part='',detail='']=location.hash.slice(1).split('/').map(decodeURIComponent);
+      if (section==='news') return ['media','news',''];
+      if (section==='video') {
+        if (part==='authors') return ['media','authors',detail];
+        return ['media','videos',part==='channel'?detail:part==='rutube'?'rutube-'+detail:part==='channels'?'channels':''];
+      }
+      if (section==='audio') return ['media',['lectures','podcasts','audiobooks'].includes(part)?part:'all-audio',detail];
+      if (section==='media') return ['media',Object.hasOwn(mediaTitles,part)?part:'news',detail];
+      return [section||'journal',part,detail];
+    } catch {return ['missing','',''];}
   }
   function render({focus = false} = {}) {
     const [section,param,subparam] = route();
@@ -333,9 +381,9 @@
     if (mediaPath !== activeMediaPath) {
       const profile = audioEdition || creators.profile(subparam);
       if (section==='media' && param==='videos') {
-        if (profile) media.selectVideos({source:profile.name});
+        if (profile) media.selectVideos({source:profile.name,mine:true});
         else if (subparam.startsWith('rutube-')) media.selectVideos({platform:'rutube',topic:subparam.slice(7)});
-        else if (activeMediaPath.startsWith('videos/') && activeMediaPath!=='videos/') media.selectVideos({});
+        else media.selectVideos({mine:subparam==='channels'});
       }
       if (section==='media' && param==='podcasts') {
         if (profile?.podcast) audio.selectPodcast(profile.podcast);
@@ -346,6 +394,7 @@
     let nav = item ? item.section : section;
     let title = item ? item.title : sections[section]?.[0];
     if (section==='library' && param==='open') title='Открытая полка';
+    if (section==='media') nav=param==='news'?'news':['videos','authors'].includes(param)?'video':'audio';
     if (section==='media') title=(param==='authors' && creators.profile(subparam)?.name) || mediaTitles[param||'news'] || 'Медиа';
     let view;
     if (section === 'journal') view = home();
@@ -389,6 +438,7 @@
       if (offset > 0) tabs.scrollLeft += offset + 12;
     }
     motion.route();
+    rotation.mount();
     if (nav === 'archive') nav = 'journal';
     document.title = section === 'journal' ? 'FOUNDER. Независимый бизнес-журнал' : `${title} · FOUNDER.`;
     document.querySelectorAll('[data-nav]').forEach(link => {
@@ -397,21 +447,32 @@
     });
     document.querySelector('[data-menu]').toggleAttribute('data-active', !['journal','library','journey','saved'].includes(nav));
     document.querySelector('.saved-dot').hidden = !savedIds().size && !audio.hasSaved();
-    if (focus) {
+    if (section==='journal' && param==='players') { const players=document.getElementById('home-players');players.scrollIntoView();if (focus) players.focus({preventScroll:true}); }
+    else if (focus) {
       if (sameCatalog) main.querySelector('.chips [aria-current]')?.focus({preventScroll:true});
       else { main.focus({preventScroll:true}); window.scrollTo({top:0,behavior:'instant'}); }
     }
   }
+  let newsRequested=0, newsPending=false, newsAvailable=false;
   async function loadFeed(kind) {
+    if (kind==='news') {
+      if (newsPending) return;
+      newsRequested=Date.now();newsPending=true;
+    }
     let data;
     try {
-      const response = await fetch(`./data/${kind}.json`);
+      const response = await fetch(`./data/${kind}.json`,kind==='news'?{cache:'no-cache'}:{});
       if (!response.ok) throw new Error(String(response.status));
       data = await response.json();
       if (!Array.isArray(data.items)) throw new Error('Invalid feed');
       data.items = data.items.filter(item => item && typeof item.title === 'string' && external(item.url) &&
         (kind!=='audio' || external(item.audio)) && (kind!=='open-books' || external(item.embed)));
-    } catch { data = {updated:null,items:[],sources:[]}; }
+    } catch {
+      if (kind==='news' && newsAvailable) return;
+      data={updated:null,items:[],sources:[]};
+    } finally {if (kind==='news') newsPending=false;}
+    if (kind==='news' && newsAvailable && !data.items.length) return;
+    if (kind==='news' && data.items.length) newsAvailable=true;
     const [section, param, subparam] = route();
     if (['news','videos'].includes(kind)) {
       media.set(kind,data);
@@ -420,7 +481,7 @@
     } else {
       audio.set(kind,data);
       if (section === 'journal' && kind === 'audio') document.getElementById('home-audio').innerHTML = audio.homeAudio();
-      if (section === 'media' && kind === 'audio' && ['lectures','podcasts','audiobooks'].includes(param)) {
+      if (section === 'media' && kind === 'audio' && ['all-audio','lectures','podcasts','audiobooks'].includes(param)) {
         document.getElementById('audio-panel').innerHTML = audio.panel(param);
         if (param==='podcasts' && subparam.startsWith('audio-') && creatorProfiles.some(p=>p.audioId===subparam)) audio.openEpisode(subparam);
       }
@@ -514,15 +575,26 @@
       return;
     }
     if (button.hasAttribute('data-search')) return openSearch();
+    if (button.hasAttribute('data-material-note')) {
+      const item=byId.get(button.dataset.materialNote);
+      if (item) notebook.fromMaterial({format:item.ideas?'book':item.section==='museum'?'failure':'story',title:item.title,author:item.author||'',href:'#read/'+item.id});
+      return;
+    }
+    if (button.hasAttribute('data-video-note')||button.hasAttribute('data-listening-note')) {
+      const video=button.hasAttribute('data-video-note'),item=video?media.currentVideo():audio.itemById(button.dataset.listeningNote);
+      if (item) notebook.fromMaterial({format:video?'video':'audio',title:item.title,author:item.source,href:external(item.url)});
+      return;
+    }
     if (journey.click(button)) return;
     if (button.hasAttribute('data-menu')) return menuDialog.showModal();
     if (button.hasAttribute('data-save')) return toggleSave(button.dataset.save,button);
+    if (button.hasAttribute('data-cover-rotation')) {
+      rotation.toggle(); return;
+    }
     if (button.hasAttribute('data-shift') || button.hasAttribute('data-slide')) {
-      featureIndex = button.hasAttribute('data-slide') ? Number(button.dataset.slide) : (featureIndex+Number(button.dataset.shift)+featureIds.length)%featureIds.length;
-      document.getElementById('feature').innerHTML = cover();
-      motion.cover();
-      const selector = button.hasAttribute('data-slide') ? `[data-slide="${featureIndex}"]` : `[data-shift="${button.dataset.shift}"]`;
-      document.querySelector(selector).focus({preventScroll:true});
+      const next=button.hasAttribute('data-slide')?Number(button.dataset.slide):(featureIndex+Number(button.dataset.shift)+featureIds.length)%featureIds.length;
+      const selector=button.hasAttribute('data-slide')?`[data-slide="${next}"]`:`[data-shift="${button.dataset.shift}"]`;
+      showCover(next,selector);
     }
     if (button.hasAttribute('data-mood') || button.hasAttribute('data-next-note')) {
       if (button.hasAttribute('data-mood')) { moodIndex = Number(button.dataset.mood); noteIndex = 0; }
@@ -596,10 +668,13 @@
   });
   function refreshDay() {
     if (document.hidden) return;
+    if (Date.now()-newsRequested>=30*60000 && (route()[0]==='journal'||route()[1]==='news')) loadFeed('news');
+    if (dateKey()!==featureDay) { featureDay=dateKey();featureIndex=dailyCoverIndex();if (route()[0]==='journal') {render();return;} }
     const form = main.querySelector('.step-form');
     if (form && form.dataset.day !== dateKey()) render();
   }
   document.addEventListener('visibilitychange',refreshDay);
+  window.addEventListener('online',()=>{if (route()[0]==='journal'||route()[1]==='news') loadFeed('news');});
   setInterval(refreshDay,60000);
   window.addEventListener('beforeinstallprompt',event => {
     event.preventDefault(); installPrompt = event; document.querySelector('.install').hidden = false;

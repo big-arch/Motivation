@@ -62,7 +62,7 @@ function createJourney({esc, icon, readState, writeState, notify, byId, moods, a
         <div class="action-row"><a class="button primary" href="#journey/route/${selected.id}">Открыть день ${icon('arrow')}</a>${material?`<a class="text-link" href="#read/${material.id}">${esc(material.title)} ${icon('out')}</a>`:''}</div></section>`;
     }
     if (planned) return `<section class="journey-next"><div class="panel-label">${icon('check')} Следующий шаг</div><h2>${esc(planned.sourceTitle||'Из моего плана')}</h2><p>${esc(planned.text)}</p><div class="action-row"><button class="button primary" data-plan-toggle="${esc(planned.id)}">${icon('check')} Я это сделал</button><a class="text-link" href="${esc(planned.href)}">Вернуться к материалу ${icon('arrow')}</a></div></section>`;
-    return `<section class="journey-next"><div class="panel-label">${icon('sun')} Начать спокойно</div><h2>Один маленький шаг лучше большого плана</h2><p>Выберите маршрут или добавьте задание из любой истории, лекции и книги.</p><div class="action-row"><a class="button primary" href="#journey/routes">Выбрать маршрут ${icon('arrow')}</a><a class="text-link" href="#media/lectures">Послушать лекцию ${icon('play')}</a></div></section>`;
+    return `<section class="journey-next"><div class="panel-label">${icon('sun')} Начать спокойно</div><h2>Один маленький шаг лучше большого плана</h2><p>Выберите маршрут или добавьте задание из любой истории, лекции и книги.</p><div class="action-row"><a class="button primary" href="#journey/routes">Выбрать маршрут ${icon('arrow')}</a><a class="text-link" href="#audio/lectures">Послушать лекцию ${icon('play')}</a></div></section>`;
   }
   function moodBlock() {
     const selected = state().mood || '';
@@ -96,7 +96,7 @@ function createJourney({esc, icon, readState, writeState, notify, byId, moods, a
   function page() {
     const completed = plan().filter(item=>item.done).length;
     return `<div class="journey-dashboard"><div class="journey-top">${goalBlock()}${nextBlock()}</div>${moodBlock()}${planBlock()}
-      <div class="journey-two"><section><div class="section-head"><div class="section-title"><h2>Продолжить слушать</h2></div><a class="section-link" href="#media/lectures">Аудиотека ${icon('out')}</a></div>${audio.resumeMarkup()}</section>${readingBlock()}</div>
+      <div class="journey-two"><section><div class="section-head"><div class="section-title"><h2>Продолжить слушать</h2></div><a class="section-link" href="#audio">Аудиотека ${icon('out')}</a></div>${audio.resumeMarkup()}</section>${readingBlock()}</div>
       ${routesBlock()}<p class="journey-local">Выполнено заданий: ${completed}. Цель, заметки, маршруты и прогресс хранятся только в этом браузере.</p></div>`;
   }
   function routesPage() {
@@ -113,7 +113,7 @@ function createJourney({esc, icon, readState, writeState, notify, byId, moods, a
     return `<div class="route-detail"><div class="route-overview"><p>${esc(selected.description)}</p><button type="button" class="button ${state().activeRoute===id?'secondary':'primary'}" data-route-start="${id}">${state().activeRoute===id?icon('check')+' Мой текущий маршрут':'Сделать текущим'}</button></div>
       <div class="route-days">${selected.days.map((day,index)=>{
         const item = day.material ? byId.get(day.material) : null;
-        const href = item ? '#read/'+item.id : day.media==='support' ? '#support' : '#media/'+(day.media||'lectures');
+        const href = item ? '#read/'+item.id : day.media==='support' ? '#support' : day.media==='videos'?'#video':'#audio/'+(day.media||'lectures');
         const complete = done.has(index);
         return `<article class="route-day ${complete?'is-done':''}"><div class="route-day-number"><span>${selected.flexible?'Шаг':'День'} ${index+1}</span><button type="button" class="round-btn" data-route-day="${index}" data-route-id="${id}" aria-pressed="${complete}" aria-label="${complete?'Вернуть шаг в работу':'Отметить шаг выполненным'}">${icon('check')}</button></div>
           <h2>${esc(day.title)}</h2>${item?`<a class="route-material" href="${href}"><span>${esc(item.tag)}</span><strong>${esc(item.title)}</strong>${icon('arrow')}</a>`:`<a class="route-material" href="${href}"><span>Материал для шага</span><strong>${day.media==='support'?'Точка опоры':'Аудиолекции'} </strong>${icon('arrow')}</a>`}
