@@ -10,7 +10,7 @@
   const sections = {
     journal: ['Журнал', 'grid'], stories: ['Истории', 'layers'], museum: ['Музей провалов', 'archive'],
     library: ['Библиотека', 'book'], media: ['Медиа', 'film'], support: ['Точка опоры', 'sun'],
-    saved: ['Личный уголок', 'bookmark'], resources: ['Ресурсы', 'write'], archive: ['Все материалы', 'layers'], about: ['О журнале', 'star']
+    journey: ['Мой путь', 'check'], saved: ['Личный уголок', 'bookmark'], resources: ['Ресурсы', 'write'], archive: ['Все материалы', 'layers'], about: ['О журнале', 'star']
   };
   const descriptions = {
     stories: 'Люди, компании и решения, которые изменили их путь.',
@@ -22,11 +22,20 @@
   const featuredDetails = {
     patagonia: ['История номера', 'Фицрой, Аргентина'], nike: ['Из архива брендов', 'Орегон, США'], kodak: ['Музей провалов', 'Рочестер, США']
   };
-  const storageKeys = {saved: 'founder.saved.v1', steps: 'founder.steps.v1', thoughts: 'founder.thoughts.v1'};
+  const storageKeys = {saved:'founder.saved.v1', steps:'founder.steps.v1', thoughts:'founder.thoughts.v1',
+    plan:'founder.plan.v1', journey:'founder.journey.v1', reading:'founder.reading.v1', audio:'founder.audio.v1'};
   const sessionFallback = new Map();
   const media = createMedia({esc,icon,external});
+  let journey;
+  const audio = createAudioLibrary({esc,icon,external,readState,writeState,notify,
+    onPlan:task=>journey?.add(task),onChange:kind=>{
+      document.querySelector('.saved-dot').hidden=!savedIds().size&&!audio.hasSaved();
+      if (kind==='saved' && route()[0]==='saved') render();
+    }});
   const motion = createJournalMotion(main);
   const studio = createThoughtStudio({esc,icon,readState,writeState,notify,onCollectionChange:refreshShelf});
+  journey = createJourney({esc,icon,readState,writeState,notify,byId,moods,audio,
+    onUpdate:()=>render(),syncStep,completeStep});
   let featureIndex = 0;
   let moodIndex = 0;
   let noteIndex = 0;
@@ -175,6 +184,8 @@
       <div class="card-grid">${['nike','kodak','habits'].map(id => card(byId.get(id),true)).join('')}</div></section>
       <div class="home-section personal"><section class="thought"><div class="panel-label">${icon('sun')} Мысль дня</div><blockquote>${esc(dailyNote()[0])}</blockquote>
         <div class="thought-actions"><button class="text-link" data-daily-card>${icon('layers')} Карточка мысли</button><a href="#support" class="text-link">К точке опоры ${icon('arrow')}</a></div></section>${stepBox()}</div>
+      <section class="home-section home-audio">${sectionHead('Слушать и действовать','Аудиотека','media/lectures')}<div id="home-audio">${audio.homeAudio()}</div></section>
+      <section class="home-path"><div><div class="panel-label">${icon('check')} Не только вдохновение</div><h2>Соберите свой путь изменений</h2><p>Цель на неделю, задания из материалов и маршрут с маленькими шагами. Без регистрации и штрафов за паузы.</p></div><a class="button primary" href="#journey">Перейти в «Мой путь» ${icon('arrow')}</a></section>
       <section class="home-section feed-home">${sectionHead('Деловая лента','Все новости','media')}<div id="home-news">${media.homeNews()}</div></section>`;
   }
   function breadcrumb(title, route = 'journal', parent = 'Журнал') {
@@ -183,13 +194,20 @@
   function pageHeading(title, desc) {
     return `<header class="page-heading">${breadcrumb(title)}<h1>${esc(title)}</h1>${desc ? `<p>${esc(desc)}</p>` : ''}</header>`;
   }
+  function libraryTabs(selected = '') {
+    return `<nav class="media-tabs chips" aria-label="Виды книг"><a href="#library" ${!selected?'aria-current="page"':''}>${icon('book')} Конспекты</a><a href="#library/open" ${selected==='open'?'aria-current="page"':''}>${icon('layers')} Открытая полка</a><a href="#media/audiobooks">${icon('audio')} Аудиокниги</a></nav>`;
+  }
+  function openBooksPage() {
+    return `<div class="page-main">${pageHeading('Открытая полка','Открытые издания из Open Library и Internet Archive. Новые книги подтягиваются автоматически; чтение доступно в официальной читалке.')}${libraryTabs('open')}<section id="audio-panel" aria-label="Открытая книжная полка">${audio.panel('open-books')}</section></div>`;
+  }
   function catalog(section, filter = '') {
+    if (section === 'library' && filter === 'open') return openBooksPage();
     const base = section === 'archive' ? items : items.filter(item => item.section === section);
     const labelFor = item => section === 'archive' ? sections[item.section][0] : item.topic;
     const tags = [...new Set(base.map(labelFor))];
     const selected = tags.includes(filter) ? filter : '';
     const shown = selected ? base.filter(item => labelFor(item) === selected) : base;
-    return `<div class="page-main">${pageHeading(sections[section][0],descriptions[section])}
+    return `<div class="page-main">${pageHeading(sections[section][0],descriptions[section])}${section==='library'?libraryTabs():''}
       <nav class="chips" aria-label="Фильтр материалов">${['',...tags].map(tag => `<a class="chip" href="#${section}${tag ? '/' + encodeURIComponent(tag) : ''}" ${tag === selected ? 'aria-current="page"' : ''}>${esc(tag || 'Все')}</a>`).join('')}</nav>
       <div class="catalog-results"><p class="catalog-count" role="status">Материалов · ${shown.length}${selected ? ' из '+base.length : ''}</p><div class="card-grid">${shown.map(item => card(item)).join('')}</div></div></div>`;
   }
@@ -201,6 +219,19 @@
     mac:'Дайте человеку одну задачу и посмотрите, куда он укажет первым. Привычный образ работает, когда подсказывает действие.',
     wework:'Сравните сроки своих обязательств с тем, как быстро клиент может отказаться от покупки.'
   };
+  function actionFor(item) {
+    return item.exercise || item.takeaway || originalTakeaways[item.id] || 'Запишите одну идею материала и действие, которое можно выполнить за 15 минут.';
+  }
+  function challengeFor(item) {
+    const challenges = {
+      'Психология':'Выберите одну привычку и повторяйте её минимальную версию пять дней. Каждый раз записывайте одно наблюдение.',
+      'Деньги':'Составьте на неделю простую таблицу обязательств, запаса и одного решения, которое увеличит вашу свободу.',
+      'Карьера':'Назначьте три рабочих сеанса и получите в каждом один результат, который можно показать коллеге или клиенту.',
+      'Технологии':'Проведите на этой неделе один небольшой эксперимент с новой технологией и заранее запишите критерий вывода.',
+      'Стратегия':'Проверьте одну ключевую гипотезу вашего проекта: поговорите с тремя людьми и сравните их ответы со своим планом.'
+    };
+    return challenges[item.topic] || 'Примените идею материала в одном реальном деле на этой неделе и запишите, что изменилось в результате.';
+  }
   function photoFigure(item, index) {
     const photo = archivePhotos[item.id][index];
     const file = `./assets/archive/${item.id}-${index+1}.webp`;
@@ -226,7 +257,7 @@
       <div class="article-spread"><header class="article-intro"><div class="card-meta"><span class="kind">${esc(item.author || item.tag)}</span><span class="meta-sep">·</span>${readTime(item,true)}</div>
       <h1>${esc(item.title)}</h1><p class="page-dek">${esc(item.intro)}</p>${saveButton(item,true)}</header>
       ${photoFigure(item,0)}</div>
-      <div class="reading">${body}<section class="sources"><h2>${item.ideas ? 'Об издании' : 'Источники'}</h2>
+      <div class="reading">${body}${journey.practice(item,actionFor(item),challengeFor(item))}${item.ideas?journey.bookProgress(item):''}<section class="sources"><h2>${item.ideas ? 'Об издании' : 'Источники'}</h2>
       ${item.sources.map(([label,url]) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`).join('')}</section>
       <div class="article-next"><a class="text-link" href="#${item.section}">${icon('back')} ${parent}</a><a class="text-link next-story" href="#read/${next.id}">${esc(next.title)} ${icon('arrow')}</a></div></div></article>`;
   }
@@ -236,7 +267,7 @@
       <div class="section-head"><div class="section-title"><h2>Мои закладки</h2></div></div>
       ${ids.length ? `<div class="card-grid">${ids.map(id => card(byId.get(id))).join('')}</div>` :
         `<div class="empty-state"><h2>Пока пусто</h2><p>Нажмите на закладку у любой истории или книги, чтобы вернуться к ней здесь.</p><a class="button secondary" href="#archive">Найти материал ${icon('arrow')}</a></div>`}
-      <div id="saved-thoughts">${studio.shelf()}</div><div class="saved-step">${stepBox()}</div></div>`;
+      ${audio.savedMarkup()}<div id="saved-thoughts">${studio.shelf()}</div><div class="saved-step">${stepBox()}<a class="button primary journey-link" href="#journey">Открыть «Мой путь» ${icon('arrow')}</a></div></div>`;
   }
   function refreshShelf() {
     const shelf = document.getElementById('saved-thoughts');
@@ -260,36 +291,49 @@
   function aboutPage() {
     return `<div class="page-main">${pageHeading('О журнале','FOUNDER. рассказывает о людях, которые строят своё дело, и о цене их решений.')}
       <div class="reading about"><h2>Как устроен журнал</h2><p>В историях мы восстанавливаем путь от первого опыта до поворотного решения. В «Музее провалов» разбираем, где перестала работать бизнес-модель. В конце материалов стоят ссылки на документы компаний, архивы и страницы издателей.</p>
-      <p>Книжные конспекты и заметки «Точки опоры» написаны редакцией. В студии карточек можно добавить личную заметку, выбрать оформление, сохранить карточку в коллекцию или скачать PNG. Закладки и трекер хранятся на вашем устройстве.</p>
+      <p>Книжные конспекты и заметки «Точки опоры» написаны редакцией. Лекции и подкасты поступают из официальных RSS, аудиокниги — из LibriVox, открытые издания — из Open Library и Internet Archive. Виджеты Spotify и Яндекс Музыки принадлежат соответствующим площадкам.</p><p>В «Моём пути» можно поставить цель, взять задание из материала, выбрать маршрут и записать итог. Позиция аудио, прогресс чтения, закладки, план и коллекция карточек хранятся только на вашем устройстве.</p>
       <h2>На экране телефона</h2><p>В Safari откройте меню «Поделиться» и выберите «На экран Домой». В Chrome на Android выберите «Установить приложение» или «Добавить на главный экран». После первой загрузки истории и книги можно читать офлайн.</p>
       <h2>Изображения</h2><p>В каждой статье есть две документальные фотографии. Под снимками указаны автор, лицензия и ссылка на оригинал. Файлы уменьшены и переведены в WebP для быстрой загрузки. Фотография Фицроя на обложке взята с Unsplash. Предметные обложки Nike, Kodak и книги Джеймса Клира на главной созданы с помощью ImageGen.</p>
       <div class="sources"><a href="https://unsplash.com/photos/150fZ07GQqs">Фицрой на рассвете · Andrew Svk ↗</a><a href="https://unsplash.com/photos/B5BTFxsZ92M">Компьютер Apple · Marissa Lewis ↗</a><a href="https://unsplash.com/photos/KN9FYaoAAik">Пицца в печи · Brad ↗</a><a href="https://unsplash.com/photos/lIipHR8mi3o">Офис · Fer Troulik ↗</a></div></div></div>`;
   }
   function mediaPage(kind) {
-    return `<div class="page-main media-page">${pageHeading('Медиа','Новости редакций и видео о бизнесе, карьере, деньгах и мотивации.')}
-      <nav class="media-tabs chips" aria-label="Вид медиа"><a href="#media" ${kind === 'news' ? 'aria-current="page"' : ''}>${icon('layers')} Новости</a><a href="#media/videos" ${kind === 'videos' ? 'aria-current="page"' : ''}>${icon('film')} Видео</a></nav>
-      <section id="media-panel" aria-label="${kind === 'videos'?'Видеотека':'Новостная лента'}">${media.panel(kind)}</section></div>`;
+    const kinds = ['news','videos','lectures','podcasts','audiobooks','services'];
+    if (!kinds.includes(kind)) kind = 'news';
+    const audioKind = !['news','videos'].includes(kind);
+    const titles = {news:'Новости',videos:'Видео',lectures:'Лекции',podcasts:'Подкасты',audiobooks:'Аудиокниги',services:'Яндекс и Spotify'};
+    return `<div class="page-main media-page">${pageHeading(titles[kind],'Лекции, подкасты, аудиокниги и видео о бизнесе, деньгах и мотивации. Новые материалы подтягиваются автоматически.')}
+      <nav class="media-tabs chips" aria-label="Вид медиа">${kinds.map(key=>`<a href="#media${key==='news'?'':'/'+key}" ${kind===key?'aria-current="page"':''}>${icon(['lectures','podcasts','audiobooks'].includes(key)?'audio':key==='videos'?'film':key==='services'?'play':'layers')} ${titles[key]}</a>`).join('')}</nav>
+      ${audioKind?`<section id="audio-panel" aria-label="${titles[kind]}">${audio.panel(kind)}</section>`:`<section id="media-panel" aria-label="${kind==='videos'?'Видеотека':'Новостная лента'}">${media.panel(kind)}</section>`}</div>`;
   }
   function route() {
     const parts = location.hash.slice(1).split('/');
-    try { return [parts[0] || 'journal', decodeURIComponent(parts[1] || '')]; }
-    catch { return ['missing','']; }
+    try { return [parts[0] || 'journal', decodeURIComponent(parts[1] || ''), decodeURIComponent(parts[2] || '')]; }
+    catch { return ['missing','','']; }
   }
   function render({focus = false} = {}) {
-    const [section,param] = route();
+    const [section,param,subparam] = route();
     const item = section === 'read' && byId.get(param);
     let nav = item ? item.section : section;
     let title = item ? item.title : sections[section]?.[0];
+    if (section==='library' && param==='open') title='Открытая полка';
+    if (section==='media') title=({news:'Новости',videos:'Видео',lectures:'Лекции',podcasts:'Подкасты',audiobooks:'Аудиокниги',services:'Яндекс и Spotify'})[param||'news'] || 'Медиа';
     let view;
     if (section === 'journal') view = home();
     else if (item) view = readArticle(item);
     else if (Object.hasOwn(descriptions,section)) view = catalog(section,param);
     else if (section === 'saved') view = savedPage();
+    else if (section === 'journey') {
+      if (param === 'routes') { title='Маршруты'; view=`<div class="page-main">${pageHeading('Маршруты','Последовательные программы от первого шага до устойчивых изменений.')}${journey.routesPage()}</div>`; }
+      else if (param === 'route' && journeyRoutes.some(route=>route.id===subparam)) {
+        const selected=journeyRoutes.find(route=>route.id===subparam); title=selected.title;
+        view=`<div class="page-main">${pageHeading(selected.title,selected.description)}${journey.routePage(selected.id)}</div>`;
+      } else view=`<div class="page-main">${pageHeading('Мой путь','Цель на неделю, действия из материалов и спокойный прогресс без штрафов за паузы.')}<div id="journey-view">${journey.page()}</div></div>`;
+    }
     else if (section === 'support') {
       if (activeRoute !== 'support') noteIndex = Math.floor(Math.random() * moods[moodIndex].notes.length);
       view = supportPage();
     }
-    else if (section === 'media') view = mediaPage(param === 'videos' ? 'videos' : 'news');
+    else if (section === 'media') view = mediaPage(param || 'news');
     else if (section === 'resources') view = resourcePage();
     else if (section === 'about') view = aboutPage();
     else {
@@ -306,8 +350,8 @@
       if (nav === link.dataset.nav) link.setAttribute('aria-current','page');
       else link.removeAttribute('aria-current');
     });
-    document.querySelector('[data-menu]').toggleAttribute('data-active', !['journal','library','saved'].includes(nav));
-    document.querySelector('.saved-dot').hidden = !savedIds().size;
+    document.querySelector('[data-menu]').toggleAttribute('data-active', !['journal','library','journey','saved'].includes(nav));
+    document.querySelector('.saved-dot').hidden = !savedIds().size && !audio.hasSaved();
     if (focus) {
       if (sameCatalog) main.querySelector('.chips [aria-current]')?.focus({preventScroll:true});
       else { main.focus({preventScroll:true}); window.scrollTo({top:0,behavior:'instant'}); }
@@ -320,12 +364,20 @@
       if (!response.ok) throw new Error(String(response.status));
       data = await response.json();
       if (!Array.isArray(data.items)) throw new Error('Invalid feed');
-      data.items = data.items.filter(item => item && typeof item.title === 'string' && external(item.url));
-    } catch { data = {updated:null,items:[]}; }
-    media.set(kind,data);
+      data.items = data.items.filter(item => item && typeof item.title === 'string' && external(item.url) &&
+        (kind!=='audio' || external(item.audio)) && (kind!=='open-books' || external(item.embed)));
+    } catch { data = {updated:null,items:[],sources:[]}; }
     const [section, param] = route();
-    if (section === 'journal' && kind === 'news') document.getElementById('home-news').innerHTML = media.homeNews();
-    if (section === 'media' && kind === (param === 'videos' ? 'videos' : 'news')) document.getElementById('media-panel').innerHTML = media.panel(kind);
+    if (['news','videos'].includes(kind)) {
+      media.set(kind,data);
+      if (section === 'journal' && kind === 'news') document.getElementById('home-news').innerHTML = media.homeNews();
+      if (section === 'media' && kind === (param === 'videos' ? 'videos' : 'news')) document.getElementById('media-panel').innerHTML = media.panel(kind);
+    } else {
+      audio.set(kind,data);
+      if (section === 'journal' && kind === 'audio') document.getElementById('home-audio').innerHTML = audio.homeAudio();
+      if (section === 'media' && kind === 'audio' && ['lectures','podcasts','audiobooks'].includes(param)) document.getElementById('audio-panel').innerHTML = audio.panel(param);
+      if (section === 'library' && param === 'open' && kind === 'open-books') document.getElementById('audio-panel').innerHTML = audio.panel('open-books');
+    }
   }
   function toggleSave(id, button) {
     const set = savedIds();
@@ -346,7 +398,7 @@
         if (node === button && wasFocused) replacement.focus({preventScroll:true});
       });
     }
-    document.querySelector('.saved-dot').hidden = !set.size;
+    document.querySelector('.saved-dot').hidden = !set.size && !audio.hasSaved();
     if (persisted) notify(set.has(id) ? 'Сохранено в закладках' : 'Материал убран из закладок');
   }
   function searchResults() {
@@ -375,6 +427,16 @@
     box.replaceWith(fresh);
     if (keepFocus) fresh.querySelector(fresh.querySelector('input').readOnly ? 'button' : 'input').focus({preventScroll:true});
   }
+  function syncStep(text) {
+    const log = stepLog();
+    const key = dateKey();
+    if (!log[key]?.text) { log[key]={text,done:false}; writeState('steps',log); }
+  }
+  function completeStep(item) {
+    const log = stepLog();
+    const key = dateKey();
+    if (!log[key]?.text || log[key].text===item.text) { log[key]={text:item.text,done:true}; writeState('steps',log); }
+  }
   document.getElementById('menu-items').innerHTML = Object.entries(sections).filter(([id]) => !['archive','about'].includes(id)).map(([id,[title,name]]) =>
     `<a class="link-row" href="#${id}"><strong>${esc(title)}</strong>${icon(name)}</a>`).join('');
   searchInput.addEventListener('input',searchResults);
@@ -398,6 +460,7 @@
       return;
     }
     if (button.hasAttribute('data-search')) return openSearch();
+    if (journey.click(button)) return;
     if (button.hasAttribute('data-menu')) return menuDialog.showModal();
     if (button.hasAttribute('data-save')) return toggleSave(button.dataset.save,button);
     if (button.hasAttribute('data-shift') || button.hasAttribute('data-slide')) {
@@ -437,13 +500,14 @@
       (searchDialog.open ? searchDialog : menuDialog).close();
       return;
     }
-    if (document.querySelector('#thought-dialog[open], #media-dialog[open]')) return;
+    if (document.querySelector('#thought-dialog[open], #media-dialog[open], #audio-dialog[open]')) return;
     const typing = event.target.matches('input,textarea,[contenteditable="true"]');
     if ((event.key === '/' && !typing || (event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') && !searchDialog.open) {
       event.preventDefault(); openSearch();
     }
   });
   document.addEventListener('input',event => {
+    if (journey.input(event.target)) return;
     const form = event.target.closest('.step-form');
     if (!form) return;
     const log = stepLog();
@@ -451,6 +515,7 @@
     writeState('steps',log);
   });
   document.addEventListener('submit',event => {
+    if (journey.submit(event.target)) { event.preventDefault(); return; }
     const form = event.target.closest('.step-form');
     if (!form) return;
     event.preventDefault();
@@ -487,11 +552,11 @@
   window.addEventListener('hashchange',() => {
     if (searchDialog.open) searchDialog.close();
     if (menuDialog.open) menuDialog.close();
-    document.querySelectorAll('#thought-dialog[open],#media-dialog[open]').forEach(dialog=>dialog.close());
+    document.querySelectorAll('#thought-dialog[open],#media-dialog[open],#audio-dialog[open]').forEach(dialog=>dialog.close());
     render({focus:true});
   });
   render();
-  loadFeed('news'); loadFeed('videos');
+  loadFeed('news'); loadFeed('videos'); loadFeed('audio'); loadFeed('open-books');
   if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
     window.addEventListener('load',() => navigator.serviceWorker.register('./sw.js').catch(() => {}));
   }

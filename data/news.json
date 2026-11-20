@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-19T21:31:51Z",
+  "updated": "2026-11-20T08:32:17Z",
   "sources": [
     {
       "name": "3DNews",
@@ -14,7 +14,7 @@
       "topic": "Технологии",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "RB.RU",
@@ -35,70 +35,70 @@
       "topic": "Деньги",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Банки.ру",
       "topic": "Деньги",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Ведомости",
       "topic": "Бизнес",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Коммерсантъ",
       "topic": "Бизнес",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Лента.ру · Экономика",
       "topic": "Деньги",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "РБК",
       "topic": "Бизнес",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Хабр · Карьера",
       "topic": "Карьера",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Banking Dive",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "BBC Business",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "CNBC",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Crunchbase News",
@@ -119,42 +119,42 @@
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Fast Company",
       "topic": "Карьера",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Federal Reserve",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Financial Times",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Fortune",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "GeekWire",
       "topic": "Технологии",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Gretchen Rubin",
@@ -168,126 +168,1156 @@
       "topic": "Карьера",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Inc.",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Knowledge at Wharton",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "MarketWatch",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "MIT Sloan Management Review",
       "topic": "Карьера",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "NPR Economy",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Retail Dive",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Sifted",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "SiliconANGLE",
       "topic": "Технологии",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "TechCrunch",
       "topic": "Технологии",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "The Conversation",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "The Economist",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "The Guardian",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "The Wall Street Journal",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     },
     {
       "name": "Zen Habits",
       "topic": "Мотивация",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:32:17Z"
     }
   ],
   "items": [
     {
-      "title": "Связанные с Visa, Mastercard и JPMorgan компании подверглись кибератаке",
-      "url": "https://www.rbc.ru/technology_and_media/20/11/2026/6aff51262c454edfb94a7058",
-      "published": "2026-11-19T21:31:11Z",
-      "summary": "За атакой стоит хакерская группировка n0n. Visa, Mastercard и JPMorgan связали атаку с инцидентами у сторонних поставщиков услуг",
+      "title": "Капризов продлил результативную серию в НХЛ до 13 матчей",
+      "url": "https://www.rbc.ru/sport/20/11/2026/6b000044225f1b7c69abd175",
+      "published": "2026-11-20T08:30:03Z",
+      "summary": "Шайба и две передачи российского форварда Кирилла Капризова принесли «Миннесоте» победу над «Калгари»",
+      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/1/34/587951622934341.jpeg",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Мосты в Киеве: главные переправы через Днепр, названия и фото",
+      "url": "https://www.rbc.ru/base/06/10/2026/6ac508aa9a7947d21c808cf6",
+      "published": "2026-11-20T08:30:00Z",
+      "summary": "Киев расположен на обоих берегах реки Днепр, которая пересекает город примерно с севера на юг.",
+      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/3/65/117912991933653.jpeg",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Christine Lagarde: Acting in time",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html",
+      "published": "2026-11-20T08:30:00Z",
+      "summary": "",
+      "thumbnail": "https://www.ecb.europa.eu/press/key/shared/img/socialmedia/social-default.jpg?0dbb2de262f4f1fcaeae410be132177a",
+      "source": "European Central Bank",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "title": "Ozon банк сообщил о восстановлении работы после сбоя",
+      "url": "https://www.kommersant.ru/doc/9114439",
+      "published": "2026-11-20T08:29:25Z",
+      "summary": "Сервисы Ozon банка утром 20 ноября работали нестабильно, подтвердили в пресс-службе компании. Кредитная организация, однако, заверила, что сейчас специалисты уже устранили проблему.",
+      "thumbnail": "",
+      "source": "Коммерсантъ",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Китай втрое увеличил импорт российского вина в октябре",
+      "url": "https://www.vedomosti.ru/business/news/2026/11/20/1413644-kitai-uvelichil-import",
+      "published": "2026-11-20T08:28:45Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/o1125/normal-v52.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "TMZ раскрыл причину смерти звезды Star Trek Патрика Стюарта",
+      "url": "https://www.rbc.ru/rbcfreenews/6afffd20d3e48520914aed12",
+      "published": "2026-11-20T08:28:01Z",
+      "summary": "Британский актер Патрик Стюарт, известный по ролям во франшизах Star Trek («Звездный путь») и «Люди Икс», умер от остановки сердца на фоне деменции с тельцами Леви.",
       "thumbnail": "",
       "source": "РБК",
       "topic": "Бизнес",
       "lang": "ru"
     },
     {
-      "title": "Thousands of Anthropic Employees and Investors Are Set to Reap Fortunes",
-      "url": "https://www.wsj.com/tech/ai/thousands-of-anthropic-employees-and-investors-are-set-to-reap-fortunes-d9c3c6ed?mod=pls_whats_news_us_business_f",
-      "published": "2026-11-19T21:30:00Z",
-      "summary": "A majority of the AI frontier lab’s more than 5,000 employees are expected to become millionaires.",
-      "thumbnail": "https://images.wsj.net/im-29708872",
+      "title": "Oil Prices Edge Higher as Traders Assess Middle East Shipping Risks, Supply Outlook",
+      "url": "https://www.wsj.com/business/energy-oil/oil-prices-edge-higher-as-traders-assess-middle-east-shipping-risks-supply-outlook-faf8f60a?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-20T08:24:00Z",
+      "summary": "Oil prices edged higher as traders assessed continued threats to Middle Eastern oil shipments and improving global supply conditions.",
+      "thumbnail": "https://images.wsj.net/im-59514062",
       "source": "The Wall Street Journal",
       "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Армия России нанесла массированный удар по предприятиям ВПК Украины",
+      "url": "https://www.vedomosti.ru/politics/news/2026/11/20/1413648-armiya-rossii",
+      "published": "2026-11-20T08:23:45Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/oczkp/normal-vkk.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "ЦБ предложил снизить нижнюю границу тарифа ОСАГО до одного рубля",
+      "url": "https://www.kommersant.ru/doc/9114422",
+      "published": "2026-11-20T08:19:39Z",
+      "summary": "Банк России предложил снизить до одного рубля нижнюю границу тарифного коридора ОСАГО для всех категорий транспорта и водителей. Об этом сообщила пресс-служба регулятора в Telegram-канале.",
+      "thumbnail": "",
+      "source": "Коммерсантъ",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Российский фондовый рынок впал в пессимизм",
+      "url": "https://lenta.ru/news/2026/11/20/pessimizm/",
+      "published": "2026-11-20T08:18:00Z",
+      "summary": "",
+      "thumbnail": "https://icdn.lenta.ru/images/2026/11/20/11/20261120110959748/pic_49ea1daf3593780d829912d126f4b964.jpg",
+      "source": "Лента.ру · Экономика",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Прибыль банка «Санкт-Петербург» по МСФО за девять месяцев упала на 27,8%",
+      "url": "https://www.vedomosti.ru/investments/news/2026/11/20/1413640-pribil-banka",
+      "published": "2026-11-20T08:17:04Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/o3k1v/normal-v8c.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Патриарх Кирилл рассказал о самом горьком разочаровании в жизни",
+      "url": "https://www.vedomosti.ru/society/news/2026/11/20/1413642-kirill-rasskazal",
+      "published": "2026-11-20T08:16:53Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/ny82y/normal-v1g.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Минпромторг уточнил условия новой программы льготного автокредитования",
+      "url": "https://www.kommersant.ru/doc/9114405",
+      "published": "2026-11-20T08:15:28Z",
+      "summary": "Министерство промышленности и торговли доработало программу льготного автокредитования перед ее возобновлением с 1 декабря. Ведомство среди прочего уточнило требования по локализации для машин…",
+      "thumbnail": "",
+      "source": "Коммерсантъ",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "ЦБ предложил снизить нижнюю границу тарифного коридора ОСАГО до 1 рубля",
+      "url": "https://www.vedomosti.ru/finance/news/2026/11/20/1413637-tsb-predlozhil-snizit",
+      "published": "2026-11-20T08:12:43Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/np2hw/normal-upl.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "«МегаФон» ускорил мобильный интернет в Зарайском кремле",
+      "url": "https://www.cnews.ru/news/line/2026-11-20_megafon_uskoril_mobilnyj",
+      "published": "2026-11-20T08:11:00Z",
+      "summary": "Инженеры «МегаФона» установили телеком-оборудование вблизи Зарайского кремля — единственной полностью сохранившейся...",
+      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
+      "source": "CNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "title": "Решения Банка России в отношении участников финансового рынка",
+      "url": "https://www.cbr.ru/rbr/rbr_fr/",
+      "published": "2026-11-20T08:10:50Z",
+      "summary": "",
+      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
+      "source": "Банк России",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
+      "url": "https://www.bbc.co.uk/news/articles/ck053mzy2qqeo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T08:09:04Z",
+      "summary": "People stocking up on long-life food drove retail sales higher October, according to official data.",
+      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/55f3/live/5b4f20a0-e4b2-11f1-a1dc-9f4190df3aa7.jpg",
+      "source": "BBC Business",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Зачем изучать ассемблер, если писать на нём вы не будете?",
+      "url": "https://habr.com/ru/companies/bhv_publishing/articles/1110196/?utm_campaign=1110196&utm_source=habrahabr&utm_medium=rss",
+      "published": "2026-11-20T08:08:11Z",
+      "summary": "Ассемблер — всё. Так, по крайней мере, считают сейчас многие. Ну, не совсем всё: микроконтроллеры и устройства system-on-chip сейчас переживают свою эпоху ренессанса, однако это — отдельная…",
+      "thumbnail": "https://habrastorage.org/extt/fb/4b/b3/fb4bb3b715a0722608fa4301728bfc8b.jpg",
+      "source": "Хабр · Карьера",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "title": "Мэра Парижа заподозрили в прогуле заседания из-за GTA VI",
+      "url": "https://www.vedomosti.ru/politics/news/2026/11/20/1413634-parizha-zapodozrili",
+      "published": "2026-11-20T08:07:53Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/nnkt6/normal-uno.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Рязань возглавила рейтинг городов ЦФО по количеству заблокированных нежелательных звонков",
+      "url": "https://www.cnews.ru/news/line/2026-11-20_ryazan_vozglavila_rejting",
+      "published": "2026-11-20T08:05:00Z",
+      "summary": "МТС с помощью платформы цифровой безопасности «МТС Защитник» проанализировала, кому чаще всего поступали нежелательные...",
+      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
+      "source": "CNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "title": "Снижение посещаемости игорной зоны на Алтае объяснили",
+      "url": "https://lenta.ru/news/2026/11/20/snizhenie-poseschaemosti-igornoy-zony-na-altae-ob-yasnili/",
+      "published": "2026-11-20T08:02:00Z",
+      "summary": "",
+      "thumbnail": "https://icdn.lenta.ru/images/2026/11/20/11/20261120110148664/pic_f26ba383ccda79dd4b561c120ec00ceb.jpg",
+      "source": "Лента.ру · Экономика",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Выручка «МТС Линк» в III квартале 2026 г. выросла на 38%",
+      "url": "https://www.cnews.ru/news/line/2026-11-20_vyruchka_mts_link_v_iii_kvartale",
+      "published": "2026-11-20T08:01:00Z",
+      "summary": "«МТС Линк», разработчик платформы для бизнес-коммуникаций, обучения и совместной работы, подвел итоги III квартала...",
+      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
+      "source": "CNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "title": "Армия России нанесла удар по заводам компании Fire Point на Украине",
+      "url": "https://www.rbc.ru/rbcfreenews/6afff7cccf371471e43205a5",
+      "published": "2026-11-20T08:00:57Z",
+      "summary": "В Киеве и Львове российские военные нанесли удары по предприятиям украинской компании Fire Point, занимающейся разработкой и производством крылатых ракет",
+      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/7/87/587951618031877.png",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "МГКЛ выплатила купон по конвертируемым облигациям на фоне дефолтов",
+      "url": "https://www.rbc.ru/quote/20/11/2026/6afff60e225f1b7c69abd0ed",
+      "published": "2026-11-20T08:00:46Z",
+      "summary": "ПАО «МГКЛ» допустило уже два полноценных дефолта по выплате купона облигаций. При этом 20 ноября эмитент отчитался об успешной выплате дохода по конвертируемым облигациям",
+      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/4/72/347882776809724.jpeg",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Денежная база (в узком определении, еженедельные значения)",
+      "url": "https://www.cbr.ru/hd_base/mb_nd/mb_nd_weekly/",
+      "published": "2026-11-20T08:00:00Z",
+      "summary": "",
+      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
+      "source": "Банк России",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Инсайдерская информация Банка России",
+      "url": "https://www.cbr.ru/analytics/insideinfo/",
+      "published": "2026-11-20T07:58:31Z",
+      "summary": "",
+      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
+      "source": "Банк России",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Вице-президентом по развитию бизнеса Sitronics Group назначен Всеволод Новиков",
+      "url": "https://www.cnews.ru/news/line/2026-11-20_vitse-prezidentom_po_razvitiyu",
+      "published": "2026-11-20T07:58:00Z",
+      "summary": "Sitronics Group объявила о назначении Всеволода Новикова на должность вице-президента по развитию бизнеса. На новом...",
+      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
+      "source": "CNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "title": "Овечкин отреагировал на свою антирекордную безголевую серию в НХЛ",
+      "url": "https://www.rbc.ru/sport/20/11/2026/6afff99294dbd6972af786b3",
+      "published": "2026-11-20T07:57:17Z",
+      "summary": "Капитан «Вашингтона» Александр Овечкин отметил, что голевые моменты у него есть и нужно просто продолжать работать дальше",
+      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/3/76/467951605148763.jpeg",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Пользователи смогут видеть ИИ-подсказки по своим интересам в приложении «Яндекс — с Алисой AI»",
+      "url": "https://www.cnews.ru/news/line/2026-11-20_polzovateli_smogut_videt",
+      "published": "2026-11-20T07:56:00Z",
+      "summary": "«Яндекс — с Алисой AI» и «Яндекс Браузер» теперь предугадывают, какие темы могут заинтересовать пользователя...",
+      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
+      "source": "CNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "title": "UK retail sales jump as consumers stock up on emergency supplies",
+      "url": "https://www.ft.com/content/1e7855e5-fe9c-4e9c-ba8d-68c70159a1f1?syn-25a6b1a6=1",
+      "published": "2026-11-20T07:55:18Z",
+      "summary": "Government’s ‘Be Ready Campaign’ pushed up demand for tinned food and long-life milk",
+      "thumbnail": "",
+      "source": "Financial Times",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Использовавшие ИИ считают его благом: в НИУ ВШЭ оценили отношение население к искусственному интеллекту",
+      "url": "https://www.cnews.ru/news/line/2026-11-20_ispolzovavshie_ii_schitayut",
+      "published": "2026-11-20T07:55:00Z",
+      "summary": "Благом развитие ИИ считают почти вчетверо больше россиян, чем вредом. Так, 41% отмечают позитивное влияние ИИ, тогда...",
+      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
+      "source": "CNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "title": "Проекты нормативных документов Банка России для публичного обсуждения",
+      "url": "https://www.cbr.ru/project_na/?tab.current=t2#a_6853",
+      "published": "2026-11-20T07:55:00Z",
+      "summary": "",
+      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
+      "source": "Банк России",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Инфляционные ожидания растут: как поступит Банк России с ключевой ставкой",
+      "url": "https://www.banki.ru/news/lenta/?id=11029151",
+      "published": "2026-11-20T07:50:20Z",
+      "summary": "Инфляционные ожидания россиян в ноябре 2026 года выросли с октябрьских 13,2% до 13,5%.",
+      "thumbnail": "https://static2.banki.ru/ugc/4d/2e/bd/f6efbb5c723e58ea.jpg",
+      "source": "Банки.ру",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Как стать финансовым аналитиком и сколько можно зарабатывать",
+      "url": "https://habr.com/ru/companies/habr_career/articles/1110184/?utm_campaign=1110184&utm_source=habrahabr&utm_medium=rss",
+      "published": "2026-11-20T07:46:03Z",
+      "summary": "Когда компания планирует запуск нового продукта или разбирается, почему расходы превысили бюджет, помогает финансовый аналитик. Он изучает отчёты, оценивает показатели и помогает руководству…",
+      "thumbnail": "https://habrastorage.org/extt/84/6c/a7/846ca71c90986279fb52c10373402dc9.png",
+      "source": "Хабр · Карьера",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "title": "Информация о программно-технических средствах в системе наличного денежного обращения Российской Федерации на 01.10.2026",
+      "url": "https://www.cbr.ru/statistics/cash_circulation/#a_154214",
+      "published": "2026-11-20T07:45:00Z",
+      "summary": "",
+      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
+      "source": "Банк России",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Поставки китайского пива в Россию взлетели",
+      "url": "https://lenta.ru/news/2026/11/20/postavki-kitayskogo-piva-v-rossiyu-vzleteli/",
+      "published": "2026-11-20T07:44:21Z",
+      "summary": "",
+      "thumbnail": "https://icdn.lenta.ru/images/2026/11/20/10/20261120104003561/pic_0accc440fdccda8d6ea36fb214e31a1f.jpg",
+      "source": "Лента.ру · Экономика",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Should AI be judging our credit worthiness?",
+      "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T07:32:19Z",
+      "summary": "Would AI be a good judge of whether you should get a mortgage, car loan or mobile phone contract?",
+      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5352/live/663fec10-d765-11f1-93e1-3b657b665bcf.jpg",
+      "source": "BBC Business",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Проекты нормативных документов Банка России для публичного обсуждения",
+      "url": "https://www.cbr.ru/project_na/?tab.current=t2#a_6852",
+      "published": "2026-11-20T07:30:00Z",
+      "summary": "",
+      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
+      "source": "Банк России",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Tech stocks fall as Anthropic IPO fails to reignite AI trade",
+      "url": "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b?syn-25a6b1a6=1",
+      "published": "2026-11-20T07:29:48Z",
+      "summary": "Asia’s markets follow Wall Street lower despite Claude AI maker’s record listing",
+      "thumbnail": "",
+      "source": "Financial Times",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Тестировщик — это не ступенька в программисты: 85 навыков современного QA",
+      "url": "https://habr.com/ru/companies/ibs/articles/1110146/?utm_campaign=1110146&utm_source=habrahabr&utm_medium=rss",
+      "published": "2026-11-20T07:26:54Z",
+      "summary": "Тестировщика долго представляли как человека, который приходит в конце разработки, открывает готовое приложение и проверяет, работает ли кнопка. Отсюда устойчивый образ тестирования как одной из…",
+      "thumbnail": "https://habrastorage.org/extt/a3/6d/cc/a36dcc2ecfa54de101c4da6b40f6a9f4.png",
+      "source": "Хабр · Карьера",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "title": "ВТБ обновил одно из приложений для Android",
+      "url": "https://www.banki.ru/news/lenta/?id=11029150",
+      "published": "2026-11-20T07:16:06Z",
+      "summary": "«ВТБ Мои Инвестиции» выпустили обновление приложения для Android и веб-версии.",
+      "thumbnail": "https://static2.banki.ru/ugc/62/4e/41/b5dbbc3839ad9737.jpg",
+      "source": "Банки.ру",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Почему корпорация платит миллионы подрядчику, а разработчика выводит за один день",
+      "url": "https://habr.com/ru/articles/1110160/?utm_campaign=1110160&utm_source=habrahabr&utm_medium=rss",
+      "published": "2026-11-20T07:13:37Z",
+      "summary": "Если считать отдельные проекты, я раз восемь работал разработчиком через аутстаф. Трижды всё заканчивалось одинаково. Работа идёт нормально, претензий нет, а потом без предупреждения: «Дружище…",
+      "thumbnail": "https://habrastorage.org/extt/84/98/e6/8498e6d81d18bcf32d5f7a8cc7551e3e.png",
+      "source": "Хабр · Карьера",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "title": "Немецкий перевозчик решил сократить сотрудников",
+      "url": "https://lenta.ru/news/2026/11/20/nemetskiy-perevozchik-reshil-sokratit-sotrudnikov/",
+      "published": "2026-11-20T07:09:00Z",
+      "summary": "",
+      "thumbnail": "https://icdn.lenta.ru/images/2026/11/20/09/20261120095904678/pic_245dde66ae5c8bbfa1c007014620ef6e.jpg",
+      "source": "Лента.ру · Экономика",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Индекс Мосбиржи опустился ниже 2400 пунктов впервые с 16 октября",
+      "url": "https://www.kommersant.ru/doc/9114373",
+      "published": "2026-11-20T07:07:10Z",
+      "summary": "Индекс Мосбиржи на торгах в 9:57 снизился на 0,94% -- до 2394 пунктов. В последний раз индикатор опускался ниже 2400 пунктов 16 октября 2026 года.",
+      "thumbnail": "",
+      "source": "Коммерсантъ",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Сервисы доставки попросили не запрещать курьерам гонять по тротуарам",
+      "url": "https://lenta.ru/news/2026/11/20/peshekhodi-ne-nuzhni/",
+      "published": "2026-11-20T07:05:00Z",
+      "summary": "",
+      "thumbnail": "https://icdn.lenta.ru/images/2026/11/20/09/20261120093501723/pic_79c31fc604630c9601025491f1ec32e7.jpg",
+      "source": "Лента.ру · Экономика",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Nvidia рассматривает главу Arm Рене Хааса в качестве кандидата на пост генерального директора",
+      "url": "https://habr.com/ru/articles/1110152/?utm_campaign=1110152&utm_source=habrahabr&utm_medium=rss",
+      "published": "2026-11-20T07:02:52Z",
+      "summary": "Рекрутинговое агентство Heidrick & Struggles, нанятое советом директоров Nvidia после отставки Дженсена Хуанга, предложило возглавить компанию 64-летнему генеральному директору британской Arm…",
+      "thumbnail": "https://habrastorage.org/extt/b9/79/6f/b9796f116f571bce0b2bb37636b3cb64.jpeg",
+      "source": "Хабр · Карьера",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "title": "Совет директоров МТС утвердил обратный выкуп акций на 21,5 млрд рублей",
+      "url": "https://www.kommersant.ru/doc/9114355",
+      "published": "2026-11-20T06:50:32Z",
+      "summary": "Совет директоров МТС утвердил обратный выкуп акций (buyback) на 2027 год в размере не более 21,5 млрд руб., сообщила пресс-служба компании. В МТС напомнили, что buyback -- это часть утвержденной…",
+      "thumbnail": "",
+      "source": "Коммерсантъ",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Сервисы доставки попросили разрешить курьерам ездить по тротуарам до 2029 года",
+      "url": "https://www.banki.ru/news/lenta/?id=11029149",
+      "published": "2026-11-20T06:39:43Z",
+      "summary": "Законопроект, предложенный Минтрансом, предполагает запрет на езду на СИМ по тротуарам и пешеходным зонам.",
+      "thumbnail": "https://static4.banki.ru/ugc/09/65/35/4130076b1f9cc7c1.jpg",
+      "source": "Банки.ру",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Совет директоров МТС рекомендовал выплатить дивиденды за девять месяцев // МТС может выплатить дивиденды в размере 7 рублей за акцию по итогам 9 месяцев",
+      "url": "https://www.kommersant.ru/doc/9114324",
+      "published": "2026-11-20T06:29:57Z",
+      "summary": "Совет директоров МТС рекомендовал выплатить дивиденды по итогам девяти месяцев 2026 года в размере 7 руб. на акцию, указано на сайте раскрытия информации. Дивдоходность составляет 3,9%.",
+      "thumbnail": "",
+      "source": "Коммерсантъ",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Social poker with £5 stake is booming, says dealer",
+      "url": "https://www.bbc.co.uk/news/articles/cm8947dy3kg9o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T06:19:25Z",
+      "summary": "A poker league in Fenland sees a 35% rise in players since 2022.",
+      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d9e7/live/d5c23fa0-e342-11f1-99aa-0f40b013ad11.jpg",
+      "source": "BBC Business",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Survey reveals 'major increase' in cost of living",
+      "url": "https://www.bbc.co.uk/news/articles/cq772r7kk315o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T06:12:28Z",
+      "summary": "More than two thirds of respondents reported noticing rises in the cost of living.",
+      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/54b6/live/f36ecac0-e435-11f1-8346-933d3547e297.jpg",
+      "source": "BBC Business",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Российским регионам запретили снижать часть налогов",
+      "url": "https://lenta.ru/news/2026/11/20/ne-smet/",
+      "published": "2026-11-20T06:05:00Z",
+      "summary": "",
+      "thumbnail": "https://icdn.lenta.ru/images/2026/11/20/09/20261120090413613/pic_3447f58aebb84063bbd85b7a3953c5ba.jpg",
+      "source": "Лента.ру · Экономика",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Mouldy, infested housing for vulnerable people sold as ethical investments abroad",
+      "url": "https://www.bbc.co.uk/news/articles/c6evre8j12vno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T06:00:33Z",
+      "summary": "The properties are marketed at premium prices with claims of “government-backed” returns, the BBC finds.",
+      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2c60/live/a3312140-e43d-11f1-99b6-a35a62fa4264.jpg",
+      "source": "BBC Business",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Доходы от сдачи квартир упали, власти обсуждают разные коммунальные тарифы для разных потребителей. Обзор Банки.ру",
+      "url": "https://www.banki.ru/news/lenta/?id=11029148",
+      "published": "2026-11-20T05:46:21Z",
+      "summary": "Дайджест деловой прессы.",
+      "thumbnail": "https://static2.banki.ru/ugc/8b/53/03/15a3c5408e6d551d.jpg",
+      "source": "Банки.ру",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "FirstFT: UK and EU poised to finalise deal to ‘reset’ ties",
+      "url": "https://www.ft.com/content/5fbbe806-37d7-42e4-8235-ce9cbb3f2cdb?syn-25a6b1a6=1",
+      "published": "2026-11-20T05:31:18Z",
+      "summary": "Also in today’s newsletter: Anthropic IPO and oil-bonds correlation unwinds",
+      "thumbnail": "",
+      "source": "Financial Times",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Названа средняя зарплата в Москве",
+      "url": "https://www.banki.ru/news/lenta/?id=11029146",
+      "published": "2026-11-20T05:24:01Z",
+      "summary": "За год средняя зарплата в столице увеличилась на 15 тысяч рублей.",
+      "thumbnail": "https://static2.banki.ru/ugc/56/1e/08/e6e312f908ea1faf.jpg",
+      "source": "Банки.ру",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "So, Anthropic is finally a public company. What now?",
+      "url": "https://www.ft.com/content/017044a9-76dc-4cb4-9259-a844a96f2757",
+      "published": "2026-11-20T05:19:35Z",
+      "summary": "A blockbuster IPO postmortem",
+      "thumbnail": "",
+      "source": "Financial Times",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "UK AI minister rejects calls for sovereign model, sparking backlash: 'I'm so angry'",
+      "url": "https://sifted.eu/articles/kanishka-narayan-ai-uk-minister-sovereign/",
+      "published": "2026-11-20T05:00:50Z",
+      "summary": "",
+      "thumbnail": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/20005242/kanishka-scaled.png",
+      "source": "Sifted",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "13 pre-seed fintechs to watch, according to VCs",
+      "url": "https://sifted.eu/articles/pre-seed-fintechs-to-watch/",
+      "published": "2026-11-20T05:00:48Z",
+      "summary": "",
+      "thumbnail": "https://images.sifted.eu/cdn-cgi/image/width=1366,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/19143521/Mike-McFadgen-low-res-scaled.jpeg",
+      "source": "Sifted",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Inside Slush 2026: Robots, riches and the race to superintelligence",
+      "url": "https://sifted.eu/articles/inside-slush-2026-robots-riches-and-the-race-to-superintelligence/",
+      "published": "2026-11-20T05:00:44Z",
+      "summary": "",
+      "thumbnail": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/19172951/1794994593134.jpg",
+      "source": "Sifted",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Brussels to favour EU companies in quantum technology race",
+      "url": "https://www.ft.com/content/7966c474-a62f-4d90-9cff-66c02ca309bb?syn-25a6b1a6=1",
+      "published": "2026-11-20T05:00:27Z",
+      "summary": "Domestic groups will be prioritised for public contracts under plans to be presented next week",
+      "thumbnail": "",
+      "source": "Financial Times",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Labour measures fail to shield UK households from sharp energy bill rises",
+      "url": "https://www.ft.com/content/91cee968-66d0-4c48-b453-47b17f7443d2?syn-25a6b1a6=1",
+      "published": "2026-11-20T05:00:26Z",
+      "summary": "Government initiatives offset only a third of the rise in energy bills for poorer families, according to new analysis",
+      "thumbnail": "",
+      "source": "Financial Times",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "‘I want to be the world’s youngest billionaire’: Meet the Slush 20u20",
+      "url": "https://sifted.eu/articles/slush-20u20-2026/",
+      "published": "2026-11-20T05:00:05Z",
+      "summary": "",
+      "thumbnail": "https://content.sifted.eu/wp-content/uploads/2026/11/19151640/Edvin-20U20-1.webp",
+      "source": "Sifted",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Espoo closes in on Helsinki as Finland’s startup funding race tightens",
+      "url": "https://sifted.eu/articles/espoo-closes-in-on-helsinki-as-finlands-startup-funding-race-tightens/",
+      "published": "2026-11-20T05:00:03Z",
+      "summary": "",
+      "thumbnail": "https://images.sifted.eu/cdn-cgi/image/width=1200,quality=75,fit=cover,format=auto/wp-content/uploads/2021/12/02144334/Hero_image_Helsinki-2.jpg",
+      "source": "Sifted",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "TPG, Corpay to Buy Finance Platform Bill for About $6 Billion",
+      "url": "https://www.wsj.com/business/deals/tpg-corpay-to-buy-finance-platform-bill-for-about-6-billion-9f8be10c?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-20T04:51:00Z",
+      "summary": "Bill Holdings will be acquired in a deal valued at about $6 billion, with TPG set to buy a majority stake and Corpay agreeing to buy a minority interest.",
+      "thumbnail": "https://images.wsj.net/im-605619",
+      "source": "The Wall Street Journal",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Senate Passes Measure Designed to Speed Up Energy Projects, Lower Consumer Costs",
+      "url": "https://www.wsj.com/politics/policy/senate-passes-measure-designed-to-speed-up-energy-projects-lower-consumer-costs-dcacc9c6?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-20T04:12:00Z",
+      "summary": "The bipartisan effort to streamline federal permitting split Democrats over environmental concerns.",
+      "thumbnail": "https://images.wsj.net/im-01957098",
+      "source": "The Wall Street Journal",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Финансовый совет на 20 ноября: как оформить деньги от родителей на квартиру, чтобы не делить ее при разводе",
+      "url": "https://www.banki.ru/news/lenta/?id=11029005",
+      "published": "2026-11-20T04:00:00Z",
+      "summary": "Квартира, купленная в браке на подаренные родителями деньги, может остаться одному супругу, но только если дарение можно доказать.",
+      "thumbnail": "https://static3.banki.ru/ugc/ab/7a/f4/679d6624d04261de.png",
+      "source": "Банки.ру",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Mbappé’s apology is a warning: China’s economic coercion needs a collective response",
+      "url": "https://fortune.com/2026/11/19/mbappes-apology-chinas-economic-coercion/",
+      "published": "2026-11-20T04:00:00Z",
+      "summary": "As long as governments won't stand up to China, no company or individual will—and certainly no athlete, no matter how famous.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2285016491.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "‘Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate — or ride out the storm?",
+      "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
+      "published": "2026-11-20T03:31:00Z",
+      "summary": "Tempted to ditch stocks for property or CDs? Take a deep breath before making any sudden moves.",
+      "thumbnail": "https://images.mktw.net/im-49247042",
+      "source": "MarketWatch",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "title": "Anthropic Employees Now Hold Enough Wealth to Buy 9 Percent of San Francisco’s Homes. Sellers Aren’t Waiting for Them to Start Buying",
+      "url": "https://www.inc.com/moses-jeanfrancois/anthropic-employees-enough-wealth-buy-9-percent-san-francisco-homes/91439826",
+      "published": "2026-11-20T03:04:19Z",
+      "summary": "Anthropic’s massive IPO could inject billions into San Francisco’s housing market. Experts point to SpaceX and Facebook as examples of what may unfold.",
+      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/anthropic-money-san-francisco-real-estate-inc-544680900.jpg",
+      "source": "Inc.",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Maybank’s tech chief isn’t rushing to put agentic AI in front of customers: ‘You don’t want to put trust in jeopardy’",
+      "url": "https://fortune.com/2026/11/19/maybank-pursuing-gradual-agentic-ai-rollout/",
+      "published": "2026-11-20T03:01:39Z",
+      "summary": "Maybank CTO Giorgio Migliarina says the bank wants AI agents to auditable and predictable before it makes them customer-facing.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/55660309360_0ee14d2911_4k-e1795135067518.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "GTA 6 breaks records as estimated sales top $2.3bn",
+      "url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T02:54:40Z",
+      "summary": "Rockstar Games ended a 13-year wait with what is expected to be the biggest entertainment launch ever.",
+      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/929e/live/80e88200-e4b9-11f1-99a1-253766e7ad8b.jpg",
+      "source": "BBC Business",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "RBC Signals brings in $10M investment to expand strategic frontiers for satellite services",
+      "url": "https://www.geekwire.com/2026/rbc-signals-10m-investment-satellite-services/",
+      "published": "2026-11-20T02:33:25Z",
+      "summary": "Washington Harbour Partners supports Seattle-area company's plan to expand into government market for satellite connectivity and capitalize on emerging space technologies. Read More",
+      "thumbnail": "https://cdn.geekwire.com/wp-content/uploads/2026/08/260813-quartz-1260x840.jpg",
+      "source": "GeekWire",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "DoorDash Says It Won’t Use Your Data to Raise Prices. Its Exceptions Could Undermine That Promise",
+      "url": "https://www.inc.com/amaya-nichole/doordash-says-wont-use-data-raise-prices-exceptions-could-undermine-promise/91439796",
+      "published": "2026-11-20T02:15:46Z",
+      "summary": "As the FTC scrutinizes personalized pricing, the delivery platform says order history, phone type, and personal characteristics won’t change what customers pay.",
+      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/doordash-surveillance-pricing-inc-2301817662.jpg",
+      "source": "Inc.",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Parents Are ‘Flying Blind’ in an Exploding Autism-Therapy Industry",
+      "url": "https://www.wsj.com/health/healthcare/autism-therapy-aba-parents-34cf1cc0?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-20T02:00:00Z",
+      "summary": "Popular therapy known as ABA has become the default treatment for children, but quality varies and parents get little guidance.",
+      "thumbnail": "https://images.wsj.net/im-51718975",
+      "source": "The Wall Street Journal",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Nvidia May Replace Jensen Huang With a Former Executive Who Spent 7 Years at the Company",
+      "url": "https://www.inc.com/moses-jeanfrancois/nvidia-replace-jensen-huang-former-executive-spent-7-years-company/91440146",
+      "published": "2026-11-20T01:53:10Z",
+      "summary": "The former Nvidia executive, who now is the chief executive of Arm Holdings, has reportedly been approached about the top job.",
+      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/rene-haas-nvidia-inc-2267714027.jpg",
+      "source": "Inc.",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Lawmakers form bipartisan caucus to create meaningful AI safety legislation",
+      "url": "https://siliconangle.com/2026/11/19/lawmakers-form-bipartisan-caucus-to-create-meaningful-ai-safety-legislation/",
+      "published": "2026-11-20T01:48:55Z",
+      "summary": "A bipartisan group of more than two dozen congressional lawmakers said today they’re forming a new AI Safety and Innovation Caucus to tackle the growing security risks posed by the advances in…",
+      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/Screenshot-from-2026-11-20-08-48-18.png",
+      "source": "SiliconANGLE",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "Industrial monitoring startup BrightAI closes $97M investment",
+      "url": "https://siliconangle.com/2026/11/19/industrial-monitoring-startup-brightai-closes-97m-investment/",
+      "published": "2026-11-20T01:37:24Z",
+      "summary": "BrightAI Inc., a startup that helps industrial companies detect malfunctioning equipment, has raised $97 million in funding. Smith Point Capital led the Series A round. BrightAI said in its…",
+      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/BrightAI.png",
+      "source": "SiliconANGLE",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
+      "url": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
+      "published": "2026-11-20T01:30:00Z",
+      "summary": "“We have a house worth $450,000. Our combined annual income is $125,000.”",
+      "thumbnail": "https://images.mktw.net/im-36389545",
+      "source": "MarketWatch",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "title": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
+      "url": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
+      "published": "2026-11-20T01:22:00Z",
+      "summary": "“Hotel rooms can cost as much as $400 per night.”",
+      "thumbnail": "https://images.mktw.net/im-05393650",
+      "source": "MarketWatch",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "title": "Apple may be developing its own AI agent that runs your Mac",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "published": "2026-11-20T00:56:01Z",
+      "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/06/iphone-usb-cable.jpg?resize=1200,800",
+      "source": "TechCrunch",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "Trump’s Personal Lawyer to Step Back as Sullivan & Cromwell Co-Chair",
+      "url": "https://www.wsj.com/us-news/law/trumps-personal-lawyer-to-step-down-as-sullivan-cromwell-co-chair-f988b3e0?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-20T00:50:00Z",
+      "summary": "Both of the law firm’s chairs will step aside in January 2028 for new leadership.",
+      "thumbnail": "https://images.wsj.net/im-47068501",
+      "source": "The Wall Street Journal",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+      "published": "2026-11-20T00:43:50Z",
+      "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/11/antrhopic-openingday-getty.jpg?resize=1200,801",
+      "source": "TechCrunch",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "Anthropic rival says companies can (mostly) skip the pricey models",
+      "url": "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+      "published": "2026-11-20T00:26:03Z",
+      "summary": "On the day Anthropic went public, Fireworks AI’s co-founder made the case for open source models as a cheaper alternative, and addressed the breaches that have cost the company some customers’…",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-20-at-12.43.24-AM.png?resize=1200,601",
+      "source": "TechCrunch",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "California Attorney General Issues Investigative Subpoena to Nvidia",
+      "url": "https://www.wsj.com/tech/california-attorney-general-issues-investigative-subpoena-to-nvidia-097cea9e?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-20T00:01:00Z",
+      "summary": "Rob Bonta opened a probe into the embattled chip maker to determine whether the company misled investors.",
+      "thumbnail": "https://images.wsj.net/im-64900544",
+      "source": "The Wall Street Journal",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "After Anthropic’s ‘bittersweet’ IPO, here’s what lies ahead",
+      "url": "https://www.marketwatch.com/story/after-anthropics-bittersweet-ipo-heres-what-lies-ahead-8c32fdb7?mod=mw_rss_topstories",
+      "published": "2026-11-19T23:56:00Z",
+      "summary": "Retail investors showed up, but Anthropic has so far failed to provide a broad lift to the technology sector.",
+      "thumbnail": "https://images.mktw.net/im-64149739",
+      "source": "MarketWatch",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "title": "Gap names new Athleta CEO, lowers full-year guidance",
+      "url": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+      "published": "2026-11-19T23:54:20Z",
+      "summary": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings.",
+      "thumbnail": "https://image.cnbcfm.com/api/v1/image/108549208-1794421626428-gettyimages-2264975879-anotherday191760601_bcczxcng.jpeg?v=1794421646&w=1920&h=1080",
+      "source": "CNBC",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Google adds computer use capabilities to Gemini’s Mac app",
+      "url": "https://siliconangle.com/2026/11/19/google-adds-computer-use-capabilities-to-geminis-mac-app/",
+      "published": "2026-11-19T23:41:48Z",
+      "summary": "Google LLC today released a new version of Gemini’s Mac client that can interact with other apps on the user’s computer. The feature is available in the U.S. on launch. It requires a Google AI…",
+      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/Gemini2.png",
+      "source": "SiliconANGLE",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "Anthropic’s IPO nets Goldman Sachs and Morgan Stanley $113 million apiece in fees, eclipsing their SpaceX paydays",
+      "url": "https://fortune.com/2026/11/19/anthropics-ipo-nets-goldman-sachs-and-morgan-stanley-113-million-apiece-in-fees-eclipsing-their-spacex-paydays/",
+      "published": "2026-11-19T23:38:22Z",
+      "summary": "The blockbuster public debut delivered one of Wall Street’s largest underwriting paydays in history.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2305196507-e1795128593757.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Elon Musk says SpaceX has a plan to eliminate cell phone dead zones",
+      "url": "https://techcrunch.com/2026/11/19/elon-musk-says-spacex-has-a-plan-to-eliminate-cell-phone-dead-zones/",
+      "published": "2026-11-19T23:37:56Z",
+      "summary": "SpaceX CEO Elon Musk said the company has completed the design of a miniature rooftop cell tower that could provide better coverage to mobile phones and eliminate dead zones.",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/10/starlink.jpg?resize=1200,800",
+      "source": "TechCrunch",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "Despite posting a solid earnings beat, Elastic sees its stock slide on rough guidance",
+      "url": "https://siliconangle.com/2026/11/19/despite-posting-a-solid-earnings-beat-elastics-stock-slides-on-rough-guidance/",
+      "published": "2026-11-19T23:33:39Z",
+      "summary": "Elastic N.V.’s stock was trending lower in late trading today after the enterprise search software firm reported earnings and revenue that beat Wall Street’s expectations but disappointed with…",
+      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/Screenshot-from-2026-11-20-06-30-00.png",
+      "source": "SiliconANGLE",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "Anthropic soars, but it may soon be back, cap in hand",
+      "url": "https://www.economist.com/business/2026/11/19/anthropic-soars-but-it-may-soon-be-back-cap-in-hand",
+      "published": "2026-11-19T23:15:40Z",
+      "summary": "The biggest IPO of all time is just a start",
+      "thumbnail": "",
+      "source": "The Economist",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Resolve AI’s SRE-1 model finds root causes of production alerts as AI agents go on call",
+      "url": "https://siliconangle.com/2026/11/19/resolve-ais-sre-1-model-finds-root-causes-of-production-alerts-as-ai-agents-go-on-call/",
+      "published": "2026-11-19T23:11:44Z",
+      "summary": "Incident remediation company Resolve AI Inc. has announced the launch of SRE-1, a new model that has been trained to find the root cause of production alerts, and Primary On-call, a new service…",
+      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/resolveai.png",
+      "source": "SiliconANGLE",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "These were the only stocks that rose amid the stock market’s wipeout Thursday",
+      "url": "https://www.marketwatch.com/story/these-were-the-only-stocks-that-rose-amid-the-stock-markets-wipeout-thursday-1eaf32ba?mod=mw_rss_topstories",
+      "published": "2026-11-19T23:11:00Z",
+      "summary": "All 11 sectors of the S&P 500 declined — 10 of them by more than 1% — but cybersecurity stocks bucked the weakness.",
+      "thumbnail": "https://images.mktw.net/im-70376549",
+      "source": "MarketWatch",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "title": "Intuit’s downbeat outlook deepens Wall Street’s anxiety about software companies",
+      "url": "https://www.marketwatch.com/story/intuits-downbeat-outlook-deepens-wall-streets-anxiety-about-software-companies-15b878e5?mod=mw_rss_topstories",
+      "published": "2026-11-19T22:53:00Z",
+      "summary": "TurboTax maker Intuit gives investors a fresh reason to worry about legacy software companies.",
+      "thumbnail": "https://images.mktw.net/im-05993865",
+      "source": "MarketWatch",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "title": "Wiz ties Microsoft Agent Framework package compromise to release pipeline certificate",
+      "url": "https://siliconangle.com/2026/11/19/wiz-ties-microsoft-agent-framework-package-compromise-to-release-pipeline-certificate/",
+      "published": "2026-11-19T22:44:56Z",
+      "summary": "Microsoft Corp.’s official Python package for its Agent Framework artificial intelligence agent toolkit was compromised earlier this week, as an attacker published two malicious versions to the…",
+      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/microsoftagenticframeworkhacked.png",
+      "source": "SiliconANGLE",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "Want to see your live AI usage on your Mac’s icons? This clever new app lets you",
+      "url": "https://techcrunch.com/2026/11/19/want-to-see-your-live-ai-usage-on-your-macs-icons-this-clever-new-app-lets-you/",
+      "published": "2026-11-19T22:33:26Z",
+      "summary": "IconSwapper brings your Mac's app icons to life with real-time data, animations, and playful customizations that make your desktop more fun.",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/11/IconSwapper-Key-Art.jpg?resize=1200,630",
+      "source": "TechCrunch",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "Melinda French Gates Fact-Checked a Video With 6.5 Million Views. The 1 Claim She Disputed Changes the Joke",
+      "url": "https://www.inc.com/victoria-salves/melinda-french-gates-fact-checked-video-1-claim-disputed-changes-joke/91439874",
+      "published": "2026-11-19T22:22:43Z",
+      "summary": "The philanthropist compared the viral caregiving sketch with real-world research on lost jobs, care costs, stress, and unpaid labor.",
+      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/melinda-gates-on-snl-sister-skit-inc-2298704719.jpg",
+      "source": "Inc.",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "‘The whole internet screams at once’: Downdetector logged 6.4 million U.S. outage reports in a week as Microsoft, the FAA, Chase, and Apple went down",
+      "url": "https://fortune.com/2026/11/19/outlook-faa-chase-crashed-down-detector-outages-ai-agents-hack/",
+      "published": "2026-11-19T22:17:02Z",
+      "summary": "Downdetector’s research chief sees “a bit of a coincidence” and a falling trend. Sen. Mark Warner blames a rush to patch software.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/flight-delays-board.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Anthropic closes first day of public trading at $1.3tn valuation after largest-ever IPO",
+      "url": "https://www.theguardian.com/technology/2026/nov/19/anthropic-public-trading-ipo",
+      "published": "2026-11-19T22:09:18Z",
+      "summary": "AI startup and Claude chatbot maker became one of the world’s most valuable publicly traded businesses with final share price of $97 Anthropic’s historic stock market debut: key takeaways, and…",
+      "thumbnail": "https://i.guim.co.uk/img/media/6998f4e0d8ab24e4c35516c1ab618511a39fcd71/545_0_4583_3667/master/4583.jpg?width=140&quality=85&auto=format&fit=max&s=1d230408bbae396686d8049961356159",
+      "source": "The Guardian",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "China’s Greater Bay Area was built to rival Silicon Valley. Nearly a decade on, is it finally living up to the hype?",
+      "url": "https://fortune.com/2026/11/19/china-greater-bay-area-finally-ready-hong-kong-shenzhen-macau/",
+      "published": "2026-11-19T22:00:00Z",
+      "summary": "The GBA is starting to deliver on its promise—even if, for now, it’s mostly a Hong Kong–Shenzhen story.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GBAA_Hong-Kong-Zhuhai-Macao-Bridge_Horizontal.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Meta’s new Muse Charm device may cost $300",
+      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+      "published": "2026-11-19T21:58:06Z",
+      "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
+      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/09/meta-muse-charm.png?resize=1200,667",
+      "source": "TechCrunch",
+      "topic": "Технологии",
+      "lang": "en"
+    },
+    {
+      "title": "Microsoft’s Outage Wasn’t the Real Failure. The Dangerous Part Came 36 Minutes Later",
+      "url": "https://www.inc.com/ray-fernandez/microsoft-365-copilot-outage-failure-teams-startup-founders/91439700",
+      "published": "2026-11-19T21:36:23Z",
+      "summary": "Experts break down how the Microsoft outage happened and what companies can do to mitigate the business impacts of future global outages.",
+      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/microsoft-outage-inc-2304367860.jpg",
+      "source": "Inc.",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Salesforce Is Cutting Jobs Again. It Put Every CEO’s Real Leadership Test in Plain Sight",
+      "url": "https://www.inc.com/marcel-schwantes/salesforce-is-cutting-jobs-again-it-put-every-ceos-real-leadership-test-in-plain-sight/91439275",
+      "published": "2026-11-19T21:30:00Z",
+      "summary": "Layoffs might be needed, but how leaders treat the people who stay will shape what happens next.",
+      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/salesforce-layoffs-inc-448760932.jpg",
+      "source": "Inc.",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "How to manage a post-IPO workforce that just became fabulously wealthy",
+      "url": "https://www.fastcompany.com/91645727/how-to-manage-a-post-ipo-workforce-that-just-became-fabulously-wealthy",
+      "published": "2026-11-19T21:30:00Z",
+      "summary": "Anthropic’s $1.5 trillion initial public offering instantly turned thousands of its roughly 5,300 employees into multimillionaires. Like other companies that have undergone massive IPOs…",
+      "thumbnail": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/11/p-1-91645727-how-do-you-manage-a-workforce-that-just-became-fabulously-wealthy.jpg",
+      "source": "Fast Company",
+      "topic": "Карьера",
       "lang": "en"
     },
     {
@@ -301,66 +1331,6 @@
       "lang": "ru"
     },
     {
-      "title": "Трамп рассказал о позиции Путина и Си по конфликту с Ираном",
-      "url": "https://www.rbc.ru/rbcfreenews/6aff616bba0ade32ed062f18",
-      "published": "2026-11-19T21:27:32Z",
-      "summary": "Завершения конфликта с Ираном хотят президент России Владимир Путин и председатель Китайской Народной Республики (КНР) Си Цзиньпин, заявил президент США Дональд Трамп.",
-      "thumbnail": "",
-      "source": "РБК",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
-      "title": "Why Micron, Broadcom and other AI stocks gave up their gains Thursday",
-      "url": "https://www.marketwatch.com/story/why-micron-intel-and-other-ai-stocks-are-getting-a-lift-on-thursday-cf6f59f8?mod=mw_rss_topstories",
-      "published": "2026-11-19T21:27:00Z",
-      "summary": "The Anthropic enthusiasm has faded while China concerns have intensified.",
-      "thumbnail": "https://images.mktw.net/im-63116555",
-      "source": "MarketWatch",
-      "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "Gap names new Athleta CEO, lowers full-year guidance",
-      "url": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
-      "published": "2026-11-19T21:22:23Z",
-      "summary": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings.",
-      "thumbnail": "https://image.cnbcfm.com/api/v1/image/108549208-1794421626428-gettyimages-2264975879-anotherday191760601_bcczxcng.jpeg?v=1794421646&w=1920&h=1080",
-      "source": "CNBC",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Boston Beer Taps Operating Chief Hodges to Be Next CEO",
-      "url": "https://www.wsj.com/business/boston-beer-taps-operating-chief-hodges-to-be-next-ceo-bbd425ed?mod=pls_whats_news_us_business_f",
-      "published": "2026-11-19T21:22:00Z",
-      "summary": "The company named Phil Hodges as its new chief executive, replacing founder Jim Koch, who is stepping down after returning to the helm last year.",
-      "thumbnail": "https://images.wsj.net/im-62473735",
-      "source": "The Wall Street Journal",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "UnitedHealth’s stock plunged after government signals crackdown on Medicare Advantage fraud",
-      "url": "https://www.marketwatch.com/story/unitedhealths-stock-keeps-plunging-after-government-signals-crackdown-on-medicare-advantage-fraud-c4770a45?mod=mw_rss_topstories",
-      "published": "2026-11-19T21:22:00Z",
-      "summary": "The shares have tumbled 19% over the past five days over worries about stricter auditing of ‘upcoding’ and new Medicare for All proposals. Other health insurance stocks also slide.",
-      "thumbnail": "https://images.mktw.net/im-55960856",
-      "source": "MarketWatch",
-      "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "В нескольких городах Германии отменили рождественские ярмарки",
-      "url": "https://lenta.ru/news/2026/11/19/v-neskolkih-gorodah-germanii-otmenili-rozhdestvenskie-yarmarki/",
-      "published": "2026-11-19T21:21:00Z",
-      "summary": "",
-      "thumbnail": "https://icdn.lenta.ru/images/2026/11/20/00/20261120000923930/pic_fe8e66d747d83820748b128b76f01faa.jpg",
-      "source": "Лента.ру · Экономика",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
       "title": "Intel Xeon 7 Diamond Rapids впервые показали вживую и даже запустили — но вскоре выключили из-за шума",
       "url": "https://3dnews.ru/1151563",
       "published": "2026-11-19T21:20:00Z",
@@ -369,126 +1339,6 @@
       "source": "3DNews",
       "topic": "Технологии",
       "lang": "ru"
-    },
-    {
-      "title": "Medical AI startup Boltz raises $110M to speed up small molecule research",
-      "url": "https://siliconangle.com/2026/11/19/medical-ai-startup-boltz-raises-110m-to-speed-up-small-molecule-research/",
-      "published": "2026-11-19T21:17:08Z",
-      "summary": "Boltz PBC, a startup that develops artificial intelligence models for pharmaceutical researchers, has raised $110 million in funding. Bessemer led the Series A investment. Boltz stated on…",
-      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/Boltz.png",
-      "source": "SiliconANGLE",
-      "topic": "Технологии",
-      "lang": "en"
-    },
-    {
-      "title": "Why Walmart is making a bigger bet on fast-food delivery",
-      "url": "https://www.marketwatch.com/story/why-walmart-is-making-a-bigger-bet-on-fast-food-delivery-27263735?mod=mw_rss_topstories",
-      "published": "2026-11-19T21:13:00Z",
-      "summary": "The retail giant says around 90% of spending at fast-food chains occurs within a few miles from a Walmart.",
-      "thumbnail": "https://images.mktw.net/im-44192970",
-      "source": "MarketWatch",
-      "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "Anthropic shares end first day of trading at $97 as Wall Street closes sharply lower – business live",
-      "url": "https://www.theguardian.com/business/live/2026/nov/19/anthropic-float-stock-market-nasdaq-raises-81bn-record-ipo-latest-news-updates",
-      "published": "2026-11-19T21:10:00Z",
-      "summary": "All ⁠three major US stock indexes ⁠ended the session ​sharply lower after record-breaking IPO by maker behind AI agent Claude Anthropic needs to grow into its $1.5tn valuation, argues Kathleen…",
-      "thumbnail": "https://i.guim.co.uk/img/media/d813681eacdf9a462a84be4e3ef0e890940a2ccf/1281_0_7200_5760/master/7200.jpg?width=140&quality=85&auto=format&fit=max&s=351333af3d876ca589b3c253ac43f20d",
-      "source": "The Guardian",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Enterprise AI is pushing cloud infrastructure beyond the GPU",
-      "url": "https://siliconangle.com/2026/11/19/enterprise-ai-pushing-cloud-infrastructure-beyond-gpu-kubeconna/",
-      "published": "2026-11-19T21:07:03Z",
-      "summary": "Enterprise adoption of artificial intelligence is creating new requirements for enterprise AI infrastructure. While much of the early AI investment centered on access to powerful GPUs…",
-      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/Enterprise-AIs-Full-Stack-Cloud-Strategy.png",
-      "source": "SiliconANGLE",
-      "topic": "Технологии",
-      "lang": "en"
-    },
-    {
-      "title": "Nike Is Giving Valedictorians Free Air Force 1s. It May Get Something More Valuable in Return",
-      "url": "https://www.inc.com/liyana-illyas/nike-giving-valedictorians-free-air-force-1s-may-get-something-more-valuable-in-return/91439522",
-      "published": "2026-11-19T21:06:56Z",
-      "summary": "The sneaker giant’s nationwide giveaway, which was proposed by Mississippi senator-elect Scott Colom, comes as the retailer works to regain momentum.",
-      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/scott-colom-nike-shoes-high-schoolers-inc-2304710374.jpg",
-      "source": "Inc.",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "В Тбилиси в результате взрыва газа в многоквартирном доме погибли шесть человек",
-      "url": "https://www.vedomosti.ru/politics/news/2026/11/20/1413560-v-tbilisi-pogibli",
-      "published": "2026-11-19T21:06:13Z",
-      "summary": "",
-      "thumbnail": "https://sharing.vedomosti.ru/1795122373/vedomosti.ru/politics/news/2026/11/20/1413560-v-tbilisi-pogibli.jpg",
-      "source": "Ведомости",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
-      "title": "‘I felt so seen’: Why families across America are laughing — and crying — over SNL’s ‘Sister’ sketch",
-      "url": "https://www.marketwatch.com/story/so-sad-and-so-true-has-your-family-talked-about-snls-sister-sketch-yet-19bf9d67?mod=mw_rss_topstories",
-      "published": "2026-11-19T21:06:00Z",
-      "summary": "The late-night comedy sketch does the impossible by making female caregivers feel seen.",
-      "thumbnail": "https://images.mktw.net/im-87121453",
-      "source": "MarketWatch",
-      "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "Rising healthcare costs push Medicare Part B premiums higher",
-      "url": "https://www.marketwatch.com/story/medicare-part-b-premiums-rise-due-higher-healthcare-spending-f2daba13?mod=mw_rss_topstories",
-      "published": "2026-11-19T21:05:00Z",
-      "summary": "The premiums will increase by $6.50, to $209.40 a month.",
-      "thumbnail": "https://images.mktw.net/im-36754506",
-      "source": "MarketWatch",
-      "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "Anthropic shares jump 17% after record Wall Street listing",
-      "url": "https://www.ft.com/content/2b203097-7c61-464f-810f-962912a133dd?syn-25a6b1a6=1",
-      "published": "2026-11-19T21:02:09Z",
-      "summary": "AI group led by Dario Amodei raises $81bn in upsized public offering",
-      "thumbnail": "",
-      "source": "Financial Times",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Daymond John Offered Bombas Snoop Dogg and Flavor Flav. The Founders Chose Elmo Instead",
-      "url": "https://www.inc.com/brian-contreras/daymond-john-bombas-snoop-dogg-flavor-flav-elmo-sesame-street/91439759",
-      "published": "2026-11-19T21:00:26Z",
-      "summary": "The ‘Shark Tank’ investor thought the sock startup’s marketing idea was silly. Then his daughter proved him wrong.",
-      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/daymond-john-bombas-inc.jpg",
-      "source": "Inc.",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "«Цветной» алкоголь и вино дороже ₽1000. Что будут пить россияне",
-      "url": "https://www.rbc.ru/business/20/11/2026/6afc758609bedaadcb863e61",
-      "published": "2026-11-19T21:00:13Z",
-      "summary": "Продажи водки в России будут падать минимум до 2029 года, прогнозируют аналитики INFOLine. Они объясняют это переключением на «цветной» крепкий алкоголь и «премиальное» вино дороже ₽1000. Что…",
-      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/5/54/967949316541545.jpeg",
-      "source": "РБК",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
-      "title": "Australian PM to meet Xi Jinping as iron ore tensions loom",
-      "url": "https://www.ft.com/content/ddbf0f75-047a-421a-87c0-3e60bf42ed22?syn-25a6b1a6=1",
-      "published": "2026-11-19T21:00:10Z",
-      "summary": "Prime Minister Anthony Albanese to hold bilateral talks with China’s president on Friday",
-      "thumbnail": "",
-      "source": "Financial Times",
-      "topic": "Бизнес",
-      "lang": "en"
     },
     {
       "title": "College may cost much less than you think, according to this calculator tool from the University of Pennsylvania",
@@ -511,16 +1361,6 @@
       "lang": "ru"
     },
     {
-      "title": "Anthropic’s $81.3 Billion IPO Just Put OpenAI on Notice. Its Advantage May Be Short-Lived",
-      "url": "https://www.inc.com/chloe-aiello/anthropics-81-3-billion-ipo-just-put-openai-on-notice-its-advantage-may-be-short-lived/91439864",
-      "published": "2026-11-19T20:53:09Z",
-      "summary": "OpenAI has the chance to learn from Anthropic’s record IPO. But one expert says it’s ‘taking a chance by waiting.’",
-      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/anthropic-ipo-openai-inc-2305334595.jpg",
-      "source": "Inc.",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
       "title": "Amazon threatens to leave NYC again, this time over delivery bill, as it rallies customers to fight it",
       "url": "https://www.geekwire.com/2026/amazon-threatens-to-leave-nyc-again-this-time-over-delivery-bill-as-it-rallies-customers-to-fight-it/",
       "published": "2026-11-19T20:51:12Z",
@@ -528,36 +1368,6 @@
       "thumbnail": "https://cdn.geekwire.com/wp-content/uploads/2026/11/amazondeliver2-1260x840.jpg",
       "source": "GeekWire",
       "topic": "Технологии",
-      "lang": "en"
-    },
-    {
-      "title": "‘Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate — or ride out the storm?",
-      "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-      "published": "2026-11-19T20:50:00Z",
-      "summary": "Tempted to ditch stocks for property or CDs? Take a deep breath before making any sudden moves.",
-      "thumbnail": "https://images.mktw.net/im-49247042",
-      "source": "MarketWatch",
-      "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "Oil Futures End Volatile Session Near Flat",
-      "url": "https://www.wsj.com/business/energy-oil/oil-prices-mixed-as-traders-weigh-supply-outlook-middle-east-shipping-risks-224e2724?mod=pls_whats_news_us_business_f",
-      "published": "2026-11-19T20:49:00Z",
-      "summary": "Oil futures finished little changed as renewed concerns about possible escalation in the Middle East were tempered by improving global supply.",
-      "thumbnail": "https://images.wsj.net/im-51467776",
-      "source": "The Wall Street Journal",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Crude Futures End Little Changed",
-      "url": "https://www.wsj.com/finance/commodities-futures/oil-falls-weighed-by-larger-than-expected-rise-in-u-s-inventories-0271b977?mod=pls_whats_news_us_business_f",
-      "published": "2026-11-19T20:44:00Z",
-      "summary": "Oil futures settled near flat in a choppy trading session as continuing tensions in the Middle East are countered by improving supply.",
-      "thumbnail": "",
-      "source": "The Wall Street Journal",
-      "topic": "Бизнес",
       "lang": "en"
     },
     {
@@ -569,16 +1379,6 @@
       "source": "GeekWire",
       "topic": "Технологии",
       "lang": "en"
-    },
-    {
-      "title": "Турцию смогли покинуть 17 задержанных в октябре россиянок",
-      "url": "https://www.vedomosti.ru/politics/news/2026/11/19/1413556-smogli-pokinut",
-      "published": "2026-11-19T20:40:18Z",
-      "summary": "",
-      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/8z/1ej1nq/normal-1thh.jpg",
-      "source": "Ведомости",
-      "topic": "Бизнес",
-      "lang": "ru"
     },
     {
       "title": "Job candidates’ AI usage is obscuring their viability, report finds",
@@ -611,30 +1411,10 @@
       "lang": "en"
     },
     {
-      "title": "Law firms that caved to Trump brace for scrutiny from new Congress",
-      "url": "https://www.ft.com/content/4e712188-9dfc-4e2a-b997-3dacde95bf08?syn-25a6b1a6=1",
-      "published": "2026-11-19T20:35:00Z",
-      "summary": "Firms are hiring outside lawyers as Democrats probe deals they struck with the president",
-      "thumbnail": "",
-      "source": "Financial Times",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "ASML Tied Executive Pay to 6 Employee Questions. It Could Create a New Problem",
-      "url": "https://www.inc.com/scott-hutcheson/asml-tied-executive-pay-to-6-employee-questions-it-could-create-a-new-problem/91439848",
-      "published": "2026-11-19T20:30:00Z",
-      "summary": "Linking executive compensation to employee experience creates accountability, but it can also give leaders incentives to improve survey scores rather than workplace conditions.",
-      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/asml-employee-engagement-inc-2281711644.jpg",
-      "source": "Inc.",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
       "title": "Young people may be holding back gender equality at work",
       "url": "https://www.fastcompany.com/91645732/young-people-may-be-holding-back-gender-equality-at-work",
       "published": "2026-11-19T20:30:00Z",
-      "summary": "About two decades ago, a substantial body of academic research started to provide evidence for what many had long suspected: young people were leading the way toward a more gender-equal world.…",
+      "summary": "About two decades ago, a substantial body of academic research started to provide evidence for what many had long suspected: Young people were leading the way toward a more gender-equal world.…",
       "thumbnail": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/11/p-1-91645732-young-people-may-be-holding-back-gender-equality-at-work.jpg",
       "source": "Fast Company",
       "topic": "Карьера",
@@ -651,44 +1431,14 @@
       "lang": "en"
     },
     {
-      "title": "Продажи товаров для выживания у американского ретейлера выросли на 450%",
-      "url": "https://www.rbc.ru/rbcfreenews/6aff57c7ad17fa2c9731d16a",
-      "published": "2026-11-19T20:20:27Z",
-      "summary": "Продажи у американского ретейлера товаров для выживания Survival Frog с 27 октября по 16 ноября выросли на 450% по сравнению с предыдущими неделями, сообщает Axios со ссылкой на основателя и…",
-      "thumbnail": "",
-      "source": "РБК",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "published": "2026-11-19T20:18:49Z",
-      "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2205754389.jpg?w=1024",
-      "source": "TechCrunch",
-      "topic": "Технологии",
-      "lang": "en"
-    },
-    {
-      "title": "‘Frustrated’ regulator vows to tackle electricity grid delays",
-      "url": "https://www.ft.com/content/81b74d04-1289-4e87-8777-9eec66d9ae10?syn-25a6b1a6=1",
-      "published": "2026-11-19T20:18:30Z",
-      "summary": "Attempts to accelerate connections may have backfired",
-      "thumbnail": "",
-      "source": "Financial Times",
+      "title": "Sound Ventures turned $435 million into a $7 billion Anthropic stake. Ashton Kutcher left months before the IPO",
+      "url": "https://fortune.com/2026/11/19/anthropic-ipo-sound-ventures-ashton-kutcher-7-billion-stake/",
+      "published": "2026-11-19T20:22:56Z",
+      "summary": "Sound Ventures, cofounded by Guy Oseary and Ashton Kutcher, put about $435 million into Anthropic.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2257124859.jpg?w=300",
+      "source": "Fortune",
       "topic": "Бизнес",
       "lang": "en"
-    },
-    {
-      "title": "Трамп допустил встречу с Ким Чен Ыном «в какой-то момент»",
-      "url": "https://www.vedomosti.ru/politics/news/2026/11/19/1413555-tramp-dopustil-vstrechu",
-      "published": "2026-11-19T20:15:35Z",
-      "summary": "",
-      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/8z/1dpi2x/normal-1sf8.jpg",
-      "source": "Ведомости",
-      "topic": "Бизнес",
-      "lang": "ru"
     },
     {
       "title": "Ubisoft похвасталась вкладом Assassin’s Creed Black Flag Resynced в успехи компании и уволила ещё 166 человек",
@@ -701,46 +1451,6 @@
       "lang": "ru"
     },
     {
-      "title": "Politico узнало о звонке Трампа в Берлин с резким вопросом о помощи Киеву",
-      "url": "https://www.rbc.ru/politics/19/11/2026/6aff56a1721d811d18093014",
-      "published": "2026-11-19T20:14:35Z",
-      "summary": "Трамп задал европейцам резкие вопросы по поводу трат на военную помощь Украине и сообщил, что Путин готов к мирным переговорам. Президент России заявил о готовности продолжать переговоры, но…",
-      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/8/74/967950835823748.jpeg",
-      "source": "РБК",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
-      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
-      "url": "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87?mod=pls_whats_news_us_business_f",
-      "published": "2026-11-19T20:12:00Z",
-      "summary": "The incident involved data belonging to thousands of customers, but it isn’t disrupting payment services or connected to banking issues earlier this week.",
-      "thumbnail": "https://images.wsj.net/im-16030868",
-      "source": "The Wall Street Journal",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "U.S. Diesel Prices to Continue to Fall in Relief for Consumers, U.S. Energy Secretary Says",
-      "url": "https://www.wsj.com/business/energy-oil/u-s-diesel-prices-to-continue-to-fall-in-relief-for-consumers-u-s-energy-secretary-says-cfe83c18?mod=pls_whats_news_us_business_f",
-      "published": "2026-11-19T20:12:00Z",
-      "summary": "Diesel prices are likely to continue falling from record highs as refined products from the Persian Gulf return to the market and unsanctioned Russian diesel adds to the downward pressure on…",
-      "thumbnail": "https://images.wsj.net/im-21834736",
-      "source": "The Wall Street Journal",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Elon Musk Says We’re in the Singularity Right Now. But These 2 Big Questions Remain",
-      "url": "https://www.inc.com/kit-eaton/elon-musk-says-were-in-the-singularity-right-now-but-these-2-big-questions-remain/91439859",
-      "published": "2026-11-19T20:04:01Z",
-      "summary": "Musk was referring to the technological singularity, a point at which AI accelerates beyond our understanding.",
-      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/elon-musk-singularity-inc.jpg",
-      "source": "Inc.",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
       "title": "На AMD обрушили обвинения в рискованных ИИ-сделках и зависимости от Китая — акции рухнули почти на 9 %",
       "url": "https://3dnews.ru/1151562",
       "published": "2026-11-19T20:02:00Z",
@@ -748,46 +1458,6 @@
       "thumbnail": "https://3dnews.ru/assets/external/illustrations/2026/11/19/1151562/amd_title.jpg",
       "source": "3DNews",
       "topic": "Технологии",
-      "lang": "ru"
-    },
-    {
-      "title": "YouTube’s Next Big Bet Isn’t Virality. It’s Habit—At Least Based on the Newly Announced Creator Shows",
-      "url": "https://www.inc.com/kamya-marwah/youtube-creator-slate-habit-over-virality-marketing/91439885",
-      "published": "2026-11-19T20:01:33Z",
-      "summary": "The platform’s new entertainment lineup reveals why businesses need to rethink how they earn sustained attention.",
-      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/youtube-streaming-shows-inc-941605138.jpg",
-      "source": "Inc.",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "‘Strict cell phone bans seem to plug about half of that leak’: Harvard economist finds locking up students’ phones adds 1–2 weeks of learning a year",
-      "url": "https://fortune.com/2026/11/19/harvard-phone-ban-study-school-kids-learn-two-weeks/",
-      "published": "2026-11-19T20:00:00Z",
-      "summary": "Strict pouch bans restore one to two weeks of learning a year, about half of what U.S. students have lost each year since 2013.",
-      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2166466262-e1795038458269.jpg?w=300",
-      "source": "Fortune",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Exclusive: AWS Marketplace head on letting AI agents shop for software: “People can’t wait three months to get access to the latest one”",
-      "url": "https://fortune.com/2026/11/19/aws-marketplace-rolls-out-ai-agents-to-shop-for-software-autonomously/",
-      "published": "2026-11-19T20:00:00Z",
-      "summary": "AWS Marketplace lets companies give AI agents a budget to buy software products.",
-      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2293791937.jpg?w=300",
-      "source": "Fortune",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "ФАС обязала «Гротекс» перечислить в бюджет незаконно полученные 2 млрд рублей",
-      "url": "https://www.vedomosti.ru/business/news/2026/11/19/1413554-fas-obyazala-grotesk",
-      "published": "2026-11-19T19:59:52Z",
-      "summary": "",
-      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/8z/1cyb76/normal-1rfz.jpg",
-      "source": "Ведомости",
-      "topic": "Бизнес",
       "lang": "ru"
     },
     {
@@ -801,16 +1471,6 @@
       "lang": "en"
     },
     {
-      "title": "«Зарождение нового формата G3». ИноСМИ о встрече Си, Путина и Трампа",
-      "url": "https://www.rbc.ru/politics/19/11/2026/6afefbe32a40494bbcc07b16",
-      "published": "2026-11-19T19:53:58Z",
-      "summary": "По итогам саммита на полях форума АТЭС лидеры России, КНР и США Владимир Путин, Си Цзиньпин и Дональд Трамп приняли Декларацию о мире. Что о ней и саммите в целом пишут зарубежные СМИ — в обзоре…",
-      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/0/67/217950959147670.jpeg",
-      "source": "РБК",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
       "title": "Ещё один дефицит на подходе: мир накроет нехватка печатных плат, сопоставимая с чиповым кризисом 2021 года",
       "url": "https://3dnews.ru/1151559",
       "published": "2026-11-19T19:51:00Z",
@@ -819,16 +1479,6 @@
       "source": "3DNews",
       "topic": "Технологии",
       "lang": "ru"
-    },
-    {
-      "title": "What we learned from Nvidia’s first earnings call without Jensen Huang",
-      "url": "https://siliconangle.com/2026/11/19/what-we-learned-from-nvidias-first-earnings-call-without-jensen-huang/",
-      "published": "2026-11-19T19:32:32Z",
-      "summary": "Nvidia Corp. reported its quarterly results this week, and contrary to the prevailing narrative, the sky didn’t fall. Revenue more than doubled year-over-year. The Vera Rubin chip platform…",
-      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2017/05/Colette-Kress-NVIDIA-ACGSV-Awards-theCUBE-YouTube-e1494707531301.png",
-      "source": "SiliconANGLE",
-      "topic": "Технологии",
-      "lang": "en"
     },
     {
       "title": "Elon Musk claims he’s ‘not MAGA’ in the wake of the blue wave",
@@ -841,26 +1491,6 @@
       "lang": "en"
     },
     {
-      "title": "AI inference servers shrink to fit the air-cooled racks enterprises already run",
-      "url": "https://siliconangle.com/2026/11/19/power-efficient-inference-chips-let-enterprises-own-ai-hardware-sc26/",
-      "published": "2026-11-19T19:29:20Z",
-      "summary": "Power-efficient inference chips are becoming the entry price for enterprises that want to run AI on hardware they own. As AI shifts from building models to running them every day, costly…",
-      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/IMG_6429-scaled-e1795115159184.jpg",
-      "source": "SiliconANGLE",
-      "topic": "Технологии",
-      "lang": "en"
-    },
-    {
-      "title": "Хуситы заявили о нанесении новых ударов по территории Саудовской Аравии",
-      "url": "https://www.vedomosti.ru/politics/news/2026/11/19/1413551-husiti-zayavili",
-      "published": "2026-11-19T19:29:14Z",
-      "summary": "",
-      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/8z/1bxwc2/normal-1q4s.jpg",
-      "source": "Ведомости",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
       "title": "US ⁠judge allows Trump’s $15bn lawsuit against New York Times to proceed",
       "url": "https://www.theguardian.com/us-news/2026/nov/19/trump-lawsuit-new-york-times",
       "published": "2026-11-19T19:27:51Z",
@@ -868,26 +1498,6 @@
       "thumbnail": "https://i.guim.co.uk/img/media/e0d95a8cd905be85ddf4efa2770e418df5ac0b2b/441_0_4410_3528/master/4410.jpg?width=140&quality=85&auto=format&fit=max&s=2b21cb64b1109e9b5d54847103a8d6f1",
       "source": "The Guardian",
       "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "D-Matrix bets stacked DRAM can solve inference’s memory bandwidth problem",
-      "url": "https://siliconangle.com/2026/11/19/raptor-chip-stacks-3d-dram-tackle-inference-memory-limits-sc26/",
-      "published": "2026-11-19T19:21:48Z",
-      "summary": "As artificial intelligence workloads shift to inference, memory bandwidth decides whether hardware generates tokens quickly or sits idle. D-Matrix Corp. is answering with Raptor, a…",
-      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/Satyam-Srivastava-fellow-at-d-Matrix-Corp.-SC26-scaled.jpg",
-      "source": "SiliconANGLE",
-      "topic": "Технологии",
-      "lang": "en"
-    },
-    {
-      "title": "Anthropic’s IPO could deliver $156 billion to charity",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
-      "published": "2026-11-19T19:10:45Z",
-      "summary": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
-      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256664479.jpg?resize=1200,800",
-      "source": "TechCrunch",
-      "topic": "Технологии",
       "lang": "en"
     },
     {
@@ -901,30 +1511,10 @@
       "lang": "ru"
     },
     {
-      "title": "Трамп назвал свою поездку на саммит АТЭС в Китае замечательной",
-      "url": "https://www.vedomosti.ru/politics/news/2026/11/19/1413545-tramp-nazval-poezdku",
-      "published": "2026-11-19T19:06:39Z",
-      "summary": "",
-      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/8z/1baztq/normal-1pb2.jpg",
-      "source": "Ведомости",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
-      "title": "Газовщики будут проверять газовые плиты и колонки по новым правилам",
-      "url": "https://www.banki.ru/news/lenta/?id=11029139",
-      "published": "2026-11-19T19:00:18Z",
-      "summary": "Жителей предупредят о визите техников дважды.",
-      "thumbnail": "https://static4.banki.ru/ugc/c9/fb/07/be6c5ed4e8995b06.jpg",
-      "source": "Банки.ру",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
       "title": "Measles is back, and it’s a dire warning against shrinking the U.S. government",
       "url": "https://www.fastcompany.com/91645739/measles-rfk-government-cuts",
       "published": "2026-11-19T19:00:00Z",
-      "summary": "Sometimes, you really don’t know what you’ve got ‘til it’s gone. Take, for instance, the United States’ measles elimination status. Formally rescinded this week, after a 26-year run, the Pan…",
+      "summary": "Sometimes, you really don’t know what you’ve got ’til it’s gone. Take, for instance, the United States’ measles elimination status. Formally rescinded this week, after a 26-year run, the Pan…",
       "thumbnail": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/11/p-2-91645739-measles-government.jpg",
       "source": "Fast Company",
       "topic": "Карьера",
@@ -951,16 +1541,6 @@
       "lang": "en"
     },
     {
-      "title": "Trump, Xi, and Putin hold rare summit but deliver no breakthroughs on nuclear risks",
-      "url": "https://www.fastcompany.com/91645815/trump-xi-putin-nuclear-ukraine-iran",
-      "published": "2026-11-19T18:45:00Z",
-      "summary": "For U.S. President Donald Trump , the meeting with the leaders of two other nuclear powers—China’s Xi Jinping and Russia’s Vladimir Putin —was supposed to be a diplomatic triumph: It would serve…",
-      "thumbnail": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/11/p-1-91645815-trump-xi-putin-summit.jpg",
-      "source": "Fast Company",
-      "topic": "Карьера",
-      "lang": "en"
-    },
-    {
       "title": "Huawei показала смартфон Mate 90 Air — с тонким корпусом и круглым блоком камер",
       "url": "https://rb.ru/news/huawei-pokazala-smartfon-mate-90-air-s-tonkim-korpusom-i-kruglym-blokom-kamer/",
       "published": "2026-11-19T18:45:00Z",
@@ -968,46 +1548,6 @@
       "thumbnail": "https://media.rbcdn.ru/media/news/web-2026-11-19t144901294.jpg",
       "source": "RB.RU",
       "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
-      "title": "Sage maps out the attractions of the UK’s tech hinterland",
-      "url": "https://www.ft.com/content/0918d3ec-f398-4508-8027-33c0f7327a50?syn-25a6b1a6=1",
-      "published": "2026-11-19T18:44:09Z",
-      "summary": "By embedding AI into its products, the software group hopes it can dissuade its small business clients from looking elsewhere",
-      "thumbnail": "",
-      "source": "Financial Times",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "AMD shares fall after short seller report on China links",
-      "url": "https://www.ft.com/content/69fd7870-a2cf-4e75-88bc-a1c4036efded?syn-25a6b1a6=1",
-      "published": "2026-11-19T18:40:23Z",
-      "summary": "Chipmaker down by as much as 11% following warnings by Hunterbrook in the aftermath of Nvidia scandal",
-      "thumbnail": "",
-      "source": "Financial Times",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Hitachi Vantara bets smarter storage can close AI’s pilot-to-production gap",
-      "url": "https://siliconangle.com/2026/11/19/apache-iceberg-intelligent-storage-help-ai-reach-production-sc26/",
-      "published": "2026-11-19T18:39:55Z",
-      "summary": "Enterprises pushing AI from pilot to production are learning that data, not GPUs, is the hardest part, and open table formats such as Apache Iceberg are part of the answer. Demand for AI…",
-      "thumbnail": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/D4_V-p0RkVc-HD.jpg",
-      "source": "SiliconANGLE",
-      "topic": "Технологии",
-      "lang": "en"
-    },
-    {
-      "title": "ЦБ оштрафовал МТС-Банк",
-      "url": "https://www.banki.ru/news/lenta/?id=11029145",
-      "published": "2026-11-19T18:33:06Z",
-      "summary": "Банк допустил нарушения на рынке ценных бумаг.",
-      "thumbnail": "https://static4.banki.ru/ugc/95/65/33/556cc5a9ec7232f7.jpg",
-      "source": "Банки.ру",
-      "topic": "Деньги",
       "lang": "ru"
     },
     {
@@ -1061,16 +1601,6 @@
       "lang": "ru"
     },
     {
-      "title": "ЗПИФам сделали скидку // От налога на пассивные доходы освободили доходные ПИФы",
-      "url": "https://www.kommersant.ru/doc/9114153",
-      "published": "2026-11-19T18:16:13Z",
-      "summary": "Госдума сохранила льготы для части рыночных фондов, осуществляющих регулярные выплаты промежуточного дохода. Взимание налога на пассивные доходы коснется только закрытых и интервальных ПИФов…",
-      "thumbnail": "https://im2.kommersant.ru/Issues.photo2/DAILY/2026/215/KMO_123274_00797_1_t219_211224.jpg",
-      "source": "Коммерсантъ",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
       "title": "Microsoft закроет приложение To Do в 2027 году — сервис прекратит работу спустя 10 лет после запуска",
       "url": "https://rb.ru/news/microsoft-zakroet-prilozhenie-do-v-2027-godu-servis-prekratit-rabotu-spustya-10-let-posle-zapuska/",
       "published": "2026-11-19T18:15:00Z",
@@ -1081,16 +1611,6 @@
       "lang": "ru"
     },
     {
-      "title": "Google gives Gemini the ability to use your Mac for you",
-      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-      "published": "2026-11-19T18:09:11Z",
-      "summary": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
-      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/11/hero_header_CU_copy.width-2200.format-webp.jpeg?resize=1200,675",
-      "source": "TechCrunch",
-      "topic": "Технологии",
-      "lang": "en"
-    },
-    {
       "title": "Uncommon Thinkers: Andrew Redd’s audacious plan to turn ocean volcanoes into power plants",
       "url": "https://www.geekwire.com/2026/uncommon-thinkers-andrew-redds-audacious-plan-to-turn-ocean-volcanoes-into-power-plants/",
       "published": "2026-11-19T18:07:54Z",
@@ -1099,26 +1619,6 @@
       "source": "GeekWire",
       "topic": "Технологии",
       "lang": "en"
-    },
-    {
-      "title": "Названы самые популярные кроссоверы стоимостью до 2,5 млн рублей",
-      "url": "https://www.banki.ru/news/lenta/?id=11029143",
-      "published": "2026-11-19T18:05:46Z",
-      "summary": "Сегмент в октябре вырос на 16%.",
-      "thumbnail": "https://static2.banki.ru/ugc/2d/2c/30/8b2fad2aca135351.jpg",
-      "source": "Банки.ру",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "Продажи кроссовера Lada Azimut начнутся 1 декабря",
-      "url": "https://www.kommersant.ru/doc/9114171",
-      "published": "2026-11-19T18:01:29Z",
-      "summary": "Продажи Lada Azimut начнутся 1 декабря, заявил «Интерфаксу» глава «АвтоВАЗа» Максим Соколов. Стоимость новой модели он не уточнил, однако отметил, что ее постараются установить на 10% ниже…",
-      "thumbnail": "",
-      "source": "Коммерсантъ",
-      "topic": "Бизнес",
-      "lang": "ru"
     },
     {
       "title": "Anthropic’s $81 Billion IPO Is the Biggest Ever — Here’s Who’s Getting Rich and Who Missed Out",
@@ -1161,62 +1661,12 @@
       "lang": "en"
     },
     {
-      "title": "Акции Anthropic взлетели на треть после рекордного IPO",
-      "url": "https://lenta.ru/news/2026/11/19/aktsii-antrophic-vzleteli-na-tret-posle-rekordnogo-ipo/",
-      "published": "2026-11-19T17:47:00Z",
-      "summary": "",
-      "thumbnail": "https://icdn.lenta.ru/images/2026/11/19/20/20261119203451660/pic_ebe325deb21bffb89309459bb6ab23f8.jpg",
-      "source": "Лента.ру · Экономика",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "Verizon’s CEO knows Elon Musk is coming for his business. He says it’ll cost SpaceX over $300 billion to compete",
-      "url": "https://fortune.com/2026/11/19/verizon-ceo-elon-musk-spacex-starlink-mobile-cost-300-billion-dollars/",
-      "published": "2026-11-19T17:46:02Z",
-      "summary": "“There's no secret sauce, there's no magic wand, there's no structural cost advantage that will come out,” Dan Schulman told Fortune.",
-      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2297384912-e1795104357824.jpg?w=300",
-      "source": "Fortune",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
       "title": "В ЦБ рассказали, как выявить финансовые пирамиды и мошенников: регулятор назвал 50 признаков",
       "url": "https://rb.ru/news/v-cb-rasskazali-kak-vyyavit-finansovye-piramidy-i-moshennikov-regulyator-nazval-50-priznakov/",
       "published": "2026-11-19T17:45:00Z",
       "summary": "В Банке России перечислили 50 признаков, по которым банки смогут выявлять клиентов, занимающихся нелегальной финансовой деятельностью. Регулятор выпустил методические рекомендации с описанием…",
       "thumbnail": "https://media.rbcdn.ru/media/news/img2278.jpeg",
       "source": "RB.RU",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
-      "title": "Crypto platform’s plan to offer tokenized shares for Anthropic IPO comes up short, following similar SpaceX flop",
-      "url": "https://fortune.com/2026/11/19/crypto-platforms-offer-tokenized-shares-anthropic-ipo-similar-spacex-flop/",
-      "published": "2026-11-19T17:41:39Z",
-      "summary": "Crypto tokens can give investors a shot at the IPO price, but strong demand keeps leaving platforms short of shares.",
-      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2305894185-e1795110004627.jpg?w=300",
-      "source": "Fortune",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Meta’s AI agent Muse is mixing up conversations and could be exposing private data, report says",
-      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
-      "published": "2026-11-19T17:38:40Z",
-      "summary": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account…",
-      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
-      "source": "TechCrunch",
-      "topic": "Технологии",
-      "lang": "en"
-    },
-    {
-      "title": "Акции Anthropic выросли в цене на 34,34% в первый день торгов на бирже",
-      "url": "https://www.kommersant.ru/doc/9114141",
-      "published": "2026-11-19T17:33:39Z",
-      "summary": "Торги акциями ИИ-разработчика Anthropic на бирже NASDAQ открылись с отметки $111,5. Это на 34,34% выше, чем цена размещения среди инвесторов в преддверии IPO — $83, за них получили $81,3 млрд.",
-      "thumbnail": "",
-      "source": "Коммерсантъ",
       "topic": "Бизнес",
       "lang": "ru"
     },
@@ -1241,26 +1691,6 @@
       "lang": "ru"
     },
     {
-      "title": "Если вас штурмует ОМОН. ВСК расширила программу страхования жилья",
-      "url": "https://www.banki.ru/news/lenta/?id=11029142",
-      "published": "2026-11-19T17:29:35Z",
-      "summary": "В покрытие вошли риски атак БПЛА и техногенные аварии.",
-      "thumbnail": "https://static2.banki.ru/ugc/55/5f/91/202b279e61ed4354.jpg",
-      "source": "Банки.ру",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "ЦБ спрогнозировал резкий рост рекордной прибыли российских банков",
-      "url": "https://lenta.ru/news/2026/11/19/tsb-sprognoziroval-rezkiy-rost-rekordnoy-pribyli-rossiyskih-bankov/",
-      "published": "2026-11-19T17:25:29Z",
-      "summary": "",
-      "thumbnail": "https://icdn.lenta.ru/images/2026/11/19/20/20261119200020263/pic_672cd4eb0f1815eb1e91acdcc0464970.jpg",
-      "source": "Лента.ру · Экономика",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
       "title": "6 highlights of the OCC’s plan for AI, charters and community banks",
       "url": "https://www.bankingdive.com/news/occ-gould-ai-charter-risk-community-bank-supervision-stablecoin-debanking/875207/",
       "published": "2026-11-19T17:21:10Z",
@@ -1268,46 +1698,6 @@
       "thumbnail": "https://imgproxy.divecdn.com/QDwvZLFF_G6u_cTVDAn3Q_q4l0b8u7AWwo7zZQDY5QE/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjYzNzA0NzM3LmpwZw==.webp",
       "source": "Banking Dive",
       "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "Хакеры опубликовали данные тысяч клиентов Visa, Mastercard и JPMorgan",
-      "url": "https://www.kommersant.ru/doc/9114139",
-      "published": "2026-11-19T17:06:09Z",
-      "summary": "Хакерская группировка опубликовала данные тысяч клиентов компаний Visa, Mastercard и JPMorgan Chase, сообщила The Wall Street Journal. По данным газеты, ответственность за инцидент на себя взяли…",
-      "thumbnail": "",
-      "source": "Коммерсантъ",
-      "topic": "Бизнес",
-      "lang": "ru"
-    },
-    {
-      "title": "Банки повышают ставки к Новому году, пенсионеры ринулись на рынок труда. Главное за день",
-      "url": "https://www.banki.ru/news/lenta/?id=11029144",
-      "published": "2026-11-19T17:00:06Z",
-      "summary": "Основные новости 19 ноября 2026 года.",
-      "thumbnail": "https://static2.banki.ru/ugc/ad/10/ce/237b9510f04969e8.jpg",
-      "source": "Банки.ру",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
-      "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
-      "published": "2026-11-19T17:00:00Z",
-      "summary": "Everful has raised $48.5 million to expand its factory-direct sourcing platform, helping retailers source products from overseas manufacturers.",
-      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/11/Everful-founders.jpg?resize=1200,800",
-      "source": "TechCrunch",
-      "topic": "Технологии",
-      "lang": "en"
-    },
-    {
-      "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
-      "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-      "published": "2026-11-19T16:59:23Z",
-      "summary": "Anthropic's IPO price was set at $83, representing more than $80 billion in new capital raised.",
-      "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/11/anthropic-opening-Getty.jpg?resize=1200,801",
-      "source": "TechCrunch",
-      "topic": "Технологии",
       "lang": "en"
     },
     {
@@ -1319,36 +1709,6 @@
       "source": "Retail Dive",
       "topic": "Бизнес",
       "lang": "en"
-    },
-    {
-      "title": "Информация о ценных бумагах, принимаемых в обеспечение по кредитам Банка России на 20.11.2026",
-      "url": "https://www.cbr.ru/hd_base/BankPapers/",
-      "published": "2026-11-19T16:55:12Z",
-      "summary": "",
-      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
-      "source": "Банк России",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "Want to build an AI operating model? First, build consensus",
-      "url": "https://fortune.com/2026/11/19/ai-operating-model-build-consensus-ibm/",
-      "published": "2026-11-19T16:53:08Z",
-      "summary": "The best AI leaders—whether COOs, CAIOs, or CIOs—possess an old-fashioned skill set: building consensus across teams.",
-      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2277251072.jpg?w=300",
-      "source": "Fortune",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Социнженеры банковских счетов // Объем хищений со счетов юрлиц снизился впервые в истории наблюдений",
-      "url": "https://www.kommersant.ru/doc/9114058",
-      "published": "2026-11-19T16:52:22Z",
-      "summary": "В третьем квартале 2026 года общий объем мошеннических трансакций снизился за счет первого в истории наблюдений падения хищений со счетов юрлиц. Вместе с тем объем средств, украденных за…",
-      "thumbnail": "https://im2.kommersant.ru/Issues.photo2/DAILY/2026/215/KMO_162420_00013_1_t219_194125.jpg",
-      "source": "Коммерсантъ",
-      "topic": "Бизнес",
-      "lang": "ru"
     },
     {
       "title": "Bath & Body Works CEO: ‘We are on track, but far from satisfied’",
@@ -1369,26 +1729,6 @@
       "source": "Retail Dive",
       "topic": "Бизнес",
       "lang": "en"
-    },
-    {
-      "title": "Цена квадратного метра в новостройках Москвы впервые превысила 900 тысяч рублей",
-      "url": "https://www.banki.ru/news/lenta/?id=11029141",
-      "published": "2026-11-19T16:31:22Z",
-      "summary": "За пять лет столичный метр подорожал более чем вдвое.",
-      "thumbnail": "https://static3.banki.ru/ugc/09/9c/dd/10fa04fb8f5811e0.jpg",
-      "source": "Банки.ру",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "Саммит в Шэньчжэне обновил месячный минимум индекса Мосбиржи",
-      "url": "https://www.kommersant.ru/doc/9114069",
-      "published": "2026-11-19T16:28:39Z",
-      "summary": "Российские инвесторы негативно восприняли результаты встречи глав России, Китая и США в Шэньчжэне, которая состоялась 19 ноября. После того как главы этих государств закончили вступительные…",
-      "thumbnail": "",
-      "source": "Коммерсантъ",
-      "topic": "Бизнес",
-      "lang": "ru"
     },
     {
       "title": "M&T aims to ‘dial up’ credit card rewards",
@@ -1421,16 +1761,6 @@
       "lang": "en"
     },
     {
-      "title": "Рынок приготовился к резкому росту котировок Anthropic после старта торгов",
-      "url": "https://lenta.ru/news/2026/11/19/rynok-prigotovilsya-k-rezkomu-rostu-kotirovok-anthropic-posle-starta-torgov/",
-      "published": "2026-11-19T16:02:00Z",
-      "summary": "",
-      "thumbnail": "https://icdn.lenta.ru/images/2026/11/19/18/20261119185303204/pic_680f435c1c6890cb401d96cb840c8a08.jpg",
-      "source": "Лента.ру · Экономика",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
       "title": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
       "published": "2026-11-19T16:00:00Z",
@@ -1438,16 +1768,6 @@
       "thumbnail": "https://www.federalreserve.gov/images/social-media/social-default-image-opengraph.jpg",
       "source": "Federal Reserve",
       "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "Anthropic raises $81bn in record-breaking stock market debut",
-      "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T15:58:58Z",
-      "summary": "The company behind the Claude chatbot will become one of the most valuable firms in the world.",
-      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3a11/live/4dfcb420-e37d-11f1-b879-03485a55c082.jpg",
-      "source": "BBC Business",
-      "topic": "Бизнес",
       "lang": "en"
     },
     {
@@ -1481,106 +1801,6 @@
       "lang": "en"
     },
     {
-      "title": "Заказчикам «Кит-системс» доступно оборудование российского бренда Nerpa",
-      "url": "https://www.cnews.ru/news/line/2026-11-19_zakazchikam_kit-sistems",
-      "published": "2026-11-19T15:52:00Z",
-      "summary": "19.11.2026, г. Москва. Системный интегратор «Кит-системс» вошел в число авторизованных партнеров российского бренда...",
-      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
-      "source": "CNews",
-      "topic": "Технологии",
-      "lang": "ru"
-    },
-    {
-      "title": "Петербургский бизнес нарастил инвестиции в технологии интернета вещей",
-      "url": "https://www.cnews.ru/news/line/2026-11-19_peterburgskij_biznes_narastil",
-      "published": "2026-11-19T15:46:00Z",
-      "summary": "МТС проанализировала востребованность решений на базе IoT (интернета вещей) у бизнеса в Санкт-Петербурге и Ленинградской...",
-      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
-      "source": "CNews",
-      "topic": "Технологии",
-      "lang": "ru"
-    },
-    {
-      "title": "Аналитический обзор «Банковский сектор» за 9 месяцев 2026 года",
-      "url": "https://www.cbr.ru/analytics/bank_sector/analytical_review_bs/#a_123445",
-      "published": "2026-11-19T15:45:00Z",
-      "summary": "",
-      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
-      "source": "Банк России",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "«Росатом» представил быструю зарядную станцию «Революция» для автомагистралей",
-      "url": "https://www.cnews.ru/news/line/2026-11-19_rosatom_predstavil_bystruyu",
-      "published": "2026-11-19T15:40:00Z",
-      "summary": "«Росатом» презентовал новую быструю зарядную станцию «Революция». Ее разработала компания «Парус электро» (входит...",
-      "thumbnail": "https://static.cnews.ru/img/news/2026/11/19/atom700.jpg",
-      "source": "CNews",
-      "topic": "Технологии",
-      "lang": "ru"
-    },
-    {
-      "title": "Путин назвал преимущество России при развитии ИИ",
-      "url": "https://lenta.ru/news/2026/11/19/putin-nazval-preimuschestvo-rossii-pri-razvitii-ii/",
-      "published": "2026-11-19T15:33:29Z",
-      "summary": "",
-      "thumbnail": "https://icdn.lenta.ru/images/2026/11/19/18/20261119180353207/pic_ebfb78f7a717fbddf6846c079ab65177.jpg",
-      "source": "Лента.ру · Экономика",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "В Ленинградской области 210 учителей получили доступ к «Ассистенту преподавателя» от Сбербанка",
-      "url": "https://www.cnews.ru/news/line/2026-11-19_v_leningradskoj_oblasti",
-      "published": "2026-11-19T15:31:00Z",
-      "summary": "В этом учебном году бесплатный доступ к платформе «Ассистент преподавателя» получили 210 учителей Ленинградской...",
-      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
-      "source": "CNews",
-      "topic": "Технологии",
-      "lang": "ru"
-    },
-    {
-      "title": "Anthropic stock pops 30% to $2 trillion market cap in mega IPO",
-      "url": "https://fortune.com/2026/11/19/anthropic-ipo-first-day-trading-nasdaq-record-valuation/",
-      "published": "2026-11-19T15:28:57Z",
-      "summary": "The Wall Street debut instantly puts the five-year-old AI company in the elite club of trillion-dollar public companies.",
-      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2305298299-e1795102326650.jpg?w=300",
-      "source": "Fortune",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Путин разрешил банкам передавать закрытую информацию на обработку ИТ-компаниям",
-      "url": "https://www.cnews.ru/news/top/2026-11-19_putin_razreshil_bankam_peredavat",
-      "published": "2026-11-19T15:25:00Z",
-      "summary": "Президент Владимир Путин подписал закон, позволяющий банкам и иным финансовым организациям передавать информацию ограниченного характера на обработку привлекаемым организациям. В роли таких…",
-      "thumbnail": "https://static.cnews.ru/img/news/2026/11/18/bank700.jpg",
-      "source": "CNews",
-      "topic": "Технологии",
-      "lang": "ru"
-    },
-    {
-      "title": "На Сахалине успешно прошли испытания новой радиостанции Zala «Урал‑25С»",
-      "url": "https://www.cnews.ru/news/line/2026-11-19_na_sahaline_uspeshno_proshli",
-      "published": "2026-11-19T15:24:00Z",
-      "summary": "На Сахалине успешно прошли испытания новой радиостанции Zala «Урал‑25С», созданной для нужд специальных и экстренных...",
-      "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
-      "source": "CNews",
-      "topic": "Технологии",
-      "lang": "ru"
-    },
-    {
-      "title": "More support for households reliant on heating oil",
-      "url": "https://www.bbc.co.uk/news/articles/cwm2mj7vezr3o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T15:22:31Z",
-      "summary": "North Northamptonshire Council is encouraging eligible residents to apply for more support.",
-      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a6d/live/4e7d2e10-1ed5-11f1-b8f6-b15aa2adfcf4.jpg",
-      "source": "BBC Business",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
       "title": "Генпрокуратура предупредила владельца «Википедии» о возможности признать его «нежелательной» организацией",
       "url": "https://vc.ru/legal/3266607-genprokuratura-preduprezhdaet-o-priznanii-vikipedii-nezhelatelnoy-organizaciey?from=rss",
       "published": "2026-11-19T15:16:32Z",
@@ -1599,26 +1819,6 @@
       "source": "The Guardian",
       "topic": "Бизнес",
       "lang": "en"
-    },
-    {
-      "title": "Решения Банка России в отношении участников финансового рынка",
-      "url": "https://www.cbr.ru/rbr/rbr_fr/",
-      "published": "2026-11-19T15:12:47Z",
-      "summary": "",
-      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
-      "source": "Банк России",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "Банк России понизил курсы доллара и евро",
-      "url": "https://lenta.ru/news/2026/11/19/bank-rossii-ponizil-kursy-dollara-i-evro/",
-      "published": "2026-11-19T15:12:00Z",
-      "summary": "",
-      "thumbnail": "https://icdn.lenta.ru/images/2026/11/19/18/20261119181226491/pic_9e3668324cae7c4940f3925b46a54454.jpg",
-      "source": "Лента.ру · Экономика",
-      "topic": "Деньги",
-      "lang": "ru"
     },
     {
       "title": "Zeno Power makes progress on an underwater power system that will eventually go nuclear",
@@ -1681,16 +1881,6 @@
       "lang": "en"
     },
     {
-      "title": "EU Inc demands Brussels scrap ‘weak’ reforms, start over",
-      "url": "https://sifted.eu/articles/eu-inc-watered-down-rules-rewrite-campaign/",
-      "published": "2026-11-19T13:47:42Z",
-      "summary": "",
-      "thumbnail": "https://content.sifted.eu/wp-content/uploads/2026/09/14214728/eu-ai-agents--1024x336.png",
-      "source": "Sifted",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
       "title": "Nvidia isn’t the first company to dump a misbehaving CEO – history shows it’s in the interest of corporate boards to act",
       "url": "https://theconversation.com/nvidia-isnt-the-first-company-to-dump-a-misbehaving-ceo-history-shows-its-in-the-interest-of-corporate-boards-to-act-296800",
       "published": "2026-11-19T13:42:38Z",
@@ -1701,61 +1891,11 @@
       "lang": "en"
     },
     {
-      "title": "Viagogo may have broken law on hidden fees, watchdog provisionally finds",
-      "url": "https://www.bbc.co.uk/news/articles/cmvg2ex7j30lo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T13:35:52Z",
-      "summary": "The UK's competition body says initial findings suggest the ticket-reselling website used drip pricing.",
-      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3865/live/755fe980-e407-11f1-ab35-e1af93fa5cce.jpg",
-      "source": "BBC Business",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Основные показатели деятельности платформенных сервисов",
-      "url": "https://www.cbr.ru/statistics/ifr/#a_174739",
-      "published": "2026-11-19T13:09:32Z",
-      "summary": "",
-      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
-      "source": "Банк России",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "Комментарии Банка России: Динамика международных резервов Российской Федерации",
-      "url": "https://www.cbr.ru/statistics/macro_itm/external_sector/ir/#a_165045page",
-      "published": "2026-11-19T13:00:00Z",
-      "summary": "",
-      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
-      "source": "Банк России",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
-      "title": "Международные резервы Российской Федерации (еженедельные значения на конец отчетной даты)",
-      "url": "https://www.cbr.ru/hd_base/mrrf/mrrf_7d/",
-      "published": "2026-11-19T13:00:00Z",
-      "summary": "",
-      "thumbnail": "https://www.cbr.ru/common/images/share-1.jpg",
-      "source": "Банк России",
-      "topic": "Деньги",
-      "lang": "ru"
-    },
-    {
       "title": "Как помочь ребёнку успешно подготовиться к экзаменам",
       "url": "https://habr.com/ru/companies/habr_career/articles/1109876/?utm_campaign=1109876&utm_source=habrahabr&utm_medium=rss",
       "published": "2026-11-19T12:09:16Z",
       "summary": "До начала экзаменов осталось чуть больше полугода. Для учеников выпускных классов это и много, и мало: достаточно, чтобы закрыть пробелы без аврала, но откладывать на потом уже нельзя. Для…",
       "thumbnail": "https://habrastorage.org/extt/e0/df/1a/e0df1aefbfa8f71dc1bf83f2fb19206b.png",
-      "source": "Хабр · Карьера",
-      "topic": "Карьера",
-      "lang": "ru"
-    },
-    {
-      "title": "Я обеими руками за цифровизацию, но заменять живых людей нейронками пока рано",
-      "url": "https://habr.com/ru/companies/h3llo_cloud/articles/1109868/?utm_campaign=1109868&utm_source=habrahabr&utm_medium=rss",
-      "published": "2026-11-19T12:01:22Z",
-      "summary": "Главная беда в том, что рынок использует LLM абсолютно диким образом . Люди берут готовые модели «как есть», вообще не обогащают их контекстом из своих репозиториев, сливают в них…",
-      "thumbnail": "https://habrastorage.org/extt/be/f6/53/bef653da17b66776bf2f70ec42162c90.png",
       "source": "Хабр · Карьера",
       "topic": "Карьера",
       "lang": "ru"
@@ -1791,16 +1931,6 @@
       "lang": "en"
     },
     {
-      "title": "Indian driver wins $1.3m in life-changing lottery prize",
-      "url": "https://www.bbc.co.uk/news/videos/cke89vdn75gyo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T11:38:09Z",
-      "summary": "A truck driver's fortunes have changed overnight after he won a Diwali lottery in the northern Indian state of Punjab.",
-      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/31eb/live/93fec7f0-e40a-11f1-99a1-253766e7ad8b.jpg",
-      "source": "BBC Business",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
       "title": "Акцент на истории любви, а не на криптобирже: на Netflix вышел сериал «Альтруисты» о крахе FTX Сэма Бэнкмана-Фрида в 2022 году",
       "url": "https://vc.ru/media/3265872-serial-altruisty-na-netflix-o-lyubvi-i-krahe-ftx?from=rss",
       "published": "2026-11-19T11:13:58Z",
@@ -1821,56 +1951,6 @@
       "lang": "ru"
     },
     {
-      "title": "Гендиректор Microsoft Сатья Наделла объяснил, почему компания предложила 60 тысячам сотрудников уволиться",
-      "url": "https://habr.com/ru/articles/1109798/?utm_campaign=1109798&utm_source=habrahabr&utm_medium=rss",
-      "published": "2026-11-19T09:55:15Z",
-      "summary": "В конце прошлого месяца директор по персоналу Microsoft Эми Коулман направила 60 тыс. сотрудникам (27% персонала) предложение добровольно уволиться за денежную компенсацию. Теперь генеральный…",
-      "thumbnail": "https://habrastorage.org/extt/7e/77/80/7e77800599140bc5d4c8d04bdfa85dd7.jpg",
-      "source": "Хабр · Карьера",
-      "topic": "Карьера",
-      "lang": "ru"
-    },
-    {
-      "title": "Peace is a system. Europe stopped maintaining it.",
-      "url": "https://sifted.eu/articles/peace-is-a-system-europe-stopped-maintaining-it-brnd/",
-      "published": "2026-11-19T09:00:54Z",
-      "summary": "",
-      "thumbnail": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/10121405/BARYON-team-collage.jpg",
-      "source": "Sifted",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "ИИ-агенты с нуля: бесплатные курсы и демо, чтобы собрать первого агента",
-      "url": "https://habr.com/ru/companies/netologyru/articles/1109754/?utm_campaign=1109754&utm_source=habrahabr&utm_medium=rss",
-      "published": "2026-11-19T08:50:45Z",
-      "summary": "Собрали семь бесплатных входов в ИИ-агентов: пять демо по пять дней и два курса в своём темпе. Внутри — что такое агент и чем он отличается от чат-бота, как собрать первого в Nodul, не написав…",
-      "thumbnail": "https://habrastorage.org/extt/42/71/28/427128455e7bdadb9469f5547f426dd2.png",
-      "source": "Хабр · Карьера",
-      "topic": "Карьера",
-      "lang": "ru"
-    },
-    {
-      "title": "Increase in direct cremations since pandemic",
-      "url": "https://www.bbc.co.uk/news/articles/ck5ywnr59z85o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T06:23:22Z",
-      "summary": "A 2026 Cost of Dying Report found direct cremation was now chosen for about one in five funerals.",
-      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e942/live/68574f50-d14f-11f1-93e1-3b657b665bcf.jpg",
-      "source": "BBC Business",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Gilts v kilts: What is happening with Scottish government bonds?",
-      "url": "https://www.bbc.co.uk/news/articles/cmwy8pgj2z8vo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T06:15:57Z",
-      "summary": "MSPs have heard both the pros and cons of the government's plan to launch its first ever bond to the market.",
-      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bef5/live/7cbd5260-e35a-11f1-a094-5fdc692f3e33.jpg",
-      "source": "BBC Business",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
       "title": "Grade I interiors, gold bars, cost fears: Bank of England faces headache over £160m revamp",
       "url": "https://www.theguardian.com/business/2026/nov/19/bank-of-england-revamp",
       "published": "2026-11-19T06:00:19Z",
@@ -1881,46 +1961,6 @@
       "lang": "en"
     },
     {
-      "title": "Exclusive: Schneider Electric's VC fund brings accelerator scheme to Europe",
-      "url": "https://sifted.eu/articles/schneider-electric-ventures-accelerator-scheme-europe/",
-      "published": "2026-11-19T05:00:42Z",
-      "summary": "",
-      "thumbnail": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/18195026/DSC01193-scaled.jpg",
-      "source": "Sifted",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "The next big bets in AI compute",
-      "url": "https://sifted.eu/articles/inside-the-next-big-bets-in-ai-compute/",
-      "published": "2026-11-19T05:00:20Z",
-      "summary": "",
-      "thumbnail": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/18155305/whats-next-in-ai-compute-hero-scaled.png",
-      "source": "Sifted",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "AI is making teams smaller — and the fight for real talent harder",
-      "url": "https://sifted.eu/articles/eqt-ai-talent-polly-barnes-opinion/",
-      "published": "2026-11-19T05:00:16Z",
-      "summary": "",
-      "thumbnail": "https://images.sifted.eu/cdn-cgi/image/width=1164,quality=75,fit=cover,format=auto/wp-content/uploads/2026/11/18143940/444600040016-scaled-e1795012804143.jpg",
-      "source": "Sifted",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "XXII конференция «Свободное ПО в высшей школе» (OSEDUCONF-2027) состоится в февраля 2027 года в Переславле-Залесском",
-      "url": "https://habr.com/ru/articles/1109192/?utm_campaign=1109192&utm_source=habrahabr&utm_medium=rss",
-      "published": "2026-11-19T03:17:42Z",
-      "summary": "«Базальт СПО» и ИПС им. А.К. Айламазяна РАН сообщили , что XXII конференция «Свободное программное обеспечение в высшей школе» (OSEDUCONF-2027) состоится 5-7 февраля 2027 года в Институте…",
-      "thumbnail": "https://habrastorage.org/extt/9d/d3/e0/9dd3e06703fa414b272f34a1079e4e45.png",
-      "source": "Хабр · Карьера",
-      "topic": "Карьера",
-      "lang": "ru"
-    },
-    {
       "title": "Anthropic Closes Up 17% After Massive IPO",
       "url": "https://news.crunchbase.com/public/ipo/anthropic-prices-ipo-ant-above-range/",
       "published": "2026-11-18T22:15:36Z",
@@ -1928,16 +1968,6 @@
       "thumbnail": "https://news.crunchbase.com/wp-content/uploads/2020/09/IPO_.png",
       "source": "Crunchbase News",
       "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "Google acquires Seattle startup Howie and its AI scheduling assistant",
-      "url": "https://www.geekwire.com/2026/google-acquires-seattle-startup-howie-and-its-ai-scheduling-assistant/",
-      "published": "2026-11-18T22:03:40Z",
-      "summary": "The email-based tool, which raised a $6 million seed round last year, will keep being built inside Google Labs. Read More",
-      "thumbnail": "https://cdn.geekwire.com/wp-content/uploads/2025/09/IMG_5024.png",
-      "source": "GeekWire",
-      "topic": "Технологии",
       "lang": "en"
     },
     {
@@ -2061,16 +2091,6 @@
       "lang": "en"
     },
     {
-      "title": "Ownership в вакансиях продактов: просят мыслить как владелец, а владельца отсеивают",
-      "url": "https://habr.com/ru/articles/1109552/?utm_campaign=1109552&utm_source=habrahabr&utm_medium=rss",
-      "published": "2026-11-18T15:59:49Z",
-      "summary": "Пост о карьере в IT, с цифрами по вакансиям. Мой брат продакт-менеджер и ищет работу в найме. У него есть опыт в финтехе, госсекторе и B2B-сервисе чат-ботов, а ещё свой продукт: ИИ-сервис…",
-      "thumbnail": "https://habrastorage.org/extt/4d/6f/0c/4d6f0c06b934397b860e06728c51eb76.png",
-      "source": "Хабр · Карьера",
-      "topic": "Карьера",
-      "lang": "ru"
-    },
-    {
       "title": "Just how central should one person be to an organisation?",
       "url": "https://www.economist.com/business/2026/11/18/just-how-central-should-one-person-be-to-an-organisation",
       "published": "2026-11-18T15:27:00Z",
@@ -2118,16 +2138,6 @@
       "thumbnail": "",
       "source": "European Central Bank",
       "topic": "Деньги",
-      "lang": "en"
-    },
-    {
-      "title": "Nvidia’s roaring results can’t hide its troubles",
-      "url": "https://www.economist.com/business/2026/11/18/nvidias-roaring-results-cant-hide-its-troubles",
-      "published": "2026-11-18T00:20:05Z",
-      "summary": "Jensen Huang’s departure will cause lasting damage",
-      "thumbnail": "",
-      "source": "The Economist",
-      "topic": "Бизнес",
       "lang": "en"
     },
     {
@@ -2288,16 +2298,6 @@
       "thumbnail": "https://images.theconversation.com/files/771653/original/file-20261112-64-qfy0aq.jpg?ixlib=rb-4.1.1&rect=0%2C1%2C6602%2C4401&q=45&auto=format&w=1050&h=700&fit=crop",
       "source": "The Conversation",
       "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
-      "title": "Isabel Schnabel: Made in Europe",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
-      "published": "2026-11-13T07:20:00Z",
-      "summary": "",
-      "thumbnail": "https://www.ecb.europa.eu/press/key/shared/img/socialmedia/social-default.jpg?0dbb2de262f4f1fcaeae410be132177a",
-      "source": "European Central Bank",
-      "topic": "Деньги",
       "lang": "en"
     },
     {

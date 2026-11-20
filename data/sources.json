@@ -489,6 +489,114 @@
       "url": "https://rutube.ru/channel/38395796/"
     }
   ],
+  "audio": [
+    {
+      "name": "TED Radio Hour",
+      "feed": "https://feeds.npr.org/510298/podcast.xml",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "lectures",
+      "url": "https://www.npr.org/programs/ted-radio-hour/",
+      "action": "Запишите одну идею из лекции и превратите её в действие на 15 минут сегодня."
+    },
+    {
+      "name": "TED Talks Daily",
+      "feed": "https://feeds.acast.com/public/shows/67587e77c705e441797aff96",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "lectures",
+      "url": "https://www.ted.com/podcasts/ted-talks-daily",
+      "action": "Выберите одну мысль спикера и запишите, где примените её в ближайшие сутки."
+    },
+    {
+      "name": "How I Built This",
+      "feed": "https://feeds.npr.org/510313/podcast.xml",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "podcasts",
+      "url": "https://www.npr.org/series/490248027/how-i-built-this",
+      "action": "Найдите в истории основателя один проверяемый шаг и повторите его в масштабе своего проекта."
+    },
+    {
+      "name": "Planet Money",
+      "feed": "https://feeds.npr.org/510289/podcast.xml",
+      "topic": "Деньги",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "podcasts",
+      "url": "https://www.npr.org/sections/money/",
+      "action": "Запишите один экономический механизм из выпуска и проверьте, где он проявляется в ваших расходах или бизнесе."
+    },
+    {
+      "name": "The Diary Of A CEO",
+      "feed": "https://rss2.flightcast.com/xmsftuzjjykcmqwolaqn6mdn",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "podcasts",
+      "url": "https://stevenbartlett.com/doac/",
+      "action": "После выпуска выберите одну привычку гостя и назначьте ей точное время в календаре."
+    },
+    {
+      "name": "BIG MONEY",
+      "feed": "https://podster.fm/rss.xml?pid=57351",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rss-audio",
+      "kind": "podcasts",
+      "url": "https://bigmoney.podster.fm/",
+      "action": "Выпишите один совет гостя, одно своё сомнение и один способ проверить совет на практике."
+    },
+    {
+      "name": "LibriVox · Бизнес и экономика",
+      "genre": "Business & Economics",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "librivox",
+      "kind": "audiobooks",
+      "url": "https://librivox.org/search?genre=Business%20%26%20Economics",
+      "action": "Выберите главу и запишите три предложения: идея, пример из своей жизни, следующий шаг."
+    },
+    {
+      "name": "LibriVox · Саморазвитие",
+      "genre": "Self-Help",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "librivox",
+      "kind": "audiobooks",
+      "url": "https://librivox.org/search?genre=Self-Help",
+      "action": "После главы выберите одно упражнение и выполните его до перехода к следующей."
+    }
+  ],
+  "open-books": [
+    {
+      "name": "Open Library · Бизнес",
+      "query": "business",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "openlibrary",
+      "url": "https://openlibrary.org/subjects/business"
+    },
+    {
+      "name": "Open Library · Предпринимательство",
+      "query": "entrepreneurship",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "openlibrary",
+      "url": "https://openlibrary.org/subjects/entrepreneurship"
+    },
+    {
+      "name": "Open Library · Успех и привычки",
+      "query": "success",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "openlibrary",
+      "url": "https://openlibrary.org/subjects/success"
+    }
+  ],
   "news": [
     {
       "name": "Коммерсантъ",

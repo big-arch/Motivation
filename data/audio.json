@@ -1,0 +1,2004 @@
+{
+  "schema": 2,
+  "updated": "2026-11-20T08:33:01Z",
+  "sources": [
+    {
+      "name": "BIG MONEY",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rss-audio",
+      "kind": "podcasts",
+      "url": "https://bigmoney.podster.fm/",
+      "action": "Выпишите один совет гостя, одно своё сомнение и один способ проверить совет на практике.",
+      "count": 6,
+      "checked": "2026-11-20T08:33:01Z"
+    },
+    {
+      "name": "How I Built This",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "podcasts",
+      "url": "https://www.npr.org/series/490248027/how-i-built-this",
+      "action": "Найдите в истории основателя один проверяемый шаг и повторите его в масштабе своего проекта.",
+      "count": 6,
+      "checked": "2026-11-20T08:33:01Z"
+    },
+    {
+      "name": "LibriVox · Бизнес и экономика",
+      "topic": "Бизнес",
+      "lang": "en",
+      "platform": "librivox",
+      "kind": "audiobooks",
+      "url": "https://librivox.org/search?genre=Business%20%26%20Economics",
+      "action": "Выберите главу и запишите три предложения: идея, пример из своей жизни, следующий шаг.",
+      "count": 6,
+      "checked": "2026-11-20T08:33:01Z"
+    },
+    {
+      "name": "LibriVox · Саморазвитие",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "librivox",
+      "kind": "audiobooks",
+      "url": "https://librivox.org/search?genre=Self-Help",
+      "action": "После главы выберите одно упражнение и выполните его до перехода к следующей.",
+      "count": 6,
+      "checked": "2026-11-20T08:33:01Z"
+    },
+    {
+      "name": "Planet Money",
+      "topic": "Деньги",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "podcasts",
+      "url": "https://www.npr.org/sections/money/",
+      "action": "Запишите один экономический механизм из выпуска и проверьте, где он проявляется в ваших расходах или бизнесе.",
+      "count": 6,
+      "checked": "2026-11-20T08:33:01Z"
+    },
+    {
+      "name": "TED Radio Hour",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "lectures",
+      "url": "https://www.npr.org/programs/ted-radio-hour/",
+      "action": "Запишите одну идею из лекции и превратите её в действие на 15 минут сегодня.",
+      "count": 6,
+      "checked": "2026-11-20T08:33:01Z"
+    },
+    {
+      "name": "TED Talks Daily",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "lectures",
+      "url": "https://www.ted.com/podcasts/ted-talks-daily",
+      "action": "Выберите одну мысль спикера и запишите, где примените её в ближайшие сутки.",
+      "count": 6,
+      "checked": "2026-11-20T08:33:01Z"
+    },
+    {
+      "name": "The Diary Of A CEO",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "rss-audio",
+      "kind": "podcasts",
+      "url": "https://stevenbartlett.com/doac/",
+      "action": "После выпуска выберите одну привычку гостя и назначьте ей точное время в календаре.",
+      "count": 6,
+      "checked": "2026-11-20T08:33:01Z"
+    }
+  ],
+  "items": [
+    {
+      "id": "audio-3a0a1e08ca46b5d3",
+      "title": "Uncovering the mysteries of the animal kingdom",
+      "url": "https://www.npr.org/2026/11/20/nx-s1-6047049/uncovering-the-mysteries-of-the-animal-kingdom",
+      "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510298/npr.simplecastaudio.com/e19460b8-b905-4bd2-9062-cea3c0ab9405/episodes/2ebf8e4e-1080-455b-866b-1c46bae026af/audio/128/default.mp3?awCollectionId=e19460b8-b905-4bd2-9062-cea3c0ab9405&awEpisodeId=2ebf8e4e-1080-455b-866b-1c46bae026af&feed=gGUt_fS1&t=podcast&e=nx-s1-6047049&p=510298&d=2977&size=47639449",
+      "published": "2026-11-20T08:00:00Z",
+      "summary": "From the bugs in our backyards to prehistoric reptiles, animal biology and behavior are full of puzzles and conundrums. On this episode, we hear from experts solving the mysteries of the animal kingdom. Guests include paleontologist Dean Lomax, biochemical engineer Saad Bhamla, herpetologist Gowri Shankar and conservation biologist Patrícia Medici. See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fad%2F5f%2Fc9b7c4294b8c878767ea24327175%2F1fce522d-a8ee-41f2-b3d4-b3e3726de716.jpg",
+      "duration": 2977,
+      "source": "TED Radio Hour",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Запишите одну идею из лекции и превратите её в действие на 15 минут сегодня."
+    },
+    {
+      "id": "lv-book-22314",
+      "title": "Richest Man in Babylon",
+      "url": "https://librivox.org/the-richest-man-in-babylon-by-george-clason/",
+      "audio": "https://www.archive.org/download/richestman_2604_librivox/richestman_01_clason_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-692980",
+          "title": "Preface /Dedication",
+          "audio": "https://www.archive.org/download/richestman_2604_librivox/richestman_01_clason_64kb.mp3",
+          "duration": 95
+        },
+        {
+          "id": "lv-692978",
+          "title": "The Richest Man in Babylon",
+          "audio": "https://www.archive.org/download/richestman_2604_librivox/richestman_02_clason_64kb.mp3",
+          "duration": 1390
+        },
+        {
+          "id": "lv-692982",
+          "title": "The Gold Lender of Babylon",
+          "audio": "https://www.archive.org/download/richestman_2604_librivox/richestman_03_clason_64kb.mp3",
+          "duration": 1447
+        },
+        {
+          "id": "lv-692979",
+          "title": "The Camel Trader of Babylon",
+          "audio": "https://www.archive.org/download/richestman_2604_librivox/richestman_04_clason_64kb.mp3",
+          "duration": 1243
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "The Richest Man in Babylon is a series of parables written by George S. Clason, an American author. Mr. Clason dispenses lessons in personal finance using the land of Babylon as its backdrop, when the city was a prosperous region some 4000+ years prior. The book shares advice on the perils of handling money, using money as a tool for increased wealth, careful considerations when dealing with loans, and the importance of honoring obligations in loan repayment. While later publications of this book contains additional stories not contained within this version, along with essays on the various topics. This audiobook contains the original three parables. (Summary by Gpolum)",
+      "thumbnail": "https://archive.org/download/richestman_2604_librivox/richestmaninbabylon_2604_thumb.jpg",
+      "duration": 4175,
+      "author": "George Clason",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Саморазвитие",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "После главы выберите одно упражнение и выполните его до перехода к следующей."
+    },
+    {
+      "id": "lv-book-20857",
+      "title": "Mesmeric Guide, for Family Use",
+      "url": "https://librivox.org/the-mesmeric-guide-for-family-use-by-s-d-saunders/",
+      "audio": "https://www.archive.org/download/mesmericguide_2408_librivox/mesmericguide_00_saunders_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-652391",
+          "title": "Introduction",
+          "audio": "https://www.archive.org/download/mesmericguide_2408_librivox/mesmericguide_00_saunders_64kb.mp3",
+          "duration": 145
+        },
+        {
+          "id": "lv-652392",
+          "title": "The Mesmeric Guide, for Family Use",
+          "audio": "https://www.archive.org/download/mesmericguide_2408_librivox/mesmericguide_01_saunders_64kb.mp3",
+          "duration": 1828
+        },
+        {
+          "id": "lv-652393",
+          "title": "Works on Mesmerism",
+          "audio": "https://www.archive.org/download/mesmericguide_2408_librivox/mesmericguide_02_saunders_64kb.mp3",
+          "duration": 210
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "Aimed at \"those who judge of a Science by its practical utility and think that one minute spent in applying it to the benefit of mankind is better employed than years of profitless speculation regarding its secret nature\", this book gives Mesmeric cures for everything from bruises and fatigue to paralysis and cancer. - Summary by Jordan",
+      "thumbnail": "https://archive.org/download/mesmericguide_2408_librivox/mesmeric_guide_2408_thumb.jpg",
+      "duration": 2183,
+      "author": "S. D. Saunders",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Саморазвитие",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "После главы выберите одно упражнение и выполните его до перехода к следующей."
+    },
+    {
+      "id": "lv-book-22628",
+      "title": "Conquest of Happiness",
+      "url": "https://librivox.org/the-conquest-of-happiness-by-bertrand-russell/",
+      "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_00_russell_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-702604",
+          "title": "Preface",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_00_russell_64kb.mp3",
+          "duration": 129
+        },
+        {
+          "id": "lv-702605",
+          "title": "Part I: Causes of Unhappiness || Chapter I: What Makes People Unhappy?",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_01_russell_64kb.mp3",
+          "duration": 1212
+        },
+        {
+          "id": "lv-702606",
+          "title": "Chapter II: Byronic Unhappiness",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_02_russell_64kb.mp3",
+          "duration": 1857
+        },
+        {
+          "id": "lv-702607",
+          "title": "Chapter III: Competition",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_03_russell_64kb.mp3",
+          "duration": 1212
+        },
+        {
+          "id": "lv-702608",
+          "title": "Chapter IV: Boredom and Excitement",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_04_russell_64kb.mp3",
+          "duration": 1175
+        },
+        {
+          "id": "lv-702609",
+          "title": "Chapter V: Fatigue",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_05_russell_64kb.mp3",
+          "duration": 1406
+        },
+        {
+          "id": "lv-702610",
+          "title": "Chapter VI: Envy",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_06_russell_64kb.mp3",
+          "duration": 1391
+        },
+        {
+          "id": "lv-702611",
+          "title": "Chapter VII: The Sense of Sin",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_07_russell_64kb.mp3",
+          "duration": 1604
+        },
+        {
+          "id": "lv-702612",
+          "title": "Chapter VIII: Persecution Mania",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_08_russell_64kb.mp3",
+          "duration": 1466
+        },
+        {
+          "id": "lv-702613",
+          "title": "Chapter IX: Fear of Public Opinion",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_09_russell_64kb.mp3",
+          "duration": 1403
+        },
+        {
+          "id": "lv-702614",
+          "title": "Part II: Causes of Happiness || Chapter X: Is Happiness Still Possible?",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_10_russell_64kb.mp3",
+          "duration": 1492
+        },
+        {
+          "id": "lv-702615",
+          "title": "Chapter XI: Zest",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_11_russell_64kb.mp3",
+          "duration": 1685
+        },
+        {
+          "id": "lv-702616",
+          "title": "Chapter XII: Affection",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_12_russell_64kb.mp3",
+          "duration": 1143
+        },
+        {
+          "id": "lv-702617",
+          "title": "Chapter XIII: The Family",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_13_russell_64kb.mp3",
+          "duration": 2180
+        },
+        {
+          "id": "lv-702618",
+          "title": "Chapter XIV: Work",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_14_russell_64kb.mp3",
+          "duration": 1128
+        },
+        {
+          "id": "lv-702619",
+          "title": "Chapter XV: Impersonal Interests",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_15_russell_64kb.mp3",
+          "duration": 1115
+        },
+        {
+          "id": "lv-702620",
+          "title": "Chapter XVI: Effort and Resignation",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_16_russell_64kb.mp3",
+          "duration": 1194
+        },
+        {
+          "id": "lv-702621",
+          "title": "Chapter XVII: The Happy Man",
+          "audio": "https://www.archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_17_russell_64kb.mp3",
+          "duration": 788
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "\"This book is not addressed to the learned, or to those who regard a practical problem merely as something to be talked about. No profound philosophy or deep erudition will be found in the following pages. I have aimed only at putting together some remarks which are inspired by what I hope is common sense.\" Bertrand Russell opens the preface with this statement of the intended audience, goals, and writing style of The Conquest of Happiness. The \"recipes,\" as he calls this collection of personal anecdotes, self-reflection, and advice, are written as a wise mentor or elder might share them. As I previewed the text to understand the book's character and how it wanted to be read, it revealed…",
+      "thumbnail": "https://archive.org/download/conquestofhappiness_2608_librivox/conquestofhappiness_2608_thumb.jpg",
+      "duration": 23580,
+      "author": "Bertrand Russell",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Саморазвитие",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "После главы выберите одно упражнение и выполните его до перехода к следующей."
+    },
+    {
+      "id": "lv-book-22580",
+      "title": "American Bee Journal, Vol. XVII, No. 5 , February 2, 1881",
+      "url": "https://librivox.org/the-american-bee-journal-vol-xvii-no-5",
+      "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_01_various_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-700715",
+          "title": "Correspondence: Hive and Section Making by James Heddon",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_01_various_64kb.mp3",
+          "duration": 490
+        },
+        {
+          "id": "lv-700716",
+          "title": "Correspondence: Bee House -- Holy Queen, Etc. by Melville Hayes",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_02_various_64kb.mp3",
+          "duration": 185
+        },
+        {
+          "id": "lv-700717",
+          "title": "Correspondence: Covering Bees with Snow by G.M. Doolittle",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_03_various_64kb.mp3",
+          "duration": 346
+        },
+        {
+          "id": "lv-700718",
+          "title": "Correspondence: Successful Apiculture by Dr. S. Stevenson",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_04_various_64kb.mp3",
+          "duration": 323
+        },
+        {
+          "id": "lv-700719",
+          "title": "Correspondence: A Good Shade for Bee Hives by L. James",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_05_various_64kb.mp3",
+          "duration": 152
+        },
+        {
+          "id": "lv-700720",
+          "title": "Correspondence: Bee-Keeping in Northern Indiana by John Craycraft",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_06_various_64kb.mp3",
+          "duration": 196
+        },
+        {
+          "id": "lv-700721",
+          "title": "Correspondence: How My Bees Are Wintering by H.R. Boardman",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_07_various_64kb.mp3",
+          "duration": 169
+        },
+        {
+          "id": "lv-700722",
+          "title": "Correspondence: The Season and Wintering by John F. Cowan",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_08_various_64kb.mp3",
+          "duration": 126
+        },
+        {
+          "id": "lv-700723",
+          "title": "Selections from Our Letterbox",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_09_various_64kb.mp3",
+          "duration": 715
+        },
+        {
+          "id": "lv-700724",
+          "title": "Opinions Concerning the Journal, Convenntion Notes",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_10_various_64kb.mp3",
+          "duration": 431
+        },
+        {
+          "id": "lv-700725",
+          "title": "The American Bee Journal: Editorial Comments",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_11_various_64kb.mp3",
+          "duration": 964
+        },
+        {
+          "id": "lv-700730",
+          "title": "Pure Liquid Honey in Glass Jars",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_12_various_64kb.mp3",
+          "duration": 305
+        },
+        {
+          "id": "lv-700726",
+          "title": "Among Our Exchanges: London Journal of Horticulture - Feeding Bees with Whisky",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_13_various_64kb.mp3",
+          "duration": 400
+        },
+        {
+          "id": "lv-700727",
+          "title": "Among Our Exchanges: Gleanings - Lime for Wintering",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_14_various_64kb.mp3",
+          "duration": 257
+        },
+        {
+          "id": "lv-700728",
+          "title": "Among Our Exchanges: Miscellaneous",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_15_various_64kb.mp3",
+          "duration": 241
+        },
+        {
+          "id": "lv-700729",
+          "title": "Convention Notes: Indiana State Convention",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_16_various_64kb.mp3",
+          "duration": 713
+        },
+        {
+          "id": "lv-700731",
+          "title": "Convention Notes: Texas Convention",
+          "audio": "https://www.archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/beejournalvolxviino5feb021881_17_various_64kb.mp3",
+          "duration": 470
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "The American Bee Journal is the “oldest bee paper in America established in 1861 devoted to scientific bee-culture and the production and sale of pure honey. This issue covers such topics such as Hive and Section Making by James Heddon, A Good Shade for Bee Hives by L. James, state convention reports and correspondence. - Summary by Larry Wilson",
+      "thumbnail": "https://archive.org/download/theamericanbeejournalvolxviino5_2611_librivox/americanbeejournal5_2611_thumb.jpg",
+      "duration": 6483,
+      "author": "Various",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Бизнес и экономика",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "Выберите главу и запишите три предложения: идея, пример из своей жизни, следующий шаг."
+    },
+    {
+      "id": "lv-book-22822",
+      "title": "Look at Latin America",
+      "url": "https://librivox.org/look-at-latin-america-by-joan-raushenbush/",
+      "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_01_raushenbush_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-709819",
+          "title": "Introduction. Chapters I - II",
+          "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_01_raushenbush_64kb.mp3",
+          "duration": 602
+        },
+        {
+          "id": "lv-709820",
+          "title": "Chapters III - IV",
+          "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_02_raushenbush_64kb.mp3",
+          "duration": 484
+        },
+        {
+          "id": "lv-709821",
+          "title": "Chapters V - VI",
+          "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_03_raushenbush_64kb.mp3",
+          "duration": 448
+        },
+        {
+          "id": "lv-709822",
+          "title": "Chapters VII - IX",
+          "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_04_raushenbush_64kb.mp3",
+          "duration": 454
+        },
+        {
+          "id": "lv-709823",
+          "title": "Chapters X - XII",
+          "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_05_raushenbush_64kb.mp3",
+          "duration": 553
+        },
+        {
+          "id": "lv-709824",
+          "title": "Chapters XIII - XIV",
+          "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_06_raushenbush_64kb.mp3",
+          "duration": 387
+        },
+        {
+          "id": "lv-709825",
+          "title": "Chapters XV - XVII",
+          "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_07_raushenbush_64kb.mp3",
+          "duration": 494
+        },
+        {
+          "id": "lv-709826",
+          "title": "Chapters XVIII - XX",
+          "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_08_raushenbush_64kb.mp3",
+          "duration": 631
+        },
+        {
+          "id": "lv-712367",
+          "title": "Chapter XXI",
+          "audio": "https://www.archive.org/download/lookatlatinamerica_2608_librivox/looklatam_09_raushenbush_64kb.mp3",
+          "duration": 572
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "Joan Raushenbush delivers us with is a lively, accessible introduction to the peoples and cultures of Latin America in the 1930s, written to spark curiosity and respect in young readers. She highlights the region’s diversity—from bustling modern cities to Indigenous traditions that shape daily life—while emphasizing the shared challenges and aspirations that connect Latin American nations. Trade, economy, education, and the impending WWII impact is reviewed in macro terms, ending with encouraging words to the reader and the governments to work together for the benefits of the American Continent.. - Summary by mpinedag",
+      "thumbnail": "https://archive.org/download/lookatlatinamerica_2608_librivox/lookatlatinamerica_2609_thumb.jpg",
+      "duration": 4625,
+      "author": "Joan Raushenbush",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Бизнес и экономика",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "Выберите главу и запишите три предложения: идея, пример из своей жизни, следующий шаг."
+    },
+    {
+      "id": "lv-book-21354",
+      "title": "Joyous Gard",
+      "url": "https://librivox.org/joyous-gard-by-arthur-christopher-benson/",
+      "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_00_benson_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-667644",
+          "title": "Preface",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_00_benson_64kb.mp3",
+          "duration": 345
+        },
+        {
+          "id": "lv-667645",
+          "title": "Chapter 1. JOYOUS GARD, PRELUDE",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_01_benson_64kb.mp3",
+          "duration": 450
+        },
+        {
+          "id": "lv-667646",
+          "title": "Chapter 2. IDEAS",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_02_benson_64kb.mp3",
+          "duration": 214
+        },
+        {
+          "id": "lv-667647",
+          "title": "Chapter 3. POETRY",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_03_benson_64kb.mp3",
+          "duration": 373
+        },
+        {
+          "id": "lv-667648",
+          "title": "Chapter 4. POETRY AND LIFE",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_04_benson_64kb.mp3",
+          "duration": 526
+        },
+        {
+          "id": "lv-667649",
+          "title": "Chapter 5. ART",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_05_benson_64kb.mp3",
+          "duration": 1229
+        },
+        {
+          "id": "lv-667650",
+          "title": "Chapter 6. ART AND MORALITY",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_06_benson_64kb.mp3",
+          "duration": 1001
+        },
+        {
+          "id": "lv-667651",
+          "title": "Chapter 7. INTERPRETATION",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_07_benson_64kb.mp3",
+          "duration": 634
+        },
+        {
+          "id": "lv-667652",
+          "title": "Chapter 8. EDUCATION",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_08_benson_64kb.mp3",
+          "duration": 383
+        },
+        {
+          "id": "lv-667653",
+          "title": "Chapter 9. KNOWLEDGE",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_09_benson_64kb.mp3",
+          "duration": 809
+        },
+        {
+          "id": "lv-667654",
+          "title": "Chapter 10. GROWTH",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_10_benson_64kb.mp3",
+          "duration": 620
+        },
+        {
+          "id": "lv-667655",
+          "title": "Chapter 11. EMOTION",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_11_benson_64kb.mp3",
+          "duration": 689
+        },
+        {
+          "id": "lv-667656",
+          "title": "Chapter 12. MEMORY",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_12_benson_64kb.mp3",
+          "duration": 951
+        },
+        {
+          "id": "lv-667657",
+          "title": "Chapter 13. RETROSPECT",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_13_benson_64kb.mp3",
+          "duration": 722
+        },
+        {
+          "id": "lv-667658",
+          "title": "Chapter 14. HUMOUR",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_14_benson_64kb.mp3",
+          "duration": 956
+        },
+        {
+          "id": "lv-667659",
+          "title": "Chapter 15. VISIONS",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_15_benson_64kb.mp3",
+          "duration": 536
+        },
+        {
+          "id": "lv-667660",
+          "title": "Chapter 16. THOUGHT",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_16_benson_64kb.mp3",
+          "duration": 712
+        },
+        {
+          "id": "lv-667661",
+          "title": "Chapter 17. ACCESSIBILITY",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_17_benson_64kb.mp3",
+          "duration": 821
+        },
+        {
+          "id": "lv-667662",
+          "title": "Chapter 18. SYMPATHY",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_18_benson_64kb.mp3",
+          "duration": 813
+        },
+        {
+          "id": "lv-667663",
+          "title": "Chapter 19. SCIENCE",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_19_benson_64kb.mp3",
+          "duration": 617
+        },
+        {
+          "id": "lv-667664",
+          "title": "Chapter 20. WORK",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_20_benson_64kb.mp3",
+          "duration": 514
+        },
+        {
+          "id": "lv-667665",
+          "title": "Chapter 21. HOPE",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_21_benson_64kb.mp3",
+          "duration": 838
+        },
+        {
+          "id": "lv-667666",
+          "title": "Chapter 22. EXPERIENCE",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_22_benson_64kb.mp3",
+          "duration": 654
+        },
+        {
+          "id": "lv-667667",
+          "title": "Chapter 23. FAITH",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_23_benson_64kb.mp3",
+          "duration": 846
+        },
+        {
+          "id": "lv-667668",
+          "title": "Chapter 24. PROGRESS",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_24_benson_64kb.mp3",
+          "duration": 692
+        },
+        {
+          "id": "lv-667669",
+          "title": "Chapter 25. THE SENSE OF BEAUTY",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_25_benson_64kb.mp3",
+          "duration": 577
+        },
+        {
+          "id": "lv-667670",
+          "title": "Chapter 26. THE PRINCIPLE OF BEAUTY",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_26_benson_64kb.mp3",
+          "duration": 595
+        },
+        {
+          "id": "lv-667671",
+          "title": "Chapter 27. LIFE",
+          "audio": "https://www.archive.org/download/joyousgard_2507_librivox/joyousgard_27_benson_64kb.mp3",
+          "duration": 671
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "Joyous Gard was the castle of Sir Lancelot in the Morte D'Arthur, into which he retired, in the intervals of war and business, for rest and mirth. In this book called by its name, the author pleads that many men and women could make for themselves a stronghold of the mind where they could follow according to their desire the track of things beautiful, intellectual, and spiritual, not from a sense of duty but for recreation and enjoyment, as a respite from daily work and trivial cares. - Summary by The Publisher",
+      "thumbnail": "https://archive.org/download/joyousgard_2507_librivox/joyousgard_2508_thumb.jpg",
+      "duration": 18788,
+      "author": "Arthur Christopher Benson",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Саморазвитие",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "После главы выберите одно упражнение и выполните его до перехода к следующей."
+    },
+    {
+      "id": "lv-book-22077",
+      "title": "How to Be a Man",
+      "url": "https://librivox.org/how-to-be-a-man-by-harvey-newcomb/",
+      "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_01_newcomb_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-687009",
+          "title": "On Childhood and Youth",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_01_newcomb_64kb.mp3",
+          "duration": 475
+        },
+        {
+          "id": "lv-687010",
+          "title": "Nature and Objects of Education",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_02_newcomb_64kb.mp3",
+          "duration": 449
+        },
+        {
+          "id": "lv-687011",
+          "title": "Piety, as the Spring of Action and Regulator of the Soul",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_03_newcomb_64kb.mp3",
+          "duration": 597
+        },
+        {
+          "id": "lv-687012",
+          "title": "Filial Piety",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_04_newcomb_64kb.mp3",
+          "duration": 1085
+        },
+        {
+          "id": "lv-687013",
+          "title": "Treatment of Brothers and Sisters and Others in the Family",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_05_newcomb_64kb.mp3",
+          "duration": 643
+        },
+        {
+          "id": "lv-687014",
+          "title": "Behavior at School",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_06_newcomb_64kb.mp3",
+          "duration": 482
+        },
+        {
+          "id": "lv-687015",
+          "title": "Behavior at Table",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_07_newcomb_64kb.mp3",
+          "duration": 389
+        },
+        {
+          "id": "lv-687016",
+          "title": "Behavior at Family Worship",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_08_newcomb_64kb.mp3",
+          "duration": 255
+        },
+        {
+          "id": "lv-687017",
+          "title": "Private Prayer",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_09_newcomb_64kb.mp3",
+          "duration": 430
+        },
+        {
+          "id": "lv-687018",
+          "title": "Keeping the Sabbath",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_10_newcomb_64kb.mp3",
+          "duration": 2024
+        },
+        {
+          "id": "lv-687019",
+          "title": "Habits",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_11_newcomb_64kb.mp3",
+          "duration": 1456
+        },
+        {
+          "id": "lv-687020",
+          "title": "Education of the Body",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_12_newcomb_64kb.mp3",
+          "duration": 797
+        },
+        {
+          "id": "lv-687021",
+          "title": "On Useful Labor",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_13_newcomb_64kb.mp3",
+          "duration": 871
+        },
+        {
+          "id": "lv-687022",
+          "title": "Education of the Heart",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_14_newcomb_64kb.mp3",
+          "duration": 2073
+        },
+        {
+          "id": "lv-687023",
+          "title": "Education of the Mind",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_15_newcomb_64kb.mp3",
+          "duration": 766
+        },
+        {
+          "id": "lv-687024",
+          "title": "Reading",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_16_newcomb_64kb.mp3",
+          "duration": 665
+        },
+        {
+          "id": "lv-687025",
+          "title": "Writing",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_17_newcomb_64kb.mp3",
+          "duration": 332
+        },
+        {
+          "id": "lv-687026",
+          "title": "Indolence",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_18_newcomb_64kb.mp3",
+          "duration": 313
+        },
+        {
+          "id": "lv-687027",
+          "title": "On Doing One Thing at a Time",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_19_newcomb_64kb.mp3",
+          "duration": 189
+        },
+        {
+          "id": "lv-687028",
+          "title": "On Finishing What is Begun",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_20_newcomb_64kb.mp3",
+          "duration": 180
+        },
+        {
+          "id": "lv-687029",
+          "title": "Choice of Society and Formation of Friendships",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_21_newcomb_64kb.mp3",
+          "duration": 285
+        },
+        {
+          "id": "lv-687030",
+          "title": "Bad Company and Mischievousnes",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_22_newcomb_64kb.mp3",
+          "duration": 407
+        },
+        {
+          "id": "lv-687031",
+          "title": "On Amusements",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_23_newcomb_64kb.mp3",
+          "duration": 1020
+        },
+        {
+          "id": "lv-687032",
+          "title": "Government of the Tongue",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_24_newcomb_64kb.mp3",
+          "duration": 730
+        },
+        {
+          "id": "lv-687033",
+          "title": "On the Art of Agreeable and Profitable Conversation",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_25_newcomb_64kb.mp3",
+          "duration": 689
+        },
+        {
+          "id": "lv-687034",
+          "title": "Inquisitiveness",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_26_newcomb_64kb.mp3",
+          "duration": 260
+        },
+        {
+          "id": "lv-687035",
+          "title": "On the Importance of Being Able to Say No",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_27_newcomb_64kb.mp3",
+          "duration": 211
+        },
+        {
+          "id": "lv-687036",
+          "title": "On Being Useful",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_28_newcomb_64kb.mp3",
+          "duration": 308
+        },
+        {
+          "id": "lv-687037",
+          "title": "On Being Contented",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_29_newcomb_64kb.mp3",
+          "duration": 289
+        },
+        {
+          "id": "lv-687038",
+          "title": "Union of Serious Piety with Habitual Cheerfulness",
+          "audio": "https://www.archive.org/download/howtobeaman_2605_librivox/howtobeaman_30_newcomb_64kb.mp3",
+          "duration": 417
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "I wish to see the youth of my country come forward upon the stage of life, models of excellence, with characters formed for the times in which they are to act. How much influence my book may have, in securing such a result, I cannot tell; but my design in writing it has been, to contribute something toward forming the character of some of those who are to be our future electors, legislators, governors, judges, ministers, lawyers, and physicians, — after the best model; and, from the kind reception of my former attempts to benefit American youth, I trust they will give a candid hearing to the few hints contained in the following pages. It is intended for boys, — or, if you please, for young…",
+      "thumbnail": "https://archive.org/download/howtobeaman_2605_librivox/howtobeaman_2606_thumb.jpg",
+      "duration": 19087,
+      "author": "Harvey Newcomb",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Саморазвитие",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "После главы выберите одно упражнение и выполните его до перехода к следующей."
+    },
+    {
+      "id": "lv-book-22305",
+      "title": "How to Add Ten Years to your Life and to Double Its Satisfactions",
+      "url": "https://librivox.org/how-to-add-ten-years-to-your-life-and-to-double-its-satisfactions-by-samuel-silas-curry/",
+      "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_00_curry_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-692767",
+          "title": "Introduction",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_00_curry_64kb.mp3",
+          "duration": 413
+        },
+        {
+          "id": "lv-692758",
+          "title": "Significance of Morning",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_01_curry_64kb.mp3",
+          "duration": 1554
+        },
+        {
+          "id": "lv-692759",
+          "title": "Supposed Secrets of Health and Long Life",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_02_curry_64kb.mp3",
+          "duration": 2156
+        },
+        {
+          "id": "lv-692760",
+          "title": "What is an Exercise?",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_03_curry_64kb.mp3",
+          "duration": 1242
+        },
+        {
+          "id": "lv-692761",
+          "title": "Program of Exercises. Part 1",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_04_curry_64kb.mp3",
+          "duration": 1607
+        },
+        {
+          "id": "lv-692762",
+          "title": "Program of Exercises. Part 2",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_05_curry_64kb.mp3",
+          "duration": 1263
+        },
+        {
+          "id": "lv-692763",
+          "title": "How to Practice the Exercises",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_06_curry_64kb.mp3",
+          "duration": 1971
+        },
+        {
+          "id": "lv-692764",
+          "title": "Actions of Every Day Life",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_07_curry_64kb.mp3",
+          "duration": 727
+        },
+        {
+          "id": "lv-692765",
+          "title": "Work and Play",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_08_curry_64kb.mp3",
+          "duration": 1417
+        },
+        {
+          "id": "lv-692768",
+          "title": "Significance of Night and Sleep",
+          "audio": "https://www.archive.org/download/tenyears_2604_librivox/tenyears_09_curry_64kb.mp3",
+          "duration": 1340
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "This book embodies a few points about health; without going deeply into the principles involved, a short programme is given, the practice of which has already accomplished marvelous results. The book embodies my own experiences, and obeys the scientific principles involved in training. It is meant to be a guide for home study and practice. The principles are applicable to everyone. It requires at first, patience, perseverance, and resolution at that moment in the day when we are most liable to be indifferent and negative, if not irresolute and discouraged. Whoever resolutely undertakes to obey the suggestions will never regret doing so. In fact, it is not too much to claim that he will not…",
+      "thumbnail": "https://archive.org/download/tenyears_2604_librivox/howtoaddtenyears_2604_thumb.jpg",
+      "duration": 13690,
+      "author": "Samuel Silas Curry",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Саморазвитие",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "После главы выберите одно упражнение и выполните его до перехода к следующей."
+    },
+    {
+      "id": "lv-book-22759",
+      "title": "How America Went to War. Volume 1. The Giant Hand: Our Mobilisation and Control of Industry and Natural Resources, 1917-1918",
+      "url": "https://librivox.org/how-america-went-to-war-volume-1-the-giant-hand-by-benedict-crowell/",
+      "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_00_crowell_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-708207",
+          "title": "Author's Foward. Preface",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_00_crowell_64kb.mp3",
+          "duration": 2402
+        },
+        {
+          "id": "lv-708208",
+          "title": "I. The Control of War Industry",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_01_crowell_64kb.mp3",
+          "duration": 2038
+        },
+        {
+          "id": "lv-708209",
+          "title": "II. The Creation of the War Industries Board",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_02_crowell_64kb.mp3",
+          "duration": 2456
+        },
+        {
+          "id": "lv-708210",
+          "title": "III. Priority",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_03_crowell_64kb.mp3",
+          "duration": 2737
+        },
+        {
+          "id": "lv-708211",
+          "title": "IV. Industrial Conversion and Conservation",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_04_crowell_64kb.mp3",
+          "duration": 1839
+        },
+        {
+          "id": "lv-708212",
+          "title": "V. Price Fixing",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_05_crowell_64kb.mp3",
+          "duration": 1750
+        },
+        {
+          "id": "lv-708213",
+          "title": "VI. Allied Purchases, Clearances, and Labor",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_06_crowell_64kb.mp3",
+          "duration": 1906
+        },
+        {
+          "id": "lv-708214",
+          "title": "VII. Commodity Sections - Steel",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_07_crowell_64kb.mp3",
+          "duration": 1802
+        },
+        {
+          "id": "lv-708215",
+          "title": "VIII. Nitrates - Glass - Dyes - Chemicals",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_08_crowell_64kb.mp3",
+          "duration": 1886
+        },
+        {
+          "id": "lv-708216",
+          "title": "IX. Copper and Explosives",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_09_crowell_64kb.mp3",
+          "duration": 1927
+        },
+        {
+          "id": "lv-708217",
+          "title": "X. Foreign Activities",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_10_crowell_64kb.mp3",
+          "duration": 2119
+        },
+        {
+          "id": "lv-708220",
+          "title": "XI. Organization and Personnel",
+          "audio": "https://www.archive.org/download/howamericawenttowar1_2611_librivox/gianthand_11_crowell_64kb.mp3",
+          "duration": 1047
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "Unlike most recollections of the war, that revolve around tales of daring raids and valiant defences, or the memoirs of the burden of command and the slice of life of civilian caught in the fire, this series of books deals with the the story of how the government was able to organise the industrial capacity of nation into military supply and logistics, able to sustain combat far overseas. There can be no exaggeration that the efforts in manufacture of the massive triage of inventory needed to keep an army mobile is overlooked, but ultimately affects every single person alive, from tiniest details of components right up to the construction of entire new factories. The need for central…",
+      "thumbnail": "https://archive.org/download/howamericawenttowar1_2611_librivox/gianthand_2611_thumb.jpg",
+      "duration": 23909,
+      "author": "Benedict Crowell, Robert Forrest Wilson",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Бизнес и экономика",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "Выберите главу и запишите три предложения: идея, пример из своей жизни, следующий шаг."
+    },
+    {
+      "id": "lv-book-22935",
+      "title": "History of the Great American Fortunes Vol. 3",
+      "url": "https://librivox.org/history-of-the-great-american-fortunes_vol-3-by-gustavus-myers/",
+      "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_01_myers_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-713944",
+          "title": "Chapter 1, Part 1",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_01_myers_64kb.mp3",
+          "duration": 1771
+        },
+        {
+          "id": "lv-713945",
+          "title": "Chapter 1, Part 2",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_02_myers_64kb.mp3",
+          "duration": 1521
+        },
+        {
+          "id": "lv-713946",
+          "title": "Chapter 2",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_03_myers_64kb.mp3",
+          "duration": 1871
+        },
+        {
+          "id": "lv-713947",
+          "title": "Chapter 3",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_04_myers_64kb.mp3",
+          "duration": 2266
+        },
+        {
+          "id": "lv-713948",
+          "title": "Chapter 4",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_05_myers_64kb.mp3",
+          "duration": 1624
+        },
+        {
+          "id": "lv-713949",
+          "title": "Chapter 5",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_06_myers_64kb.mp3",
+          "duration": 2184
+        },
+        {
+          "id": "lv-713950",
+          "title": "Chapter 6",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_07_myers_64kb.mp3",
+          "duration": 2199
+        },
+        {
+          "id": "lv-713951",
+          "title": "Chapter 7, Part 1",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_08_myers_64kb.mp3",
+          "duration": 1723
+        },
+        {
+          "id": "lv-713952",
+          "title": "Chapter 7, Part 2",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_09_myers_64kb.mp3",
+          "duration": 1309
+        },
+        {
+          "id": "lv-713953",
+          "title": "Chapter 8",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_10_myers_64kb.mp3",
+          "duration": 2581
+        },
+        {
+          "id": "lv-713954",
+          "title": "Chapter 9",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_11_myers_64kb.mp3",
+          "duration": 2418
+        },
+        {
+          "id": "lv-713955",
+          "title": "Chapter 10",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_12_myers_64kb.mp3",
+          "duration": 1735
+        },
+        {
+          "id": "lv-713956",
+          "title": "Chapter 11, Part 1",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_13_myers_64kb.mp3",
+          "duration": 2133
+        },
+        {
+          "id": "lv-713957",
+          "title": "Chapter 11, Part 2",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_14_myers_64kb.mp3",
+          "duration": 2065
+        },
+        {
+          "id": "lv-713958",
+          "title": "Chapter 12",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_15_myers_64kb.mp3",
+          "duration": 2456
+        },
+        {
+          "id": "lv-713959",
+          "title": "Chapter 13, Part 1",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_16_myers_64kb.mp3",
+          "duration": 1436
+        },
+        {
+          "id": "lv-713960",
+          "title": "Chapter 13, Part 2",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_17_myers_64kb.mp3",
+          "duration": 1542
+        },
+        {
+          "id": "lv-713961",
+          "title": "Chapter 14, Part 1",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_18_myers_64kb.mp3",
+          "duration": 2090
+        },
+        {
+          "id": "lv-713962",
+          "title": "Chapter 14, Part 2",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_19_myers_64kb.mp3",
+          "duration": 1785
+        },
+        {
+          "id": "lv-713963",
+          "title": "Chapter 14, Part 3",
+          "audio": "https://www.archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_20_myers_64kb.mp3",
+          "duration": 2097
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "History of the Great American Fortunes, Volume III by Gustavus Myers is the concluding volume of Myers’s three-part examination of how enormous fortunes were accumulated in the United States. Volume III argues that America's great fortunes were not simply the result of individual entrepreneurship or talent, but were built within a system that enabled powerful financiers and industrialists to accumulate extraordinary wealth and influence. Myers portrays the growing concentration of capital as being supported by corruption and favorable legislation, while ordinary citizens and workers bore much of the economic cost. - Summary by Celine Major",
+      "thumbnail": "https://archive.org/download/greatamericanfortunes_vol3_2610_librivox/historyofthegreatamericanfortunesvol3_2611_thumb.jpg",
+      "duration": 38806,
+      "author": "Gustavus Myers",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Бизнес и экономика",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "Выберите главу и запишите три предложения: идея, пример из своей жизни, следующий шаг."
+    },
+    {
+      "id": "lv-book-22830",
+      "title": "History of the Great American Fortunes Vol. 2",
+      "url": "https://librivox.org/history-of-the-great-american-fortunes-vol-2-by-gustavus-myers/",
+      "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_01_myers_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-710152",
+          "title": "Chapter 1, Part 1",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_01_myers_64kb.mp3",
+          "duration": 2204
+        },
+        {
+          "id": "lv-710153",
+          "title": "Chapter 1, Part 2",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_02_myers_64kb.mp3",
+          "duration": 1872
+        },
+        {
+          "id": "lv-710154",
+          "title": "Chapter 2, Part 1",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_03_myers_64kb.mp3",
+          "duration": 2316
+        },
+        {
+          "id": "lv-710155",
+          "title": "Chapter 2, Part 2",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_04_myers_64kb.mp3",
+          "duration": 2494
+        },
+        {
+          "id": "lv-710156",
+          "title": "Chapter 3, Part 1",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_05_myers_64kb.mp3",
+          "duration": 1628
+        },
+        {
+          "id": "lv-710157",
+          "title": "Chapter 3, Part 2",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_06_myers_64kb.mp3",
+          "duration": 1338
+        },
+        {
+          "id": "lv-710158",
+          "title": "Chapter 4",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_07_myers_64kb.mp3",
+          "duration": 2694
+        },
+        {
+          "id": "lv-710159",
+          "title": "Chapter 5, Part 1",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_08_myers_64kb.mp3",
+          "duration": 1899
+        },
+        {
+          "id": "lv-710160",
+          "title": "Chapter 5, Part 2",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_09_myers_64kb.mp3",
+          "duration": 1967
+        },
+        {
+          "id": "lv-710161",
+          "title": "hapter 6, Part 1",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_10_myers_64kb.mp3",
+          "duration": 1712
+        },
+        {
+          "id": "lv-710162",
+          "title": "Chapter 6, Part 2",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_11_myers_64kb.mp3",
+          "duration": 1627
+        },
+        {
+          "id": "lv-710163",
+          "title": "Chapter 7, Part 1",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_12_myers_64kb.mp3",
+          "duration": 1913
+        },
+        {
+          "id": "lv-710164",
+          "title": "Chapter 7, Part 2",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_13_myers_64kb.mp3",
+          "duration": 1726
+        },
+        {
+          "id": "lv-710165",
+          "title": "Chapter 8",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_14_myers_64kb.mp3",
+          "duration": 2181
+        },
+        {
+          "id": "lv-710166",
+          "title": "Chapter 9",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_15_myers_64kb.mp3",
+          "duration": 2066
+        },
+        {
+          "id": "lv-710167",
+          "title": "Chapter 10",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_16_myers_64kb.mp3",
+          "duration": 2279
+        },
+        {
+          "id": "lv-710168",
+          "title": "Chapter 11",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_17_myers_64kb.mp3",
+          "duration": 2467
+        },
+        {
+          "id": "lv-710169",
+          "title": "Chapter 12",
+          "audio": "https://www.archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_18_myers_64kb.mp3",
+          "duration": 1874
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "History of the Great American Fortunes by Gustavus Myers is a landmark early-20th-century critique of how immense wealth was accumulated in the United States. First published in three volumes between 1909 and 1910, the book examines the rise of powerful American fortunes—from colonial landowners to railroad magnates and industrial monopolists such as the Astors, Vanderbilts, Goulds, Morgans, and Rockefellers. He portrays America's great fortunes not as heroic tales of entrepreneurship but as case studies in systemic injustice, revealing how economic power was amassed not through ingenuity alone but through fraud, exploitation, land grabs, political influence, and manipulation of laws and…",
+      "thumbnail": "https://archive.org/download/historyofthegreatamericanfortunesvol2_2609_librivox/historyofthegreatamericanfortunesvol2_2609_thumb.jpg",
+      "duration": 36257,
+      "author": "Gustavus Myers",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Бизнес и экономика",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "Выберите главу и запишите три предложения: идея, пример из своей жизни, следующий шаг."
+    },
+    {
+      "id": "lv-book-22684",
+      "title": "History of the Great American Fortunes Vol. 1",
+      "url": "https://librivox.org/history-of-the-great-american-fortunes-vol-1-by-gustavus-myers/",
+      "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_00_myers_64kb.mp3",
+      "chapters": [
+        {
+          "id": "lv-704693",
+          "title": "Preface",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_00_myers_64kb.mp3",
+          "duration": 418
+        },
+        {
+          "id": "lv-704694",
+          "title": "P. 1 Chapter 1",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_01_myers_64kb.mp3",
+          "duration": 1255
+        },
+        {
+          "id": "lv-704695",
+          "title": "P. 1 Chapter 2",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_02_myers_64kb.mp3",
+          "duration": 2279
+        },
+        {
+          "id": "lv-704696",
+          "title": "P. 1 Chapter 3",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_03_myers_64kb.mp3",
+          "duration": 1258
+        },
+        {
+          "id": "lv-704697",
+          "title": "P. 1 Chapter 4",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_04_myers_64kb.mp3",
+          "duration": 845
+        },
+        {
+          "id": "lv-704698",
+          "title": "P. 1 Chapter 5",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_05_myers_64kb.mp3",
+          "duration": 1805
+        },
+        {
+          "id": "lv-704699",
+          "title": "P. 1 Chapter 6",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_06_myers_64kb.mp3",
+          "duration": 1171
+        },
+        {
+          "id": "lv-704700",
+          "title": "P. 2 Chapter 1",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_07_myers_64kb.mp3",
+          "duration": 1248
+        },
+        {
+          "id": "lv-704701",
+          "title": "P. 2 Chapter 2",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_08_myers_64kb.mp3",
+          "duration": 1646
+        },
+        {
+          "id": "lv-704702",
+          "title": "P. 2 Chapter 3-1",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_09_myers_64kb.mp3",
+          "duration": 1307
+        },
+        {
+          "id": "lv-704703",
+          "title": "P. 2 Chapter 3-2",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_10_myers_64kb.mp3",
+          "duration": 1645
+        },
+        {
+          "id": "lv-704704",
+          "title": "P. 2 Chapter 4-1",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_11_myers_64kb.mp3",
+          "duration": 1388
+        },
+        {
+          "id": "lv-704705",
+          "title": "P. 2 Chapter 4-2",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_12_myers_64kb.mp3",
+          "duration": 1437
+        },
+        {
+          "id": "lv-704706",
+          "title": "P. 2 Chapter 5",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_13_myers_64kb.mp3",
+          "duration": 2128
+        },
+        {
+          "id": "lv-704707",
+          "title": "P. 2 Chapter 6",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_14_myers_64kb.mp3",
+          "duration": 2368
+        },
+        {
+          "id": "lv-704708",
+          "title": "P. 2 Chapter 7",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_15_myers_64kb.mp3",
+          "duration": 1951
+        },
+        {
+          "id": "lv-704709",
+          "title": "P. 2 Chapter 8",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_16_myers_64kb.mp3",
+          "duration": 2184
+        },
+        {
+          "id": "lv-704710",
+          "title": "P. 2 Chapter 9",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_17_myers_64kb.mp3",
+          "duration": 1663
+        },
+        {
+          "id": "lv-704711",
+          "title": "P. 2 Chapter 10",
+          "audio": "https://www.archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_18_myers_64kb.mp3",
+          "duration": 1999
+        }
+      ],
+      "published": "2026-11-20T07:35:24Z",
+      "summary": "History of the Great American Fortunes by Gustavus Myers is a landmark early-20th-century critique of how immense wealth was accumulated in the United States. First published in three volumes between 1909 and 1910, the book examines the rise of powerful American fortunes—from colonial landowners to railroad magnates and industrial monopolists such as the Astors, Vanderbilts, Morgans, and Rockefellers. He portrays America's great fortunes not as heroic tales of entrepreneurship but as case studies in systemic injustice, revealing how economic power was amassed not through ingenuity alone but through fraud, exploitation, land grabs, political influence, and manipulation of laws and finance.…",
+      "thumbnail": "https://archive.org/download/greatamericanfortunesvol1_2607_librivox/greatamericanfortunesvol1_2607_thumb.jpg",
+      "duration": 29995,
+      "author": "Gustavus Myers",
+      "language_name": "English",
+      "rights": "Public domain · LibriVox",
+      "source": "LibriVox · Бизнес и экономика",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "audiobooks",
+      "action": "Выберите главу и запишите три предложения: идея, пример из своей жизни, следующий шаг."
+    },
+    {
+      "id": "audio-f02c0779ff8b76e4",
+      "title": "Most Replayed Moment: Why 3 Meals A Day Could Be Aging You! Harvard Longevity Scientist",
+      "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M4BHK8QYREX41SA3DWR2F959.mp3",
+      "audio": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M4BHK8QYREX41SA3DWR2F959.mp3",
+      "published": "2026-11-20T06:00:00Z",
+      "summary": "What if the way you eat is quietly deciding how fast you age? David Sinclair is a Professor of Genetics at Harvard Medical School, one of the world's leading researchers on ageing and longevity, and the author of the New York Times bestseller Lifespan: Why We Age and Why We Don't Have To. In this moment, David gives Steven a first-hand taste of what old age really feels like, and challenges what most of us assume about how long we'd actually want to live. He reveals the tiny \"bodyguards\" inside your cells that decide how quickly you age, the fasting window he aims for, the popular diet he's sceptical of, and the simple morning swap he made for his longevity. Listen to the full episode here!…",
+      "thumbnail": "https://files.flightcast.com/workspaces/edpmsc3wdznn1aa2txug5e3p/01M6PQN7ZAD8J9Y7J7FGCFTYZ1/square_cover_image.jpg",
+      "duration": 1661,
+      "source": "The Diary Of A CEO",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "После выпуска выберите одну привычку гостя и назначьте ей точное время в календаре."
+    },
+    {
+      "id": "audio-b1f6580e02f3e53e",
+      "title": "A letter to the end of time | Lau Noah",
+      "url": "http://go.ted.com/launoah",
+      "audio": "https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/6aff1debc1a867006b449928/media.mp3",
+      "published": "2026-11-19T16:56:31Z",
+      "summary": "You’ve likely never met composer Lau Noah, but she has a wish for you: that someday you’ll look back on your life and feel at peace. In a soulful performance that’s part concert, part story hour, she weaves together songs and short fables that celebrate love, friendship and the natural world. Hosted on Acast. See acast.com/privacy for more information.",
+      "thumbnail": "https://assets.pippa.io/shows/67587e77c705e441797aff96/show-cover.png",
+      "duration": 1184,
+      "source": "TED Talks Daily",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Выберите одну мысль спикера и запишите, где примените её в ближайшие сутки."
+    },
+    {
+      "id": "audio-7a1b95606d233886",
+      "title": "Bernie Sanders: Why He Says Netanyahu Pushed Trump Into the Iran War",
+      "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M719PD9WR55Y9X87NSQTFMXH.mp3?fcv=dxfmthh2zbd1xmds6jgkuewd",
+      "audio": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M719PD9WR55Y9X87NSQTFMXH.mp3?fcv=dxfmthh2zbd1xmds6jgkuewd",
+      "published": "2026-11-19T06:00:00Z",
+      "summary": "Can America's democracy still be saved at the ballot box, or has big money already bought the outcome? Senator Bernie Sanders joins to lay out what it will take to save American democracy, working families and the future of the Democratic Party. Senator Bernie Sanders is the longest-serving independent in U.S. congressional history and a two-time presidential candidate who ignited a modern political revolution. Through his bestselling book It's OK to Be Angry About Capitalism and national tours against oligarchy, he leads the charge to restore power to the working class. His ongoing movement challenges entrenched political and corporate monopolies to prove that government must serve human…",
+      "thumbnail": "https://files.flightcast.com/workspaces/edpmsc3wdznn1aa2txug5e3p/01M73HHVD36TCTEXEWJGEK5TR4/bernie_sanders_cover.jpg",
+      "duration": 5389,
+      "source": "The Diary Of A CEO",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "После выпуска выберите одну привычку гостя и назначьте ей точное время в календаре."
+    },
+    {
+      "id": "audio-9e94b4890ce782b4",
+      "title": "Jensen Huang: The Personal Cost of Building NVIDIA (April 2026)",
+      "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP8419655880.mp3",
+      "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP8419655880.mp3",
+      "published": "2026-11-19T05:00:00Z",
+      "summary": "Given recent news about Jensen Huang, we're revisiting this unusually personal conversation with the Nvidia co-founder and former CEO. Recorded in April 2026, before the revelations that led to his resignation, the interview offers a fuller picture of Jensen: his family, the sacrifices he made during 33 years leading the company, his demanding leadership style, and his views on the U.S., Taiwan, and AI. Nvidia is one of the most valuable companies in human history. Its chips run the AI systems transforming everything from entertainment to warfare. But for years, Jensen struggled to convince others of his vision. He spent nearly a decade pouring billions of dollars into a technology called…",
+      "thumbnail": "",
+      "duration": 4299,
+      "source": "How I Built This",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Найдите в истории основателя один проверяемый шаг и повторите его в масштабе своего проекта."
+    },
+    {
+      "id": "audio-937c45f34631b6c6",
+      "title": "The “godfather of AI” on the risks that worry him most | Geoffrey Hinton",
+      "url": "http://go.ted.com/GeoffreyHinton",
+      "audio": "https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/6afc7f5d22c8b5ded545df81/media.mp3",
+      "published": "2026-11-18T21:46:01Z",
+      "summary": "Geoffrey Hinton helped create the neural networks behind today’s AI, won a Nobel Prize for it — and has spent the years since warning about where it’s headed. In conversation with journalist Nicholas Thompson, Hinton shares the AI risks he’s worried about, sketches out a best-case future for the technology and explores whether or not chatbots have subjective experience. Plus: hear his thoughts on the one rule we must give superintelligent AI. Hosted on Acast. See acast.com/privacy for more information.",
+      "thumbnail": "https://assets.pippa.io/shows/67587e77c705e441797aff96/show-cover.png",
+      "duration": 1759,
+      "source": "TED Talks Daily",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Выберите одну мысль спикера и запишите, где примените её в ближайшие сутки."
+    },
+    {
+      "id": "audio-502088f404161325",
+      "title": "Exciting News: More How I Built This is on the Way!",
+      "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP5396536074.mp3",
+      "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP5396536074.mp3",
+      "published": "2026-11-18T08:10:00Z",
+      "summary": "Guy shares what’s next for How I Built This, including a brand-new YouTube channel and a bigger weekly lineup ahead: Rest of 2026: A new episode every Monday (in audio and video) and an archive favorite every Thursday. Starting January: Three episodes a week: two new founder interviews (in audio and video) plus never-before-seen video versions of classic episodes on Fridays. Listen wherever you get your podcasts, or subscribe to our all-new YouTube channel: https://www.youtube.com/@howibuiltthis Learn more about your ad choices. Visit podcastchoices.com/adchoices",
+      "thumbnail": "",
+      "duration": 62,
+      "source": "How I Built This",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Найдите в истории основателя один проверяемый шаг и повторите его в масштабе своего проекта."
+    },
+    {
+      "id": "audio-35fb1dcf83b6f13a",
+      "title": "Two ways big bets on data centers might affect you (Two Indicators)",
+      "url": "https://www.npr.org/2026/11/18/nx-s1-6044772/data-center-debt-deals-investment",
+      "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/b19ce1fb-95ca-4339-9f74-93cd72d20032/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=b19ce1fb-95ca-4339-9f74-93cd72d20032&feed=hvWWWzRv&t=podcast&e=nx-s1-6044772&p=510289&d=1108&size=17739090",
+      "published": "2026-11-18T08:00:00Z",
+      "summary": "Your money might be fueling the AI boom … just as some AI data center bets are starting to look riskier. If you own stocks, that money is likely tied up in giant tech companies like Microsoft and Nvidia. And if your 401(k) has money invested in the US bond fund, you might be lending tech companies the money to build data centers. Today on the show, two stories from our short daily podcast The Indicator from Planet Money on how risky these data center bets are for investors and the companies making them. And, of course, for all of us. Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life Our weekly longform Planet Money newsletter Our weekly Indicator round-up…",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2F98%2Ff3%2F6e7481a743e7b1f4315991a68cb5%2F1c4d3c72-935c-4a1a-8e09-8b45a531fe89.png",
+      "duration": 1108,
+      "source": "Planet Money",
+      "topic": "Деньги",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Запишите один экономический механизм из выпуска и проверьте, где он проявляется в ваших расходах или бизнесе."
+    },
+    {
+      "id": "audio-59ec802f450a5298",
+      "title": "My search for proof aliens exist | Avi Loeb (re-release)",
+      "url": "http://go.ted.com/AviLoeb",
+      "audio": "https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/6afb5767f1fb73f380bc6633/media.mp3",
+      "published": "2026-11-17T15:00:00Z",
+      "summary": "Why have we not yet found proof of alien life? According to astrophysicist Avi Loeb, we simply haven't dedicated the proper resources. Diving into unidentified phenomena such as the Oumuamua asteroid, he explores his scientific search for extraterrestrial technology, envisioning a future where a higher interstellar intelligence helps us improve life here on Earth. Hosted on Acast. See acast.com/privacy for more information.",
+      "thumbnail": "https://assets.pippa.io/shows/67587e77c705e441797aff96/show-cover.png",
+      "duration": 1293,
+      "source": "TED Talks Daily",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Выберите одну мысль спикера и запишите, где примените её в ближайшие сутки."
+    },
+    {
+      "id": "audio-c4d49afe17424e15",
+      "title": "What you hear when you stop talking | John Lloyd",
+      "url": "http://go.ted.com/JohnLloyd",
+      "audio": "https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/6af7358772c084b0516a29b5/media.mp3",
+      "published": "2026-11-16T15:47:13Z",
+      "summary": "Scientists have estimated how many colors we can see and how many scents we can smell … but director John Lloyd can’t find anyone who has counted how many sounds we can hear. Drawing on a legendary career in radio, film and TV, he makes a funny case for paying closer attention to sound — and for listening more than you talk. (Plus: find out why almost every frog noise you hear in movies sounds the same.) Hosted on Acast. See acast.com/privacy for more information.",
+      "thumbnail": "https://assets.pippa.io/shows/67587e77c705e441797aff96/show-cover.png",
+      "duration": 765,
+      "source": "TED Talks Daily",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Выберите одну мысль спикера и запишите, где примените её в ближайшие сутки."
+    },
+    {
+      "id": "audio-7367d347d84f4bae",
+      "title": "Good Culture: How Jesse Merrill Made Cottage Cheese Cool",
+      "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7035807570.mp3",
+      "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7035807570.mp3",
+      "published": "2026-11-16T08:10:00Z",
+      "summary": "Jesse Merrill wanted to make movies. Instead, he made cottage cheese cool—and built a business with more than $200 million in annual sales. Jesse got his start fetching coffee on the set of Jackass and handing out product samples for extra cash. After helping build Moby’s tea brand and grow Honest Tea, he teamed up with cofounder Anders Eisner to reinvent cottage cheese. But Good Culture got off to a rocky start. The first batch came out soupy. Shoppers mistook it for yogurt. And Jesse had just 30 days to sell his inventory at Whole Foods or risk paying for what didn't sell. Then a cottage cheese ice cream recipe went viral on TikTok, introducing millions of people to a food they'd long…",
+      "thumbnail": "",
+      "duration": 4696,
+      "source": "How I Built This",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Найдите в истории основателя один проверяемый шаг и повторите его в масштабе своего проекта."
+    },
+    {
+      "id": "audio-f3948480608211bd",
+      "title": "Nvidia Spy Scandal: What Trump Was Told and When | John Kiriakou",
+      "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M765ZSNB27M9KYEYV98QHT3M.mp3?fcv=xcwwr3mfkf6d3n952cw4wqmc",
+      "audio": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M765ZSNB27M9KYEYV98QHT3M.mp3?fcv=xcwwr3mfkf6d3n952cw4wqmc",
+      "published": "2026-11-16T06:00:00Z",
+      "summary": "How did Jensen Huang CEO of Nvidia the world's most critical AI company fall victim to a multi billion dollar intelligence trap? Former CIA officer John Kiriakou and former Russian operative Aliia Roza expose the dark reality of spies, honeypot operations and espionage; revealing the exact psychological tradecraft used to compromise powerful targets. John Kiriakou is a former CIA officer who managed global intelligence operations, and Aliia Roza is a former Russian spy subjected to intensive military training in human psychology and seduction. Today, Kiriakou is a published author and Roza leverages her large social media platform to teach civilians how to spot covert manipulation and…",
+      "thumbnail": "https://files.flightcast.com/workspaces/edpmsc3wdznn1aa2txug5e3p/01M78M9ZKRPHVMQAV3XKH9WNBY/kiriakou.jpg",
+      "duration": 7468,
+      "source": "The Diary Of A CEO",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "После выпуска выберите одну привычку гостя и назначьте ей точное время в календаре."
+    },
+    {
+      "id": "audio-5689dff5fa737cc1",
+      "title": "The digital detectives preserving the truth of war | Hadi Al Khatib",
+      "url": "http://go.ted.com/hadialkhatib",
+      "audio": "https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/6af5f8aa43d8776fbbb21b36/media.mp3",
+      "published": "2026-11-14T07:00:00Z",
+      "summary": "A lot of today’s war footage is shot on phones and posted to platforms that were never meant to permanently store it. Digital archivist and TED Fellow Hadi Al Khatib founded Mnemonic to save these photos and videos before they vanish. Learn how his team is turning people’s social media posts into evidence of crimes that holds up in court — and building an archive that ensures the truth outlasts the war. (Note: this film contains disturbing footage of war.) Hosted on Acast. See acast.com/privacy for more information.",
+      "thumbnail": "https://assets.pippa.io/shows/67587e77c705e441797aff96/show-cover.png",
+      "duration": 2548,
+      "source": "TED Talks Daily",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Выберите одну мысль спикера и запишите, где примените её в ближайшие сутки."
+    },
+    {
+      "id": "audio-aeb05d1b2927c2b0",
+      "title": "Are wildfires making the future uninsurable?",
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6040434/california-wildfires-home-insurance",
+      "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/4bb23a81-c77c-46d0-a3bc-f001ff4783d0/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=4bb23a81-c77c-46d0-a3bc-f001ff4783d0&feed=hvWWWzRv&t=podcast&e=nx-s1-6040434&p=510289&d=2470&size=39525630",
+      "published": "2026-11-13T23:49:12Z",
+      "summary": "Over the past decade, increasingly catastrophic wildfires have wrought unprecedented destruction and upended the basic math of the insurance industry. In some of the riskiest parts of the country, homeowners have seen spiking premiums or lost their coverage altogether. Today on the show, we travel to the forested foothills of Northern California to see how communities in wildfire-prone areas are trying to conjure the private insurance market back into existence. What actually happens when a megafire comes knocking at your door. And what all this means for the biggest question: In the age of climate change, could the future simply become uninsurable? For more about how natural disasters are…",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F85%2F31%2F2ecc11054ea0aa3da0dd0cb45160%2F8c4935cb-764c-48fe-a4d6-921dfd766dd8.png",
+      "duration": 2470,
+      "source": "Planet Money",
+      "topic": "Деньги",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Запишите один экономический механизм из выпуска и проверьте, где он проявляется в ваших расходах или бизнесе."
+    },
+    {
+      "id": "audio-a37bcd91853f3ec8",
+      "title": "An epidemiologist's guide to good health advice",
+      "url": "https://www.npr.org/2026/11/13/nx-s1-6035796/an-epidemiologists-guide-to-good-health-advice",
+      "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510298/npr.simplecastaudio.com/e19460b8-b905-4bd2-9062-cea3c0ab9405/episodes/7f77890e-86aa-414a-a345-5c5db9e91fba/audio/128/default.mp3?awCollectionId=e19460b8-b905-4bd2-9062-cea3c0ab9405&awEpisodeId=7f77890e-86aa-414a-a345-5c5db9e91fba&feed=gGUt_fS1&t=podcast&e=nx-s1-6035796&p=510298&d=2977&size=47639032",
+      "published": "2026-11-13T08:00:00Z",
+      "summary": "Bad medical advice is everywhere, from TikTok to chatbots. Epidemiologist Jessica Malaty Rivera is fighting back. This hour, how she’s taking on the internet and helping us figure out who to trust. See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=https%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fae%2Fa6%2F4bd67d484736b2d7e9aa6e88e866%2Fb5e502fc-6c26-4306-8760-8df9ba22cfb2.jpg",
+      "duration": 2977,
+      "source": "TED Radio Hour",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Запишите одну идею из лекции и превратите её в действие на 15 минут сегодня."
+    },
+    {
+      "id": "audio-b234305ca7684172",
+      "title": "Most Replayed Moment: The Childhood Scripts Still Running Your Life! Chase Hughes",
+      "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M4BH7NBHMF5N7XTD55NJQGSG.mp3",
+      "audio": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M4BH7NBHMF5N7XTD55NJQGSG.mp3",
+      "published": "2026-11-13T06:00:00Z",
+      "summary": "What if your \"authentic self\" was actually shaped by an 8-year-old? Chase Hughes is a former US Navy behaviour expert and #1 bestselling author of Six-Minute X-Ray, known for teaching intelligence agencies, police and elite teams how to profile, read and influence human behaviour. In this moment, Chase reveals the three childhood \"contracts\" quietly running your relationships, career and conflicts, and the uncomfortable daily exercise that pushed one client to finally break free. He also explains how the same tactic used by hypnotists and cult leaders can be turned to your advantage, and the four forces that hijack your attention every time you scroll. Listen to the full episode here!…",
+      "thumbnail": "https://files.flightcast.com/workspaces/edpmsc3wdznn1aa2txug5e3p/01M6PQH6XHC5PMMR14KJBZC07X/square_cover_image.jpg",
+      "duration": 1409,
+      "source": "The Diary Of A CEO",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "После выпуска выберите одну привычку гостя и назначьте ей точное время в календаре."
+    },
+    {
+      "id": "audio-2523b117bcf52700",
+      "title": "What Are The Five Lifestyle Habits Destroying Your Brain Right Now?",
+      "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M5WPEV7GSE7H752YSF2T3WA3.mp3?fcv=hs4wgt5v7blybw4dlvrji2hz",
+      "audio": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M5WPEV7GSE7H752YSF2T3WA3.mp3?fcv=hs4wgt5v7blybw4dlvrji2hz",
+      "published": "2026-11-12T06:00:00Z",
+      "summary": "What if the decline of your cognitive function isn't a genetic inevitability, but a metabolic choice you’re making every single day? Board-certified neurologist Dr. David Perlmutter discusses cognitive decay and outlines the definitive protocol for lifelong brain health and dementia prevention. Dr. David Perlmutter is a pioneering researcher who radically challenged the medical establishment by linking metabolic dysfunction to severe neurodegenerative diseases. He is the author of several groundbreaking texts, including his most recent release, Brain Defenders. This project aims to empower individuals to regain agency over their longevity by harnessing the brain's immune system to reverse…",
+      "thumbnail": "https://files.flightcast.com/workspaces/edpmsc3wdznn1aa2txug5e3p/01M67JBAHKJ07QE6CCKYMSZ01F/perlmutter_cover.jpg",
+      "duration": 6962,
+      "source": "The Diary Of A CEO",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "После выпуска выберите одну привычку гостя и назначьте ей точное время в календаре."
+    },
+    {
+      "id": "audio-a9d35d2826f858f8",
+      "title": "Panera: Ron Shaich. The Big Bet That Changed Fast Food (2018)",
+      "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7917788157.mp3",
+      "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7917788157.mp3",
+      "published": "2026-11-12T05:00:00Z",
+      "summary": "In the early 1980s, Ron Shaich took over Au Bon Pain, a struggling group of Boston bakeries, and helped grow it into a national chain with 250 locations. But Ron saw an even bigger opportunity in a small bakery chain in St. Louis. So he made a remarkable gamble: he sold Au Bon Pain to focus entirely on what would become Panera Bread. That bet helped transform the way Americans eat—and turned Panera into a multibillion-dollar business. What You’ll Learn How customers asking for sliced baguettes helped Ron discover a bigger business in sandwiches What he saw in a 19-store bakery chain with surprisingly low real estate costs Why Ron sold Au Bon Pain after building it into a national chain to…",
+      "thumbnail": "",
+      "duration": 2445,
+      "source": "How I Built This",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Найдите в истории основателя один проверяемый шаг и повторите его в масштабе своего проекта."
+    },
+    {
+      "id": "audio-f21a40ae9cccc89a",
+      "title": "How bodegas led to the Yemeni coffeehouse explosion",
+      "url": "https://www.npr.org/2026/11/11/nx-s1-6036839/yemeni-coffee-house-bodega-immigrant-entrepreneur",
+      "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7&feed=hvWWWzRv&t=podcast&e=nx-s1-6036839&p=510289&d=1441&size=23060985",
+      "published": "2026-11-11T13:03:29Z",
+      "summary": "There is a long-standing tradition of different immigrant groups arriving in the U.S. and specializing in one particular type of business. Think, nail salons run by people from Vietnam or Gujarati Indians owning motels and hotels. Yemenis are another immigrant community that has largely clustered around one industry, in their case, bodegas and small grocery stores. There are thousands of these shops all over the country, despite Yemeni-Americans only making up around one-fortieth of one percent of the U.S. population, according to the last census. In the past 9 years, a new business success story has been built on top of that foundation: Yemeni coffee houses. Today on the show, why some…",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F23%2F2d%2F81d23f63425ea538fa5a6e1626cb%2Ff53ccc25-2d8b-4411-99b8-256bdafe750a.jpg",
+      "duration": 1441,
+      "source": "Planet Money",
+      "topic": "Деньги",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Запишите один экономический механизм из выпуска и проверьте, где он проявляется в ваших расходах или бизнесе."
+    },
+    {
+      "id": "audio-f34690f1b0441d32",
+      "title": "Dr. Squatch: Jack Haldrup. From a Closet Full of Soap to a $1.5 Billion Brand",
+      "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP1750831437.mp3",
+      "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP1750831437.mp3",
+      "published": "2026-11-09T08:10:00Z",
+      "summary": "Jack Haldrup didn’t set out to build a billion-dollar company. He just wanted a way out of consulting and a bar of soap he actually liked. After developing psoriasis, Jack started paying closer attention to the products he used on his skin. A chance purchase at a farmers market introduced him to handmade soap and sparked a business idea. With just $1,500, he launched an online soap company, shipping orders from his closet. Eventually, his mom took over fulfillment from his childhood bedroom. But growing the company meant navigating a trademark dispute, a painful split with a lifelong friend and business partner, and rising expenses that forced Jack to cut staff and rethink the business.…",
+      "thumbnail": "",
+      "duration": 4813,
+      "source": "How I Built This",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Найдите в истории основателя один проверяемый шаг и повторите его в масштабе своего проекта."
+    },
+    {
+      "id": "audio-b2662992b6b5ac66",
+      "title": "Katt Williams: I Lied My Way Into Comedy! List The 300 People Ahead Of You, Then Outwork Each One!",
+      "url": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M5NXYQ8N5Z6RJ5HCHS2231BM.mp3?fcv=fpjovn6arqw632afph46em5m",
+      "audio": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M5NXYQ8N5Z6RJ5HCHS2231BM.mp3?fcv=fpjovn6arqw632afph46em5m",
+      "published": "2026-11-09T06:00:00Z",
+      "summary": "Are you waiting for the perfect circumstances to pursue greatness, or using your past as an excuse to avoid hard work? Legendary comedian Katt Williams reveals the story of his childhood and the mindset that turned a 13-year-old runaway into an entertainment icon. Katt Williams is an Emmy Award-winning stand-up comedian, actor, and writer, widely regarded as one of the most prolific and distinctive voices in modern comedy. Beyond his massive success on stage and screen, he is the author of a deeply revealing memoir detailing his extraordinary ascent from homelessness. In this episode, he explains: ■ The Medicine of Humor: How discovering comedy provided an immediate escape from severe…",
+      "thumbnail": "https://files.flightcast.com/workspaces/edpmsc3wdznn1aa2txug5e3p/01M5WX4TBGEY5AMKEH0PQSDGK2/katt_williams_ep_cover.jpg",
+      "duration": 6608,
+      "source": "The Diary Of A CEO",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "После выпуска выберите одну привычку гостя и назначьте ей точное время в календаре."
+    },
+    {
+      "id": "audio-c74ea893f9944483",
+      "title": "Inside the insurance industry’s destruction lab",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6032860/fire-insurance-industry-destruction-lab",
+      "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/1e049bd1-7af5-4822-bae2-28d526ef53fd/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=1e049bd1-7af5-4822-bae2-28d526ef53fd&feed=hvWWWzRv&t=podcast&e=nx-s1-6032860&p=510289&d=1943&size=31091653",
+      "published": "2026-11-06T22:30:00Z",
+      "summary": "When you think of someone burning down a house for insurance purposes, you don’t imagine it would ever be the insurance company itself lighting the match. But that’s essentially what’s happening inside a giant destruction laboratory, funded by the insurance industry, in the woods of South Carolina. Scientists and engineers there build household structures — from decks to sheds to single family homes — and subject them to literal trials by fire, hail, and hurricane force wind. It’s all in hopes of determining which building materials and techniques will make communities across the country more resilient to natural disasters and make those natural disasters less expensive for insurance…",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F95%2F35%2Fb5f14c2c4af8a5ae7ef9a152a7f2%2F95dcddac-1f04-4dc3-8f92-1132c8be0166.png",
+      "duration": 1943,
+      "source": "Planet Money",
+      "topic": "Деньги",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Запишите один экономический механизм из выпуска и проверьте, где он проявляется в ваших расходах или бизнесе."
+    },
+    {
+      "id": "audio-88f6a6508335f828",
+      "title": "Escaping the modern world and your noisy mind",
+      "url": "https://www.npr.org/2026/11/06/nx-s1-6030663/escaping-the-modern-world-and-your-noisy-mind",
+      "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510298/npr.simplecastaudio.com/e19460b8-b905-4bd2-9062-cea3c0ab9405/episodes/9cb070f4-7480-48ec-b995-ebce220b0ae4/audio/128/default.mp3?awCollectionId=e19460b8-b905-4bd2-9062-cea3c0ab9405&awEpisodeId=9cb070f4-7480-48ec-b995-ebce220b0ae4&feed=gGUt_fS1&t=podcast&e=nx-s1-6030663&p=510298&d=2979&size=47673305",
+      "published": "2026-11-06T08:00:00Z",
+      "summary": "How do you find the courage to leave the world you know and make your way to a completely different reality? This episode, TED speakers share ideas about escape and renewal. Guests include author Pico Iyer, NXIVM whistleblower Sarah Edmondson, captain and navigator Lehua Kamalu and TV producer and screenwriter Shonda Rhimes. Original broadcast date: June 13, 2025 See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x2000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8b%2F8d%2Ffd9696584bd08e083e2ea9753562%2Fa31577a7-fcf9-40e5-9a66-732c70378013.jpg",
+      "duration": 2979,
+      "source": "TED Radio Hour",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Запишите одну идею из лекции и превратите её в действие на 15 минут сегодня."
+    },
+    {
+      "id": "audio-99809ceb805e582e",
+      "title": "Dell Computers: Michael Dell. The College Dropout Who Took on IBM (2018)",
+      "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP4247798433.mp3",
+      "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP4247798433.mp3",
+      "published": "2026-11-05T08:10:00Z",
+      "summary": "Michael Dell was building a tech business in his dorm room long before it became a familiar startup story. In 1983, the UT Austin student began selling PC upgrade kits. Within months, he left college to devote himself to the business. When Dell entered the Fortune 500 in 1992, Michael was just 27—the youngest CEO on the list. In this episode, Michael explains how a teenage job selling newspaper subscriptions taught him to find customers, why he abandoned plans to become a doctor, and how Dell became a global powerhouse in computing technology. He also shares what he learned from the mistakes that came with building a business so quickly. What You'll Learn How Dell sold computers for half…",
+      "thumbnail": "",
+      "duration": 2808,
+      "source": "How I Built This",
+      "topic": "Бизнес",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Найдите в истории основателя один проверяемый шаг и повторите его в масштабе своего проекта."
+    },
+    {
+      "id": "audio-12edbe8cbe800579",
+      "title": "The history of light (classic)",
+      "url": "https://www.npr.org/2026/11/04/nx-s1-6027986/william-nordhaus-yale-nobel-obituary-history-light",
+      "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/df5d68e4-3e3f-4c21-81f1-66dfd11e3193/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=df5d68e4-3e3f-4c21-81f1-66dfd11e3193&feed=hvWWWzRv&t=podcast&e=nx-s1-6027986&p=510289&d=1266&size=20264002",
+      "published": "2026-11-04T08:00:00Z",
+      "summary": "How do you measure human progress? Light is the answer. For thousands of years, getting light was a huge hassle. You had to make candles from scratch. This is not as romantic as it sounds. You had to get a cow, raise the cow, feed the cow, kill the cow, get the fat out of the cow, cook the fat, dip wicks into the fat. All that — for not very much light. Now, if we want to light a whole room, we just flip a switch. Nobel-winning economist Bill Nordhaus passed away last week. He was known for his work on the economics of climate change, but he also came up with this idea that the history of light explains reveals why the world today is the way it is. It explains why we aren't all subsistence…",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F55%2F03%2F72db2eb54e4f936849c599165ce1%2F42ac82ac-214e-498a-9545-48a6185a2302.jpg",
+      "duration": 1266,
+      "source": "Planet Money",
+      "topic": "Деньги",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Запишите один экономический механизм из выпуска и проверьте, где он проявляется в ваших расходах или бизнесе."
+    },
+    {
+      "id": "audio-34d3fbe392b77793",
+      "title": "Is this how the great international borrowing spree ends?",
+      "url": "https://www.npr.org/2026/10/30/nx-s1-6023794/france-protests-students-bonds-debt",
+      "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/da5ac6fe-f193-4ead-991e-b95e74c47923/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=da5ac6fe-f193-4ead-991e-b95e74c47923&feed=hvWWWzRv&t=podcast&e=nx-s1-6023794&p=510289&d=1551&size=24826026",
+      "published": "2026-10-31T00:15:00Z",
+      "summary": "In recent months, there have been serious whispers about an outrageous possibility: that one day soon, France — the seventh largest economy in the world — might not be able to pay back its debts. Right now, protesters in France are complaining about crumbling schools, the lack of teachers, and the overall high cost of living. But the government is struggling to find the money to address all the country’s problems. France is in a lot of debt. It has been borrowing record amounts of money. So have many other countries including the U.S., the U.K., Italy, Canada. For more than a decade, there has been an international borrowing spree going on. Now, as interest rates climb, that borrowing spree…",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F51%2F50%2F6b4046ef4f3dbca99f2cc6906985%2Fsquare.jpg",
+      "duration": 1551,
+      "source": "Planet Money",
+      "topic": "Деньги",
+      "lang": "en",
+      "kind": "podcasts",
+      "action": "Запишите один экономический механизм из выпуска и проверьте, где он проявляется в ваших расходах или бизнесе."
+    },
+    {
+      "id": "audio-cca95f7a14027acb",
+      "title": "Can curiosity save the wild?",
+      "url": "https://www.npr.org/2026/10/30/nx-s1-6020932/can-curiosity-save-the-wild",
+      "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510298/npr.simplecastaudio.com/e19460b8-b905-4bd2-9062-cea3c0ab9405/episodes/6f98e092-7327-4f5a-8923-711abecd27a5/audio/128/default.mp3?awCollectionId=e19460b8-b905-4bd2-9062-cea3c0ab9405&awEpisodeId=6f98e092-7327-4f5a-8923-711abecd27a5&feed=gGUt_fS1&t=podcast&e=nx-s1-6020932&p=510298&d=2979&size=47668706",
+      "published": "2026-10-30T07:00:00Z",
+      "summary": "How do we inspire people to care about wild animals without disrupting their lives? This hour, two surprising approaches to getting to know wildlife — and rethinking what it means to protect it. Guests include conservationist Maya Higa and computational linguist Jeffery Reed. Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1080x1080+420+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2Fd9%2Fafd6e0a54db0b4ceeea459eafe2b%2F4719c4bb-9350-4c17-b08c-8af00ddac05c.jpg",
+      "duration": 2979,
+      "source": "TED Radio Hour",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Запишите одну идею из лекции и превратите её в действие на 15 минут сегодня."
+    },
+    {
+      "id": "audio-faf407930c56c850",
+      "title": "How we experience time",
+      "url": "https://www.npr.org/2026/10/23/nx-s1-6010864/how-we-experience-time",
+      "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510298/npr.simplecastaudio.com/e19460b8-b905-4bd2-9062-cea3c0ab9405/episodes/8849e173-e608-4e2e-9514-16275040d7b7/audio/128/default.mp3?awCollectionId=e19460b8-b905-4bd2-9062-cea3c0ab9405&awEpisodeId=8849e173-e608-4e2e-9514-16275040d7b7&feed=gGUt_fS1&t=podcast&e=nx-s1-6010864&p=510298&d=2981&size=47698799",
+      "published": "2026-10-23T07:00:00Z",
+      "summary": "Why does one hour drag by, but a year can pass in a flash? And how does our relationship with time influence our behavior? This hour, TED speakers share ideas on making the most of the time we have. Guests include artist Katie Paterson, cognitive neuroscientist Irena Arslanova, the late music director Robert Franz and the late psychologist Philip Zimbardo. Original broadcast date: May 16, 2025 Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship…",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F92%2Fcf%2Fa71696ad4706823bac78c8e08b94%2Ff71146fb-3d17-42da-ae0d-739da05abcc9.jpg",
+      "duration": 2981,
+      "source": "TED Radio Hour",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Запишите одну идею из лекции и превратите её в действие на 15 минут сегодня."
+    },
+    {
+      "id": "audio-e55c1041aba504c1",
+      "title": "Have we forgotten how to play?",
+      "url": "https://www.npr.org/2026/10/16/nx-s1-6001767/have-we-forgotten-how-to-play",
+      "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510298/npr.simplecastaudio.com/e19460b8-b905-4bd2-9062-cea3c0ab9405/episodes/f5fee0c8-3954-426f-aa1e-f71315973eb5/audio/128/default.mp3?awCollectionId=e19460b8-b905-4bd2-9062-cea3c0ab9405&awEpisodeId=f5fee0c8-3954-426f-aa1e-f71315973eb5&feed=gGUt_fS1&t=podcast&e=nx-s1-6001767&p=510298&d=2979&size=47666199",
+      "published": "2026-10-16T07:00:00Z",
+      "summary": "Play is how we evolved to learn, solve problems, and navigate the world. So why do we treat it as optional? This hour, the science of play — and what happens when we don’t get enough of it. Guests include psychology researcher Peter Gray, sailor and social activist Tracy Edwards and photographer Stefen Chow. Support public media with NPR+ and enjoy perks for over 25 podcasts like this one. This show’s perks include sponsor-free listening. Learn more at plus.npr.org . See pcm.adswizz.com for information about our collection and use of personal data for sponsorship and to manage your podcast sponsorship preferences. NPR Privacy Policy",
+      "thumbnail": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbe%2F4b%2F7aabc73241018722c600e47187bc%2F785222c2-90af-4fe0-95bb-1900546e5826.jpg",
+      "duration": 2979,
+      "source": "TED Radio Hour",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Запишите одну идею из лекции и превратите её в действие на 15 минут сегодня."
+    },
+    {
+      "id": "audio-ed4b299ba1994385",
+      "title": "Sunday Pick: What happens to sex in midlife? A look at the \"bedroom gap\" | TED Health",
+      "url": "https://audiocollective.ted.com/",
+      "audio": "https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/67e56ba8bf74401b771732f2/media.mp3",
+      "published": "2025-03-30T06:00:00Z",
+      "summary": "Menopause isn't just hot flashes, says gynecologist and sexual medicine specialist Maria Sophocles. It's often accompanied by overlooked symptoms like painful sex or loss of libido. Shedding light on what she calls the \"bedroom gap,\" or the difference in sexual expectations of men and women in midlife due to societal norms, Sophocles advocates for education, medical advancement and a new understanding of menopause — because sex should be pleasurable and comfortable for everyone. After the talk, join Shoshana for a conversation with OB/GYN and women’s health advocate Dr. Jessica Shepherd. Hosted on Acast. See acast.com/privacy for more information.",
+      "thumbnail": "https://assets.pippa.io/shows/67587e77c705e441797aff96/show-cover.png",
+      "duration": 2134,
+      "source": "TED Talks Daily",
+      "topic": "Мотивация",
+      "lang": "en",
+      "kind": "lectures",
+      "action": "Выберите одну мысль спикера и запишите, где примените её в ближайшие сутки."
+    },
+    {
+      "id": "audio-97905ec6da8d4d8a",
+      "title": "Будущее криптовалют. Куда инвестировать, инсайд! Николай Удянский | BIG MONEY #145",
+      "url": "https://bigmoney.podster.fm/115",
+      "audio": "https://bigmoney.podster.fm/115/download/audio.mp3?media=rss",
+      "published": "2022-02-19T14:44:19Z",
+      "summary": "В гостях у BIG MONEY Николай Удянский — основатель компании «Prof-it» — основатель криптобиржи «Coinsbit» — президент холдинга «Ehold — совладелец медиа-холдинга «Parliament Media Group» — участник рейтинга топ-100 богатейших украинцев по версии «Forbes» Компания «Prof-it» — создатели форка Биткоина — «Bitcoin Ultimatum» — разработчики 7-ми криптовалютных бирж, под ключ, каждая из которых входит в топ-100 мировых — разработчики системы автоматизации бизнес-процессов и решения для финансовых компаний, веб и мобильных приложений для IOS и Android",
+      "thumbnail": "https://i.podster.fm/img/258039/size/default/258039-1.jpg",
+      "duration": 5117,
+      "source": "BIG MONEY",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "kind": "podcasts",
+      "action": "Выпишите один совет гостя, одно своё сомнение и один способ проверить совет на практике."
+    },
+    {
+      "id": "audio-444b6709031f0945",
+      "title": "Будущее корпоративных предпринимателей Михаил Фридман | Big Money #142",
+      "url": "https://bigmoney.podster.fm/114",
+      "audio": "https://bigmoney.podster.fm/114/download/audio.mp3?v=2&media=rss",
+      "published": "2021-12-03T11:19:34Z",
+      "summary": "В гостях у BigMoney Михаил Фридман — совладелец и председатель наблюдательного совета «Альфа-Групп», основатель и председатель совета директоров инвестиционной группы LetterOne Holdings, а также член совета директоров X5 Group.",
+      "thumbnail": "https://i.podster.fm/img/255274/size/default/255274-1.jpg",
+      "duration": 6148,
+      "source": "BIG MONEY",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "kind": "podcasts",
+      "action": "Выпишите один совет гостя, одно своё сомнение и один способ проверить совет на практике."
+    },
+    {
+      "id": "audio-e24da3ab8325afca",
+      "title": "VELTA. Сырьевой бизнес без влияния государства | BigMoney #126",
+      "url": "https://bigmoney.podster.fm/113",
+      "audio": "https://bigmoney.podster.fm/113/download/audio.mp3?media=rss",
+      "published": "2021-10-07T08:42:14Z",
+      "summary": "",
+      "thumbnail": "",
+      "duration": 3735,
+      "source": "BIG MONEY",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "kind": "podcasts",
+      "action": "Выпишите один совет гостя, одно своё сомнение и один способ проверить совет на практике."
+    },
+    {
+      "id": "audio-c9f19286c178cbbd",
+      "title": "Владимир Тарасов: бизнес в эпоху неопределенности и секрет успеха людей из Forbes | BigMoney #125",
+      "url": "https://bigmoney.podster.fm/112",
+      "audio": "https://bigmoney.podster.fm/112/download/audio.mp3?media=rss",
+      "published": "2021-07-02T08:12:17Z",
+      "summary": "",
+      "thumbnail": "",
+      "duration": 1972,
+      "source": "BIG MONEY",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "kind": "podcasts",
+      "action": "Выпишите один совет гостя, одно своё сомнение и один способ проверить совет на практике."
+    },
+    {
+      "id": "audio-0bb90c0e8fb308a2",
+      "title": "26 отелей без собственных вложений с оборотом $8 миллионов. Ribas Hotels | BigMoney #123",
+      "url": "https://bigmoney.podster.fm/111",
+      "audio": "https://bigmoney.podster.fm/111/download/audio.mp3?media=rss",
+      "published": "2021-05-28T07:54:35Z",
+      "summary": "",
+      "thumbnail": "",
+      "duration": 3426,
+      "source": "BIG MONEY",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "kind": "podcasts",
+      "action": "Выпишите один совет гостя, одно своё сомнение и один способ проверить совет на практике."
+    },
+    {
+      "id": "audio-cb0bef4fbc7b0d82",
+      "title": "Как правильно вести переговоры? Какие главные качества для ТОП менеджера? Игорь Ланда. BigMoney #122",
+      "url": "https://bigmoney.podster.fm/110",
+      "audio": "https://bigmoney.podster.fm/110/download/audio.mp3?media=rss",
+      "published": "2021-05-07T07:49:07Z",
+      "summary": "",
+      "thumbnail": "",
+      "duration": 4432,
+      "source": "BIG MONEY",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "kind": "podcasts",
+      "action": "Выпишите один совет гостя, одно своё сомнение и один способ проверить совет на практике."
+    }
+  ]
+}

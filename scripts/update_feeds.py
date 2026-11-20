@@ -1,19 +1,21 @@
-"""Build the static media library from publisher feeds and public video channels."""
+"""Build the static media library from publisher feeds and open catalogs."""
 
 import argparse
 import concurrent.futures
 import email.utils
+import hashlib
 import html
 import http.client
 import json
 import re
 import sys
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urlencode, urljoin, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,20 +24,29 @@ MEDIA = "{http://search.yahoo.com/mrss/}"
 YT = "{http://www.youtube.com/xml/schemas/2015}"
 DC = "{http://purl.org/dc/elements/1.1/}"
 CONTENT = "{http://purl.org/rss/1.0/modules/content/}"
+ITUNES = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
 MOSCOW = timezone(timedelta(hours=3))
 FEED_ERRORS = (OSError, ValueError, ET.ParseError, http.client.HTTPException)
+MAX_DOWNLOAD = 20_000_000
 
 
 def download(url: str) -> bytes:
     request = urllib.request.Request(url, headers={
-        "User-Agent": "FounderJournal/2.0 (+https://github.com/big-arch/Motivation)",
+        "User-Agent": "FounderJournal/3.0 (+https://github.com/big-arch/Motivation)",
         "Accept": "*/*",
     })
-    with urllib.request.urlopen(request, timeout=20) as response:
-        data = response.read(8_000_001)
-    if len(data) > 8_000_000:
-        raise ValueError("Feed exceeds size limit")
-    return data
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                data = response.read(MAX_DOWNLOAD + 1)
+            if len(data) > MAX_DOWNLOAD:
+                raise ValueError("Feed exceeds size limit")
+            return data
+        except FEED_ERRORS:
+            if attempt:
+                raise
+            time.sleep(0.4)
+    raise ValueError("Download failed")
 
 
 def stamp(value: str, default_zone=timezone.utc) -> str:
@@ -61,6 +72,13 @@ def public_url(value: str, base: str = "") -> str:
     return resolved
 
 
+def clean_text(value: str, limit: int = 500) -> str:
+    text = " ".join((value or "").split())
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0].rstrip(" ,:") + "…"
+
+
 class PagePreview(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -84,7 +102,7 @@ def fill_previews(rows: list[dict], previous: list[dict], feed_url: str) -> None
         if not host or not (host == publisher or host.endswith("." + publisher)):
             continue
         try:
-            request = urllib.request.Request(row["url"], headers={"User-Agent": "Mozilla/5.0 (compatible; FounderJournal/2.0)"})
+            request = urllib.request.Request(row["url"], headers={"User-Agent": "Mozilla/5.0 (compatible; FounderJournal/3.0)"})
             with urllib.request.urlopen(request, timeout=5) as page:
                 parser = PagePreview()
                 parser.feed(page.read(130_000).decode("utf-8", "replace"))
@@ -182,6 +200,109 @@ def rutube_entries(data: bytes, source: dict) -> list[dict]:
     return entries
 
 
+def seconds(value: str) -> int:
+    text = (value or "").strip()
+    if not text:
+        return 0
+    try:
+        parts = [float(part) for part in text.split(":")]
+    except ValueError:
+        return 0
+    if any(part < 0 for part in parts) or len(parts) > 3:
+        return 0
+    result = 0
+    for part in parts:
+        result = result * 60 + part
+    return round(result)
+
+
+def audio_entries(data: bytes, source: dict) -> list[dict]:
+    entries = []
+    for node in ET.fromstring(data).findall("./channel/item"):
+        page_url = public_url(node.findtext("link") or "", source["feed"])
+        title = clean_text(node.findtext("title") or "", 260)
+        published = stamp(node.findtext("pubDate") or node.findtext(DC + "date") or "")
+        audio = next((public_url(enclosure.get("url", ""), page_url) for enclosure in node.findall("enclosure")
+                      if enclosure.get("type", "").startswith("audio/") and public_url(enclosure.get("url", ""), page_url)), "")
+        url = page_url or audio
+        if not (url and title and published and audio) or "�" in title:
+            continue
+        summary = Excerpt(node.findtext("description") or node.findtext(ITUNES + "summary") or
+                          node.findtext(CONTENT + "encoded") or "").text(700)
+        image = node.find(ITUNES + "image")
+        media_image = node.find(MEDIA + "thumbnail")
+        thumbnail = public_url((image.get("href", "") if image is not None else "") or
+                               (media_image.get("url", "") if media_image is not None else ""), url)
+        entries.append({
+            "id": "audio-" + hashlib.sha1(url.encode("utf-8")).hexdigest()[:16],
+            "title": title, "url": url, "audio": audio, "published": published,
+            "summary": summary, "thumbnail": thumbnail,
+            "duration": seconds(node.findtext(ITUNES + "duration") or ""),
+        })
+    return entries
+
+
+def librivox_entries(data: bytes, source: dict, now: str) -> list[dict]:
+    entries = []
+    for book in json.loads(data).get("books", []):
+        page = public_url(book.get("url_librivox", ""))
+        chapters = []
+        for section in book.get("sections", []):
+            audio = public_url(section.get("listen_url") or "")
+            if not audio:
+                continue
+            chapters.append({
+                "id": "lv-" + str(section.get("id", "")),
+                "title": clean_text(section.get("title") or "Глава " + str(section.get("section_number", "")),
+                                    180),
+                "audio": audio, "duration": seconds(str(section.get("playtime") or "")),
+            })
+        title = clean_text(book.get("title") or "", 260)
+        if not (page and title and chapters) or "�" in title:
+            continue
+        authors = ", ".join(clean_text(author.get("first_name", "") + " " + author.get("last_name", ""), 100)
+                            for author in book.get("authors", [])) or "Автор не указан"
+        entries.append({
+            "id": "lv-book-" + str(book.get("id", "")), "title": title, "url": page,
+            "audio": chapters[0]["audio"], "chapters": chapters[:100], "published": now,
+            "summary": Excerpt(book.get("description", "")).text(700), "thumbnail": public_url(book.get("coverart_thumbnail") or ""),
+            "duration": int(book.get("totaltimesecs") or 0), "author": authors,
+            "language_name": book.get("language") or "English", "rights": "Public domain · LibriVox",
+        })
+    return entries
+
+
+def openlibrary_entries(data: bytes, source: dict, now: str) -> list[dict]:
+    entries = []
+    for book in json.loads(data).get("docs", []):
+        title = clean_text(book.get("title") or "", 240)
+        authors = ", ".join(book.get("author_name", [])) or "Автор не указан"
+        archive = next((value for value in book.get("ia", []) if re.fullmatch(r"[\w.-]+", value, re.ASCII)), "")
+        work = book.get("key", "")
+        languages = book.get("language", [])
+        if languages and not {"eng", "rus"}.intersection(languages):
+            continue
+        if not (book.get("public_scan_b") and book.get("ebook_access") == "public" and archive and
+                re.fullmatch(r"/works/OL\d+W", work) and title and "�" not in title + authors):
+            continue
+        year = int(book.get("first_publish_year") or 0)
+        if year > datetime.now(timezone.utc).year:
+            continue
+        page = public_url("https://openlibrary.org" + work)
+        entries.append({
+            "id": "ol-" + work.rsplit("/", 1)[-1], "title": title, "url": page,
+            "lang": "ru" if "rus" in languages else "en",
+            "read_url": "https://archive.org/details/" + archive,
+            "embed": "https://archive.org/embed/" + archive,
+            "published": now, "author": clean_text(authors, 180), "year": year,
+            "thumbnail": public_url("https://covers.openlibrary.org/b/id/" + str(book.get("cover_i", "")) + "-L.jpg")
+            if book.get("cover_i") else "",
+            "summary": "Открытое издание в Internet Archive. Доступность и условия чтения указаны на странице оригинала.",
+            "rights": "Open Library · Internet Archive",
+        })
+    return entries
+
+
 def collect(source: dict, now: str) -> list[dict]:
     platform = source.get("platform")
     if platform == "youtube":
@@ -190,12 +311,27 @@ def collect(source: dict, now: str) -> list[dict]:
     elif platform == "rutube":
         url = "https://rutube.ru/api/video/person/" + source["id"] + "/?format=json"
         rows = rutube_entries(download(url), source)
+    elif platform == "rss-audio":
+        rows = audio_entries(download(source["feed"]), source)
+    elif platform == "librivox":
+        query = urlencode({"genre": source["genre"], "format": "json", "extended": 1,
+                           "coverart": 1, "limit": 50, "sort_order": "desc"})
+        rows = librivox_entries(download("https://librivox.org/api/feed/audiobooks/?" + query), source, now)
+    elif platform == "openlibrary":
+        query = urlencode({
+            "q": "subject:" + source["query"] + " ebook_access:public",
+            "fields": "key,title,author_name,first_publish_year,cover_i,ia,public_scan_b,language,ebook_access",
+            "sort": "new", "limit": 50,
+        })
+        rows = openlibrary_entries(download("https://openlibrary.org/search.json?" + query), source, now)
     else:
         rows = news_entries(download(source["feed"]), source)
     valid = []
     for row in rows:
         if row["title"] and row["published"] and row["published"] <= now:
-            valid.append({**row, "source": source["name"], "topic": source["topic"], "lang": source["lang"]})
+            extra = {key: source[key] for key in ("kind", "action") if key in source}
+            valid.append({**row, "source": source["name"], "topic": source["topic"],
+                          "lang": row.get("lang", source["lang"]), **extra})
     if not valid:
         raise ValueError("No published entries with an original date")
     ordered = sorted(valid, key=lambda item: item["published"], reverse=True)
@@ -204,7 +340,11 @@ def collect(source: dict, now: str) -> list[dict]:
 
 def collect_source(source, now, previous):
     rows = collect(source, now)
-    if "feed" in source:
+    if source.get("platform") in {"librivox", "openlibrary"}:
+        known = {row["url"]: row["published"] for row in previous.get("items", [])}
+        for row in rows:
+            row["published"] = known.get(row["url"], row["published"])
+    elif "feed" in source and not source.get("platform"):
         fill_previews(rows, previous.get("items", []), source["feed"])
     return rows
 
@@ -252,7 +392,8 @@ def refresh(kind: str, sources: list[dict], base_url: str) -> None:
                 backup = previous.get(name, {})
                 rows, checked = backup.get("items", []), backup.get("checked", "")
             items.extend(rows)
-            directory.append({**{k: v for k, v in source.items() if k != "feed"}, "count": len(rows), "checked": checked})
+            directory.append({**{k: v for k, v in source.items() if k not in {"feed", "query", "genre"}},
+                              "count": len(rows), "checked": checked})
     if not items:
         raise RuntimeError(f"No usable {kind} to publish")
     items = sorted(items, key=lambda row: (row["published"], row["url"]), reverse=True)
@@ -268,7 +409,8 @@ def refresh(kind: str, sources: list[dict], base_url: str) -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--previous-url", default="")
+    parser.add_argument("--only", nargs="+", choices=("news", "videos", "audio", "open-books"))
     options = parser.parse_args()
     config = json.loads((ROOT / "data/sources.json").read_text(encoding="utf-8-sig"))
-    for category in ("news", "videos"):
+    for category in options.only or ("news", "videos", "audio", "open-books"):
         refresh(category, config[category], options.previous_url)

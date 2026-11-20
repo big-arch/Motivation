@@ -8,7 +8,7 @@ const fontFiles = ['inter-cyrillic-wght-normal','inter-latin-wght-normal',
   'playfair-display-latin-wght-normal','playfair-display-latin-wght-italic',
   'playfair-display-cyrillic-wght-normal','playfair-display-cyrillic-wght-italic'];
 const assets = [
-  'index.html','css/style.css','css/edition.css','js/app.js','js/content.js','js/edition.js','js/photos.js','js/news-photos.js','js/media.js','js/cards.js','js/motion.js','manifest.json','data/news.json','data/videos.json',
+  'index.html','css/style.css','css/edition.css','js/app.js','js/content.js','js/edition.js','js/photos.js','js/news-photos.js','js/media.js','js/journey-data.js','js/journey.js','js/audio.js','js/cards.js','js/motion.js','manifest.json','data/news.json','data/videos.json','data/audio.json','data/open-books.json',
   ...['markets','bank','trade','factory','press','office','tech','retail'].map(id=>'assets/news/'+id+'.webp'),
   ...photos.flatMap(name => ['-sm',''].map(size => 'assets/photos/' + name + size + '.webp')),
   ...fontFiles.map(name => 'assets/fonts/' + name + '.woff2'),
@@ -27,7 +27,7 @@ self.addEventListener('fetch', event => {
   if (request.method !== 'GET' || url.origin !== ROOT.origin || !url.pathname.startsWith(ROOT.pathname)) return;
   if (request.mode === 'navigate' && (url.pathname === ROOT.pathname || url.href.split('?')[0] === indexUrl)) {
     event.respondWith(caches.open(CACHE).then(async cache => (await cache.match(indexUrl)) || fetch(request)));
-  } else if (url.pathname === ROOT.pathname + 'data/news.json' || url.pathname === ROOT.pathname + 'data/videos.json') {
+  } else if (['news','videos','audio','open-books'].some(kind=>url.pathname===ROOT.pathname+'data/'+kind+'.json')) {
     event.respondWith(caches.open(CACHE).then(async cache => {
       try {
         const response = await fetch(request, {cache:'no-cache'});

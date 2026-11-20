@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Refresh feeds using the last published snapshot as fallback
+      - name: Refresh news, video, audio and book catalogs using the last published snapshots as fallback
         run: python scripts/update_feeds.py --previous-url https://big-arch.github.io/Motivation/
       - name: Prepare static site
         run: |

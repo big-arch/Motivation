@@ -19,6 +19,9 @@
   <script src="./js/photos.js" defer></script>
   <script src="./js/news-photos.js" defer></script>
   <script src="./js/media.js" defer></script>
+  <script src="./js/journey-data.js" defer></script>
+  <script src="./js/journey.js" defer></script>
+  <script src="./js/audio.js" defer></script>
   <script src="./js/cards.js" defer></script>
   <script src="./js/motion.js" defer></script>
   <script src="./js/app.js" defer></script>
@@ -46,6 +49,10 @@
     <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M19.7 9a8 8 0 1 0 .1 6M20 3v6h-6"/></symbol>
     <symbol id="i-write" viewBox="0 0 24 24"><path d="m14.5 5.5 4 4M4 20l4.6-1L21 6.5l-4-4L4.8 15ZM12 20h8"/></symbol>
     <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
+    <symbol id="i-audio" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2M4 12H3v7h4v-7H4Zm16 0h1v7h-4v-7h3ZM17 19c0 2-2 3-5 3"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="m5 5 10 7-10 7Zm14 0v14"/></symbol>
   </svg>
   <a class="skip" href="#main">Перейти к содержанию</a>
   <div id="reading-progress" aria-hidden="true" hidden><i></i></div>
@@ -68,14 +75,14 @@
   </main>
   <footer class="site-footer">
     <div class="shell footer-inner"><div><a class="wordmark" href="#journal">FOUNDER<span>.</span></a><p>Независимый бизнес-журнал</p></div>
-      <nav aria-label="Дополнительно"><a href="#resources">Ресурсы</a><a href="#about">О журнале</a><a href="#saved">Личный уголок</a></nav>
+      <nav aria-label="Дополнительно"><a href="#journey">Мой путь</a><a href="#resources">Ресурсы</a><a href="#about">О журнале</a><a href="#saved">Личный уголок</a></nav>
       <button class="text-link install" hidden>Установить приложение <svg class="icon"><use href="#i-download"/></svg></button>
     </div>
   </footer>
   <nav class="bottom-nav" aria-label="Мобильная навигация">
     <a href="#journal" data-nav="journal"><svg class="icon"><use href="#i-grid"/></svg>Журнал</a>
     <a href="#library" data-nav="library"><svg class="icon"><use href="#i-book"/></svg>Книги</a>
-    <a href="#saved" data-nav="saved"><svg class="icon"><use href="#i-bookmark"/></svg>Моё</a>
+    <a href="#journey" data-nav="journey"><svg class="icon"><use href="#i-check"/></svg>Мой путь</a>
     <button data-menu><svg class="icon"><use href="#i-menu"/></svg>Разделы</button>
   </nav>
   <dialog id="search-dialog" class="dialog"><div class="dialog-head"><h2>Поиск по журналу</h2><button class="icon-btn" data-close aria-label="Закрыть поиск"><svg class="icon"><use href="#i-close"/></svg></button></div>
@@ -86,6 +93,20 @@
     <div class="detail-bar"><span>FOUNDER<span class="title-dot">.</span> / Медиа</span><span class="play-state"><i aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></i>Сейчас играет</span><button type="button" class="icon-btn" data-close-media aria-label="Закрыть материал"><svg class="icon"><use href="#i-close"/></svg></button></div>
     <div id="media-detail"></div>
   </dialog>
+  <dialog id="audio-dialog" class="dialog media-dialog audio-dialog" aria-labelledby="audio-detail-title">
+    <div class="detail-bar"><span>FOUNDER<span class="title-dot">.</span> / Аудиотека</span><span class="play-state"><i aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></i>Сейчас играет</span><button type="button" class="icon-btn" data-close-audio aria-label="Закрыть материал"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <div id="audio-detail"></div>
+  </dialog>
+  <section id="audio-dock" class="audio-dock" aria-label="Аудиоплеер" hidden>
+    <audio id="audio-engine" preload="metadata"></audio>
+    <div class="audio-dock-inner">
+      <button type="button" id="audio-now" class="audio-now" aria-label="Открыть текущий материал"></button>
+      <div class="audio-transport"><button type="button" id="audio-toggle" class="round-btn" aria-label="Продолжить"><span id="audio-toggle-icon"><svg class="icon"><use href="#i-play"/></svg></span></button><button type="button" data-audio-seek-by="-15" aria-label="На 15 секунд назад">−15</button><button type="button" data-audio-seek-by="15" aria-label="На 15 секунд вперёд">+15</button><button type="button" id="audio-next" aria-label="Следующий выпуск"><svg class="icon"><use href="#i-next"/></svg></button></div>
+      <div class="audio-timeline"><input id="audio-seek" type="range" min="0" max="100" value="0" aria-label="Позиция воспроизведения"><span id="audio-time">0:00 / —</span></div>
+      <div class="audio-settings"><label><span class="sr-only">Скорость</span><select id="audio-rate" aria-label="Скорость воспроизведения"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><label><span class="sr-only">Таймер сна</span><select id="audio-sleep" aria-label="Таймер сна"><option value="0">Таймер сна</option><option value="15">15 минут</option><option value="30">30 минут</option><option value="45">45 минут</option></select></label></div>
+      <button type="button" id="audio-close" class="icon-btn" aria-label="Закрыть плеер"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+  </section>
   <dialog id="thought-dialog" class="dialog studio" aria-labelledby="studio-heading">
     <div class="dialog-head"><h2 id="studio-heading">Карточка мысли</h2><button type="button" class="icon-btn" data-close-thought aria-label="Закрыть редактор"><svg class="icon"><use href="#i-close"/></svg></button></div>
     <div class="studio-body"><div class="card-preview" data-shape="square"><canvas width="1080" height="1080" role="img" aria-label="Оформление карточки"></canvas></div>
