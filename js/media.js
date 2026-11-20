@@ -150,9 +150,9 @@ function createMedia({esc, icon, external}) {
     }
     return rows.length ? `<div class="link-list">${rows.join('')}</div>` : '<a class="text-link" href="#media">Открыть ленту новостей</a>';
   }
-  function playerUrl(item) {
+  function playerUrl(item, start = 0) {
     if (item.platform==='rutube' && /^[a-f0-9]{32}$/.test(item.id)) return `https://rutube.ru/play/embed/${item.id}?autostart=true`;
-    if (item.platform==='youtube' && /^[\w-]{11}$/.test(item.id)) return `https://www.youtube-nocookie.com/embed/${item.id}?autoplay=1&playsinline=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}`;
+    if (item.platform==='youtube' && /^[\w-]{11}$/.test(item.id)) return `https://www.youtube-nocookie.com/embed/${item.id}?autoplay=1&playsinline=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}${start ? '&start='+start : ''}`;
     return '';
   }
   function connectYouTube(frame) {
@@ -173,18 +173,18 @@ function createMedia({esc, icon, external}) {
       }});
     });
   }
-  function openItem(kind,index) {
-    const item = feeds[kind]?.items?.[index];
+  function openItem(kind, item, start = 0) {
     if (!item) return;
-    const url = playerUrl(item);
+    const url = playerUrl(item, start);
     const video = kind === 'videos';
     const stage = document.getElementById('media-detail');
     const description = item.summary && item.summary !== item.title ? `<p class="detail-summary">${esc(item.summary)}</p>` : '';
     stage.innerHTML = `${video && url ? `<div class="player-frame"><iframe title="${esc(item.title)}" src="${esc(url)}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>` : `<figure class="news-detail-visual">${poster(item,kind,true)}${newsCredit(newsIllustration(item))}</figure>`}
       <div class="detail-copy"><p class="media-byline">${esc(item.source)} ${newMark(item,kind)}</p><h2 id="media-detail-title">${esc(item.title)}</h2>
       <p class="media-meta">Опубликовано ${instant(item.published)} · ${esc(item.topic)}</p>${description}
-      <p class="player-status" role="status"></p><a class="button secondary" href="${esc(external(item.url))}" target="_blank" rel="noopener noreferrer">${video?'Открыть в '+nameOf(item.platform):'Читать у издателя'} ${icon('out')}</a>${item.platform==='youtube' ? `<button class="text-link related-rutube" data-related-rutube="${esc(item.topic)}">По этой теме на RUTUBE ${icon('arrow')}</button>` : ''}</div>`;
+      <p class="player-status" role="status"></p><a class="button secondary" href="${esc(external(start ? item.url+'&t='+start+'s' : item.url))}" target="_blank" rel="noopener noreferrer">${video?'Открыть в '+nameOf(item.platform):'Читать у издателя'} ${icon('out')}</a>${item.platform==='youtube' ? `<button class="text-link related-rutube" data-related-rutube="${esc(item.topic)}">По этой теме на RUTUBE ${icon('arrow')}</button>` : ''}</div>`;
     dialog.dataset.playing='false';
+    if (video) document.getElementById('audio-engine')?.pause();
     dialog.showModal();
     if (video && item.platform==='youtube' && url) connectYouTube(stage.querySelector('iframe'));
   }
@@ -223,10 +223,7 @@ function createMedia({esc, icon, external}) {
     const related=event.target.closest('[data-related-rutube]');
     if (related) {
       releasePlayer(); dialog.close();
-      delete filters.videos;
-      settings('videos').platform='rutube';
-      change('topic',related.dataset.relatedRutube,'[data-media-topic][aria-pressed="true"]');
-      document.getElementById('media-results')?.scrollIntoView({block:'start'});
+      location.hash = 'media/videos/rutube-' + encodeURIComponent(related.dataset.relatedRutube);
       return;
     }
     if (event.target === dialog || event.target.closest('[data-close-media]')) { releasePlayer(); dialog.close(); }
@@ -238,7 +235,7 @@ function createMedia({esc, icon, external}) {
   document.addEventListener('click',event=>{
     const button = event.target.closest('button');
     if (!button) return;
-    if (button.hasAttribute('data-media-open')) openItem(button.dataset.kind,Number(button.dataset.mediaOpen));
+    if (button.hasAttribute('data-media-open')) openItem(button.dataset.kind,feeds[button.dataset.kind]?.items[Number(button.dataset.mediaOpen)]);
     if (button.hasAttribute('data-media-topic')) change('topic',button.dataset.mediaTopic,'[data-media-topic][aria-pressed="true"]');
     if (button.hasAttribute('data-media-source')) {
       delete filters[current];
@@ -255,5 +252,10 @@ function createMedia({esc, icon, external}) {
       target.querySelectorAll('.media-story')[next]?.focus({preventScroll:true});
     }
   });
-  return {panel, homeNews, set(kind, data){ feeds[kind]=data; }};
+  return {
+    panel, homeNews, poster, instant, duration, newMark,
+    watch(item, start = 0) { openItem('videos', item, Math.max(0, Math.floor(Number(start) || 0))); },
+    selectVideos(values) { delete filters.videos; Object.assign(settings('videos'), values); },
+    set(kind, data) { feeds[kind] = data; }
+  };
 }

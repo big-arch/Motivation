@@ -32,7 +32,7 @@ function createJournalMotion(main) {
   main.addEventListener('load',queue,true);
   function scan() {
     observer?.disconnect();
-    if(!preference.matches) main.querySelectorAll('.story-card,.archive-figure,.thought-shelf,.media-card').forEach(node=>observer?.observe(node));
+    if(!preference.matches) main.querySelectorAll('.story-card,.archive-figure,.thought-shelf,.media-card,.creator-card,.creator-feature').forEach(node=>observer?.observe(node));
   }
   function route() {
     article=main.querySelector('.article-top');

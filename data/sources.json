@@ -487,6 +487,126 @@
       "lang": "ru",
       "platform": "rutube",
       "url": "https://rutube.ru/channel/38395796/"
+    },
+    {
+      "id": "UCJkRFzV59Yk9JvD3_uG3vHA",
+      "name": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCJkRFzV59Yk9JvD3_uG3vHA"
+    },
+    {
+      "id": "UCLJl8-mbCfolWMkh1F1qfjA",
+      "name": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCLJl8-mbCfolWMkh1F1qfjA"
+    },
+    {
+      "id": "UCLHUstZMFFBSs5_2Uouvadg",
+      "name": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCLHUstZMFFBSs5_2Uouvadg"
+    },
+    {
+      "id": "UCrTZilC84na02gb9awUAx9w",
+      "name": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCrTZilC84na02gb9awUAx9w"
+    },
+    {
+      "id": "UCo3S9OQDrM79i7yPmixnSsQ",
+      "name": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCo3S9OQDrM79i7yPmixnSsQ"
+    },
+    {
+      "id": "UCiq1FIgtEK7LRAOB1JXTPig",
+      "name": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCiq1FIgtEK7LRAOB1JXTPig"
+    },
+    {
+      "id": "UCHb8IB3bh9uXpKL2KwY7viA",
+      "name": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCHb8IB3bh9uXpKL2KwY7viA"
+    },
+    {
+      "id": "UCyjGdVmEhYLXgyPf9jNHPrw",
+      "name": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCyjGdVmEhYLXgyPf9jNHPrw"
+    },
+    {
+      "id": "UCaR6XjSJJsLbKN3n6VYsGKw",
+      "name": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCaR6XjSJJsLbKN3n6VYsGKw"
+    },
+    {
+      "id": "UCbk_QsfaFZG6PdQeCvaYXJQ",
+      "name": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCbk_QsfaFZG6PdQeCvaYXJQ"
+    },
+    {
+      "id": "UCQpPo9BNwezg54N9hMFQp6Q",
+      "name": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCQpPo9BNwezg54N9hMFQp6Q"
+    },
+    {
+      "id": "UC1bFQRZLgbShAkKGY0UMrWQ",
+      "name": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UC1bFQRZLgbShAkKGY0UMrWQ"
+    },
+    {
+      "id": "UCL-HTw4Wfi9Igh9r1CBrrDA",
+      "name": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCL-HTw4Wfi9Igh9r1CBrrDA"
+    },
+    {
+      "id": "UC7cHp-kdghep0vZrCBNmQPw",
+      "name": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UC7cHp-kdghep0vZrCBNmQPw"
+    },
+    {
+      "id": "UCVedwIvkmSZdYUcy5OJJRZQ",
+      "name": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCVedwIvkmSZdYUcy5OJJRZQ"
     }
   ],
   "audio": [
@@ -569,6 +689,76 @@
       "kind": "audiobooks",
       "url": "https://librivox.org/search?genre=Self-Help",
       "action": "После главы выберите одно упражнение и выполните его до перехода к следующей."
+    },
+    {
+      "name": "Основатели",
+      "feed": "https://cloud.mave.digital/41997",
+      "url": "https://osnovateli.mave.digital/",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "action": "Перечислите две альтернативы, которые были у гостя. Какой результат помог ему выбрать?",
+      "kind": "podcasts",
+      "platform": "rss-audio"
+    },
+    {
+      "name": "Prodcast · Анна Наумова",
+      "feed": "https://anchor.fm/s/1508838c/podcast/rss",
+      "url": "https://annanaumova.com/",
+      "topic": "Карьера",
+      "lang": "ru",
+      "action": "Возьмите один вопрос рекрутера и напишите ответ на примере своего проекта.",
+      "kind": "podcasts",
+      "platform": "rss-audio"
+    },
+    {
+      "name": "Русские норм! · архив",
+      "feed": "https://rss.libsyn.com/shows/265643/destinations/2020574.xml",
+      "url": "https://russkienorm.libsyn.com/",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "action": "Отметьте дату интервью и запишите одно решение гостя, понятное в условиях того времени.",
+      "kind": "podcasts",
+      "platform": "rss-audio"
+    },
+    {
+      "name": "Подкаст Соколовского",
+      "feed": "https://podster.fm/rss.xml?pid=81488",
+      "url": "https://podkast-sokolovskogo.podster.fm/",
+      "topic": "Карьера",
+      "lang": "ru",
+      "action": "Сформулируйте один вопрос, который вы задали бы гостю о его работе.",
+      "kind": "podcasts",
+      "platform": "rss-audio"
+    },
+    {
+      "name": "On Purpose with Jay Shetty",
+      "feed": "https://feeds.megaphone.fm/on-purpose",
+      "url": "https://www.jayshetty.me/podcast",
+      "topic": "Мотивация",
+      "lang": "en",
+      "action": "Вспомните один свой выбор, похожий на обсуждаемый в выпуске. Что на него повлияло?",
+      "kind": "podcasts",
+      "platform": "rss-audio"
+    },
+    {
+      "name": "Подкаст Глеба Соломина",
+      "feed": "https://cloud.mave.digital/36719",
+      "url": "https://glebsolomin.mave.digital/",
+      "topic": "Карьера",
+      "lang": "ru",
+      "action": "Выпишите одну гипотезу собеседника и подумайте, какое наблюдение позволит её проверить.",
+      "kind": "podcasts",
+      "platform": "rss-audio"
+    },
+    {
+      "name": "Подкасты Михаила Гребенюка",
+      "feed": "https://cloud.mave.digital/48780",
+      "url": "https://grebenuk.mave.digital/",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "action": "Найдите в своём процессе одну повторяющуюся задержку и замерьте её длительность.",
+      "kind": "podcasts",
+      "platform": "rss-audio"
     }
   ],
   "open-books": [

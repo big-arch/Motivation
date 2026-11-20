@@ -359,7 +359,8 @@ def prior_sources(path: Path, base_url: str) -> dict:
         except FEED_ERRORS as error:
             print(f"{path.name}: previous deployment unavailable ({type(error).__name__})", file=sys.stderr)
     result = {}
-    for snapshot in sorted(snapshots, key=lambda s: s.get("updated") or ""):
+    # Keep the checked-in collection and a rolling window from Pages.
+    for index, snapshot in enumerate(snapshots):
         if snapshot.get("schema") != 2:
             continue
         by_source = {}
@@ -367,8 +368,19 @@ def prior_sources(path: Path, base_url: str) -> dict:
             by_source.setdefault(item["source"], []).append(item)
         for entry in snapshot.get("sources", []):
             name = entry["name"]
-            if by_source.get(name) and (entry.get("checked") or "") >= result.get(name, {}).get("checked", ""):
-                result[name] = {"checked": entry.get("checked") or "", "items": by_source[name]}
+            rows = by_source.get(name, [])
+            if not rows:
+                continue
+            prior = result.setdefault(name, {"checked": "", "items": []})
+            merged = {row["url"]: row for row in prior["items"]}
+            checked = entry.get("checked") or ""
+            for row in (rows[:24] if index else rows):
+                existing = merged.get(row["url"], {})
+                if path.stem in {"audio", "open-books"} and existing and (row.get("chapters") or row.get("embed")):
+                    row = {**row, "published": existing["published"]}
+                merged[row["url"]] = {**existing, **row} if checked >= prior["checked"] else {**row, **existing}
+            prior["items"] = list(merged.values())
+            prior["checked"] = max(prior["checked"], checked)
     return result
 
 
@@ -384,7 +396,11 @@ def refresh(kind: str, sources: list[dict], base_url: str) -> None:
             source = pending[future]
             name = source["name"]
             try:
-                rows = future.result()
+                merged = {row["url"]: row for row in previous.get(name, {}).get("items", [])}
+                for row in future.result():
+                    # Preserve fields such as the verified running time of a YouTube episode.
+                    merged[row["url"]] = {**merged.get(row["url"], {}), **row}
+                rows = list(merged.values())
                 checked = now
                 successes += 1
             except FEED_ERRORS as error:

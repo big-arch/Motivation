@@ -5,7 +5,7 @@
   const searchDialog = document.getElementById('search-dialog');
   const menuDialog = document.getElementById('menu-dialog');
   const searchInput = document.getElementById('search-input');
-  const items = [...articles, ...editionArticles, ...books];
+  const items = [...creatorArticles, ...articles, ...editionArticles, ...books];
   const byId = new Map(items.map(item => [item.id, item]));
   const sections = {
     journal: ['Журнал', 'grid'], stories: ['Истории', 'layers'], museum: ['Музей провалов', 'archive'],
@@ -26,6 +26,7 @@
     plan:'founder.plan.v1', journey:'founder.journey.v1', reading:'founder.reading.v1', audio:'founder.audio.v1'};
   const sessionFallback = new Map();
   const media = createMedia({esc,icon,external});
+  const creators = createCreatorDesk({esc,icon,media,byId});
   let journey;
   const audio = createAudioLibrary({esc,icon,external,readState,writeState,notify,
     onPlan:task=>journey?.add(task),onChange:kind=>{
@@ -42,6 +43,7 @@
   let toastTimer;
   let installPrompt;
   let activeRoute = '';
+  let activeMediaPath = '';
 
   function esc(value) {
     const entities = {'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'};
@@ -184,6 +186,7 @@
       <div class="card-grid">${['nike','kodak','habits'].map(id => card(byId.get(id),true)).join('')}</div></section>
       <div class="home-section personal"><section class="thought"><div class="panel-label">${icon('sun')} Мысль дня</div><blockquote>${esc(dailyNote()[0])}</blockquote>
         <div class="thought-actions"><button class="text-link" data-daily-card>${icon('layers')} Карточка мысли</button><a href="#support" class="text-link">К точке опоры ${icon('arrow')}</a></div></section>${stepBox()}</div>
+      <section class="home-section">${sectionHead('Авторы в эфире','Все 16 каналов','media/authors')}${creators.home()}</section>
       <section class="home-section home-audio">${sectionHead('Слушать и действовать','Аудиотека','media/lectures')}<div id="home-audio">${audio.homeAudio()}</div></section>
       <section class="home-path"><div><div class="panel-label">${icon('check')} Не только вдохновение</div><h2>Соберите свой путь изменений</h2><p>Цель на неделю, задания из материалов и маршрут с маленькими шагами. Без регистрации и штрафов за паузы.</p></div><a class="button primary" href="#journey">Перейти в «Мой путь» ${icon('arrow')}</a></section>
       <section class="home-section feed-home">${sectionHead('Деловая лента','Все новости','media')}<div id="home-news">${media.homeNews()}</div></section>`;
@@ -259,7 +262,7 @@
       ${photoFigure(item,0)}</div>
       <div class="reading">${body}${journey.practice(item,actionFor(item),challengeFor(item))}${item.ideas?journey.bookProgress(item):''}<section class="sources"><h2>${item.ideas ? 'Об издании' : 'Источники'}</h2>
       ${item.sources.map(([label,url]) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`).join('')}</section>
-      <div class="article-next"><a class="text-link" href="#${item.section}">${icon('back')} ${parent}</a><a class="text-link next-story" href="#read/${next.id}">${esc(next.title)} ${icon('arrow')}</a></div></div></article>`;
+      ${creators.related(item.id)}<div class="article-next"><a class="text-link" href="#${item.section}">${icon('back')} ${parent}</a><a class="text-link next-story" href="#read/${next.id}">${esc(next.title)} ${icon('arrow')}</a></div></div></article>`;
   }
   function savedPage() {
     const ids = Array.from(savedIds()).reverse();
@@ -296,14 +299,23 @@
       <h2>Изображения</h2><p>В каждой статье есть две документальные фотографии. Под снимками указаны автор, лицензия и ссылка на оригинал. Файлы уменьшены и переведены в WebP для быстрой загрузки. Фотография Фицроя на обложке взята с Unsplash. Предметные обложки Nike, Kodak и книги Джеймса Клира на главной созданы с помощью ImageGen.</p>
       <div class="sources"><a href="https://unsplash.com/photos/150fZ07GQqs">Фицрой на рассвете · Andrew Svk ↗</a><a href="https://unsplash.com/photos/B5BTFxsZ92M">Компьютер Apple · Marissa Lewis ↗</a><a href="https://unsplash.com/photos/KN9FYaoAAik">Пицца в печи · Brad ↗</a><a href="https://unsplash.com/photos/lIipHR8mi3o">Офис · Fer Troulik ↗</a></div></div></div>`;
   }
-  function mediaPage(kind) {
-    const kinds = ['news','videos','lectures','podcasts','audiobooks','services'];
-    if (!kinds.includes(kind)) kind = 'news';
-    const audioKind = !['news','videos'].includes(kind);
-    const titles = {news:'Новости',videos:'Видео',lectures:'Лекции',podcasts:'Подкасты',audiobooks:'Аудиокниги',services:'Яндекс и Spotify'};
-    return `<div class="page-main media-page">${pageHeading(titles[kind],'Лекции, подкасты, аудиокниги и видео о бизнесе, деньгах и мотивации. Новые материалы подтягиваются автоматически.')}
-      <nav class="media-tabs chips" aria-label="Вид медиа">${kinds.map(key=>`<a href="#media${key==='news'?'':'/'+key}" ${kind===key?'aria-current="page"':''}>${icon(['lectures','podcasts','audiobooks'].includes(key)?'audio':key==='videos'?'film':key==='services'?'play':'layers')} ${titles[key]}</a>`).join('')}</nav>
-      ${audioKind?`<section id="audio-panel" aria-label="${titles[kind]}">${audio.panel(kind)}</section>`:`<section id="media-panel" aria-label="${kind==='videos'?'Видеотека':'Новостная лента'}">${media.panel(kind)}</section>`}</div>`;
+  const mediaTitles = {news:'Новости',videos:'Видео',authors:'Авторы',lectures:'Лекции',podcasts:'Подкасты',audiobooks:'Аудиокниги',services:'Яндекс и Spotify'};
+  function mediaPage(kind, handle) {
+    if (!Object.hasOwn(mediaTitles,kind)) kind='news';
+    const profile = creators.profile(handle);
+    const title = kind==='authors' && profile ? profile.name : mediaTitles[kind];
+    const heading = kind==='authors' && profile
+      ? `<header class="page-heading">${breadcrumb(profile.name,'media/authors','Все авторы')}<h1>${esc(profile.name)}</h1></header>`
+      : pageHeading(title, kind==='authors' ? 'С какого выпуска начать, какую главу посмотреть и что прочитать после. Выберите интересующую тему.' : 'Лекции, подкасты, аудиокниги и видео о бизнесе, деньгах и мотивации.');
+    const tabs=`<nav class="media-tabs chips" aria-label="Вид медиа">${Object.entries(mediaTitles).map(([key,label])=>`<a href="#media${key==='news'?'':'/'+key}" ${kind===key?'aria-current="page"':''}>${icon(['lectures','podcasts','audiobooks'].includes(key)?'audio':key==='videos'?'film':key==='services'?'play':'layers')} ${label}</a>`).join('')}</nav>`;
+    let panel;
+    if (kind==='authors') panel = profile ? creators.detail(profile) : creators.index(handle);
+    else if (kind==='news' || kind==='videos') panel=`<section id="media-panel" aria-label="${mediaTitles[kind]}">${media.panel(kind)}</section>`;
+    else panel=`<section id="audio-panel" aria-label="${mediaTitles[kind]}">${audio.panel(kind)}</section>`;
+    const selection = kind==='podcasts'
+      ? `<a class="creator-catalog-link" href="#media/authors/podcasts">${icon('film')} Интервью и подкасты в видеоформате ${icon('arrow')}</a>`
+      : kind==='videos' ? `<a class="creator-catalog-link" href="#media/authors">${icon('layers')} С какого канала начать ${icon('arrow')}</a>` : '';
+    return `<div class="page-main media-page">${heading}${tabs}${selection}${panel}</div>`;
   }
   function route() {
     const parts = location.hash.slice(1).split('/');
@@ -312,11 +324,24 @@
   }
   function render({focus = false} = {}) {
     const [section,param,subparam] = route();
+    const mediaPath = section==='media' ? [param || 'news', subparam].join('/') : '';
+    if (mediaPath !== activeMediaPath) {
+      const profile = creators.profile(subparam);
+      if (section==='media' && param==='videos') {
+        if (profile) media.selectVideos({source:profile.name});
+        else if (subparam.startsWith('rutube-')) media.selectVideos({platform:'rutube',topic:subparam.slice(7)});
+        else if (activeMediaPath.startsWith('videos/') && activeMediaPath!=='videos/') media.selectVideos({});
+      }
+      if (section==='media' && param==='podcasts') {
+        if (profile?.podcast) audio.selectPodcast(profile.podcast);
+        else if (activeMediaPath.startsWith('podcasts/') && activeMediaPath!=='podcasts/') audio.selectPodcast('');
+      }
+    }
     const item = section === 'read' && byId.get(param);
     let nav = item ? item.section : section;
     let title = item ? item.title : sections[section]?.[0];
     if (section==='library' && param==='open') title='Открытая полка';
-    if (section==='media') title=({news:'Новости',videos:'Видео',lectures:'Лекции',podcasts:'Подкасты',audiobooks:'Аудиокниги',services:'Яндекс и Spotify'})[param||'news'] || 'Медиа';
+    if (section==='media') title=(param==='authors' && creators.profile(subparam)?.name) || mediaTitles[param||'news'] || 'Медиа';
     let view;
     if (section === 'journal') view = home();
     else if (item) view = readArticle(item);
@@ -333,16 +358,23 @@
       if (activeRoute !== 'support') noteIndex = Math.floor(Math.random() * moods[moodIndex].notes.length);
       view = supportPage();
     }
-    else if (section === 'media') view = mediaPage(param || 'news');
+    else if (section === 'media') view = mediaPage(param || 'news', subparam);
     else if (section === 'resources') view = resourcePage();
     else if (section === 'about') view = aboutPage();
     else {
       title = 'Материал не найден';
       view = `<div class="page-main">${pageHeading(title,'Возможно, адрес изменился. Остальные материалы доступны в архиве.')}<a class="button primary" href="#archive">Открыть архив ${icon('arrow')}</a></div>`;
     }
-    const sameCatalog = activeRoute === section && (Object.hasOwn(descriptions,section) || section === 'media');
+    const sameCatalog = activeRoute === section && (Object.hasOwn(descriptions,section) || (section === 'media' && activeMediaPath===mediaPath));
     activeRoute = section;
+    activeMediaPath = mediaPath;
     main.innerHTML = view;
+    const tabs = main.querySelector('.media-page>.media-tabs');
+    if (tabs && tabs.scrollWidth > tabs.clientWidth) {
+      const active = tabs.querySelector('[aria-current]');
+      const offset = active.getBoundingClientRect().right - tabs.getBoundingClientRect().right;
+      if (offset > 0) tabs.scrollLeft += offset + 12;
+    }
     motion.route();
     if (nav === 'archive') nav = 'journal';
     document.title = section === 'journal' ? 'FOUNDER. Независимый бизнес-журнал' : `${title} · FOUNDER.`;
@@ -371,7 +403,7 @@
     if (['news','videos'].includes(kind)) {
       media.set(kind,data);
       if (section === 'journal' && kind === 'news') document.getElementById('home-news').innerHTML = media.homeNews();
-      if (section === 'media' && kind === (param === 'videos' ? 'videos' : 'news')) document.getElementById('media-panel').innerHTML = media.panel(kind);
+      if (section === 'media' && kind === (param || 'news')) document.getElementById('media-panel').innerHTML = media.panel(kind);
     } else {
       audio.set(kind,data);
       if (section === 'journal' && kind === 'audio') document.getElementById('home-audio').innerHTML = audio.homeAudio();
@@ -409,9 +441,15 @@
       return tokens.every(token => haystack.includes(token));
     });
     const suggestions = tokens.length ? matches : ['patagonia','nike','kodak','habits'].map(id => byId.get(id));
-    const summary = tokens.length ? (suggestions.length ? `Найдено материалов: ${suggestions.length}` : 'Ничего не нашлось. Попробуйте название бренда, имя автора или тему.') : 'Читают в журнале';
+    const channels = tokens.length ? creatorProfiles.filter(p => {
+      const text = normalized([p.handle,p.name,p.headline,p.intro,p.episode.title,p.topic,p.podcast,p.format,...p.reading.map(([id])=>byId.get(id).title)].join(' '));
+      return tokens.every(token => text.includes(token.replace(/^@/,'')));
+    }) : [];
+    const count = suggestions.length + channels.length;
+    const summary = tokens.length ? (count ? `Найдено · ${count}` : 'Ничего не нашлось. Попробуйте название бренда, имя автора или тему.') : 'Читают в журнале';
     document.getElementById('search-results').innerHTML = `<p class="search-summary" role="status">${summary}</p>${suggestions.map(item =>
-      `<a class="link-row" href="#read/${item.id}"><div><span class="row-meta">${esc(item.tag)} · ${esc(item.author || item.topic)}</span><strong>${esc(item.title)}</strong></div>${icon('arrow')}</a>`).join('')}`;
+      `<a class="link-row" href="#read/${item.id}"><div><span class="row-meta">${esc(item.tag)} · ${esc(item.author || item.topic)}</span><strong>${esc(item.title)}</strong></div>${icon('arrow')}</a>`).join('')}${channels.map(p=>
+      `<a class="link-row" href="${creators.route(p)}"><div><span class="row-meta">Канал · ${esc(p.name)}</span><strong>${esc(p.headline)}</strong></div>${icon('arrow')}</a>`).join('')}`;
   }
   function openSearch() {
     if (menuDialog.open) menuDialog.close();

@@ -1,41 +1,41 @@
 {
   "schema": 2,
-  "updated": "2026-11-20T08:32:17Z",
+  "updated": "2026-11-20T08:59:33Z",
   "sources": [
     {
       "name": "3DNews",
       "topic": "Технологии",
       "lang": "ru",
-      "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "count": 12,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "CNews",
       "topic": "Технологии",
       "lang": "ru",
-      "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "count": 8,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "RB.RU",
       "topic": "Бизнес",
       "lang": "ru",
-      "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "count": 9,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "vc.ru",
       "topic": "Бизнес",
       "lang": "ru",
-      "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "count": 9,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Банк России",
       "topic": "Деньги",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Банки.ру",
@@ -48,228 +48,398 @@
       "name": "Ведомости",
       "topic": "Бизнес",
       "lang": "ru",
-      "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "count": 12,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Коммерсантъ",
       "topic": "Бизнес",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Лента.ру · Экономика",
       "topic": "Деньги",
       "lang": "ru",
-      "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "count": 7,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "РБК",
       "topic": "Бизнес",
       "lang": "ru",
-      "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "count": 12,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Хабр · Карьера",
       "topic": "Карьера",
       "lang": "ru",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Banking Dive",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "BBC Business",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "CNBC",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Crunchbase News",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Entrepreneur",
       "topic": "Бизнес",
       "lang": "en",
-      "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "count": 10,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "European Central Bank",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Fast Company",
       "topic": "Карьера",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Federal Reserve",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Financial Times",
       "topic": "Бизнес",
       "lang": "en",
-      "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "count": 8,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Fortune",
       "topic": "Бизнес",
       "lang": "en",
-      "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "count": 12,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "GeekWire",
       "topic": "Технологии",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Gretchen Rubin",
       "topic": "Мотивация",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-19T21:31:51Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "HR Dive",
       "topic": "Карьера",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Inc.",
       "topic": "Бизнес",
       "lang": "en",
-      "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "count": 7,
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Knowledge at Wharton",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "MarketWatch",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "MIT Sloan Management Review",
       "topic": "Карьера",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "NPR Economy",
       "topic": "Деньги",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Retail Dive",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Sifted",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "SiliconANGLE",
       "topic": "Технологии",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "TechCrunch",
       "topic": "Технологии",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "The Conversation",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "The Economist",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "The Guardian",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "The Wall Street Journal",
       "topic": "Бизнес",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     },
     {
       "name": "Zen Habits",
       "topic": "Мотивация",
       "lang": "en",
       "count": 6,
-      "checked": "2026-11-20T08:32:17Z"
+      "checked": "2026-11-20T08:59:33Z"
     }
   ],
   "items": [
+    {
+      "title": "МГКЛ отчитался о выплате купонного дохода по облигациям",
+      "url": "https://www.vedomosti.ru/investments/news/2026/11/20/1413669-mgkl-otchitalsya",
+      "published": "2026-11-20T08:59:19Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/pjco2/normal-x3h.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Совкомбанк повысил ставки по вкладам до полугода",
+      "url": "https://www.rbc.ru/quote/20/11/2026/6b0006cae253fa4a0c754e5d",
+      "published": "2026-11-20T08:56:38Z",
+      "summary": "С 20 ноября Совкомбанк улучшил условия по вкладам «Щедрая осень», «Гибкий» и «Регулярные %%», повысив ставки на ряде сроков",
+      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/8/56/347809920390568.jpeg",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Швеция отказалась выдавать визы российским спортсменам",
+      "url": "https://www.rbc.ru/sport/20/11/2026/6b000752e1d3aa338c4df144",
+      "published": "2026-11-20T08:55:36Z",
+      "summary": "В начале следующего год в шведском Фалуне пройдет чемпионат мира по лыжным видам спорта",
+      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/3/09/557951640525093.jpeg",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "ФСБ задержала бывшего директора «Роспатриотцентра» по делу о растрате",
+      "url": "https://www.rbc.ru/politics/20/11/2026/6afffeea5e2ed76366e4ddd7",
+      "published": "2026-11-20T08:53:15Z",
+      "summary": "Силовики задержали бывшего директора «Роспатриотцентра» Елену Беликову по делу о хищении бюджетных средств, выделенных на реализацию проектов учреждения. Ей вменяют растрату в особо крупном…",
+      "thumbnail": "",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "В КНДР появился собственный искусственный интеллект",
+      "url": "https://lenta.ru/news/2026/11/20/v-kndr-poyavilsya-sobstvennyy-iskusstvennyy-intellekt/",
+      "published": "2026-11-20T08:53:05Z",
+      "summary": "",
+      "thumbnail": "https://icdn.lenta.ru/images/2026/11/20/11/20261120114532529/pic_fc8d309a3539a3590f7285d44a6d72ee.jpg",
+      "source": "Лента.ру · Экономика",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "title": "Медведев оценил идею приема Украины в НАТО в обмен на территории",
+      "url": "https://www.rbc.ru/politics/20/11/2026/6b00096a1dfff0d3d73b3ff5",
+      "published": "2026-11-20T08:52:55Z",
+      "summary": "Зампред Совета безопасности России Дмитрий Медведев раскритиковал идею членства Украины в НАТО в обмен на территориальные уступки, назвав ее безумной.",
+      "thumbnail": "https://s0.rbk.ru/v6_top_pics/media/img/0/40/947951651049400.jpeg",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Climate talks drop fossil fuel phaseout and pivot to carbon capture",
+      "url": "https://www.ft.com/content/134dcef4-9453-48bd-bcbd-4180818d3aca?syn-25a6b1a6=1",
+      "published": "2026-11-20T08:52:29Z",
+      "summary": "Final COP31 sessions focusing on energy security rather than climate change, critics say",
+      "thumbnail": "",
+      "source": "Financial Times",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "МИД: сторонники эскалации в Европе не готовы к переговорам по Украине",
+      "url": "https://www.vedomosti.ru/politics/news/2026/11/20/1413671-eskalatsii-v-evrope",
+      "published": "2026-11-20T08:51:57Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/p7o1g/normal-wod.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Патриарх Кирилл рассказал о самом горьком разочаровании в жизни",
+      "url": "https://www.rbc.ru/rbcfreenews/6b000659225f1b7c69abd18d",
+      "published": "2026-11-20T08:50:54Z",
+      "summary": "Сохранение ненависти и равнодушия среди людей, несмотря на обретенную внешнюю свободу, стало самым горьким разочарованием в жизни патриарха Московского и всея Руси Кирилла.",
+      "thumbnail": "",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Несырьевой экспорт РФ: новые инструменты международных платежей",
+      "url": "https://www.rbc.ru/radio/20/11/2026/6b00098d514a158775e6328f",
+      "published": "2026-11-20T08:49:41Z",
+      "summary": "Станислав Лазарев, заместитель генерального директора по продажам А7, — о том, какие отрасли сегодня наиболее активно выходят на зарубежные рынки и как обеспечить бесперебойные платежи с…",
+      "thumbnail": "",
+      "source": "РБК",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Зеленский: гарантии безопасности Украине должны включать базы США",
+      "url": "https://www.vedomosti.ru/politics/news/2026/11/20/1413666-bazi-ssha",
+      "published": "2026-11-20T08:49:33Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/p2oaw/normal-whv.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
+      "url": "https://www.bbc.co.uk/news/articles/ck053mzy2qqeo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T08:49:33Z",
+      "summary": "People stocking up on long-life food drove retail sales higher October, according to official data.",
+      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b2f3/live/616b7460-e4bd-11f1-bd65-4bcf15946188.jpg",
+      "source": "BBC Business",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Захарова обвинила ВСУ в ударах по гражданским объектам из-за неудач на фронте",
+      "url": "https://www.vedomosti.ru/politics/news/2026/11/20/1413665-zaharova-obvinila-vsu",
+      "published": "2026-11-20T08:46:31Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/oy1w7/normal-wbv.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Власти Подмосковья опровергли массовое исключение пиццы из школьных меню",
+      "url": "https://www.vedomosti.ru/society/news/2026/11/20/1413660-vlasti-podmoskovya-oprovergli",
+      "published": "2026-11-20T08:43:29Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/p4btn/normal-wk0.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "«Совкомфлот» по итогам девяти месяцев получил $396 млн чистой прибыли",
+      "url": "https://www.vedomosti.ru/investments/news/2026/11/20/1413657-sovkomflot-poluchil-pribili",
+      "published": "2026-11-20T08:41:57Z",
+      "summary": "",
+      "thumbnail": "https://cdn5.vedomosti.ru/image/2026/90/ozhqo/normal-wdr.jpg",
+      "source": "Ведомости",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Новый сезон «Ведьмака» от Netflix выйдет в 2027 году — он станет последним",
+      "url": "https://rb.ru/news/novyj-sezon-vedmaka-ot-netflix-vyjdet-v-2027-godu-stanet-poslednim/",
+      "published": "2026-11-20T08:40:06Z",
+      "summary": "Пятый и заключительный сезон сериала «Ведьмак» от Netflix выйдет в 2027 году. Информация появилась в пресс-релизе компании, посвящённом экранизациям книг. При этом точную дату премьеры…",
+      "thumbnail": "https://media.rbcdn.ru/media/news/web_CHPta5k.png",
+      "source": "RB.RU",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "White House replaces top cyber security official",
+      "url": "https://www.ft.com/content/6333f2e6-98da-4491-bd2e-30237d7bfbf5?syn-25a6b1a6=1",
+      "published": "2026-11-20T08:33:59Z",
+      "summary": "Kirsten Davies joins from the Pentagon to succeed Sean Cairncross after string of online outages",
+      "thumbnail": "",
+      "source": "Financial Times",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
     {
       "title": "Капризов продлил результативную серию в НХЛ до 13 матчей",
       "url": "https://www.rbc.ru/sport/20/11/2026/6b000044225f1b7c69abd175",
@@ -289,6 +459,16 @@
       "source": "РБК",
       "topic": "Бизнес",
       "lang": "ru"
+    },
+    {
+      "title": "Think Reddit’s Doomed? You’re Looking at the Wrong Numbers",
+      "url": "https://www.inc.com/sneha-saigal/think-reddits-doomed-youre-looking-at-the-wrong-numbers/91433635",
+      "published": "2026-11-20T08:30:00Z",
+      "summary": "Reddit’s search referrals are declining, but its revenue and logged-in users reveal a competitive advantage investors may be underestimating.",
+      "thumbnail": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/reddit-ai-moat-inc-1342446979.jpg",
+      "source": "Inc.",
+      "topic": "Бизнес",
+      "lang": "en"
     },
     {
       "title": "Christine Lagarde: Acting in time",
@@ -331,6 +511,16 @@
       "lang": "ru"
     },
     {
+      "title": "Выпущена бесплатная версия Windows 11. Она работает на ARM, RISC-V и x86",
+      "url": "https://www.cnews.ru/news/top/2026-11-20_microsoft_ne_smoglaa_domoroshchennye",
+      "published": "2026-11-20T08:26:00Z",
+      "summary": "Разработана операционная система LiberNT – почти полная копия Windows 11. В отличие от оригинала, LiberNT полностью бесплатна и обладает поддержкой архитектуры RISC-V, которую Microsoft так и не…",
+      "thumbnail": "https://static.cnews.ru/img/news/2026/11/20/lib6.jpg",
+      "source": "CNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
       "title": "Oil Prices Edge Higher as Traders Assess Middle East Shipping Risks, Supply Outlook",
       "url": "https://www.wsj.com/business/energy-oil/oil-prices-edge-higher-as-traders-assess-middle-east-shipping-risks-supply-outlook-faf8f60a?mod=pls_whats_news_us_business_f",
       "published": "2026-11-20T08:24:00Z",
@@ -339,6 +529,16 @@
       "source": "The Wall Street Journal",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "title": "«Ждал эту игру почти всю свою жизнь»: Creative Assembly заинтриговала фанатов целым часом нового геймплея Total War: Warhammer 40,000",
+      "url": "https://3dnews.ru/1151579",
+      "published": "2026-11-20T08:24:00Z",
+      "summary": "Разработчики из британской студии Creative Assembly (принадлежит Sega) устроили первую за четыре месяца «живую» демонстрацию своей галактической стратегии в антураже мрачного будущего Total War…",
+      "thumbnail": "https://3dnews.ru/assets/external/illustrations/2026/11/20/1151579/02.jpg",
+      "source": "3DNews",
+      "topic": "Технологии",
+      "lang": "ru"
     },
     {
       "title": "Армия России нанесла массированный удар по предприятиям ВПК Украины",
@@ -351,12 +551,32 @@
       "lang": "ru"
     },
     {
+      "title": "Bending Spoons купит сервис для рассылок Mailchimp за $3,68 млрд — примерно втрое дешевле, чем он стоил в 2021 году",
+      "url": "https://vc.ru/services/3267806-bending-spoons-pokupka-mailchimp?from=rss",
+      "published": "2026-11-20T08:20:31Z",
+      "summary": "Сделку закроют в начале 2027 года.",
+      "thumbnail": "https://leonardo.osnova.io/05a8af8a-e348-5e77-b0e3-4f6083a65deb/",
+      "source": "vc.ru",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "title": "ЦБ предложил снизить нижнюю границу тарифа ОСАГО до одного рубля",
       "url": "https://www.kommersant.ru/doc/9114422",
       "published": "2026-11-20T08:19:39Z",
       "summary": "Банк России предложил снизить до одного рубля нижнюю границу тарифного коридора ОСАГО для всех категорий транспорта и водителей. Об этом сообщила пресс-служба регулятора в Telegram-канале.",
       "thumbnail": "",
       "source": "Коммерсантъ",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Сервисы доставки попросили отложить введение новых правил для курьеров до 2029-го — бизнес опасается роста расходов",
+      "url": "https://rb.ru/news/servisy-dostavki-poprosili-otlozhit-vvedenie-novyh-pravil-dlya-kurerov-do-2029-go-biznes-opasaetsya-rosta-rashodov/",
+      "published": "2026-11-20T08:18:00Z",
+      "summary": "Крупнейшие сервисы доставки попросили правительство отложить до 2029 года введение новых ограничений для курьеров на электровелосипедах и электросамокатах, сообщают «Ведомости» со ссылкой на…",
+      "thumbnail": "https://media.rbcdn.ru/media/news/web-2026-11-20t101845124-1.jpg",
+      "source": "RB.RU",
       "topic": "Бизнес",
       "lang": "ru"
     },
@@ -431,16 +651,6 @@
       "lang": "ru"
     },
     {
-      "title": "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
-      "url": "https://www.bbc.co.uk/news/articles/ck053mzy2qqeo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-20T08:09:04Z",
-      "summary": "People stocking up on long-life food drove retail sales higher October, according to official data.",
-      "thumbnail": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/55f3/live/5b4f20a0-e4b2-11f1-a1dc-9f4190df3aa7.jpg",
-      "source": "BBC Business",
-      "topic": "Бизнес",
-      "lang": "en"
-    },
-    {
       "title": "Зачем изучать ассемблер, если писать на нём вы не будете?",
       "url": "https://habr.com/ru/companies/bhv_publishing/articles/1110196/?utm_campaign=1110196&utm_source=habrahabr&utm_medium=rss",
       "published": "2026-11-20T08:08:11Z",
@@ -448,6 +658,16 @@
       "thumbnail": "https://habrastorage.org/extt/fb/4b/b3/fb4bb3b715a0722608fa4301728bfc8b.jpg",
       "source": "Хабр · Карьера",
       "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "title": "Apple запустила разработку собственного ИИ-агента, который поселится в компьютерах Mac",
+      "url": "https://3dnews.ru/1151580",
+      "published": "2026-11-20T08:08:00Z",
+      "summary": "Стало известно, что Apple работает над созданием собственного ИИ-агента, который сможет выполнять действия от имени пользователя, в том числе взаимодействовать с приложениями, посещать…",
+      "thumbnail": "https://3dnews.ru/assets/external/illustrations/2026/11/20/1151580/macos.jpg",
+      "source": "3DNews",
+      "topic": "Технологии",
       "lang": "ru"
     },
     {
@@ -461,11 +681,71 @@
       "lang": "ru"
     },
     {
+      "title": "США разрешили AMD и Nvidia поставлять ИИ-ускорители китайским бигтехам Tencent и Alibaba",
+      "url": "https://3dnews.ru/1151581",
+      "published": "2026-11-20T08:07:00Z",
+      "summary": "Минторг США выдал в этом году Nvidia и AMD разрешение на поставку сотен тысяч ускорителей искусственного интеллекта китайским клиентам. В их число вошли компании, которые Пентагон впоследствии…",
+      "thumbnail": "https://3dnews.ru/assets/external/illustrations/2026/11/20/1151581/h200.jpg",
+      "source": "3DNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "title": "Disney’s sports profit jumped 53% as it bets on live games. It also wants $3 billion in cost cuts",
+      "url": "https://fortune.com/2026/11/20/disney-espn-live-sports-3-billion-cost-cuts/",
+      "published": "2026-11-20T08:06:00Z",
+      "summary": "ESPN’s first Super Bowl and a 24-team playoff anchor Disney’s sports push. A $3 billion savings plan, including more layoffs, will help pay for what comes next.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2261108879.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Grocers sell bananas at 66 cents a pound to lure you in. What could be the strongest El Niño on record is testing that",
+      "url": "https://fortune.com/2026/11/20/bananas-tested-by-strong-el-nino-in-75-years/",
+      "published": "2026-11-20T08:06:00Z",
+      "summary": "Costa Rica wants growers paid nearly 10% more per box next year, and Ecuador has logged 851 floods since late August.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-1401803455-e1795125856500.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
       "title": "Рязань возглавила рейтинг городов ЦФО по количеству заблокированных нежелательных звонков",
       "url": "https://www.cnews.ru/news/line/2026-11-20_ryazan_vozglavila_rejting",
       "published": "2026-11-20T08:05:00Z",
       "summary": "МТС с помощью платформы цифровой безопасности «МТС Защитник» проанализировала, кому чаще всего поступали нежелательные...",
       "thumbnail": "https://www.cnews.ru/img/design2008/placeholderimage.jpg",
+      "source": "CNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "title": "As attention spans move on from Iran and oil, the world is forever changed and the conflict is escalating again",
+      "url": "https://fortune.com/2026/11/20/attention-spans-move-iran-world-forever-changed-conflict-escalating/",
+      "published": "2026-11-20T08:05:00Z",
+      "summary": "Global oil demand is projected to peak by 2030 even as worldwide energy demand continues to skyrocket.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2305023871-e1795131426539.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "‘Half philanthropy and half protest’: Noah Wyle and FIGS pair up to erase $200 million in real patients’ medical debt",
+      "url": "https://fortune.com/2026/11/20/half-philanthropy-and-half-protest-noah-wyle-and-figs-pair-up-to-erase-200-million-in-real-patients-medical-debt/",
+      "published": "2026-11-20T08:04:00Z",
+      "summary": "After decades of playing a doctor on TV, Wyle is teaming up with FIGS and Undue Medical Debt to clear debt for more than 150,000 Americans.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2276901465-e1795120613418.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "Украдены и слиты в Сеть данные тысяч клиентов Visa и Mastercard",
+      "url": "https://www.cnews.ru/news/top/2026-11-20_hakery_slili_dannye_tysyach",
+      "published": "2026-11-20T08:03:00Z",
+      "summary": "Хакерская атака привела к тому, что данные тысяч клиентов Visa, Mastercard и JP Morgan Chase оказались в интернете. Злоумышленники получили доступ к ИТ-системам сторонних организаций, но сами…",
+      "thumbnail": "https://static.cnews.ru/img/news/2026/11/20/snimok_ekrana_2026-11-20_112344.png",
       "source": "CNews",
       "topic": "Технологии",
       "lang": "ru"
@@ -489,6 +769,16 @@
       "source": "CNews",
       "topic": "Технологии",
       "lang": "ru"
+    },
+    {
+      "title": "One in four boomers are still working well into their 70s because they can’t afford to retire—around 10% have even picked up second jobs",
+      "url": "https://fortune.com/2026/11/20/boomers-working-retirement-age-second-jobs-affordability/",
+      "published": "2026-11-20T08:01:00Z",
+      "summary": "Even 60 to 75 year olds who have already retired are now considering returning to work. Unsurprisingly, it’s not because they miss the office.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2275646575-e1794843480333.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
     },
     {
       "title": "Армия России нанесла удар по заводам компании Fire Point на Украине",
@@ -519,6 +809,16 @@
       "source": "Банк России",
       "topic": "Деньги",
       "lang": "ru"
+    },
+    {
+      "title": "Warby Parker is betting its next chapter on smart glasses people actually want to wear",
+      "url": "https://fortune.com/2026/11/20/warby-parker-google-smart-glasses/",
+      "published": "2026-11-20T08:00:00Z",
+      "summary": "With growth slowing, the eyewear brand has partnered with Google on $395 AI glasses designed to look like ordinary frames, putting it head-to-head with Meta and Ray-Ban.",
+      "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2026/11/image-copy.jpg?w=300",
+      "source": "Fortune",
+      "topic": "Бизнес",
+      "lang": "en"
     },
     {
       "title": "Инсайдерская информация Банка России",
@@ -631,6 +931,16 @@
       "lang": "ru"
     },
     {
+      "title": "Apple потеряла главного разработчика софта для камеры iPhone",
+      "url": "https://3dnews.ru/1151578",
+      "published": "2026-11-20T07:44:00Z",
+      "summary": "Из Apple ушёл глава отдела, отвечающего за ПО для работы с камерами и фотографиями — это редкий случай перестановок в руководстве, стоящем за одной из важнейших функций iPhone. В конце октября…",
+      "thumbnail": "https://3dnews.ru/assets/external/illustrations/2026/11/20/1151578/apple_1.jpg",
+      "source": "3DNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
       "title": "Should AI be judging our credit worthiness?",
       "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss",
       "published": "2026-11-20T07:32:19Z",
@@ -654,7 +964,7 @@
       "title": "Tech stocks fall as Anthropic IPO fails to reignite AI trade",
       "url": "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b?syn-25a6b1a6=1",
       "published": "2026-11-20T07:29:48Z",
-      "summary": "Asia’s markets follow Wall Street lower despite Claude AI maker’s record listing",
+      "summary": "Markets in Europe and Asia follow Wall Street lower despite Claude AI maker’s record listing",
       "thumbnail": "",
       "source": "Financial Times",
       "topic": "Бизнес",
@@ -731,6 +1041,26 @@
       "lang": "ru"
     },
     {
+      "title": "Max и Telegram стали крупнейшими источниками публикаций в соцмедиа — на них пришлось 692 млн сообщений",
+      "url": "https://rb.ru/news/max-i-telegram-stali-krupnejshimi-istochnikami-publikacij-v-socmedia-na-nih-prishlos-692-mln-soobshenij/",
+      "published": "2026-11-20T07:00:00Z",
+      "summary": "В сентябре 2026 года в российских соцмедиа было 91,1 млн активных авторов, которые опубликовали 1,42 млрд сообщений, следует из данных платформы мониторинга Brand Analytics. Почти половина всех…",
+      "thumbnail": "https://media.rbcdn.ru/media/news/web-2026-11-19t174806318-1.jpg",
+      "source": "RB.RU",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Сервисы доставки попросили отложить до 2029 года введение новых правил для курьеров — о запрете езды на тротуарах и получении прав на мопеды",
+      "url": "https://vc.ru/services/3267556-servisy-dostavki-trebuyut-otlozhit-novye-pravila-dlya-kuryerov?from=rss",
+      "published": "2026-11-20T06:52:53Z",
+      "summary": "Иначе работа сервисов будет парализована как минимум на несколько месяцев.",
+      "thumbnail": "https://leonardo.osnova.io/3682af7b-0712-5099-9972-a81d1769bc71/",
+      "source": "vc.ru",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "title": "Совет директоров МТС утвердил обратный выкуп акций на 21,5 млрд рублей",
       "url": "https://www.kommersant.ru/doc/9114355",
       "published": "2026-11-20T06:50:32Z",
@@ -758,6 +1088,26 @@
       "thumbnail": "",
       "source": "Коммерсантъ",
       "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "title": "Хакер Cyberleek «слил» в открытый доступ почти рабочую сборку GTA VI для Xbox, и это только начало",
+      "url": "https://3dnews.ru/1151574",
+      "published": "2026-11-20T06:28:00Z",
+      "summary": "Наделавший шума серией «слитых» отрывков геймплея GTA VI хакер Cyberleek спустя месяц молчания вернулся с новой утечкой криминального боевика с открытым миром от Rockstar Games (принадлежит…",
+      "thumbnail": "https://3dnews.ru/assets/external/illustrations/2026/11/20/1151574/00.jpg",
+      "source": "3DNews",
+      "topic": "Технологии",
+      "lang": "ru"
+    },
+    {
+      "title": "Широкоэкранный складной смартфон Motorola Razr Flex показался на качественных изображениях",
+      "url": "https://3dnews.ru/1151573",
+      "published": "2026-11-20T06:28:00Z",
+      "summary": "Ставка Samsung на широкоформатный складной смартфон Galaxy Z Fold8 в этом году сыграла успешно, и Motorola готовится ответить собственным устройством аналогичного типа. О нём стало известно…",
+      "thumbnail": "https://3dnews.ru/assets/external/illustrations/2026/11/20/1151573/sm.razr-flex_1.800.jpg",
+      "source": "3DNews",
+      "topic": "Технологии",
       "lang": "ru"
     },
     {
@@ -819,6 +1169,16 @@
       "source": "Financial Times",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "title": "День 1731: некоторые операторы дата-центров попросили клиентов самих определить 10% мощностей для госрезерва",
+      "url": "https://vc.ru/money/3267441-operatory-data-tsentrov-prosyat-klientov-opredelit-moschnosti-dlya-gosrezerva?from=rss",
+      "published": "2026-11-20T05:28:35Z",
+      "summary": "Собираем новости, события и мнения о рынках, банках и реакциях компаний.",
+      "thumbnail": "https://leonardo.osnova.io/8ddd00bd-26c6-51ac-92e2-bba86a8e356c/",
+      "source": "vc.ru",
+      "topic": "Бизнес",
+      "lang": "ru"
     },
     {
       "title": "Названа средняя зарплата в Москве",
@@ -1351,6 +1711,16 @@
       "lang": "en"
     },
     {
+      "title": "I Used to Counteroffer My Best Employees With More Money. Now I Rely on These 3 Strategies.",
+      "url": "https://www.entrepreneur.com/building-a-business/i-used-to-counteroffer-my-best-employees-with-more-money-now-i-rely-on-these-3-strategies",
+      "published": "2026-11-19T21:00:00Z",
+      "summary": "Raises and equity can delay a top performer’s exit, but smarter compensation structures can keep them for the long haul.",
+      "thumbnail": "https://www.entrepreneur.com/wp-content/uploads/sites/2/2026/11/counter-best-employees-1126-g-890545720.jpg",
+      "source": "Entrepreneur",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
       "title": "Новая статья: Обзор блока питания GamerStorm PF800D V2",
       "url": "https://3dnews.ru/1151501",
       "published": "2026-11-19T21:00:00Z",
@@ -1461,6 +1831,16 @@
       "lang": "ru"
     },
     {
+      "title": "I Never Saw My Team’s Daily Work as Content. It Turned Out to Be a Powerful Marketing Tool.",
+      "url": "https://www.entrepreneur.com/building-a-business/grow-your-business/i-never-saw-my-teams-daily-work-as-content-it-turned-out-to-be-a-powerful-marketing-tool",
+      "published": "2026-11-19T20:00:00Z",
+      "summary": "The everyday work you take for granted could be the most compelling story your business has to tell.",
+      "thumbnail": "https://www.entrepreneur.com/wp-content/uploads/sites/2/2026/11/content-into-marketing-1126_g2277147017.jpg",
+      "source": "Entrepreneur",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
       "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
       "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
       "published": "2026-11-19T19:58:30Z",
@@ -1488,6 +1868,26 @@
       "thumbnail": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/11/p-1-91645763-elon-musk-not-maga.jpg",
       "source": "Fast Company",
       "topic": "Карьера",
+      "lang": "en"
+    },
+    {
+      "title": "SEO Isn’t Over, But Google Is Losing Its Monopoly. Here’s How to Adapt.",
+      "url": "https://www.entrepreneur.com/building-a-business/seo-isnt-over-but-google-is-losing-its-monopoly-heres-how-to-adapt",
+      "published": "2026-11-19T19:30:00Z",
+      "summary": "The shift from traditional search to AI-powered discovery is changing the future of digital marketing.",
+      "thumbnail": "https://www.entrepreneur.com/wp-content/uploads/sites/2/2026/11/google-losing-its-monopoly-1126-g-1250142483.jpg",
+      "source": "Entrepreneur",
+      "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "title": "How the Race to Control Product Recommendations Is Changing the Creator Economy",
+      "url": "https://www.entrepreneur.com/building-a-business/how-the-race-to-control-product-recommendations-is-changing-the-creator-economy",
+      "published": "2026-11-19T19:30:00Z",
+      "summary": "Reddit’s new ad test points to a bigger shift: Platforms are connecting creators, communities, AI discovery and shopping to influence the decision before a customer buys.",
+      "thumbnail": "https://www.entrepreneur.com/wp-content/uploads/sites/2/2026/11/product-recommendations-1126-g-2281513026.jpg",
+      "source": "Entrepreneur",
+      "topic": "Бизнес",
       "lang": "en"
     },
     {
@@ -1594,7 +1994,7 @@
       "title": "Разработчик из Китая выпустил Andarium — эмулятор Android на iPhone для запуска APK-файлов приложений",
       "url": "https://vc.ru/services/3266775-andarium-emulyator-android-na-iphone?from=rss",
       "published": "2026-11-19T18:20:19Z",
-      "summary": "Он доступен в российском App Store бесплатно.",
+      "summary": "Например, сервисов, удалённых из российских магазинов приложений.",
       "thumbnail": "https://leonardo.osnova.io/6b1cfb76-328f-5cf5-aae3-2162d79f9ee6/",
       "source": "vc.ru",
       "topic": "Бизнес",

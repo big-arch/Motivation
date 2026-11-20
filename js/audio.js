@@ -406,6 +406,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
   }
   return {
     panel, homeAudio, savedMarkup, resumeMarkup,
+    selectPodcast(name) { delete filters.podcasts; settings('podcasts').source = name || ''; },
     hasSaved(){ return Boolean(audioState().saved?.length); },
     set(kind,data){
       feeds[kind]=data;

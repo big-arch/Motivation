@@ -880,4 +880,226 @@ const archivePhotos = {
       "height": 467
     }
   ]
+,
+  "mogilko-book": [
+    {
+      "caption": "Марина Могилко в книжном магазине The Last Bookstore.",
+      "credit": "Александра Георгиевна Гененфельд",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Marina_Mogilko_in_The_Last_Bookstore.jpg",
+      "width": 832,
+      "height": 1040
+    },
+    {
+      "caption": "Марина Могилко в студии YouTube Space в Сан-Франциско.",
+      "credit": "Олег Шевчишин",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Marina_Mogilko_in_YouTube_Space,_San_Francisco.jpg",
+      "width": 832,
+      "height": 1040
+    }
+  ],
+  "think-monk": [
+    {
+      "caption": "Джей Шетти, автор книги и ведущий подкаста On Purpose.",
+      "credit": "Steven Erle",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Jay_Shetty_Headshot_2021.jpg",
+      "width": 745,
+      "height": 1040
+    },
+    {
+      "caption": "Белый дом, июль 2023 года. Запись Джо Байдена в гостевой книге Джея Шетти.",
+      "credit": "The White House",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Joe_Biden_signs_a_guest_book_for_Jay_Shetty_(53235059234).jpg",
+      "width": 960,
+      "height": 640
+    }
+  ],
+  "grebenuk-sales": [
+    {
+      "caption": "Руководитель отдела дизайна и продаж Рейчел Селлман обучает сотрудников Houston Homes. Снимок к теме обучения продавцов.",
+      "credit": "Houstonhomesmo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sales_Training_at_Houston_Homes.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "caption": "Книжная торговля на Texas Teen Book Festival в 2018 году. Снимок к теме работы с покупателем.",
+      "credit": "Larry D. Moore",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Book_Sales_2018_Texas_Teen_Book_Festival.jpg",
+      "width": 960,
+      "height": 640
+    }
+  ],
+  "hartmann-action": [
+    {
+      "caption": "Предприниматель Оскар Хартманн, автор книги.",
+      "credit": "Darinelly",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Oskar_Hartmann.jpg",
+      "width": 819,
+      "height": 1040
+    },
+    {
+      "caption": "Стартовые колодки на дорожке в Норман-Парке. Снимок к теме подготовки к старту.",
+      "credit": "Norman Park athletics track: starting blocks by Stephen Craven",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Norman_Park_athletics_track,_starting_blocks_-_geograph.org.uk_-_2168170.jpg",
+      "width": 640,
+      "height": 480
+    }
+  ],
+  "mom-test": [
+    {
+      "caption": "Антрополог Вольфганг Краус и его помощник проводят полевое интервью на рынке в Тингире, Марокко, в 2016 году.",
+      "credit": "Man77",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kraus_interview_Souq.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "caption": "Исследователь Садик беседует с участником проекта Wikimedia о языковом разнообразии. Снимок к теме интервью.",
+      "credit": "Shahadusadik",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sadik_interviews_research_participant.jpg",
+      "width": 744,
+      "height": 992
+    }
+  ],
+  "designing-life": [
+    {
+      "caption": "Школа дизайна Стэнфордского университета во время церемонии открытия.",
+      "credit": "Steve Jurvetson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:D.school_Stanford.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "caption": "Доска с идеями на практикуме по дизайн-мышлению Wikimedia Deutschland.",
+      "credit": "Corinna Schuster (WMDE)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Design_Thinking_Workshop_WMDE_1.jpg",
+      "width": 960,
+      "height": 589
+    }
+  ],
+  "linguatrip": [
+    {
+      "caption": "Марина Могилко и физик Джон Мартинис на Всемирном экономическом форуме в Давосе в 2026 году.",
+      "credit": "Babbieshannon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Marina_Mogilko_with_John_Martinis_at_World_Economic_Forum_in_Davos,_2026.jpg",
+      "width": 596,
+      "height": 1040
+    },
+    {
+      "caption": "Занятие в школе Баочжун на Тайване. Снимок к теме языкового обучения.",
+      "credit": "褒忠國中 雲端網",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Classroom_with_students_in_Baozhong_Junior_High_School_20130308.jpg",
+      "width": 960,
+      "height": 643
+    }
+  ],
+  "youdo": [
+    {
+      "caption": "Курьер на улице Вавилова в Москве, август 2025 года. Снимок к теме городских услуг.",
+      "credit": "Retired electrician",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Moscow,_Vavilova_Street,_Yandex.Eda_courier,_Aug_2025_01.jpg",
+      "width": 698,
+      "height": 1040
+    },
+    {
+      "caption": "Веломеханик за работой в Кении. Ремонт велосипеда — пример задания с проверяемым результатом.",
+      "credit": "NoahNairobi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Bicycle_Mechanic.jpg",
+      "width": 960,
+      "height": 720
+    }
+  ],
+  "clientocracy": [
+    {
+      "caption": "Пельмени на полке «ВкусВилла» на Зацепском Валу в Москве, март 2025 года.",
+      "credit": "Retired electrician",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Moscow,_Vkusvill_Zatsepsky_Val_Mar.2025_-_pelmeni_04.jpg",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "caption": "Торговый зал супермаркета на Сейшелах. Снимок к теме ассортимента и выбора продуктов.",
+      "credit": "Seychelles News Agency",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Seychelles_supermarket.jpg",
+      "width": 640,
+      "height": 427
+    }
+  ]
+,
+  "igtv": [
+    {
+      "caption": "Здание на Джефферсон-драйв в Менло-Парке, где на момент съёмки размещалась штаб-квартира Instagram.",
+      "credit": "Coolcaesar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:200_Jefferson_Drive.jpg",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "caption": "Посетители снимают водопад Шифэнь на смартфон, Тайвань, август 2019 года.",
+      "credit": "Yue gowua YT",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:People_recording_video_with_iPhone_at_Shifen_Waterfall_20190812.jpg",
+      "width": 960,
+      "height": 720
+    }
+  ],
+  "linkedin-stories": [
+    {
+      "caption": "Штаб-квартира LinkedIn в Саннивейле, Калифорния.",
+      "credit": "LPS.1",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:LinkedIn_Headquarters_Sunnyvale.jpg",
+      "width": 960,
+      "height": 640
+    },
+    {
+      "caption": "Участник рабочего семинара в Будапеште задаёт вопрос. Снимок к теме обмена профессиональным опытом.",
+      "credit": "Sarah Stierch",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Alex_asks_a_question_at_the_Program_Evaluation_%26_Design_Workshop_in_Budapest_-_Sarah_Stierch.jpg",
+      "width": 943,
+      "height": 1040
+    }
+  ]
 };

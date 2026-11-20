@@ -340,3 +340,55 @@ a.route-card:hover { border-color:var(--gold); }
   .service-heading { flex-direction:column; }
   .service-card { padding:15px; }
 }
+
+/* Editorial selection of channels, with original episode artwork. */
+.creator-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:34px clamp(18px,2.2vw,32px); }
+.creator-card { min-width:0; padding-bottom:17px; border-bottom:1px solid var(--line); }
+.creator-preview { display:block; width:100%; padding:0; text-align:left; }
+.creator-preview .media-poster { aspect-ratio:16/9; border-radius:6px; }
+.creator-preview img { transition:transform .24s var(--ease); }
+.creator-byline,.creator-meta,.creator-detail-meta,.creator-follow,.creator-catalog-link { display:flex; align-items:center; flex-wrap:wrap; gap:7px 12px; }
+.creator-byline { justify-content:space-between; margin:12px 0 5px; color:var(--soft-gold); font-size:12px; font-weight:600; }
+.creator-byline span+span { color:var(--muted); font-weight:500; }
+.creator-card h3 { font-size:clamp(22px,2.1vw,32px); line-height:1.16; letter-spacing:-.027em; text-wrap:balance; }
+.creator-format,.creator-meta,.creator-count,.creator-source { font-size:12px; color:var(--muted); }
+.creator-format { margin-top:8px; }
+.creator-meta { margin:4px 0; }
+.creator-card .text-link,.creator-feature .text-link { min-height:42px; }
+.creator-count { margin:0 0 12px; }
+.creator-topics { margin:20px 0 12px; }
+.creator-feature,.creator-profile-spread { display:grid; grid-template-columns:minmax(0,1.23fr) minmax(0,1fr); align-items:center; column-gap:clamp(20px,3.7vw,65px); }
+.creator-feature { padding-bottom:clamp(20px,3.2vw,44px); margin-bottom:clamp(24px,3.2vw,44px); border-bottom:1px solid var(--line); }
+.creator-feature .creator-byline { margin-top:0; }
+.creator-feature h2,.creator-profile-spread h2 { margin:9px 0 14px; font-size:clamp(30px,3.3vw,53px); line-height:1.08; letter-spacing:-.043em; text-wrap:balance; }
+.creator-feature-copy>p,.creator-profile-spread p,.creator-notes p { max-width:63ch; color:var(--text); }
+.creator-feature-copy>.creator-meta { margin-top:15px; }
+.creator-profile-spread .button { margin-top:18px; }
+.creator-detail-meta { justify-content:space-between; margin:18px 0; color:var(--soft-gold); font-size:13px; }
+.creator-notes { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:clamp(25px,5vw,84px); margin:clamp(28px,4vw,60px) 0 26px; }
+.creator-notes h2,.creator-related h2 { font-size:clamp(24px,2.4vw,36px); letter-spacing:-.035em; line-height:1.2; margin-bottom:14px; }
+.chapter-link { display:inline-flex; align-items:center; gap:10px; min-height:44px; margin:14px 0; padding:8px 12px; border:1px solid var(--line); border-radius:5px; text-align:left; }
+.chapter-link b { color:var(--soft-gold); font-variant-numeric:tabular-nums; }.chapter-link .icon { width:16px; flex-shrink:0; }
+.creator-notes .creator-source { margin-top:13px; color:var(--muted); }.creator-source a { text-decoration:underline; text-underline-offset:3px; }
+.creator-follow { border-top:1px solid var(--line); padding-top:20px; gap:10px 20px; }
+.creator-related { margin:30px 0; }.creator-related .row-meta,.creator-notes .row-meta { display:block; }
+.creator-catalog-link { width:fit-content; min-height:42px; color:var(--soft-gold); font-size:14px; margin:8px 0; }
+.creator-catalog-link .icon { width:17px; height:17px; }
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  .creator-preview:hover img { transform:scale(1.025); }
+}
+@media (hover:hover) {
+  .creator-card h3 a:hover,.creator-feature h2 a:hover,.creator-catalog-link:hover { color:var(--gold); }
+  .chapter-link:hover { border-color:var(--gold); }
+}
+@media (max-width:850px) { .creator-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:650px) {
+  .media-page>.media-tabs { flex-wrap:nowrap; gap:17px; max-width:100%; overflow-x:auto; padding:2px 1px 4px; scrollbar-width:thin; scrollbar-color:var(--line) transparent; }
+  .media-page>.media-tabs a { flex:0 0 auto; min-height:42px; }
+  .creator-feature,.creator-profile-spread,.creator-notes { grid-template-columns:1fr; row-gap:17px; }
+  .creator-grid { grid-template-columns:1fr; row-gap:26px; }
+  .creator-feature-copy .creator-meta { margin-top:9px; }
+  .creator-notes { row-gap:29px; }
+  .creator-detail-meta { align-items:flex-start; gap:2px 10px; }
+  .creator-detail-meta .creator-meta { margin:0; }
+}

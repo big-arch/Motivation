@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-11-20T08:32:46Z",
+  "updated": "2026-11-20T11:16:42Z",
   "sources": [
     {
       "id": "24236675",
@@ -10,7 +10,17 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/24236675/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCLJl8-mbCfolWMkh1F1qfjA",
+      "name": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCLJl8-mbCfolWMkh1F1qfjA",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "38420507",
@@ -20,7 +30,17 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/38420507/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCrTZilC84na02gb9awUAx9w",
+      "name": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCrTZilC84na02gb9awUAx9w",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "33891991",
@@ -30,7 +50,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/33891991/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "32407016",
@@ -40,7 +60,17 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/32407016/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCaR6XjSJJsLbKN3n6VYsGKw",
+      "name": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCaR6XjSJJsLbKN3n6VYsGKw",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "23873201",
@@ -50,7 +80,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/23873201/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "38395796",
@@ -60,7 +90,17 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/38395796/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCyjGdVmEhYLXgyPf9jNHPrw",
+      "name": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCyjGdVmEhYLXgyPf9jNHPrw",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "77097781",
@@ -69,8 +109,8 @@
       "lang": "ru",
       "platform": "rutube",
       "url": "https://rutube.ru/channel/77097781/",
-      "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "count": 7,
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "25202353",
@@ -80,7 +120,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/25202353/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "23617327",
@@ -90,7 +130,17 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/23617327/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UC1bFQRZLgbShAkKGY0UMrWQ",
+      "name": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UC1bFQRZLgbShAkKGY0UMrWQ",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "12486282",
@@ -100,7 +150,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/12486282/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "67891076",
@@ -110,7 +160,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/67891076/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "27045988",
@@ -120,7 +170,17 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/27045988/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCHb8IB3bh9uXpKL2KwY7viA",
+      "name": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCHb8IB3bh9uXpKL2KwY7viA",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "17943278",
@@ -130,7 +190,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/17943278/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "67828597",
@@ -140,7 +200,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/67828597/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "24209222",
@@ -150,7 +210,17 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/24209222/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCL-HTw4Wfi9Igh9r1CBrrDA",
+      "name": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCL-HTw4Wfi9Igh9r1CBrrDA",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "14167677",
@@ -160,7 +230,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/14167677/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "60024369",
@@ -170,7 +240,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/60024369/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCFJnZHIusOlHr-pbYVHmr-A",
@@ -179,8 +249,28 @@
       "lang": "ru",
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCFJnZHIusOlHr-pbYVHmr-A",
-      "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
+    },
+    {
+      "id": "UCLHUstZMFFBSs5_2Uouvadg",
+      "name": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCLHUstZMFFBSs5_2Uouvadg",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
+    },
+    {
+      "id": "UC7cHp-kdghep0vZrCBNmQPw",
+      "name": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UC7cHp-kdghep0vZrCBNmQPw",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "UCx32DZpDnOthjoWLNV48vrA",
@@ -190,7 +280,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCx32DZpDnOthjoWLNV48vrA",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "61493599",
@@ -200,7 +290,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/61493599/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "24161964",
@@ -210,7 +300,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/24161964/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "23486710",
@@ -220,7 +310,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/23486710/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "42389626",
@@ -230,7 +320,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/42389626/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "25061544",
@@ -240,7 +330,17 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/25061544/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCVedwIvkmSZdYUcy5OJJRZQ",
+      "name": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCVedwIvkmSZdYUcy5OJJRZQ",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "66065435",
@@ -250,7 +350,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/66065435/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "42562801",
@@ -260,7 +360,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/42562801/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "44357506",
@@ -270,7 +370,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/44357506/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "61750943",
@@ -280,7 +380,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/61750943/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "36919980",
@@ -290,7 +390,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/36919980/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "25869641",
@@ -300,7 +400,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/25869641/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "32130473",
@@ -310,7 +410,7 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/32130473/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "23838056",
@@ -320,7 +420,27 @@
       "platform": "rutube",
       "url": "https://rutube.ru/channel/23838056/",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCo3S9OQDrM79i7yPmixnSsQ",
+      "name": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCo3S9OQDrM79i7yPmixnSsQ",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
+    },
+    {
+      "id": "UCJkRFzV59Yk9JvD3_uG3vHA",
+      "name": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCJkRFzV59Yk9JvD3_uG3vHA",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -330,7 +450,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UC9cn0TuPq4dnbTY-CBsm8XA",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCoOae5nYA7VqaXzerajD0lg",
@@ -340,7 +460,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCoOae5nYA7VqaXzerajD0lg",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCDXTQ8nWmx_EhZ2v-kp7QxA",
@@ -350,7 +470,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCDXTQ8nWmx_EhZ2v-kp7QxA",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCtUId5WFnN82GdDy7DgaQ7w",
@@ -360,7 +480,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCtUId5WFnN82GdDy7DgaQ7w",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCIhJnsJ0IHlVNnYfp-gw_5Q",
@@ -370,7 +490,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCIhJnsJ0IHlVNnYfp-gw_5Q",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCrtPXCqjm9c7nqgJL-vBSZg",
@@ -380,7 +500,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCrtPXCqjm9c7nqgJL-vBSZg",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCH5_L3ytGbBziX0CLuYdQ1Q",
@@ -390,7 +510,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCH5_L3ytGbBziX0CLuYdQ1Q",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCHDr4RtxwA1KqKGwxgdK4Vg",
@@ -400,7 +520,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCHDr4RtxwA1KqKGwxgdK4Vg",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCWo4IA01TXzBeGJJKWHOG9g",
@@ -410,7 +530,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
@@ -420,7 +540,17 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCbk_QsfaFZG6PdQeCvaYXJQ",
+      "name": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCbk_QsfaFZG6PdQeCvaYXJQ",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "UCwAnu01qlnVg1Ai2AbtTMaA",
@@ -430,7 +560,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCwAnu01qlnVg1Ai2AbtTMaA",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCXUyg1vYSupswhi0zNeD-5w",
@@ -440,7 +570,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCXUyg1vYSupswhi0zNeD-5w",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
@@ -450,7 +580,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCJ24N4O0bP7LGLBDvye7oCA",
@@ -460,7 +590,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCJ24N4O0bP7LGLBDvye7oCA",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCk2U-Oqn7RXf-ydPqfSxG5g",
@@ -470,7 +600,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCk2U-Oqn7RXf-ydPqfSxG5g",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCaUvoQTl3-vcwSgcHQlvGKg",
@@ -480,7 +610,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCaUvoQTl3-vcwSgcHQlvGKg",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCyaN6mg5u8Cjy2ZI4ikWaug",
@@ -490,7 +620,17 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCyaN6mg5u8Cjy2ZI4ikWaug",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCQpPo9BNwezg54N9hMFQp6Q",
+      "name": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCQpPo9BNwezg54N9hMFQp6Q",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "UC9OIwUcx-Uss7xj7s1P5XGw",
@@ -500,7 +640,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UC9OIwUcx-Uss7xj7s1P5XGw",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCeNm7lbfRg9wiBDSLQ-M8RA",
@@ -510,7 +650,17 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCeNm7lbfRg9wiBDSLQ-M8RA",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
+    },
+    {
+      "id": "UCiq1FIgtEK7LRAOB1JXTPig",
+      "name": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCiq1FIgtEK7LRAOB1JXTPig",
+      "count": 15,
+      "checked": "2026-11-20T11:16:42Z"
     },
     {
       "id": "UCPmfPl-BsCd3wmE8i45LAoA",
@@ -520,7 +670,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCPmfPl-BsCd3wmE8i45LAoA",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UC4bq21IPPbpu0Qrsl7LW0sw",
@@ -530,7 +680,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UC4bq21IPPbpu0Qrsl7LW0sw",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCGwuxdEeCf0TIA2RbPOj-8g",
@@ -540,7 +690,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCGwuxdEeCf0TIA2RbPOj-8g",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCGq-a57w-aPwyi3pW7XLiHw",
@@ -550,7 +700,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCGq-a57w-aPwyi3pW7XLiHw",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCSPYNpQ2fHv9HJ-q6MIMaPw",
@@ -560,7 +710,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCSPYNpQ2fHv9HJ-q6MIMaPw",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCFCEuCsyWP0YkP3CZ3Mr01Q",
@@ -570,7 +720,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCFCEuCsyWP0YkP3CZ3Mr01Q",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCL8w_A8p8P1HWI3k6PR5Z6w",
@@ -580,7 +730,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCL8w_A8p8P1HWI3k6PR5Z6w",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
@@ -590,7 +740,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCM4d4vlR_63WQJv6UxTwZqg",
@@ -600,7 +750,7 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCM4d4vlR_63WQJv6UxTwZqg",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     },
     {
       "id": "UCcefcZRL2oaA_uBNeo5UOWg",
@@ -610,10 +760,71 @@
       "platform": "youtube",
       "url": "https://www.youtube.com/channel/UCcefcZRL2oaA_uBNeo5UOWg",
       "count": 6,
-      "checked": "2026-11-20T08:32:46Z"
+      "checked": "2026-11-20T08:59:42Z"
     }
   ],
   "items": [
+    {
+      "id": "wVYKVfUE1Mw",
+      "platform": "youtube",
+      "title": "Как научиться красиво и уверенно говорить? Полный выпуск подкаста смотрите по ссылке выше ▶️",
+      "url": "https://www.youtube.com/watch?v=wVYKVfUE1Mw",
+      "published": "2026-11-20T10:00:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/wVYKVfUE1Mw/hqdefault.jpg",
+      "summary": "У нас на подкасте Анна Эрнстовна Валл - эксперт по деловому этикету и коммуникациям, филолог. Обучала сотрудников крупнейших компаний, таких как Газпром и Coca-Cola, работает консультантом в клинике…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "x5jne6flaj4",
+      "platform": "youtube",
+      "title": "Что Сторонский думает об AI? #shorts",
+      "url": "https://www.youtube.com/watch?v=x5jne6flaj4",
+      "published": "2026-11-20T09:00:24Z",
+      "thumbnail": "https://i.ytimg.com/vi/x5jne6flaj4/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "23fa6e7c5d2296724253ffad4fa02a6e",
+      "platform": "rutube",
+      "title": "Утреннее шоу — «Деньги. Утро. БКС»! 23 ноября в 8:00",
+      "url": "https://rutube.ru/video/23fa6e7c5d2296724253ffad4fa02a6e/",
+      "published": "2026-11-20T08:45:27Z",
+      "thumbnail": "https://pic.rtbcdn.ru/video/2026-11-20/b0/e2/b0e27920076f971dc6a7b968c23cacc3.jpg",
+      "duration": 0,
+      "summary": "🔥 «Деньги. Утро. БКС»! Каждый понедельник в 8:00 разбираем главное перед открытием рынка — с кофе, без пафоса, по делу. В выпуске: 🔹 Новости выходных и чего ждать от предстоящей недели 🔹 Что…",
+      "source": "БКС Мир инвестиций",
+      "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "id": "Z35utgogojs",
+      "platform": "youtube",
+      "title": "«ВкусВилл» в цифрах",
+      "url": "https://www.youtube.com/watch?v=Z35utgogojs",
+      "published": "2026-11-20T08:23:42Z",
+      "thumbnail": "https://i.ytimg.com/vi/Z35utgogojs/hqdefault.jpg",
+      "summary": "Полный выпуск ищите на YouTube: КУЧМЕНТ ПОПОВИЧ #михаилкучмент #попович #бизнеснасалфетке #бизнес #предпринимательство #вкусвилл #лояльность #выручка #клиенты",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "ONdkZabYRpI",
+      "platform": "youtube",
+      "title": "Я стараюсь, но ничего не меняется: почему?",
+      "url": "https://www.youtube.com/watch?v=ONdkZabYRpI",
+      "published": "2026-11-20T05:45:37Z",
+      "thumbnail": "https://i.ytimg.com/vi/ONdkZabYRpI/hqdefault.jpg",
+      "summary": "Смотрите полный выпуск на канале @kolosook",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
     {
       "id": "DUw8cIenO-4",
       "platform": "youtube",
@@ -637,6 +848,31 @@
       "source": "Computer History Museum",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "bvzP_UYcri4",
+      "platform": "youtube",
+      "title": "They never even gave you a first try",
+      "url": "https://www.youtube.com/watch?v=bvzP_UYcri4",
+      "published": "2026-11-19T22:00:33Z",
+      "thumbnail": "https://i.ytimg.com/vi/bvzP_UYcri4/hqdefault.jpg",
+      "summary": "Jay on the friendships that leave you smaller than they found you. Watch the FULL episode on Netflix & Spotify. https://jayshettypodcast.com/Netflix https://jayshettypodcast.com/Spotify #jayshetty…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
+      "id": "Jp0TgQrc9D4",
+      "platform": "youtube",
+      "title": "Бывший рекрутер Amazon раскрыл, за что отсеивают кандидатов. Алекс Шигидин",
+      "url": "https://www.youtube.com/watch?v=Jp0TgQrc9D4",
+      "published": "2026-11-19T21:56:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/Jp0TgQrc9D4/hqdefault.jpg",
+      "summary": "Откройте свой профиль рядом с выпуском. Видно ли по первым строкам, за какой результат вы отвечали?",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 5364
     },
     {
       "id": "NCFkhaSzMQY",
@@ -711,6 +947,19 @@
       "lang": "en"
     },
     {
+      "id": "h4V7-RZjq5c",
+      "platform": "youtube",
+      "title": "Alex Cooper on Barstool, Call Her Daddy and Being Called a Bad Friend",
+      "url": "https://www.youtube.com/watch?v=h4V7-RZjq5c",
+      "published": "2026-11-19T16:30:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/h4V7-RZjq5c/hqdefault.jpg",
+      "summary": "Alex Cooper on the one label that hurts her more than any other, and who gets cast as the villain when things go wrong in public. In this conversation from 2022, Alex Cooper and Jay Shetty talk about…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en",
+      "duration": 1786
+    },
+    {
       "id": "hc3_ciYu0QU",
       "platform": "youtube",
       "title": "Never Rush to Answer a Difficult Question | Mel Robbins #shorts",
@@ -733,6 +982,30 @@
       "source": "INSEAD",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "iW6UZ9_cjpU",
+      "platform": "youtube",
+      "title": "The Hidden Instagram Feature Everyone Is Missing",
+      "url": "https://www.youtube.com/watch?v=iW6UZ9_cjpU",
+      "published": "2026-11-19T15:41:10Z",
+      "thumbnail": "https://i.ytimg.com/vi/iW6UZ9_cjpU/hqdefault.jpg",
+      "summary": "",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
+      "id": "t9sXmkNa4nY",
+      "platform": "youtube",
+      "title": "только 4 часа в день человек может работать эффективно: миф или правда? Колосок",
+      "url": "https://www.youtube.com/watch?v=t9sXmkNa4nY",
+      "published": "2026-11-19T15:38:59Z",
+      "thumbnail": "https://i.ytimg.com/vi/t9sXmkNa4nY/hqdefault.jpg",
+      "summary": "Смотрите полный выпуск на канале @kolosook",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru"
     },
     {
       "id": "_GpD6A58FBE",
@@ -920,6 +1193,18 @@
       "lang": "en"
     },
     {
+      "id": "L7uoByIMbHk",
+      "platform": "youtube",
+      "title": "Почему деньги — не главное для женщины?  Полный выпуск подкаста смотрите по ссылке выше ▶️ #подкаст",
+      "url": "https://www.youtube.com/watch?v=L7uoByIMbHk",
+      "published": "2026-11-19T10:00:30Z",
+      "thumbnail": "https://i.ytimg.com/vi/L7uoByIMbHk/hqdefault.jpg",
+      "summary": "У нас на подкасте Марина Нахалова - семейный психолог, 19 лет в профессии, более 3 тысяч клиентов, член ассоциации психологов Москвы. Что на самом деле хотят женщины, но никогда не попросят? О чем…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "eocM1C3HfQg",
       "platform": "youtube",
       "title": "Senator Bernie Sanders: Iran Wasn't Trump's Idea. Someone Else Pushed Him Into It!",
@@ -942,6 +1227,18 @@
       "source": "Work It Daily",
       "topic": "Карьера",
       "lang": "en"
+    },
+    {
+      "id": "gMiMd-53JD8",
+      "platform": "youtube",
+      "title": "3 ТРЕНДА ПИТАНИЯ ОТ «ВКУСВИЛЛ»",
+      "url": "https://www.youtube.com/watch?v=gMiMd-53JD8",
+      "published": "2026-11-19T07:11:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/gMiMd-53JD8/hqdefault.jpg",
+      "summary": "Инсайты от наших гостей в моем Telegram-канале МИХАИЛ КУЧМЕНТ — сохраняйте и применяйте! #михаилкучмент #попович #бизнеснасалфетке #бизнес #предпринимательство #вкусвилл #питание #тренды…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
     },
     {
       "id": "puUJw5VItR4",
@@ -1077,6 +1374,18 @@
       "lang": "en"
     },
     {
+      "id": "GI4CQ2Nwkzg",
+      "platform": "youtube",
+      "title": "How To Build AI Loops That Actually Learn",
+      "url": "https://www.youtube.com/watch?v=GI4CQ2Nwkzg",
+      "published": "2026-11-18T17:29:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/GI4CQ2Nwkzg/hqdefault.jpg",
+      "summary": "",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
       "id": "hn3vYhlqEQU",
       "platform": "youtube",
       "title": "Tech workers are flocking to NYC",
@@ -1101,6 +1410,19 @@
       "lang": "en"
     },
     {
+      "id": "28qT0ycz-DE",
+      "platform": "youtube",
+      "title": "Give Me 18 Minutes and You'll Finally Let Go",
+      "url": "https://www.youtube.com/watch?v=28qT0ycz-DE",
+      "published": "2026-11-18T16:30:11Z",
+      "thumbnail": "https://i.ytimg.com/vi/28qT0ycz-DE/hqdefault.jpg",
+      "summary": "Поставьте на паузу после вопроса о повторном выборе. Какая часть вашего нынешнего решения связана с прошлым, а какая — с будущим?",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en",
+      "duration": 1104
+    },
+    {
       "id": "cef4538935418101bf52f777a402c267",
       "platform": "rutube",
       "title": "Как предпринимателю системно запускать новые бизнесы?",
@@ -1110,6 +1432,18 @@
       "duration": 6577,
       "summary": "Как предпринимателю системно запускать новые бизнесы? | Стартап Академия СКОЛКОВО Как найти перспективную бизнес-идею, создать востребованный продукт и занять своё место на рынке? На лекции Стартап…",
       "source": "SKOLKOVO Programmes",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "a4Bn4s4q5oc",
+      "platform": "youtube",
+      "title": "В скандале Nvidia виноват Anthropic? #shorts",
+      "url": "https://www.youtube.com/watch?v=a4Bn4s4q5oc",
+      "published": "2026-11-18T16:14:10Z",
+      "thumbnail": "https://i.ytimg.com/vi/a4Bn4s4q5oc/hqdefault.jpg",
+      "summary": "",
+      "source": "Это Осетинская!",
       "topic": "Бизнес",
       "lang": "ru"
     },
@@ -1310,6 +1644,18 @@
       "lang": "en"
     },
     {
+      "id": "xLq_OmbYW4s",
+      "platform": "youtube",
+      "title": "Один жук изменил историю технологий! Полный выпуск подкаста смотрите по ссылке выше ▶️ #подкаст",
+      "url": "https://www.youtube.com/watch?v=xLq_OmbYW4s",
+      "published": "2026-11-18T11:00:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/xLq_OmbYW4s/hqdefault.jpg",
+      "summary": "У нас на подкасте Анна Эрнстовна Валл - эксперт по деловому этикету и коммуникациям, филолог. Обучала сотрудников крупнейших компаний, таких как Газпром и Coca-Cola, работает консультантом в клинике…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "103328bfece5e48ed813b7784147062a",
       "platform": "rutube",
       "title": "МКПАО «Циан»: День инвестора",
@@ -1349,6 +1695,18 @@
       "lang": "ru"
     },
     {
+      "id": "rMFgsndWAHA",
+      "platform": "youtube",
+      "title": "Not everyone needs to know your good news",
+      "url": "https://www.youtube.com/watch?v=rMFgsndWAHA",
+      "published": "2026-11-18T09:00:12Z",
+      "thumbnail": "https://i.ytimg.com/vi/rMFgsndWAHA/hqdefault.jpg",
+      "summary": "Jay on what it costs you to share the promotion, the holiday and the next move with everyone. Watch and listen to On Purpose on Netflix & Spotify. https://jayshettypodcast.com/Netflix…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
       "id": "zOH2M5zjGk8",
       "platform": "youtube",
       "title": "How Do You Transform a 1970s Building? | INSEAD",
@@ -1359,6 +1717,18 @@
       "source": "INSEAD",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "OQp3z4GRyDk",
+      "platform": "youtube",
+      "title": "Почему именно миллениалы стали самыми преданными покупателями «ВкусВилла»?",
+      "url": "https://www.youtube.com/watch?v=OQp3z4GRyDk",
+      "published": "2026-11-18T05:09:51Z",
+      "thumbnail": "https://i.ytimg.com/vi/OQp3z4GRyDk/hqdefault.jpg",
+      "summary": "Всё началось со ставки, которую сеть сделала задолго до массового бума. Угадаете, на что? А вы сами чаще покупаете готовую еду или всё ещё готовите дома? Расскажите в комментариях. Инсайты от наших…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
     },
     {
       "id": "Z833RJWXBjw",
@@ -1397,6 +1767,18 @@
       "lang": "en"
     },
     {
+      "id": "5o5GvV3mGbc",
+      "platform": "youtube",
+      "title": "«Хуанг что-нибудь вымутит»: обсуждаем скандал в Nvidia с Николаем и Мариной Давыдовыми",
+      "url": "https://www.youtube.com/watch?v=5o5GvV3mGbc",
+      "published": "2026-11-17T18:08:59Z",
+      "thumbnail": "https://i.ytimg.com/vi/5o5GvV3mGbc/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+ THE…",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "P13t5sGhGhk",
       "platform": "youtube",
       "title": "You Don't Have to Earn the Love You Receive | Jim Curtis + Simon Sinek | A Bit of Optimism Podcast",
@@ -1419,6 +1801,44 @@
       "source": "The Financial Diet",
       "topic": "Деньги",
       "lang": "en"
+    },
+    {
+      "id": "CN8c1edTCew",
+      "platform": "youtube",
+      "title": "Head of Instagram Reveals How the Top 1% Actually Work With AI",
+      "url": "https://www.youtube.com/watch?v=CN8c1edTCew",
+      "published": "2026-11-17T17:15:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/CN8c1edTCew/hqdefault.jpg",
+      "summary": "Сравните подготовку к встрече в выпуске со своей последней встречей. Какой информации тогда не хватило?",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en",
+      "duration": 2679
+    },
+    {
+      "id": "wxAKGtmL01Y",
+      "platform": "youtube",
+      "title": "Vanessa Hudgens: I told him what I wanted",
+      "url": "https://www.youtube.com/watch?v=wxAKGtmL01Y",
+      "published": "2026-11-17T17:00:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/wxAKGtmL01Y/hqdefault.jpg",
+      "summary": "Vanessa Hudgens on being forthright from the start, and risking the answer. Watch the FULL episode on Netflix & Spotify. https://jayshettypodcast.com/Netflix https://jayshettypodcast.com/Spotify…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
+      "id": "Rnr-gWPNFzM",
+      "platform": "youtube",
+      "title": "HILARY DUFF: What Lizzie McGuire Was Hiding Behind the Smile",
+      "url": "https://www.youtube.com/watch?v=Rnr-gWPNFzM",
+      "published": "2026-11-17T16:30:39Z",
+      "thumbnail": "https://i.ytimg.com/vi/Rnr-gWPNFzM/hqdefault.jpg",
+      "summary": "Hilary Duff on the family truth she spent years tiptoeing around. In this episode, Hilary Duff and Jay Shetty talk about the songs on her first album in over a decade, and the real life behind them.…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en",
+      "duration": 1914
     },
     {
       "id": "db52cccc9879b18068b96f7375e58f26",
@@ -1520,6 +1940,19 @@
       "lang": "en"
     },
     {
+      "id": "CYiyZqp0jPA",
+      "platform": "youtube",
+      "title": "ACCOUNTANT WARNS: Do This NOW Before the Nvidia Crash",
+      "url": "https://www.youtube.com/watch?v=CYiyZqp0jPA",
+      "published": "2026-11-17T14:45:33Z",
+      "thumbnail": "https://i.ytimg.com/vi/CYiyZqp0jPA/hqdefault.jpg",
+      "summary": "📋 The exact plan I'd follow if markets crashed tomorrow, from 9 years inside investment banks (free): https://link.nischa.me/marketcrashchecklist Register for my free Investing workshop this Sunday…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "duration": 871
+    },
+    {
       "id": "ESa_M2VvzR4",
       "platform": "youtube",
       "title": "How Jensen Huang stayed ahead for 10 years",
@@ -1553,6 +1986,18 @@
       "thumbnail": "https://i.ytimg.com/vi/n88OaMCjnDI/hqdefault.jpg",
       "summary": "",
       "source": "Про Бизнес",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "0zgHdfu_V4c",
+      "platform": "youtube",
+      "title": "Как Маск приезжал в Россию за ракетой #shorts",
+      "url": "https://www.youtube.com/watch?v=0zgHdfu_V4c",
+      "published": "2026-11-17T13:30:32Z",
+      "thumbnail": "https://i.ytimg.com/vi/0zgHdfu_V4c/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
       "topic": "Бизнес",
       "lang": "ru"
     },
@@ -1619,6 +2064,30 @@
       "lang": "en"
     },
     {
+      "id": "xFg-aOPMi0A",
+      "platform": "youtube",
+      "title": "Even when I'm a brat, he doesn't flinch",
+      "url": "https://www.youtube.com/watch?v=xFg-aOPMi0A",
+      "published": "2026-11-17T09:00:31Z",
+      "thumbnail": "https://i.ytimg.com/vi/xFg-aOPMi0A/hqdefault.jpg",
+      "summary": "Radhi asks Jay why he never pushes back, even when she knows she's being difficult. Watch and listen to On Purpose on Netflix & Spotify. https://jayshettypodcast.com/Netflix…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
+      "id": "yJxd8FKDrU0",
+      "platform": "youtube",
+      "title": "Как управлять компанией без гендиректора? #бизнес #предпринимательство #вкусвилл #бизнеснасалфетке",
+      "url": "https://www.youtube.com/watch?v=yJxd8FKDrU0",
+      "published": "2026-11-17T08:06:35Z",
+      "thumbnail": "https://i.ytimg.com/vi/yJxd8FKDrU0/hqdefault.jpg",
+      "summary": "Во «ВкусВилле» нет генерального директора. Кто же тогда принимает решения и кто отвечает, если что-то пошло не так? Николай Попович, лидер совета управляющих компании рассказал, как живёт компания…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "383f8ee78fd95b5b1ae93f7c3ab44c2f",
       "platform": "rutube",
       "title": "А вы уверены, что дело просто в усталости?",
@@ -1642,6 +2111,19 @@
       "source": "Harvard Business Review",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "zmi5kCBwCvo",
+      "platform": "youtube",
+      "title": "Год с ЕС Клиникой. 5 вещей, которые я понял о бизнесе",
+      "url": "https://www.youtube.com/watch?v=zmi5kCBwCvo",
+      "published": "2026-11-16T19:43:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/zmi5kCBwCvo/hqdefault.jpg",
+      "summary": "Послушайте главу о первых продажах. В какой момент отчёт о проделанной работе превращается в подтверждение спроса?",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1661
     },
     {
       "id": "49gIAR6Pzj8",
@@ -1677,7 +2159,8 @@
       "summary": "► Научитесь пользоваться ИИ системно – https://www.eduson.tv/~edinorogodai. Курс «Нейросети для бизнес-процессов» от Эдюсон. Андрей Дороничев — бывший топ-менеджер Google, руководивший развитием…",
       "source": "Оскар Хартманн",
       "topic": "Мотивация",
-      "lang": "ru"
+      "lang": "ru",
+      "duration": 5413
     },
     {
       "id": "9627895b022a20fea54b0d0f67435383",
@@ -1691,6 +2174,18 @@
       "source": "БКС Мир инвестиций",
       "topic": "Деньги",
       "lang": "ru"
+    },
+    {
+      "id": "noaptR9CKaw",
+      "platform": "youtube",
+      "title": "Can a couple recover from infidelity?",
+      "url": "https://www.youtube.com/watch?v=noaptR9CKaw",
+      "published": "2026-11-16T17:00:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/noaptR9CKaw/hqdefault.jpg",
+      "summary": "Lisa Bilyeu on the question that actually decides it. Watch the FULL episode on Netflix & Spotify. https://jayshettypodcast.com/Netflix https://jayshettypodcast.com/Spotify #jayshetty #lisabilyeu…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en"
     },
     {
       "id": "IjvFq0qRK7I",
@@ -1715,6 +2210,19 @@
       "source": "My First Million",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "WysKRcaqqxQ",
+      "platform": "youtube",
+      "title": "Relationship Therapist: The Hidden Question Behind Every Small Argument You Have | Esther Perel",
+      "url": "https://www.youtube.com/watch?v=WysKRcaqqxQ",
+      "published": "2026-11-16T16:30:10Z",
+      "thumbnail": "https://i.ytimg.com/vi/WysKRcaqqxQ/hqdefault.jpg",
+      "summary": "Most fights in a relationship aren't about the dishes. They're about the fear of losing each other, or of losing yourself. In this episode, Esther Perel and Jay Shetty talk about why, in so many…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en",
+      "duration": 2760
     },
     {
       "id": "P4Y_9XJryf4",
@@ -1854,6 +2362,30 @@
       "lang": "en"
     },
     {
+      "id": "1DeblageuBk",
+      "platform": "youtube",
+      "title": "Сколько стоит робот-гуманоид? #shorts",
+      "url": "https://www.youtube.com/watch?v=1DeblageuBk",
+      "published": "2026-11-16T10:30:21Z",
+      "thumbnail": "https://i.ytimg.com/vi/1DeblageuBk/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "uQ3L9zQqYOk",
+      "platform": "youtube",
+      "title": "Что чаще всего воруют из магазинов «ВкусВилла»?",
+      "url": "https://www.youtube.com/watch?v=uQ3L9zQqYOk",
+      "published": "2026-11-16T08:31:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/uQ3L9zQqYOk/hqdefault.jpg",
+      "summary": "Ответ вас удивит! Полный выпуск ищите на YouTube: КУЧМЕНТ ПОПОВИЧ #михаилкучмент #попович #бизнеснасалфетке #бизнес #предпринимательство #вкусвилл #кражи #ритейл #сливочноемасло",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "1mDHHi398ig",
       "platform": "youtube",
       "title": "Russian Sex Spy: I Was Trained To Control A Man's Mind With Sex! | John Kiriakou & Aliia Roza",
@@ -1864,6 +2396,18 @@
       "source": "The Diary Of A CEO",
       "topic": "Мотивация",
       "lang": "en"
+    },
+    {
+      "id": "h1RViL-KbwM",
+      "platform": "youtube",
+      "title": "Где ИХ найти?",
+      "url": "https://www.youtube.com/watch?v=h1RViL-KbwM",
+      "published": "2026-11-16T07:00:32Z",
+      "thumbnail": "https://i.ytimg.com/vi/h1RViL-KbwM/hqdefault.jpg",
+      "summary": "Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность – ссылка в описании канала! В моём тг я регулярно делюсь интересными историями предпринимателей и личными инсайтами. Меня зовут…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru"
     },
     {
       "id": "70cfd90c4833c9741dfe043d8ab7eec1",
@@ -1879,6 +2423,31 @@
       "lang": "ru"
     },
     {
+      "id": "5NP6-7LTVFI",
+      "platform": "youtube",
+      "title": "15 ЛЕТ ПРОВЕРЯЮ СОТРУДНИКОВ ОДНИМ ТЕСТОМ",
+      "url": "https://www.youtube.com/watch?v=5NP6-7LTVFI",
+      "published": "2026-11-15T19:34:31Z",
+      "thumbnail": "https://i.ytimg.com/vi/5NP6-7LTVFI/hqdefault.jpg",
+      "summary": "Перейди в бот и вступи в десятку за 72 часа: https://t.me/anomaly_grebenuk_bot?start=lnk_youtubeanomaly ▶︎ Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность. Там я регулярно делюсь…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1091
+    },
+    {
+      "id": "dY3ur_v2uaw",
+      "platform": "youtube",
+      "title": "Когда мужчины плачут? Полный выпуск подкаста смотрите по ссылке выше ▶️ #психология",
+      "url": "https://www.youtube.com/watch?v=dY3ur_v2uaw",
+      "published": "2026-11-15T18:35:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/dY3ur_v2uaw/hqdefault.jpg",
+      "summary": "У нас на подкасте Марина Нахалова - семейный психолог, 19 лет в профессии, более 3 тысяч клиентов, член ассоциации психологов Москвы. Что на самом деле хотят женщины, но никогда не попросят? О чем…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "HAXzFdJ9U-0",
       "platform": "youtube",
       "title": "ORANGE JUICE HAS MORE SUGAR THAN YOU THINK!",
@@ -1887,6 +2456,18 @@
       "thumbnail": "https://i.ytimg.com/vi/HAXzFdJ9U-0/hqdefault.jpg",
       "summary": "",
       "source": "The Diary Of A CEO",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
+      "id": "xYBQLGEz3Qg",
+      "platform": "youtube",
+      "title": "Kim K: they're not your person",
+      "url": "https://www.youtube.com/watch?v=xYBQLGEz3Qg",
+      "published": "2026-11-15T17:00:16Z",
+      "thumbnail": "https://i.ytimg.com/vi/xYBQLGEz3Qg/hqdefault.jpg",
+      "summary": "Kim Kardashian on loving and missing someone you already know isn't right for you. Watch the FULL episode on Netflix & Spotify. https://jayshettypodcast.com/Netflix…",
+      "source": "Jay Shetty Podcast",
       "topic": "Мотивация",
       "lang": "en"
     },
@@ -1964,6 +2545,31 @@
       "lang": "en"
     },
     {
+      "id": "La15U3j8U0c",
+      "platform": "youtube",
+      "title": "ЭТО должно висеть на вашем холодильнике. Сергей Крук",
+      "url": "https://www.youtube.com/watch?v=La15U3j8U0c",
+      "published": "2026-11-15T11:30:34Z",
+      "thumbnail": "https://i.ytimg.com/vi/La15U3j8U0c/hqdefault.jpg",
+      "summary": "В этом выпуске: 00:00 — ГЕНИЙ ЛИ ХИРУРГ СЕРГЕЙ КРУК? 01:23 — О призвании, миссии и создании блога 03:38 — Врач — это в первую очередь психолог 04:40 — Первый опыт смерти пациента 06:17 — Операции не…",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 4443
+    },
+    {
+      "id": "9ILoCZetltI",
+      "platform": "youtube",
+      "title": "Chris Hemsworth: what a real friend does",
+      "url": "https://www.youtube.com/watch?v=9ILoCZetltI",
+      "published": "2026-11-15T09:00:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/9ILoCZetltI/hqdefault.jpg",
+      "summary": "Chris Hemsworth on how he knows someone is actually a friend. Watch the FULL episode on Netflix & Spotify. https://jayshettypodcast.com/Netflix https://jayshettypodcast.com/Spotify #jayshetty…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
       "id": "e40cfcee81367bb5b1053f4f2bbc639b",
       "platform": "rutube",
       "title": "Контроль успокаивает — поэтому его так трудно отдать",
@@ -2014,6 +2620,43 @@
       "lang": "ru"
     },
     {
+      "id": "R0mliT0iidE",
+      "platform": "youtube",
+      "title": "Tom Holland: I really don't like Hollywood",
+      "url": "https://www.youtube.com/watch?v=R0mliT0iidE",
+      "published": "2026-11-14T17:00:00Z",
+      "thumbnail": "https://i.ytimg.com/vi/R0mliT0iidE/hqdefault.jpg",
+      "summary": "Tom Holland on the business he's part of and keeps trying to step away from. Watch the FULL episode on Netflix & Spotify. https://jayshettypodcast.com/Netflix https://jayshettypodcast.com/Spotify…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
+      "id": "-JOZCe69cNc",
+      "platform": "youtube",
+      "title": "Как помогают ПСИХОЛОГИ МЧС людям? Полный выпуск подкаста смотрите по ссылке выше ▶️ #психология",
+      "url": "https://www.youtube.com/watch?v=-JOZCe69cNc",
+      "published": "2026-11-14T16:41:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/-JOZCe69cNc/hqdefault.jpg",
+      "summary": "У нас на подкасте Лариса Пыжьянова - психолог, кандидат псих. наук, ex-руководитель горячей линии МЧС России и специалист Елизаветинского детского хосписа, где она работает уже 9 лет. Как поддержать…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "4zjP1SwZTfQ",
+      "platform": "youtube",
+      "title": "KEVIN HART: The More Money I Made, the More I Needed...",
+      "url": "https://www.youtube.com/watch?v=4zjP1SwZTfQ",
+      "published": "2026-11-14T16:30:31Z",
+      "thumbnail": "https://i.ytimg.com/vi/4zjP1SwZTfQ/hqdefault.jpg",
+      "summary": "Success didn't fix Kevin Hart. It showed him the parts of himself he didn't want to see. In this episode, Kevin Hart and Jay Shetty talk about the version of you that winning brings out. Kevin calls…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en",
+      "duration": 2152
+    },
+    {
       "id": "xsJ0SOKS4pg",
       "platform": "youtube",
       "title": "The rise of the 15-foot skeleton",
@@ -2038,6 +2681,18 @@
       "lang": "en"
     },
     {
+      "id": "CpSGYA71Au0",
+      "platform": "youtube",
+      "title": "Есть ли у работы будущее?",
+      "url": "https://www.youtube.com/watch?v=CpSGYA71Au0",
+      "published": "2026-11-14T12:00:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/CpSGYA71Au0/hqdefault.jpg",
+      "summary": "Есть ли у работы будущее? Евгений Вольнов, автор канала Future of Work, отвечает честно: на горизонте 30-40 лет это будущее неустойчиво. Объем человеческого труда в производстве снижается уже 100…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "S7ivkDvgTaY",
       "platform": "youtube",
       "title": "What's Working in the 2026 Stock Market: Autumn Update",
@@ -2050,6 +2705,55 @@
       "lang": "en"
     },
     {
+      "id": "7Il2BtASfls",
+      "platform": "youtube",
+      "title": "Как «ВкусВилл» мотивирует сотрудников?",
+      "url": "https://www.youtube.com/watch?v=7Il2BtASfls",
+      "published": "2026-11-14T09:00:17Z",
+      "thumbnail": "https://i.ytimg.com/vi/7Il2BtASfls/hqdefault.jpg",
+      "summary": "У сотрудников «ВкусВилла» нет привычных KPI. Но есть простое правило, которое многие компании боятся применить. А как устроена мотивация в вашей команде? Делитесь в комментариях. Инсайты от наших…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "mVunNhPHsz8",
+      "platform": "youtube",
+      "title": "Курсы - ВСЕ",
+      "url": "https://www.youtube.com/watch?v=mVunNhPHsz8",
+      "published": "2026-11-14T08:52:40Z",
+      "thumbnail": "https://i.ytimg.com/vi/mVunNhPHsz8/hqdefault.jpg",
+      "summary": "Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность – ссылка в описании канала! В моём тг я регулярно делюсь интересными историями предпринимателей и личными инсайтами. Меня зовут…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "8UcoEs81oDU",
+      "platform": "youtube",
+      "title": "Консультант миллиардеров из ТОП-10 Forbes о будущем и навыках эпохи ИИ | Евгения Попова",
+      "url": "https://www.youtube.com/watch?v=8UcoEs81oDU",
+      "published": "2026-11-14T07:54:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/8UcoEs81oDU/hqdefault.jpg",
+      "summary": "Сопоставьте рассуждение гостьи с одной задачей из своей работы. Где результат зависит от инструмента, а где — от вашего разговора с человеком?",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 3358
+    },
+    {
+      "id": "VolLSsdJ6KE",
+      "platform": "youtube",
+      "title": "Что не так с образованием в России? Полный выпуск подкаста смотрите по ссылке выше ▶️ #образование",
+      "url": "https://www.youtube.com/watch?v=VolLSsdJ6KE",
+      "published": "2026-11-14T06:54:19Z",
+      "thumbnail": "https://i.ytimg.com/vi/VolLSsdJ6KE/hqdefault.jpg",
+      "summary": "У нас на подкасте Анна Эрнстовна Валл - эксперт по деловому этикету и коммуникациям, филолог. Обучала сотрудников крупнейших компаний, таких как Газпром и Coca-Cola, работает консультантом в клинике…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "0X3u-_AT-f4",
       "platform": "youtube",
       "title": "CHM Live | SRI at 80: Inventing the Future",
@@ -2060,6 +2764,32 @@
       "source": "Computer History Museum",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "2RKd1Qw0BKc",
+      "platform": "youtube",
+      "title": "ПОЧЕМУ САМАЯ УМНАЯ НАЦИЯ ВЫМИРАЕТ? | Андрей Ланьков",
+      "url": "https://www.youtube.com/watch?v=2RKd1Qw0BKc",
+      "published": "2026-11-13T20:57:04Z",
+      "thumbnail": "https://i.ytimg.com/vi/2RKd1Qw0BKc/hqdefault.jpg",
+      "summary": "▶︎ Чёрная пятница в Точка Банке: https://tchk.me/UOeT0D ▶︎ Ищите людей на hh⁠.ru — https://my.hh.ru/0U0 Южная Корея совершила экономическое чудо. Теперь страна переживает демографический кризис…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 4309
+    },
+    {
+      "id": "7VKEIoF28Lk",
+      "platform": "youtube",
+      "title": "Это игнорируют 98% предпринимателей. Рост бизнеса ЗДЕСЬ",
+      "url": "https://www.youtube.com/watch?v=7VKEIoF28Lk",
+      "published": "2026-11-13T19:55:18Z",
+      "thumbnail": "https://i.ytimg.com/vi/7VKEIoF28Lk/hqdefault.jpg",
+      "summary": "Перейди в бот и вступи в десятку за 72 часа: https://t.me/anomaly_grebenuk_bot?start=lnk_youtubeanomaly ▶︎ Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность. Там я регулярно делюсь…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 625
     },
     {
       "id": "T2ebBjSx5QE",
@@ -2099,6 +2829,18 @@
       "lang": "en"
     },
     {
+      "id": "uuLipqMSdXA",
+      "platform": "youtube",
+      "title": "Nick Jonas: I saw her billboard on Sunset",
+      "url": "https://www.youtube.com/watch?v=uuLipqMSdXA",
+      "published": "2026-11-13T17:00:24Z",
+      "thumbnail": "https://i.ytimg.com/vi/uuLipqMSdXA/hqdefault.jpg",
+      "summary": "Nick Jonas on the first time he ever saw Priyanka. Watch the FULL episode on Netflix & Spotify. https://jayshettypodcast.com/Netflix https://jayshettypodcast.com/Spotify #jayshetty #nickjonas #shorts…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
       "id": "V6Vm1LU0kbQ",
       "platform": "youtube",
       "title": "Canada Just Made Some Big Tax Changes",
@@ -2109,6 +2851,68 @@
       "source": "The Plain Bagel",
       "topic": "Деньги",
       "lang": "en"
+    },
+    {
+      "id": "jMY2XqB7u_o",
+      "platform": "youtube",
+      "title": "How I Got 23 Sponsors for My Podcast",
+      "url": "https://www.youtube.com/watch?v=jMY2XqB7u_o",
+      "published": "2026-11-13T16:56:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/jMY2XqB7u_o/hqdefault.jpg",
+      "summary": "Try Flipsnack for free or get 20% off with code SILICONVALLEY…",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
+      "id": "sC8zLuYWme4",
+      "platform": "youtube",
+      "title": "21 МИЛЛИАРД связей",
+      "url": "https://www.youtube.com/watch?v=sC8zLuYWme4",
+      "published": "2026-11-13T15:16:37Z",
+      "thumbnail": "https://i.ytimg.com/vi/sC8zLuYWme4/hqdefault.jpg",
+      "summary": "Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность – ссылка в описании канала! В моём тг я регулярно делюсь интересными историями предпринимателей и личными инсайтами. Меня зовут…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "X2sjrj7z3r4",
+      "platform": "youtube",
+      "title": "5 способов добиваться больших результатов без надрыва и боли (как я научилась радоваться) / Колосок",
+      "url": "https://www.youtube.com/watch?v=X2sjrj7z3r4",
+      "published": "2026-11-13T13:59:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/X2sjrj7z3r4/hqdefault.jpg",
+      "summary": "Курс для руководителей «Большая игра»: https://kolosok-zapleti.ru/thegame?utm_source=youtube&utm_medium=video&utm_campaign=gamepromo&utm_content=youtube13_11 В этом видео разберём 5 правил, которые…",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 1127
+    },
+    {
+      "id": "W2bdRW-EazA",
+      "platform": "youtube",
+      "title": "Руководитель Claude: «Вы используете ИИ не на полную»",
+      "url": "https://www.youtube.com/watch?v=W2bdRW-EazA",
+      "published": "2026-11-13T13:00:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/W2bdRW-EazA/hqdefault.jpg",
+      "summary": "Как правильно пользоваться Claude? Спросила у человека, который его создавал. Подписаться на мою бесплатную рассылку…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 2700
+    },
+    {
+      "id": "MCHuQMJy8t8",
+      "platform": "youtube",
+      "title": "Вам ЭТОГО не простят! Полный выпуск подкаста смотрите по ссылке выше ▶️ #психология",
+      "url": "https://www.youtube.com/watch?v=MCHuQMJy8t8",
+      "published": "2026-11-13T12:55:06Z",
+      "thumbnail": "https://i.ytimg.com/vi/MCHuQMJy8t8/hqdefault.jpg",
+      "summary": "У нас на подкасте Анна Эрнстовна Валл - эксперт по деловому этикету и коммуникациям, филолог. Обучала сотрудников крупнейших компаний, таких как Газпром и Coca-Cola, работает консультантом в клинике…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
     },
     {
       "id": "5bc9dea1174c300bd0c7b6af35e6f265",
@@ -2124,6 +2928,30 @@
       "lang": "ru"
     },
     {
+      "id": "WKpmaKKE1Lo",
+      "platform": "youtube",
+      "title": "«ВкусВилл» ждёт, пока зумеры повзрослеют?",
+      "url": "https://www.youtube.com/watch?v=WKpmaKKE1Lo",
+      "published": "2026-11-13T12:00:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/WKpmaKKE1Lo/hqdefault.jpg",
+      "summary": "Николай Попович, лидер совета управляющих сети ответил на этот вопрос без дипломатии. Почему крупный бренд открыто говорит «это пока не наша аудитория» и что должно измениться, смотрите в нашем…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "LM6eyH1nF9M",
+      "platform": "youtube",
+      "title": "Секрет конкурентоспособности за 1 минуту",
+      "url": "https://www.youtube.com/watch?v=LM6eyH1nF9M",
+      "published": "2026-11-13T12:00:10Z",
+      "thumbnail": "https://i.ytimg.com/vi/LM6eyH1nF9M/hqdefault.jpg",
+      "summary": "Если делать работу на тройку, как все остальные, успеха не будет. Евгений Вольнов, автор канала Future of Work, объясняет: большинство людей посредственны в том, что делают, поэтому стать…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "qCaDHdnFDd8",
       "platform": "youtube",
       "title": "Как массово удалить одинаковый текст в Excel",
@@ -2132,6 +2960,30 @@
       "thumbnail": "https://i.ytimg.com/vi/qCaDHdnFDd8/hqdefault.jpg",
       "summary": "На помощь придет комбинация клавиш Ctrl + H. Она вызовет окно «Найти и заменить». А далее — следуйте подсказкам на видео! Ставьте лайк, если было полезно!",
       "source": "Про Бизнес",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "xuIF1Z3uOXg",
+      "platform": "youtube",
+      "title": "Tom Hanks: solitary isn't the same as lonely",
+      "url": "https://www.youtube.com/watch?v=xuIF1Z3uOXg",
+      "published": "2026-11-13T09:00:16Z",
+      "thumbnail": "https://i.ytimg.com/vi/xuIF1Z3uOXg/hqdefault.jpg",
+      "summary": "Tom Hanks on the life you get if you decide you don't need anybody. Watch the FULL episode on Netflix & Spotify. https://jayshettypodcast.com/Netflix https://jayshettypodcast.com/Spotify #jayshetty…",
+      "source": "Jay Shetty Podcast",
+      "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
+      "id": "RxHxcCg7d_I",
+      "platform": "youtube",
+      "title": "Как хайповое манго стало главным продуктом «ВкусВилла»?",
+      "url": "https://www.youtube.com/watch?v=RxHxcCg7d_I",
+      "published": "2026-11-13T05:51:32Z",
+      "thumbnail": "https://i.ytimg.com/vi/RxHxcCg7d_I/hqdefault.jpg",
+      "summary": "Манго возят многие сети, но хитом оно стало именно во «ВкусВилле». Что пошло не так в самом начале и какой секрет компания нашла методом проб и ошибок? Как всё было на самом деле, смотрите в нашем…",
+      "source": "Бизнес на салфетке",
       "topic": "Бизнес",
       "lang": "ru"
     },
@@ -2146,6 +2998,18 @@
       "source": "Slidebean",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "uEUAPSEmvq4",
+      "platform": "youtube",
+      "title": "Почему новости про AI мешают тебе расти",
+      "url": "https://www.youtube.com/watch?v=uEUAPSEmvq4",
+      "published": "2026-11-12T21:18:20Z",
+      "thumbnail": "https://i.ytimg.com/vi/uEUAPSEmvq4/hqdefault.jpg",
+      "summary": "Новости про AI и рынок труда пугают каждый день. Евгений Вольнов, автор канала Future of Work, рекомендует меньше читать новостей и тренировать критическое мышление: не вовлекаться эмоционально и…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
     },
     {
       "id": "DuiQvQb3cOo",
@@ -2172,6 +3036,18 @@
       "lang": "en"
     },
     {
+      "id": "jg4-d8QZ5B8",
+      "platform": "youtube",
+      "title": "Как БЫСТРО поставить человека на место? Полный выпуск подкаста смотрите на канале #психология",
+      "url": "https://www.youtube.com/watch?v=jg4-d8QZ5B8",
+      "published": "2026-11-12T19:22:30Z",
+      "thumbnail": "https://i.ytimg.com/vi/jg4-d8QZ5B8/hqdefault.jpg",
+      "summary": "У нас на подкасте Анна Эрнстовна Валл - эксперт по деловому этикету и коммуникациям, филолог. Обучала сотрудников крупнейших компаний, таких как Газпром и Coca-Cola, работает консультантом в клинике…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "G2tBWRHif6Q",
       "platform": "youtube",
       "title": "How to Get Rich (My Talk at a Business School)",
@@ -2192,6 +3068,30 @@
       "thumbnail": "https://i.ytimg.com/vi/QYtjHxAW_r4/hqdefault.jpg",
       "summary": "Soaring tuition costs, recent changes to the federal lending system and a volatile job market are forcing a generation to question if funding a college education is worth it. Do you think college is…",
       "source": "CNBC Make It",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
+      "id": "vHLkXkwJmJE",
+      "platform": "youtube",
+      "title": "Что в ПОСТЕЛИ выбирают предприниматели",
+      "url": "https://www.youtube.com/watch?v=vHLkXkwJmJE",
+      "published": "2026-11-12T15:17:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/vHLkXkwJmJE/hqdefault.jpg",
+      "summary": "Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность – ссылка в описании канала! В моём тг я регулярно делюсь интересными историями предпринимателей и личными инсайтами. Меня зовут…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "PVsUI-J7hkI",
+      "platform": "youtube",
+      "title": "Are you ambitious enough?",
+      "url": "https://www.youtube.com/watch?v=PVsUI-J7hkI",
+      "published": "2026-11-12T14:00:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/PVsUI-J7hkI/hqdefault.jpg",
+      "summary": "",
+      "source": "Silicon Valley Girl",
       "topic": "Карьера",
       "lang": "en"
     },
@@ -2230,6 +3130,56 @@
       "source": "Cal Newport",
       "topic": "Карьера",
       "lang": "en"
+    },
+    {
+      "id": "hiQbCXVqiYA",
+      "platform": "youtube",
+      "title": "Кто заработает миллиарды в космосе? Дата-центры на орбите, ракеты и колонии на Марсе",
+      "url": "https://www.youtube.com/watch?v=hiQbCXVqiYA",
+      "published": "2026-11-12T09:00:16Z",
+      "thumbnail": "https://i.ytimg.com/vi/hiQbCXVqiYA/hqdefault.jpg",
+      "summary": "На главе о стоимости отделите текущие расходы от вложений, которые придётся сделать задолго до первого клиента.",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 8437
+    },
+    {
+      "id": "qcwVb3qdtHM",
+      "platform": "youtube",
+      "title": "Рабочая техника для РОСТА малого бизнеса",
+      "url": "https://www.youtube.com/watch?v=qcwVb3qdtHM",
+      "published": "2026-11-12T06:00:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/qcwVb3qdtHM/hqdefault.jpg",
+      "summary": "Перейди в бот и вступи в десятку за 72 часа: https://t.me/anomaly_grebenuk_bot?start=lnk_youtubeanomaly ▶︎ Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность. Там я регулярно делюсь…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 936
+    },
+    {
+      "id": "agsOEdfy1io",
+      "platform": "youtube",
+      "title": "Рынок труда 2027: прогнозы, которые сбылись, и что нас ждет дальше. Евгений Вольнов",
+      "url": "https://www.youtube.com/watch?v=agsOEdfy1io",
+      "published": "2026-11-12T05:40:45Z",
+      "thumbnail": "https://i.ytimg.com/vi/agsOEdfy1io/hqdefault.jpg",
+      "summary": "AI теперь требуют чуть ли не в каждой вакансии, сокращения продолжаются, а правила найма меняются на глазах. Что реально произошло с рынком труда в 2026 году и к чему готовиться в 2027? Полтора года…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "n9ZFltaSGEA",
+      "platform": "youtube",
+      "title": "КАК \"ВКУСВИЛЛ\" РАБОТАЕТ БЕЗ ГЕНДИРЕКТОРА И БЮДЖЕТА?",
+      "url": "https://www.youtube.com/watch?v=n9ZFltaSGEA",
+      "published": "2026-11-12T05:38:21Z",
+      "thumbnail": "https://i.ytimg.com/vi/n9ZFltaSGEA/hqdefault.jpg",
+      "summary": "Как управлять компанией, в которой 15 человек принимают ключевые решения единогласно, а сотрудники работают без привычных KPI? Где «ВкусВилл» ищет новые точки роста, когда темпы развития замедляются?…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
     },
     {
       "id": "e0afaa72fe3d7730c3df3db8ad0286fb",
@@ -2332,6 +3282,43 @@
       "lang": "ru"
     },
     {
+      "id": "NFdbsXFYOvA",
+      "platform": "youtube",
+      "title": "Что происходит с психикой после смерти? Полный выпуск подкаста смотрите по ссылке выше ▶️#психология",
+      "url": "https://www.youtube.com/watch?v=NFdbsXFYOvA",
+      "published": "2026-11-11T15:42:41Z",
+      "thumbnail": "https://i.ytimg.com/vi/NFdbsXFYOvA/hqdefault.jpg",
+      "summary": "У нас на подкасте Лариса Пыжьянова - психолог, кандидат псих. наук, ex-руководитель горячей линии МЧС России и специалист Елизаветинского детского хосписа, где она работает уже 9 лет. Как поддержать…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "VghvRA4LVlo",
+      "platform": "youtube",
+      "title": "Who Remembers Google Glass? 👀",
+      "url": "https://www.youtube.com/watch?v=VghvRA4LVlo",
+      "published": "2026-11-11T14:00:32Z",
+      "thumbnail": "https://i.ytimg.com/vi/VghvRA4LVlo/hqdefault.jpg",
+      "summary": "Preparing for my next podcast guest!!",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
+      "id": "_w2UvtC77yo",
+      "platform": "youtube",
+      "title": "Половину выручки «ВкусВилла» делают 10% покупателей: как работает клиентократия / Николай Попович",
+      "url": "https://www.youtube.com/watch?v=_w2UvtC77yo",
+      "published": "2026-11-11T14:00:27Z",
+      "thumbnail": "https://i.ytimg.com/vi/_w2UvtC77yo/hqdefault.jpg",
+      "summary": "Послушайте, как собеседники описывают решения возле полки. Затем откройте конспект книги, в написании которой участвовал гость.",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 5749
+    },
+    {
       "id": "9ab4dd4ccce1eaa30b99fe0096992cf4",
       "platform": "rutube",
       "title": "Что пошло не так | Почему Galaxy Note 7 запретили в самолётах?",
@@ -2401,10 +3388,11 @@
       "url": "https://www.youtube.com/watch?v=zOE1UbMxGwY",
       "published": "2026-11-10T22:19:54Z",
       "thumbnail": "https://i.ytimg.com/vi/zOE1UbMxGwY/hqdefault.jpg",
-      "summary": "Четыре предпринимателя пришли на Арену Единорогов, чтобы привлечь 106 миллионов рублей на развитие своих компаний. Вместе с другими инвесторами разбираю сервис для управления платежами…",
+      "summary": "На первом питче прислушайтесь к вопросу о привлечении денег. Как основатель объясняет, на что пойдут средства и что это изменит?",
       "source": "Оскар Хартманн",
       "topic": "Мотивация",
-      "lang": "ru"
+      "lang": "ru",
+      "duration": 5340
     },
     {
       "id": "evQcbeOlvWc",
@@ -2445,6 +3433,43 @@
       "lang": "ru"
     },
     {
+      "id": "yIFhTVMOH98",
+      "platform": "youtube",
+      "title": "AI’s Next Trillion-Dollar Market Isn’t Software | Max Jaderberg, President of Isomorphic Labs",
+      "url": "https://www.youtube.com/watch?v=yIFhTVMOH98",
+      "published": "2026-11-10T16:00:33Z",
+      "thumbnail": "https://i.ytimg.com/vi/yIFhTVMOH98/hqdefault.jpg",
+      "summary": "AI can generate thousands of ideas. I asked Max Jaderberg how to tell which ones are worth pursuing. 📌 Bring your team’s research, context, and AI workflow together on one canvas: Try Miro -…",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en",
+      "duration": 2615
+    },
+    {
+      "id": "BgnbhHxF1MA",
+      "platform": "youtube",
+      "title": "ЭТО поможет пережить ГОРЕ. Полный выпуск подкаста смотрите по ссылке выше ▶️ #психология",
+      "url": "https://www.youtube.com/watch?v=BgnbhHxF1MA",
+      "published": "2026-11-10T14:54:51Z",
+      "thumbnail": "https://i.ytimg.com/vi/BgnbhHxF1MA/hqdefault.jpg",
+      "summary": "У нас на подкасте Лариса Пыжьянова - психолог, кандидат псих. наук, ex-руководитель горячей линии МЧС России и специалист Елизаветинского детского хосписа, где она работает уже 9 лет. Как поддержать…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "Ebwo764JgFc",
+      "platform": "youtube",
+      "title": "Что такое ДЕСЯТКА",
+      "url": "https://www.youtube.com/watch?v=Ebwo764JgFc",
+      "published": "2026-11-10T13:27:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/Ebwo764JgFc/hqdefault.jpg",
+      "summary": "Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность – ссылка в описании канала! В моём тг я регулярно делюсь интересными историями предпринимателей и личными инсайтами. Меня зовут…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "9Hwanevuhd8",
       "platform": "youtube",
       "title": "6 Insanely Practical AI Tips (in 18 minutes)",
@@ -2457,6 +3482,18 @@
       "lang": "en"
     },
     {
+      "id": "K7O35U8Y_LQ",
+      "platform": "youtube",
+      "title": "Бизнес в России — соучастие в войне? #shorts",
+      "url": "https://www.youtube.com/watch?v=K7O35U8Y_LQ",
+      "published": "2026-11-10T11:00:20Z",
+      "thumbnail": "https://i.ytimg.com/vi/K7O35U8Y_LQ/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "iACc_7N7QnU",
       "platform": "youtube",
       "title": "What I got wrong about freedom in my 20s",
@@ -2467,6 +3504,30 @@
       "source": "Ali Abdaal",
       "topic": "Мотивация",
       "lang": "en"
+    },
+    {
+      "id": "ZD5yQnUs-wQ",
+      "platform": "youtube",
+      "title": "ЧТО нас ждет?",
+      "url": "https://www.youtube.com/watch?v=ZD5yQnUs-wQ",
+      "published": "2026-11-10T07:02:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/ZD5yQnUs-wQ/hqdefault.jpg",
+      "summary": "Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность – ссылка в описании канала! В моём тг я регулярно делюсь интересными историями предпринимателей и личными инсайтами. Меня зовут…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "nWw-H1PKcmc",
+      "platform": "youtube",
+      "title": "Кого нам СЛОЖНЕЕ потерять из близких? Полный выпуск подкаста смотрите на канале #отношения",
+      "url": "https://www.youtube.com/watch?v=nWw-H1PKcmc",
+      "published": "2026-11-09T19:54:50Z",
+      "thumbnail": "https://i.ytimg.com/vi/nWw-H1PKcmc/hqdefault.jpg",
+      "summary": "У нас на подкасте Лариса Пыжьянова - психолог, кандидат псих. наук, ex-руководитель горячей линии МЧС России и специалист Елизаветинского детского хосписа, где она работает уже 9 лет. Как поддержать…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
     },
     {
       "id": "0_QAaEDHvEc",
@@ -2506,6 +3567,19 @@
       "lang": "ru"
     },
     {
+      "id": "bhK96VrwG4U",
+      "platform": "youtube",
+      "title": "Неделя страшной операционки. Что я меняю в бизнесе?",
+      "url": "https://www.youtube.com/watch?v=bhK96VrwG4U",
+      "published": "2026-11-09T15:42:49Z",
+      "thumbnail": "https://i.ytimg.com/vi/bhK96VrwG4U/hqdefault.jpg",
+      "summary": "Узнать больше о продукте «Забота о родителях» в ЕС Клинике: https://es-clinic.ru ▶︎ Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность. Там я регулярно делюсь интересными историями…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1241
+    },
+    {
       "id": "4e021e12d432712fa1ba36c54e9b79fc",
       "platform": "rutube",
       "title": "Первичный рынок долга: эмитенты снова будут кредитоваться в банках? Идеи в ВДО: Селигдар, АБЗ-1",
@@ -2516,6 +3590,31 @@
       "summary": "Подписывайтесь на канал: https://www.youtube.com/channel/UCD23js7wHnyG_yhimDMpLpg?sub_confirmation=1 --------------------- ⚡️ Новый выпуск для тех, кто инвестирует в облигации: ▪️Как заявила глава ЦБ…",
       "source": "РБК Инвестиции",
       "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "id": "BUdT0uCPMgs",
+      "platform": "youtube",
+      "title": "Мужицкая: Как не бояться будущего и начать жить",
+      "url": "https://www.youtube.com/watch?v=BUdT0uCPMgs",
+      "published": "2026-11-09T14:34:10Z",
+      "thumbnail": "https://i.ytimg.com/vi/BUdT0uCPMgs/hqdefault.jpg",
+      "summary": "🎙 У нас на подкасте Татьяна Мужицкая (https://t.me/muzhitskaya) - психолог и международный сертифицированный тренер по НЛП (нейролингвистическое программирование) со стажем более 30 лет. Почему нам…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 4959
+    },
+    {
+      "id": "wPMSQyd62jI",
+      "platform": "youtube",
+      "title": "Почему не все люди плачут? Полный выпуск подкаста смотрите на канале ▶️ #психология",
+      "url": "https://www.youtube.com/watch?v=wPMSQyd62jI",
+      "published": "2026-11-09T14:31:27Z",
+      "thumbnail": "https://i.ytimg.com/vi/wPMSQyd62jI/hqdefault.jpg",
+      "summary": "У нас на подкасте Лариса Пыжьянова - психолог, кандидат псих. наук, ex-руководитель горячей линии МЧС России и специалист Елизаветинского детского хосписа, где она работает уже 9 лет. Как поддержать…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
       "lang": "ru"
     },
     {
@@ -2530,6 +3629,19 @@
       "source": "РБК Инвестиции",
       "topic": "Деньги",
       "lang": "ru"
+    },
+    {
+      "id": "KHWd0K3nL8c",
+      "platform": "youtube",
+      "title": "Вас не слушают из-за этого. Анна Валл о том, как технологии изменили нашу речь",
+      "url": "https://www.youtube.com/watch?v=KHWd0K3nL8c",
+      "published": "2026-11-09T14:00:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/KHWd0K3nL8c/hqdefault.jpg",
+      "summary": "► МТС CorpTech: 150+ цифровых сервисов для крупного бизнеса, чтобы комплексно решать задачи в разных отраслях. Подробнее по ссылке: https://l.mts.ru/corptech_AlexanderSokolovskiy ► Распакуйте…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 6384
     },
     {
       "id": "fd0415109650942a7284a1b2884f72e4",
@@ -2582,6 +3694,54 @@
       "lang": "ru"
     },
     {
+      "id": "QQW4R5A6Ccw",
+      "platform": "youtube",
+      "title": "Что не так с политкорректностью? #shorts",
+      "url": "https://www.youtube.com/watch?v=QQW4R5A6Ccw",
+      "published": "2026-11-09T09:00:17Z",
+      "thumbnail": "https://i.ytimg.com/vi/QQW4R5A6Ccw/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "n-LjWdvNtzo",
+      "platform": "youtube",
+      "title": "Как появился бренд FRAMBINI?",
+      "url": "https://www.youtube.com/watch?v=n-LjWdvNtzo",
+      "published": "2026-11-09T06:52:42Z",
+      "thumbnail": "https://i.ytimg.com/vi/n-LjWdvNtzo/hqdefault.jpg",
+      "summary": "Малину Frambini воруют из магазинов, конкуренты копируют продукт, а производство не успевает за спросом. При этом еще два года назад крупнейшие торговые сети даже не хотели брать эту продукцию на…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "SRaCkwMF0jE",
+      "platform": "youtube",
+      "title": "F•CK 3%!",
+      "url": "https://www.youtube.com/watch?v=SRaCkwMF0jE",
+      "published": "2026-11-08T19:00:30Z",
+      "thumbnail": "https://i.ytimg.com/vi/SRaCkwMF0jE/hqdefault.jpg",
+      "summary": "Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность – ссылка в описании канала! В моём тг я регулярно делюсь интересными историями предпринимателей и личными инсайтами. Меня зовут…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "GKDvehtKdyU",
+      "platform": "youtube",
+      "title": "Стадии ГОРЕВАНИЯ: как пережить потерю? Полный выпуск смотрите на канале #психология",
+      "url": "https://www.youtube.com/watch?v=GKDvehtKdyU",
+      "published": "2026-11-08T17:50:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/GKDvehtKdyU/hqdefault.jpg",
+      "summary": "У нас на подкасте Лариса Пыжьянова - психолог, кандидат псих. наук, ex-руководитель горячей линии МЧС России и специалист Елизаветинского детского хосписа, где она работает уже 9 лет. Как поддержать…",
+      "source": "Подкаст Алексея Голубева",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "ec39942e2677bf2f555324fba43f4e6c",
       "platform": "rutube",
       "title": "Уроки карьеры. Лекция 3. Первая работа",
@@ -2595,6 +3755,19 @@
       "lang": "ru"
     },
     {
+      "id": "xblMFk3eBh8",
+      "platform": "youtube",
+      "title": "13 Years of Brutally Honest Financial Advice in 21 mins",
+      "url": "https://www.youtube.com/watch?v=xblMFk3eBh8",
+      "published": "2026-11-08T15:37:52Z",
+      "thumbnail": "https://i.ytimg.com/vi/xblMFk3eBh8/hqdefault.jpg",
+      "summary": "Сравните полную стоимость своей последней крупной покупки с суммой, которая первой привлекла внимание. Что оказалось за пределами этой цифры?",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "duration": 1311
+    },
+    {
       "id": "-XL2gClQ2gg",
       "platform": "youtube",
       "title": "Is AI Now Good Enough To Cure Cancer? | YC Paper Club",
@@ -2605,6 +3778,67 @@
       "source": "Y Combinator",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "xSedyQRzdS0",
+      "platform": "youtube",
+      "title": "4 закона судьбы: Как изменить сценарий жизни. Алексей Ситников",
+      "url": "https://www.youtube.com/watch?v=xSedyQRzdS0",
+      "published": "2026-11-08T12:00:07Z",
+      "thumbnail": "https://i.ytimg.com/vi/xSedyQRzdS0/hqdefault.jpg",
+      "summary": "Присоединяйтесь к бесплатному курсу «Основы профессионального коучинга: первый шаг к новой профессии»…",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 4223
+    },
+    {
+      "id": "tyAPVqCdrBg",
+      "platform": "youtube",
+      "title": "Не бойтесь, что ИИ оставит вас без работы",
+      "url": "https://www.youtube.com/watch?v=tyAPVqCdrBg",
+      "published": "2026-11-08T06:00:04Z",
+      "thumbnail": "https://i.ytimg.com/vi/tyAPVqCdrBg/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "6yLw123NABI",
+      "platform": "youtube",
+      "title": "Главное – не победа, а участие? Панжинский",
+      "url": "https://www.youtube.com/watch?v=6yLw123NABI",
+      "published": "2026-11-07T18:29:42Z",
+      "thumbnail": "https://i.ytimg.com/vi/6yLw123NABI/hqdefault.jpg",
+      "summary": "Смотрите полный выпуск на канале @kolosook",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "x6oK104aOa0",
+      "platform": "youtube",
+      "title": "Цените ТАКИХ людей",
+      "url": "https://www.youtube.com/watch?v=x6oK104aOa0",
+      "published": "2026-11-07T15:32:33Z",
+      "thumbnail": "https://i.ytimg.com/vi/x6oK104aOa0/hqdefault.jpg",
+      "summary": "Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность – ссылка в описании канала! В моём тг я регулярно делюсь интересными историями предпринимателей и личными инсайтами. Меня зовут…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "Lu82AkNzi2M",
+      "platform": "youtube",
+      "title": "Перестаньте использовать ИИ, не включая голову и креатив",
+      "url": "https://www.youtube.com/watch?v=Lu82AkNzi2M",
+      "published": "2026-11-07T15:00:17Z",
+      "thumbnail": "https://i.ytimg.com/vi/Lu82AkNzi2M/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
     },
     {
       "id": "Q78dJ0vkWe8",
@@ -2643,6 +3877,30 @@
       "lang": "en"
     },
     {
+      "id": "pJ8nq3E8-JU",
+      "platform": "youtube",
+      "title": "Что воруют в магазинах чаще всего?",
+      "url": "https://www.youtube.com/watch?v=pJ8nq3E8-JU",
+      "published": "2026-11-07T06:30:32Z",
+      "thumbnail": "https://i.ytimg.com/vi/pJ8nq3E8-JU/hqdefault.jpg",
+      "summary": "ТГ-канал: МИХАИЛ КУЧМЕНТ",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "DldFtT87wYc",
+      "platform": "youtube",
+      "title": "Что хуже? Быть старовером или внедрять всё подряд и зациклиться на ИИ?",
+      "url": "https://www.youtube.com/watch?v=DldFtT87wYc",
+      "published": "2026-11-07T06:00:16Z",
+      "thumbnail": "https://i.ytimg.com/vi/DldFtT87wYc/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "a62aK2DU7uM",
       "platform": "youtube",
       "title": "I destroyed my spine. Here's how I fixed it in 6 months.",
@@ -2652,6 +3910,42 @@
       "summary": "Get 1 month of super smart dictation with Wispr Flow Pro for free here: https://ref.wisprflow.ai/better-ideas-yt-2 Follow me on Instagram: https://instagram.com/betterideas Try my daily focus drink…",
       "source": "Better Ideas",
       "topic": "Мотивация",
+      "lang": "en"
+    },
+    {
+      "id": "y1nPtPUVrag",
+      "platform": "youtube",
+      "title": "Талант ничего не решает в бизнесе? Хохлов",
+      "url": "https://www.youtube.com/watch?v=y1nPtPUVrag",
+      "published": "2026-11-06T19:46:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/y1nPtPUVrag/hqdefault.jpg",
+      "summary": "Смотрите полный выпуск на канале @kolosook",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "w6c9pr9RGvA",
+      "platform": "youtube",
+      "title": "Десятки нашего времени VS дикие десятки",
+      "url": "https://www.youtube.com/watch?v=w6c9pr9RGvA",
+      "published": "2026-11-06T19:22:46Z",
+      "thumbnail": "https://i.ytimg.com/vi/w6c9pr9RGvA/hqdefault.jpg",
+      "summary": "Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность – ссылка в описании канала! В моём тг я регулярно делюсь интересными историями предпринимателей и личными инсайтами. Меня зовут…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "6sY7Ux2z_7c",
+      "platform": "youtube",
+      "title": "The life of working mom: just craziness and compromise",
+      "url": "https://www.youtube.com/watch?v=6sY7Ux2z_7c",
+      "published": "2026-11-06T16:30:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/6sY7Ux2z_7c/hqdefault.jpg",
+      "summary": "",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
       "lang": "en"
     },
     {
@@ -2680,6 +3974,54 @@
       "lang": "ru"
     },
     {
+      "id": "v9eUBxcOIaM",
+      "platform": "youtube",
+      "title": "AI-агенты решают, кого забанить",
+      "url": "https://www.youtube.com/watch?v=v9eUBxcOIaM",
+      "published": "2026-11-06T12:00:11Z",
+      "thumbnail": "https://i.ytimg.com/vi/v9eUBxcOIaM/hqdefault.jpg",
+      "summary": "Блокировки в LinkedIn будут только усиливаться. Раньше решения о бане чаще принимали люди, а теперь это делают AI-агенты, которым всё равно, что произошло на самом деле. Эксперт, разобравший около…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "DKRLYsvDPmY",
+      "platform": "youtube",
+      "title": "«Рискуйте больше!» #shorts",
+      "url": "https://www.youtube.com/watch?v=DKRLYsvDPmY",
+      "published": "2026-11-06T09:30:34Z",
+      "thumbnail": "https://i.ytimg.com/vi/DKRLYsvDPmY/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "uQQr0rdh3lA",
+      "platform": "youtube",
+      "title": "Если вы устаёте, внедряйте ИИ",
+      "url": "https://www.youtube.com/watch?v=uQQr0rdh3lA",
+      "published": "2026-11-06T06:00:28Z",
+      "thumbnail": "https://i.ytimg.com/vi/uQQr0rdh3lA/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "zyFwphK7TDw",
+      "platform": "youtube",
+      "title": "Какой маркетинг на самом деле работает?",
+      "url": "https://www.youtube.com/watch?v=zyFwphK7TDw",
+      "published": "2026-11-06T05:06:12Z",
+      "thumbnail": "https://i.ytimg.com/vi/zyFwphK7TDw/hqdefault.jpg",
+      "summary": "Малину Frambini воруют из магазинов, конкуренты копируют продукт, а производство не успевает за спросом. При этом еще два года назад крупнейшие торговые сети даже не хотели брать эту продукцию на…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "56909c5be72d42bd02c47a5afbff28f0",
       "platform": "rutube",
       "title": "Ярмарка вакансий",
@@ -2705,6 +4047,19 @@
       "lang": "en"
     },
     {
+      "id": "lrIVD2eyPb8",
+      "platform": "youtube",
+      "title": "From Google’s 16th Employee to YouTube CEO: Susan Wojcicki’s Family Shares Her Story",
+      "url": "https://www.youtube.com/watch?v=lrIVD2eyPb8",
+      "published": "2026-11-05T18:50:04Z",
+      "thumbnail": "https://i.ytimg.com/vi/lrIVD2eyPb8/hqdefault.jpg",
+      "summary": "Susan Wojcicki helped build Google and led YouTube for nearly a decade. In this episode, I sit down with her husband, Dennis Troper; her mother, Esther Wojcicki; and her sisters, Anne and Janet…",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en",
+      "duration": 1435
+    },
+    {
       "id": "hBtY49kVPes",
       "platform": "youtube",
       "title": "“Where do I see myself in 5 years?” A smart answer to the dumb question | Interview Preparation",
@@ -2717,6 +4072,31 @@
       "lang": "en"
     },
     {
+      "id": "jhLvoCxb2r4",
+      "platform": "youtube",
+      "title": "Много работы, маленькие результаты: почему? | Хохлов, Залевская, Панжинский, Колосок",
+      "url": "https://www.youtube.com/watch?v=jhLvoCxb2r4",
+      "published": "2026-11-05T15:14:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/jhLvoCxb2r4/hqdefault.jpg",
+      "summary": "Почему мы много работаем, но не всегда получаем результат, на который рассчитываем? В этом выпуске вместе с Иваном Хохловым — сооснователем и генеральным директором 12 STOREEZ, Ириной Залевской —…",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 6189
+    },
+    {
+      "id": "Ds6bm4ePQUA",
+      "platform": "youtube",
+      "title": "Сделайте это и ИИ будет думать как вы",
+      "url": "https://www.youtube.com/watch?v=Ds6bm4ePQUA",
+      "published": "2026-11-05T15:00:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/Ds6bm4ePQUA/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "STYVvEGBM5c",
       "platform": "youtube",
       "title": "Building a Startup at AI Agent Speed",
@@ -2727,6 +4107,18 @@
       "source": "MIT Sloan School of Management",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "mbH3ZIN9BrU",
+      "platform": "youtube",
+      "title": "LinkedIn думает, что тебя взломали",
+      "url": "https://www.youtube.com/watch?v=mbH3ZIN9BrU",
+      "published": "2026-11-05T12:00:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/mbH3ZIN9BrU/hqdefault.jpg",
+      "summary": "Решили разом обновить фото, баннер и весь профиль перед поиском работы? Для LinkedIn это может выглядеть как взлом. Резкая смена поведения, всплеск коннектов и правок в профиле складываются в…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
     },
     {
       "id": "SD3AI0r88aA",
@@ -2767,6 +4159,55 @@
       "lang": "ru"
     },
     {
+      "id": "bgGJYtjlGzw",
+      "platform": "youtube",
+      "title": "Почему банят новые аккаунты на LinkedIn",
+      "url": "https://www.youtube.com/watch?v=bgGJYtjlGzw",
+      "published": "2026-11-04T21:54:49Z",
+      "thumbnail": "https://i.ytimg.com/vi/bgGJYtjlGzw/hqdefault.jpg",
+      "summary": "Для LinkedIn любой новый аккаунт по умолчанию выглядит подозрительно. Эксперт по восстановлению аккаунтов объясняет, как прогреть профиль: первую неделю просто листать ленту и читать, потом…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "r4nycpx_nks",
+      "platform": "youtube",
+      "title": "Итоги Декларации 2.0. Мы узнаем, кто заберёт 2,5 млн рублей",
+      "url": "https://www.youtube.com/watch?v=r4nycpx_nks",
+      "published": "2026-11-04T18:02:50Z",
+      "thumbnail": "https://i.ytimg.com/vi/r4nycpx_nks/hqdefault.jpg",
+      "summary": "▶︎ Подписывайтесь на мой тг, чтобы поднимать свою бизнес-насмотренность. Там я регулярно делюсь интересными историями предпринимателей: https://t.me/+Q3D86fqjd3Y4MmY6 Мы подвели итоги «Декларации…",
+      "source": "Михаил Гребенюк",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1307
+    },
+    {
+      "id": "_i2aXMhRV74",
+      "platform": "youtube",
+      "title": "Продажники больше не нужны?",
+      "url": "https://www.youtube.com/watch?v=_i2aXMhRV74",
+      "published": "2026-11-04T15:00:34Z",
+      "thumbnail": "https://i.ytimg.com/vi/_i2aXMhRV74/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "6A5wT6srPzc",
+      "platform": "youtube",
+      "title": "The Real AI Gold Rush Isn’t Software",
+      "url": "https://www.youtube.com/watch?v=6A5wT6srPzc",
+      "published": "2026-11-04T15:00:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/6A5wT6srPzc/hqdefault.jpg",
+      "summary": "",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
       "id": "QQaLmILQbNo",
       "platform": "youtube",
       "title": "AI Deployment: From Model Capability to Business Value | Wharton Business & Generative AI Conference",
@@ -2777,6 +4218,43 @@
       "source": "Wharton School",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "DYXSnCG-5rk",
+      "platform": "youtube",
+      "title": "200 тысяч за один совет: стоит ли оно того?",
+      "url": "https://www.youtube.com/watch?v=DYXSnCG-5rk",
+      "published": "2026-11-04T10:48:56Z",
+      "thumbnail": "https://i.ytimg.com/vi/DYXSnCG-5rk/hqdefault.jpg",
+      "summary": "200 тысяч за один совет: стоит ли оно того?🤔 Основатель Frambini Александр Смирнов рассказал, кому и сколько заплатил за один совет и почему. Все инсайты от наших гостей в моем Telegram-канале МИХАИЛ…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "slblaKcELsQ",
+      "platform": "youtube",
+      "title": "Сколько зарабатывал Семен Слепаков? #shorts",
+      "url": "https://www.youtube.com/watch?v=slblaKcELsQ",
+      "published": "2026-11-04T10:30:39Z",
+      "thumbnail": "https://i.ytimg.com/vi/slblaKcELsQ/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "x-q5KJ4Vq2o",
+      "platform": "youtube",
+      "title": "Вас заблокировали в LinkedIn? Что делать в 2027 году. Дмитрий Батуков",
+      "url": "https://www.youtube.com/watch?v=x-q5KJ4Vq2o",
+      "published": "2026-11-03T20:18:58Z",
+      "thumbnail": "https://i.ytimg.com/vi/x-q5KJ4Vq2o/hqdefault.jpg",
+      "summary": "Заблокировали в LinkedIn? В этом эпизоде разбираем, за что LinkedIn банит аккаунты в 2026 году, как пройти подтверждение личности и восстановить доступ, даже если поддержка написала «перманентный…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 6059
     },
     {
       "id": "f4QzbWfzWu8",
@@ -2791,6 +4269,18 @@
       "lang": "en"
     },
     {
+      "id": "Dxq3Lh5klNg",
+      "platform": "youtube",
+      "title": "ИИ сэкономит вам сотни тысяч и даже миллионы в месяц",
+      "url": "https://www.youtube.com/watch?v=Dxq3Lh5klNg",
+      "published": "2026-11-03T18:00:25Z",
+      "thumbnail": "https://i.ytimg.com/vi/Dxq3Lh5klNg/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "xgEqJiDx2i0",
       "platform": "youtube",
       "title": "Calm with Robert Rowland Smith and Randall Peterson",
@@ -2801,6 +4291,55 @@
       "source": "London Business School",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "VSq6LZejPBs",
+      "platform": "youtube",
+      "title": "ИИ не поможет вашему бизнесу, а уничтожит его",
+      "url": "https://www.youtube.com/watch?v=VSq6LZejPBs",
+      "published": "2026-11-03T15:00:21Z",
+      "thumbnail": "https://i.ytimg.com/vi/VSq6LZejPBs/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "sHHYVvG_C4Q",
+      "platform": "youtube",
+      "title": "Wharton’s Top AI Professor: Stop Starting Software Companies — The Real AI Money Is Here",
+      "url": "https://www.youtube.com/watch?v=sHHYVvG_C4Q",
+      "published": "2026-11-03T14:45:31Z",
+      "thumbnail": "https://i.ytimg.com/vi/sHHYVvG_C4Q/hqdefault.jpg",
+      "summary": "Ethan Mollick explains how to work with AI agents without giving up your own thinking. 📌 If you’re building agents for your company, check out MongoDB Atlas Agent Engine: https://fandf.co/3Ubceet 📩…",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en",
+      "duration": 3221
+    },
+    {
+      "id": "RhU3AlHpYeM",
+      "platform": "youtube",
+      "title": "Почему айтишники бунтуют против ИИ?",
+      "url": "https://www.youtube.com/watch?v=RhU3AlHpYeM",
+      "published": "2026-11-03T08:35:28Z",
+      "thumbnail": "https://i.ytimg.com/vi/RhU3AlHpYeM/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "0JAJAsBYnlo",
+      "platform": "youtube",
+      "title": "Сколько ягод должно быть в банке Frambini?",
+      "url": "https://www.youtube.com/watch?v=0JAJAsBYnlo",
+      "published": "2026-11-03T06:00:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/0JAJAsBYnlo/hqdefault.jpg",
+      "summary": "Каждый, кто ест Frambini, хоть раз ловил себя на мысли: «А сколько тут должно быть ягод?» В новом выпуске подкаста «Бизнес на салфетке» задали этот вопрос основателю бренда, Александру Смирнову и…",
+      "source": "Бизнес на салфетке",
+      "topic": "Бизнес",
+      "lang": "ru"
     },
     {
       "id": "cYkEiPdLdE8",
@@ -2852,6 +4391,18 @@
       "lang": "en"
     },
     {
+      "id": "MMCC4Tfpg98",
+      "platform": "youtube",
+      "title": "Почему мы боимся AI? #shorts",
+      "url": "https://www.youtube.com/watch?v=MMCC4Tfpg98",
+      "published": "2026-11-02T11:00:02Z",
+      "thumbnail": "https://i.ytimg.com/vi/MMCC4Tfpg98/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "02b2a93bbbfd70a68582bdfd00fbfc5e",
       "platform": "rutube",
       "title": "Ты с нами?",
@@ -2878,6 +4429,44 @@
       "lang": "ru"
     },
     {
+      "id": "2cEzwxz8qlI",
+      "platform": "youtube",
+      "title": "Роботы освободят нас от домашних дел? #shorts",
+      "url": "https://www.youtube.com/watch?v=2cEzwxz8qlI",
+      "published": "2026-11-01T09:00:32Z",
+      "thumbnail": "https://i.ytimg.com/vi/2cEzwxz8qlI/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "1C3Aj50pcnc",
+      "platform": "youtube",
+      "title": "ЭТИ 6 покупок сделают вас беднее на всю жизнь",
+      "url": "https://www.youtube.com/watch?v=1C3Aj50pcnc",
+      "published": "2026-11-01T09:00:30Z",
+      "thumbnail": "https://i.ytimg.com/vi/1C3Aj50pcnc/hqdefault.jpg",
+      "summary": "❤️‍🔥 Мой Telegram канал - https://t.me/sokolay ❗️Торговать вместе с нами - https://t.me/falconcrypto_bot?start=YouTube5 🎁 Бесплатный мини-курс по крипте -…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 746
+    },
+    {
+      "id": "QMfYDs7TLmE",
+      "platform": "youtube",
+      "title": "ДИАГНОЗ – НЕ ПРИГОВОР. Онколог Ледин Евгений дает предупреждения",
+      "url": "https://www.youtube.com/watch?v=QMfYDs7TLmE",
+      "published": "2026-11-01T08:38:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/QMfYDs7TLmE/hqdefault.jpg",
+      "summary": "Диалог с онкологом Евгением Лединым. Он получился очень важным. Мы часто боимся слова «рак» из-за кучи заблуждений, которые витают вокруг. В этом выпуске мы обсудили честно, что реально помогает, а…",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 3726
+    },
+    {
       "id": "37JCpTHGf-A",
       "platform": "youtube",
       "title": "ИНВЕСТОРЫ в ВОСТОРГЕ от НОВЫХ СТАРТАПОВ! | Арена Единорогов 11",
@@ -2887,7 +4476,8 @@
       "summary": "Три стартапа и запрос на 90 миллионов рублей инвестиций. В новом выпуске Арены Единорогов разбираем бренд функциональных напитков, сеть пастабаров из Перми и сервис аренды бытовой техники через…",
       "source": "Оскар Хартманн",
       "topic": "Мотивация",
-      "lang": "ru"
+      "lang": "ru",
+      "duration": 3060
     },
     {
       "id": "XrZ4Vozni3o",
@@ -2914,6 +4504,18 @@
       "lang": "en"
     },
     {
+      "id": "oF-8MbBLuJU",
+      "platform": "youtube",
+      "title": "Если у вас есть телеграм канал, то вам не нужно вести другие соц.сети руками",
+      "url": "https://www.youtube.com/watch?v=oF-8MbBLuJU",
+      "published": "2026-10-31T15:00:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/oF-8MbBLuJU/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "7U-DYXQjWdI",
       "platform": "youtube",
       "title": "How Many Funds Should You REALLY Own?",
@@ -2938,6 +4540,18 @@
       "lang": "en"
     },
     {
+      "id": "cMTQOY-aleE",
+      "platform": "youtube",
+      "title": "Перестаньте платить куче лишних работников, всё может делать ИИ",
+      "url": "https://www.youtube.com/watch?v=cMTQOY-aleE",
+      "published": "2026-10-31T06:00:15Z",
+      "thumbnail": "https://i.ytimg.com/vi/cMTQOY-aleE/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
       "id": "Ld-6CHb7kSk",
       "platform": "youtube",
       "title": "field shoot tech reveal",
@@ -2947,6 +4561,18 @@
       "summary": "",
       "source": "Slidebean",
       "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "id": "Yr0td6OgqRM",
+      "platform": "youtube",
+      "title": "My AI Works While I’m Sleeping",
+      "url": "https://www.youtube.com/watch?v=Yr0td6OgqRM",
+      "published": "2026-10-30T19:00:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/Yr0td6OgqRM/hqdefault.jpg",
+      "summary": "I wake up at 9, and my AI agent has already planned my day and drafted my emails. Here’s how I set up my dot in 3 steps. Try here: http://www.chatgpt.com/download/ #ChatGPT_Partner @OpenAI",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
       "lang": "en"
     },
     {
@@ -2972,6 +4598,57 @@
       "source": "Wharton School",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "vFOnDsy58NU",
+      "platform": "youtube",
+      "title": "Harvard AI Professor: The People Most at Risk From AI Aren’t Who You Think",
+      "url": "https://www.youtube.com/watch?v=vFOnDsy58NU",
+      "published": "2026-10-30T14:30:09Z",
+      "thumbnail": "https://i.ytimg.com/vi/vFOnDsy58NU/hqdefault.jpg",
+      "summary": "Karim Lakhani explains how to build real expertise with AI. 📌 Try ChatLLM by Abacus AI, all the top AI models in one place for $10 a month: https://chatllm.abacus.ai/svg 📩 Follow my Newsletter…",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
+      "lang": "en",
+      "duration": 3096
+    },
+    {
+      "id": "elOsyqThYFY",
+      "platform": "youtube",
+      "title": "5 негласных правил, которые влияют на карьеру и доход / Колосок",
+      "url": "https://www.youtube.com/watch?v=elOsyqThYFY",
+      "published": "2026-10-30T13:59:19Z",
+      "thumbnail": "https://i.ytimg.com/vi/elOsyqThYFY/hqdefault.jpg",
+      "summary": "Вспомните последнее расширение вашей роли. Кто первым увидел результат и как о нём узнал руководитель?",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 1136
+    },
+    {
+      "id": "H8o2T2jpEZA",
+      "platform": "youtube",
+      "title": "Если вы хотите внедрять в компании ИИ, то начните с себя",
+      "url": "https://www.youtube.com/watch?v=H8o2T2jpEZA",
+      "published": "2026-10-30T13:44:43Z",
+      "thumbnail": "https://i.ytimg.com/vi/H8o2T2jpEZA/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "B6O3_et5mXA",
+      "platform": "youtube",
+      "title": "Экономист из MIT: Кого ИИ сделает богаче, а кого оставит без работы",
+      "url": "https://www.youtube.com/watch?v=B6O3_et5mXA",
+      "published": "2026-10-30T13:00:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/B6O3_et5mXA/hqdefault.jpg",
+      "summary": "Получите демо-доступ к 4dev.com - платформа для оформления и администрирования команды в любой стране мира…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 2524
     },
     {
       "id": "jUnR4eQDdVM",
@@ -3022,6 +4699,44 @@
       "summary": "«Мне позвонили из налоговой. Говорят, в декларации две ставки НДС. Я ничего не понимаю — у меня ошибка? Теперь всё переделывать?» Клиентка передала вопрос нашей бухгалтерской команде и вернулась к…",
       "source": "Ксения Старостина - Бухгалтерия, налоги, финансы",
       "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "id": "LqPKkUMLqfU",
+      "platform": "youtube",
+      "title": "ИИ ЗАБЕРЁТ твою работу к 2027 | Экс-директор Google X",
+      "url": "https://www.youtube.com/watch?v=LqPKkUMLqfU",
+      "published": "2026-10-29T18:51:58Z",
+      "thumbnail": "https://i.ytimg.com/vi/LqPKkUMLqfU/hqdefault.jpg",
+      "summary": "На главе о навыках выберите один прогноз гостя. Какой пример из вашей профессии мог бы его подтвердить или опровергнуть?",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 5449
+    },
+    {
+      "id": "KDVTaMzl9H0",
+      "platform": "youtube",
+      "title": "Зачем нанимать, если можно создать? Как ИИ меняет работу компаний | Дубовенко, Балахнин, Бескромный",
+      "url": "https://www.youtube.com/watch?v=KDVTaMzl9H0",
+      "published": "2026-10-29T16:00:28Z",
+      "thumbnail": "https://i.ytimg.com/vi/KDVTaMzl9H0/hqdefault.jpg",
+      "summary": "На примере звонков сравните два шага. Что команда сначала узнала о клиентах и только потом поручила инструменту?",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 2644
+    },
+    {
+      "id": "EqjO5R1zGhg",
+      "platform": "youtube",
+      "title": "У ИИ есть сознание?",
+      "url": "https://www.youtube.com/watch?v=EqjO5R1zGhg",
+      "published": "2026-10-29T14:03:31Z",
+      "thumbnail": "https://i.ytimg.com/vi/EqjO5R1zGhg/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
       "lang": "ru"
     },
     {
@@ -3102,6 +4817,18 @@
       "lang": "en"
     },
     {
+      "id": "pXVfdOu9rhQ",
+      "platform": "youtube",
+      "title": "#Психолингвистика: как слова программируют финансовую реальность",
+      "url": "https://www.youtube.com/watch?v=pXVfdOu9rhQ",
+      "published": "2026-10-28T14:41:10Z",
+      "thumbnail": "https://i.ytimg.com/vi/pXVfdOu9rhQ/hqdefault.jpg",
+      "summary": "",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
       "id": "wQHe2HkT7pM",
       "platform": "youtube",
       "title": "Bill Gates And Steve Jobs Both Wanted To Hire Him",
@@ -3112,6 +4839,19 @@
       "source": "Computer History Museum",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "KpdD-2HiOQk",
+      "platform": "youtube",
+      "title": "Произноси это вслух – и доход начнет расти. Психолингвистика",
+      "url": "https://www.youtube.com/watch?v=KpdD-2HiOQk",
+      "published": "2026-10-28T14:00:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/KpdD-2HiOQk/hqdefault.jpg",
+      "summary": "Присоединяйтесь к годовой программе «365 очень хороших дней». Тебя ждут еженедельные практики со мной и мастерами, глубинные мастер-классы на темы денег, отношений, предназначения и привычек. А также…",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 2197
     },
     {
       "id": "du65RsZV6lU",
@@ -3134,6 +4874,18 @@
       "thumbnail": "https://i.ytimg.com/vi/ACPO9_zSnSE/hqdefault.jpg",
       "summary": "👉FREE COMMUNICATION GUIDE - If you want to learn how to speak up in meetings and deliver impactful updates, access my 'Speak Up Clearly in Work Meetings' PDF guide for free: https://bit.ly/peroct26 🗣…",
       "source": "Linda Raynier",
+      "topic": "Карьера",
+      "lang": "en"
+    },
+    {
+      "id": "wARdvYraqnw",
+      "platform": "youtube",
+      "title": "200K Jobs Lost vs. 1M Created: The AI Reality",
+      "url": "https://www.youtube.com/watch?v=wARdvYraqnw",
+      "published": "2026-10-27T18:08:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/wARdvYraqnw/hqdefault.jpg",
+      "summary": "",
+      "source": "Silicon Valley Girl",
       "topic": "Карьера",
       "lang": "en"
     },
@@ -3163,6 +4915,19 @@
       "lang": "en"
     },
     {
+      "id": "LEMfWjU_6Qg",
+      "platform": "youtube",
+      "title": "«Человек отстает от человечества». Разговор с философом про искусственный интеллект",
+      "url": "https://www.youtube.com/watch?v=LEMfWjU_6Qg",
+      "published": "2026-10-27T09:00:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/LEMfWjU_6Qg/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+…",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 8983
+    },
+    {
       "id": "BmHfGQUwvp4",
       "platform": "youtube",
       "title": "Intimacy with Jennifer Petriglieri and Stewart Friedman",
@@ -3172,6 +4937,18 @@
       "summary": "Intimacy is often treated as separate from work. But over a long working life, our closest relationships are shaped by time, ambition, care and the choices we make every day. In this episode of Life…",
       "source": "London Business School",
       "topic": "Бизнес",
+      "lang": "en"
+    },
+    {
+      "id": "UtEaeoiV6E0",
+      "platform": "youtube",
+      "title": "Why AI Still Can’t Replace Your Doctor",
+      "url": "https://www.youtube.com/watch?v=UtEaeoiV6E0",
+      "published": "2026-10-26T11:00:02Z",
+      "thumbnail": "https://i.ytimg.com/vi/UtEaeoiV6E0/hqdefault.jpg",
+      "summary": "",
+      "source": "Silicon Valley Girl",
+      "topic": "Карьера",
       "lang": "en"
     },
     {
@@ -3188,6 +4965,79 @@
       "lang": "ru"
     },
     {
+      "id": "7_ZEQHAaGqo",
+      "platform": "youtube",
+      "title": "Что сделало Диван.ру такой успешной компанией?",
+      "url": "https://www.youtube.com/watch?v=7_ZEQHAaGqo",
+      "published": "2026-10-25T15:00:02Z",
+      "thumbnail": "https://i.ytimg.com/vi/7_ZEQHAaGqo/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "0Sn3zf6sIuc",
+      "platform": "youtube",
+      "title": "Мы оба рыдали - самый трогательный момент в армии",
+      "url": "https://www.youtube.com/watch?v=0Sn3zf6sIuc",
+      "published": "2026-10-25T11:00:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/0Sn3zf6sIuc/hqdefault.jpg",
+      "summary": "На выпускном в ВВС США есть традиция: стоишь в строю и не шевелишься, пока тебя не найдет кто-то из родных и не коснется плеча. Татьяна Нам почти два месяца не видела сына, пока проходила базовый…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "lRGwGSKwzJ8",
+      "platform": "youtube",
+      "title": "Что ждёт общество в будущем? Рост неравенства, крах института семьи и кризис мегаполисов",
+      "url": "https://www.youtube.com/watch?v=lRGwGSKwzJ8",
+      "published": "2026-10-25T09:00:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/lRGwGSKwzJ8/hqdefault.jpg",
+      "summary": "► Сократите расходы на кассовое оборудование со Сбером. Арендуйте онлайн-кассу и получите скидку 50% на фискальный накопитель. Подробнее: https://s.sber.ru/3H3stB ► Wildberries для бизнеса —…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 7207
+    },
+    {
+      "id": "0KfMds-pZ0g",
+      "platform": "youtube",
+      "title": "Почему женщины стареют раньше мужчин #shorts",
+      "url": "https://www.youtube.com/watch?v=0KfMds-pZ0g",
+      "published": "2026-10-25T09:00:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/0KfMds-pZ0g/hqdefault.jpg",
+      "summary": "НАСТОЯЩИЙ МАТЕРИАЛ (ИНФОРМАЦИЯ) ПРОИЗВЕДЕН И РАСПРОСТРАНЕН ИНОСТРАННЫМ АГЕНТОМ ЕЛИЗАВЕТОЙ НИКОЛАЕВНОЙ ОСЕТИНСКОЙ ЛИБО КАСАЕТСЯ ДЕЯТЕЛЬНОСТИ ИНОСТРАННОГО АГЕНТА ЕЛИЗАВЕТЫ НИКОЛАЕВНЫ ОСЕТИНСКОЙ 18+",
+      "source": "Это Осетинская!",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "siBThUzEPmM",
+      "platform": "youtube",
+      "title": "Позвольте своим сотрудникам ошибаться",
+      "url": "https://www.youtube.com/watch?v=siBThUzEPmM",
+      "published": "2026-10-25T06:00:28Z",
+      "thumbnail": "https://i.ytimg.com/vi/siBThUzEPmM/hqdefault.jpg",
+      "summary": "",
+      "source": "Основатели",
+      "topic": "Бизнес",
+      "lang": "ru"
+    },
+    {
+      "id": "KfYzB1roAGg",
+      "platform": "youtube",
+      "title": "Как я дышала слезоточивым газом",
+      "url": "https://www.youtube.com/watch?v=KfYzB1roAGg",
+      "published": "2026-10-24T11:00:35Z",
+      "thumbnail": "https://i.ytimg.com/vi/KfYzB1roAGg/hqdefault.jpg",
+      "summary": "На базовом тренинге в ВВС США есть CBRN: подготовка к химическим и биологическим атакам. Сначала учат надевать противогаз и защитный костюм, а потом заводят в комнату со слезоточивым газом. Снимаешь…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "-8CDZRd0FWM",
       "platform": "youtube",
       "title": "The brilliant scam of satellite 5G",
@@ -3198,6 +5048,19 @@
       "source": "Slidebean",
       "topic": "Бизнес",
       "lang": "en"
+    },
+    {
+      "id": "FXqJqwINzI0",
+      "platform": "youtube",
+      "title": "№1 Эндокринолог: жир уходит, когда убираешь ЭТО (не калории)",
+      "url": "https://www.youtube.com/watch?v=FXqJqwINzI0",
+      "published": "2026-10-23T17:52:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/FXqJqwINzI0/hqdefault.jpg",
+      "summary": "▶︎ Циан помогает въехать, как купить квартиру на вторичке и не переплатить: https://clck.ru/3WdtYP ▶︎ Среда, где предприниматели разбираются, куда движется мир, вместе с теми, кто его меняет. Silicon…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 6072
     },
     {
       "id": "063c7228a42202deeee7b879ed40c4db",
@@ -3222,6 +5085,32 @@
       "summary": "Три стартапа, пять инвесторов и предложение на 20 миллионов рублей. В новом выпуске Арены Единорогов вместе с другими инвесторами разбираю пчелошеринг, ИИ-помощника для врачей и систему компьютерного…",
       "source": "Оскар Хартманн",
       "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 3915
+    },
+    {
+      "id": "eg3GzXr7sR4",
+      "platform": "youtube",
+      "title": "Основатель AirBnb: Почему с ИИ одни уйдут вперёд, а другие отстанут",
+      "url": "https://www.youtube.com/watch?v=eg3GzXr7sR4",
+      "published": "2026-10-23T13:00:02Z",
+      "thumbnail": "https://i.ytimg.com/vi/eg3GzXr7sR4/hqdefault.jpg",
+      "summary": "Перейдите к вопросу о запуске. Какой сигнал убедил бы вашу команду, что идея заслуживает первой версии?",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1702
+    },
+    {
+      "id": "6k-Ai9pTcSI",
+      "platform": "youtube",
+      "title": "На тебя орут с первой секунды",
+      "url": "https://www.youtube.com/watch?v=6k-Ai9pTcSI",
+      "published": "2026-10-23T11:00:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/6k-Ai9pTcSI/hqdefault.jpg",
+      "summary": "Первый день базового тренинга в ВВС США называют day zero. Выходишь из автобуса со своими вещами, и на тебя сразу начинают орать. Правила на все, и выучить их нужно мгновенно, иначе снова ор. Татьяна…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
       "lang": "ru"
     },
     {
@@ -3237,6 +5126,19 @@
       "lang": "en"
     },
     {
+      "id": "YrYy7J3m5bE",
+      "platform": "youtube",
+      "title": "Уволилась в никуда и пошла в ВВС США в 40 лет. Татьяна Нам",
+      "url": "https://www.youtube.com/watch?v=YrYy7J3m5bE",
+      "published": "2026-10-22T20:42:37Z",
+      "thumbnail": "https://i.ytimg.com/vi/YrYy7J3m5bE/hqdefault.jpg",
+      "summary": "Как попасть в ВВС США, если тебе 40, ты никогда не служила и у тебя на руках ребенок? Татьяна Нам переехала в Америку 11 лет назад, работала продавцом, отучилась на веб-разработчика, год безуспешно…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 6108
+    },
+    {
       "id": "27JRiGRlVaQ",
       "platform": "youtube",
       "title": "The Impact of Alberta's Referendum Results",
@@ -3247,6 +5149,32 @@
       "source": "The Plain Bagel",
       "topic": "Деньги",
       "lang": "en"
+    },
+    {
+      "id": "e_CnQafuBjI",
+      "platform": "youtube",
+      "title": "Как привлекать клиентов — разобрали 7 способов: от очевидных до неожиданных / Колосок",
+      "url": "https://www.youtube.com/watch?v=e_CnQafuBjI",
+      "published": "2026-10-22T14:07:45Z",
+      "thumbnail": "https://i.ytimg.com/vi/e_CnQafuBjI/hqdefault.jpg",
+      "summary": "В новом выпуске разобрали 7 способов привлечения клиентов — от самых очевидных до неочевидных. Обсудили, где бизнесу искать свою аудиторию, как привлекать ее внимание и какие инструменты стоит…",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 3498
+    },
+    {
+      "id": "-BRHbdnIOFY",
+      "platform": "youtube",
+      "title": "Жизнь была бы Сказкой, увидь я эту лекцию год назад",
+      "url": "https://www.youtube.com/watch?v=-BRHbdnIOFY",
+      "published": "2026-10-21T14:00:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/-BRHbdnIOFY/hqdefault.jpg",
+      "summary": "Присоединяйтесь к годовой программе «365 очень хороших дней». Тебя ждут еженедельные практики со мной и мастерами, глубинные мастер-классы на темы денег, отношений, предназначения и привычек. А также…",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 2542
     },
     {
       "id": "xoWjeM5ltv8",
@@ -3271,6 +5199,18 @@
       "summary": "Компания вложила 35 млн долларов в «модный» минималистичный дизайн, но лишила упаковку ключевых визуальных маркеров. Студенты расскажут, почему нельзя менять узнаваемые элементы бренда ради моды без…",
       "source": "Финансовый университет | Новороссийск",
       "topic": "Деньги",
+      "lang": "ru"
+    },
+    {
+      "id": "B3-44VhzywQ",
+      "platform": "youtube",
+      "title": "Кому нужен вайбкодинг",
+      "url": "https://www.youtube.com/watch?v=B3-44VhzywQ",
+      "published": "2026-10-21T11:00:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/B3-44VhzywQ/hqdefault.jpg",
+      "summary": "AI-разработка удешевила автоматизацию, и она пойдет туда, где раньше все делали в Excel. А вайбкодинг уже меняет работу продактов и проджектов. Венчурный инвестор Денис Калышкин рассказывает, как AI…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
       "lang": "ru"
     },
     {
@@ -3299,6 +5239,31 @@
       "lang": "ru"
     },
     {
+      "id": "d6VL5Zsbk0U",
+      "platform": "youtube",
+      "title": "Когда лопнет AI-пузырь?",
+      "url": "https://www.youtube.com/watch?v=d6VL5Zsbk0U",
+      "published": "2026-10-20T11:00:24Z",
+      "thumbnail": "https://i.ytimg.com/vi/d6VL5Zsbk0U/hqdefault.jpg",
+      "summary": "Все спорят, лопнет AI-пузырь или нет. Но сначала стоит разобраться, что вообще такое пузырь. Венчурный инвестор Денис Калышкин объясняет, почему полезная технология и завышенные ожидания инвесторов…",
+      "source": "Prodcast: Поиск работы и иммиграция в США",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "3eKMA0rNoGc",
+      "platform": "youtube",
+      "title": "Ex-Banker Explains: How to Invest for Beginners in 2027",
+      "url": "https://www.youtube.com/watch?v=3eKMA0rNoGc",
+      "published": "2026-10-18T12:18:11Z",
+      "thumbnail": "https://i.ytimg.com/vi/3eKMA0rNoGc/hqdefault.jpg",
+      "summary": "📢 Reserve your seat for my FREE investing workshop: https://link.nischa.me/invest-oct What if the money sitting in your bank account is shrinking every year? As a chartered accountant and former…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "duration": 1161
+    },
+    {
       "id": "h3ajVyC5vJc",
       "platform": "youtube",
       "title": "Breaking Down My Investment Portfolio",
@@ -3323,6 +5288,31 @@
       "lang": "en"
     },
     {
+      "id": "rXfXa8nLLVA",
+      "platform": "youtube",
+      "title": "Президент OpenAI: Как вырваться вперёд, когда ИИ есть у всех",
+      "url": "https://www.youtube.com/watch?v=rXfXa8nLLVA",
+      "published": "2026-10-16T13:00:19Z",
+      "thumbnail": "https://i.ytimg.com/vi/rXfXa8nLLVA/hqdefault.jpg",
+      "summary": "Получите демо-доступ к 4dev.com - платформа для оформления и администрирования команды в любой стране мира…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1840
+    },
+    {
+      "id": "QQi8ktZO5DM",
+      "platform": "youtube",
+      "title": "Кто реально тормозит рост бизнеса | Сергиенко, McKinsey",
+      "url": "https://www.youtube.com/watch?v=QQi8ktZO5DM",
+      "published": "2026-10-15T15:42:57Z",
+      "thumbnail": "https://i.ytimg.com/vi/QQi8ktZO5DM/hqdefault.jpg",
+      "summary": "Смотрите полный выпуск на канале @kolosook",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "ec86dbaad96c00c729b1c929a5a35f60",
       "platform": "rutube",
       "title": "А мне это зачем?",
@@ -3336,6 +5326,19 @@
       "lang": "ru"
     },
     {
+      "id": "BjFJtRgOukU",
+      "platform": "youtube",
+      "title": "Я разобрала весь процесс поиска работы в 2026 году — вот полная инструкция / Колосок",
+      "url": "https://www.youtube.com/watch?v=BjFJtRgOukU",
+      "published": "2026-10-15T14:57:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/BjFJtRgOukU/hqdefault.jpg",
+      "summary": "Разобрала весь процесс поиска работы в 2026 году. В ролике рассказываю, как составить резюме, где искать работу и успешно пройти собеседование. 📍 Локация: МЕСТО — резиденция нового формата в сердце…",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 3974
+    },
+    {
       "id": "H802fsEFEL8",
       "platform": "youtube",
       "title": "When You Don't Know the Answer, Say THIS [Tips for Interviews]",
@@ -3346,6 +5349,19 @@
       "source": "Self Made Millennial",
       "topic": "Карьера",
       "lang": "en"
+    },
+    {
+      "id": "JzTYFn8YvdE",
+      "platform": "youtube",
+      "title": "Демо коуч-сессия: Убираем волнение при общении",
+      "url": "https://www.youtube.com/watch?v=JzTYFn8YvdE",
+      "published": "2026-10-15T12:25:52Z",
+      "thumbnail": "https://i.ytimg.com/vi/JzTYFn8YvdE/hqdefault.jpg",
+      "summary": "Проследите, с какого вопроса начинается сессия. Как бы вы сами сформулировали запрос перед сложной беседой?",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 1306
     },
     {
       "id": "ede8a6d555df4ab2fba22d409141747c",
@@ -3395,6 +5411,19 @@
       "summary": "Искусственный интеллект повышает производительность. Но кто получит деньги от этого роста? Мой гость Олег Вьюгин, профессор ВШЭ, экономист, который работал первым заместителем председателя Банка…",
       "source": "Оскар Хартманн",
       "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 4022
+    },
+    {
+      "id": "YOwUtuWpnnc",
+      "platform": "youtube",
+      "title": "Бизнес по-русски: почему западный менеджмент нам просто не подойдёт",
+      "url": "https://www.youtube.com/watch?v=YOwUtuWpnnc",
+      "published": "2026-10-13T17:40:46Z",
+      "thumbnail": "https://i.ytimg.com/vi/YOwUtuWpnnc/hqdefault.jpg",
+      "summary": "Смотрите полный выпуск на канале @kolosook",
+      "source": "Колосок",
+      "topic": "Карьера",
       "lang": "ru"
     },
     {
@@ -3423,6 +5452,32 @@
       "lang": "en"
     },
     {
+      "id": "HL519MVtcqQ",
+      "platform": "youtube",
+      "title": "Investing Isn't Hard. It's Misunderstood",
+      "url": "https://www.youtube.com/watch?v=HL519MVtcqQ",
+      "published": "2026-10-11T12:45:34Z",
+      "thumbnail": "https://i.ytimg.com/vi/HL519MVtcqQ/hqdefault.jpg",
+      "summary": "Join my free 45-minute investing workshop this Sunday: https://link.nischa.me/investingworkshop STAY IN TOUCH: 📸 Instagram: https://instagram.com/nischa.me 📩 Newsletter…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "duration": 600
+    },
+    {
+      "id": "EqjixGuWJww",
+      "platform": "youtube",
+      "title": "Кто станет новым Китаем? Алексей Маслов о странах, где будет расти экономика следующие 10 лет",
+      "url": "https://www.youtube.com/watch?v=EqjixGuWJww",
+      "published": "2026-10-11T09:00:16Z",
+      "thumbnail": "https://i.ytimg.com/vi/EqjixGuWJww/hqdefault.jpg",
+      "summary": "► «Бизнес 360» - программа Сбера для предпринимателей. Начать можно с простого шага - получите бесплатный стратегический разбор вашего бизнеса от менторов программы «Бизнес 360»…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 8368
+    },
+    {
       "id": "0ZCVKL_PDsg",
       "platform": "youtube",
       "title": "How BAD Are Stock Valuations Really?",
@@ -3433,6 +5488,19 @@
       "source": "The Plain Bagel",
       "topic": "Деньги",
       "lang": "en"
+    },
+    {
+      "id": "Vz0kzJBdghs",
+      "platform": "youtube",
+      "title": "Сооснователь ИИ-стартапа за $13 млрд | Как заработать на своём приложении без программистов",
+      "url": "https://www.youtube.com/watch?v=Vz0kzJBdghs",
+      "published": "2026-10-09T13:26:07Z",
+      "thumbnail": "https://i.ytimg.com/vi/Vz0kzJBdghs/hqdefault.jpg",
+      "summary": "Получите демо-доступ к 4dev.com - платформа для оформления и администрирования команды в любой стране мира…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1879
     },
     {
       "id": "984e12922ccabbe6cf7c83ecc4f1622a",
@@ -3446,6 +5514,19 @@
       "source": "Неочевидная карьера",
       "topic": "Карьера",
       "lang": "ru"
+    },
+    {
+      "id": "ka2FHYwNoZo",
+      "platform": "youtube",
+      "title": "Как перестать работать за свою команду | Сергиенко, McKinsey",
+      "url": "https://www.youtube.com/watch?v=ka2FHYwNoZo",
+      "published": "2026-10-08T14:00:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/ka2FHYwNoZo/hqdefault.jpg",
+      "summary": "Почему команда есть, а всё по-прежнему приходится тащить на себе? В сегодняшнем выпуске в гостях — Яков Сергиенко, глава «Яков и Партнёры» и бывший руководитель российского офиса McKinsey, который…",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 4346
     },
     {
       "id": "c7_q0MuepVU",
@@ -3471,6 +5552,19 @@
       "source": "Кадровый центр «Работа России» _ Тюменская область",
       "topic": "Карьера",
       "lang": "ru"
+    },
+    {
+      "id": "YVV68TU0Mxo",
+      "platform": "youtube",
+      "title": "За 1 год жизнь станет другой после этой приватной лекции.",
+      "url": "https://www.youtube.com/watch?v=YVV68TU0Mxo",
+      "published": "2026-10-07T11:23:49Z",
+      "thumbnail": "https://i.ytimg.com/vi/YVV68TU0Mxo/hqdefault.jpg",
+      "summary": "Присоединяйтесь к годовой программе «365 очень хороших дней». Тебя ждут еженедельные практики со мной и мастерами, глубинные мастер-классы на темы денег, отношений, предназначения и привычек. А также…",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 3363
     },
     {
       "id": "8f7759c6c68cce4293cf63b45b14c7ed",
@@ -3510,6 +5604,32 @@
       "lang": "en"
     },
     {
+      "id": "yFUYv1kR7xY",
+      "platform": "youtube",
+      "title": "How to be so productive it feels illegal",
+      "url": "https://www.youtube.com/watch?v=yFUYv1kR7xY",
+      "published": "2026-10-04T12:35:50Z",
+      "thumbnail": "https://i.ytimg.com/vi/yFUYv1kR7xY/hqdefault.jpg",
+      "summary": "Productivity isn't always about working harder. Sometimes, the reason you're struggling to get things done is that you're constantly distracted, working at the wrong time, making your tasks harder…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "duration": 592
+    },
+    {
+      "id": "QTObnlYw2_s",
+      "platform": "youtube",
+      "title": "9 привычек, от которых пора отказаться",
+      "url": "https://www.youtube.com/watch?v=QTObnlYw2_s",
+      "published": "2026-10-04T11:24:41Z",
+      "thumbnail": "https://i.ytimg.com/vi/QTObnlYw2_s/hqdefault.jpg",
+      "summary": "❤️‍🔥 Мой Telegram канал - https://t.me/sokolay ❗️Торговать вместе с нами - https://t.me/falconcrypto_bot?start=YouTube4 🎁 Бесплатный мини-курс по крипте -…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 796
+    },
+    {
       "id": "fe2dfe5fd6ccaa237ba0344765d91392",
       "platform": "rutube",
       "title": "Битва интеллектов #1 выпуск",
@@ -3521,6 +5641,19 @@
       "source": "ВТБ Мои Инвестиции",
       "topic": "Деньги",
       "lang": "ru"
+    },
+    {
+      "id": "GA-y0AdwujI",
+      "platform": "youtube",
+      "title": "Мои рабочие будни в Америке. Выводы, которые я сделала за 11 лет.",
+      "url": "https://www.youtube.com/watch?v=GA-y0AdwujI",
+      "published": "2026-10-02T13:29:45Z",
+      "thumbnail": "https://i.ytimg.com/vi/GA-y0AdwujI/hqdefault.jpg",
+      "summary": "Самая безумная рабочая неделя за последнее время: 7 дней на ногах без выходных, Сан-Франциско→ Бостон → Нью-Йор. Беру вас с собой в командировку и отвечаю на ваши вопросы. 📬 Подписывайся на мою…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1765
     },
     {
       "id": "RJJb45JsKkA",
@@ -3545,6 +5678,32 @@
       "source": "Linda Raynier",
       "topic": "Карьера",
       "lang": "en"
+    },
+    {
+      "id": "3D7IExdxn6Y",
+      "platform": "youtube",
+      "title": "Кризис: как действовать, чтобы не сломаться и сохранить опору / Колосок",
+      "url": "https://www.youtube.com/watch?v=3D7IExdxn6Y",
+      "published": "2026-10-01T14:35:04Z",
+      "thumbnail": "https://i.ytimg.com/vi/3D7IExdxn6Y/hqdefault.jpg",
+      "summary": "Как пережить кризис и не сломаться? В этом выпуске говорим о том, что делать, когда всё нестабильно: как принимать решения, справляться с тревогой, сохранять энергию, искать опору и действовать в…",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 3973
+    },
+    {
+      "id": "G9N4qZUmDbk",
+      "platform": "youtube",
+      "title": "Это ДОКАЗЫВАЕТ симуляцию? 5 признаков — Профессор Хоффман",
+      "url": "https://www.youtube.com/watch?v=G9N4qZUmDbk",
+      "published": "2026-09-30T20:01:47Z",
+      "thumbnail": "https://i.ytimg.com/vi/G9N4qZUmDbk/hqdefault.jpg",
+      "summary": "▶︎ https://pixgames.ru/podcastsolomina?erid=2W5zFJaGSx1 — забрать набор бонусов и бесплатно скачать War Thunder. Сезон советской техники скоро завершится - торопись! ▶︎ Поймать сигнал для радости и…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 4294
     },
     {
       "id": "oKsxUe3V0AU",
@@ -3592,7 +5751,8 @@
       "summary": "Почти 18 млрд рублей оборота и больше миллиарда прибыли за 2025 год. Как 12 STOREEZ вырос из небольшого проекта в международный бренд? Я приехал в новый офис компании к её сооснователю Ивану Хохлову…",
       "source": "Оскар Хартманн",
       "topic": "Мотивация",
-      "lang": "ru"
+      "lang": "ru",
+      "duration": 4488
     },
     {
       "id": "Wa2vdA1Lcxc",
@@ -3631,6 +5791,31 @@
       "lang": "en"
     },
     {
+      "id": "iw4jSJWi4vY",
+      "platform": "youtube",
+      "title": "Постоянный стресс, иллюзия выбора и одиночество вдвоём. Психолог Насибян о главных страхах поколения",
+      "url": "https://www.youtube.com/watch?v=iw4jSJWi4vY",
+      "published": "2026-09-27T09:00:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/iw4jSJWi4vY/hqdefault.jpg",
+      "summary": "► Сбер сделал эквайринг БЕСПЛАТНЫМ на 185 дней. Чтобы воспользоваться предложением, нужно подключить торговый эквайринг и арендовать онлайн-кассу: https://s.sber.ru/bHpBSW ► Президенция Монави…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 7091
+    },
+    {
+      "id": "pIfbaCCOFpA",
+      "platform": "youtube",
+      "title": "Главный фактор плохих новостей | McKinsey, «Нейри»",
+      "url": "https://www.youtube.com/watch?v=pIfbaCCOFpA",
+      "published": "2026-09-26T19:37:50Z",
+      "thumbnail": "https://i.ytimg.com/vi/pIfbaCCOFpA/hqdefault.jpg",
+      "summary": "Смотрите полный выпуск на канале @kolosook",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
       "id": "mzkdUnCThjc",
       "platform": "youtube",
       "title": "Investment Analyst Reacts to Finance TikToks - Doomsday Doomscrolling",
@@ -3641,6 +5826,31 @@
       "source": "The Plain Bagel",
       "topic": "Деньги",
       "lang": "en"
+    },
+    {
+      "id": "MbnNoXnk78c",
+      "platform": "youtube",
+      "title": "Чипы в коровах: к чему приведут технологии будущего | McKinsey, «Нейри»",
+      "url": "https://www.youtube.com/watch?v=MbnNoXnk78c",
+      "published": "2026-09-25T15:30:04Z",
+      "thumbnail": "https://i.ytimg.com/vi/MbnNoXnk78c/hqdefault.jpg",
+      "summary": "Смотрите полный выпуск на канале @kolosook",
+      "source": "Колосок",
+      "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "P8Sp3X_Jmrg",
+      "platform": "youtube",
+      "title": "Самые большие возможности ИИ — не там, где вы их ищете | Сооснователь Coursera Эндрю Ын",
+      "url": "https://www.youtube.com/watch?v=P8Sp3X_Jmrg",
+      "published": "2026-09-25T13:00:39Z",
+      "thumbnail": "https://i.ytimg.com/vi/P8Sp3X_Jmrg/hqdefault.jpg",
+      "summary": "💼 Получите демо-доступ к 4dev.com - платформа для оформления и администрирования команды в любой стране мира…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 2266
     },
     {
       "id": "16b19ccd0b458da8fd6cb66dd76d8d50",
@@ -3745,6 +5955,44 @@
       "lang": "ru"
     },
     {
+      "id": "Us8ietzOlSM",
+      "platform": "youtube",
+      "title": "Мы нашли след ДРУГОЙ цивилизации? Астроном Дэвид Киппинг",
+      "url": "https://www.youtube.com/watch?v=Us8ietzOlSM",
+      "published": "2026-09-20T15:09:55Z",
+      "thumbnail": "https://i.ytimg.com/vi/Us8ietzOlSM/hqdefault.jpg",
+      "summary": "▶︎ «Плати по всему миру» — карта для оплаты зарубежных подписок и покупок. Можно привязать к Apple и Google Pay, а для Китая – к Alipay, WeChat Pay. Пополнение рублями через СБП. Даже кредиткой. По…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 6060
+    },
+    {
+      "id": "Z4N1ycp4Lu0",
+      "platform": "youtube",
+      "title": "The shocking thing about investment returns...",
+      "url": "https://www.youtube.com/watch?v=Z4N1ycp4Lu0",
+      "published": "2026-09-20T13:12:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/Z4N1ycp4Lu0/hqdefault.jpg",
+      "summary": "📢 Reserve your seat for my FREE investing workshop: https://link.nischa.me/novworkshop 00:00 - What most people see 00:41 - Don't invest if you can't do these 2 things 01:47 - The shocking part 03:13…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "duration": 204
+    },
+    {
+      "id": "o5RvJMD78tM",
+      "platform": "youtube",
+      "title": "You don't hate the job",
+      "url": "https://www.youtube.com/watch?v=o5RvJMD78tM",
+      "published": "2026-09-17T12:00:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/o5RvJMD78tM/hqdefault.jpg",
+      "summary": "Sometimes you don't want to quit your job — you want to quit your situation. 👀 Hate your boss, burnt out, underpaid? Before you leap into \"I'll start a business\" or \"I'll switch careers, test it…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
       "id": "8e15e4d2b977b79411153af90cb0c35a",
       "platform": "rutube",
       "title": "Что мы обнаружили, когда приняли учёт нового клиента?",
@@ -3766,6 +6014,18 @@
       "thumbnail": "https://i.ytimg.com/vi/xKeRD2Ot_hg/hqdefault.jpg",
       "summary": "",
       "source": "Two Cents",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "id": "9g91x70h3Dk",
+      "platform": "youtube",
+      "title": "The law of least regret",
+      "url": "https://www.youtube.com/watch?v=9g91x70h3Dk",
+      "published": "2026-09-16T12:00:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/9g91x70h3Dk/hqdefault.jpg",
+      "summary": "You can have the savings, the plan, everything — and still freeze on \"what if it's the wrong call?\" 💭 So use the law of least regret. Picture yourself in 20 years: you stayed and stayed comfortable…",
+      "source": "Nischa",
       "topic": "Деньги",
       "lang": "en"
     },
@@ -3821,6 +6081,18 @@
       "lang": "ru"
     },
     {
+      "id": "a3p7OvlyK9U",
+      "platform": "youtube",
+      "title": "Don't quit angry",
+      "url": "https://www.youtube.com/watch?v=a3p7OvlyK9U",
+      "published": "2026-09-15T12:00:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/a3p7OvlyK9U/hqdefault.jpg",
+      "summary": "Don't quit because you hate your job — quit because you've made it possible to leave. 💭 That Sunday-night \"I'm done\" feeling is real. But quit on impulse and a few weeks later it's rent, bills, and…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
       "id": "be275e12d005ebf306dfde638dd4106e",
       "platform": "rutube",
       "title": "Анна Жираткова «Инновации как стратегия продаж»",
@@ -3860,6 +6132,19 @@
       "lang": "ru"
     },
     {
+      "id": "84emopzXgNs",
+      "platform": "youtube",
+      "title": "Scammers only need one thing",
+      "url": "https://www.youtube.com/watch?v=84emopzXgNs",
+      "published": "2026-09-13T12:45:04Z",
+      "thumbnail": "https://i.ytimg.com/vi/84emopzXgNs/hqdefault.jpg",
+      "summary": "Scams don't look like scams anymore. The dodgy spelling and obvious dodgy links have been replaced by cloned bank websites, AI voice calls, and messages that look like they came from someone you…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "duration": 747
+    },
+    {
       "id": "TdKK1f21xvA",
       "platform": "youtube",
       "title": "Who You Marry Is a Financial Decision",
@@ -3870,6 +6155,32 @@
       "source": "Ben Felix",
       "topic": "Деньги",
       "lang": "en"
+    },
+    {
+      "id": "vqGmRpV-tAw",
+      "platform": "youtube",
+      "title": "Кто сегодня зарабатывает больше всех? Карьерный эксперт - о том, как быть востребованным в эпоху ИИ",
+      "url": "https://www.youtube.com/watch?v=vqGmRpV-tAw",
+      "published": "2026-09-13T09:00:18Z",
+      "thumbnail": "https://i.ytimg.com/vi/vqGmRpV-tAw/hqdefault.jpg",
+      "summary": "На главе о найме выпишите один пример навыка, который вы могли бы показать на собеседовании с помощью уже сделанной работы.",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 7587
+    },
+    {
+      "id": "JE6YOCSOaCQ",
+      "platform": "youtube",
+      "title": "Как устроен наш быт в США",
+      "url": "https://www.youtube.com/watch?v=JE6YOCSOaCQ",
+      "published": "2026-09-12T07:00:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/JE6YOCSOaCQ/hqdefault.jpg",
+      "summary": "Упоминаю в видео: Школа своими словами, куда ходят девочки: https://svoimislovami.com/ Робот пылесос: https://link.amazon/B06OAwisx Корзина для грязного белья: https://link.amazon/B0f3X1Voa…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1536
     },
     {
       "id": "v824SHV6COE",
@@ -3910,6 +6221,18 @@
       "lang": "ru"
     },
     {
+      "id": "mY62iV6q5as",
+      "platform": "youtube",
+      "title": "Money doing nothing",
+      "url": "https://www.youtube.com/watch?v=mY62iV6q5as",
+      "published": "2026-09-10T12:00:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/mY62iV6q5as/hqdefault.jpg",
+      "summary": "The biggest money mistake high earners make? Letting cash sit in a current account doing nothing. 💸 As a chartered accountant, the pattern I see constantly: people understand investing, mean to…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
       "id": "1713d1bc310282dab16c57cfe9a51538",
       "platform": "rutube",
       "title": "Команда косячит",
@@ -3921,6 +6244,43 @@
       "source": "Бизнес и мышление",
       "topic": "Мотивация",
       "lang": "ru"
+    },
+    {
+      "id": "kldKPSBuqH0",
+      "platform": "youtube",
+      "title": "The £100K 60% tax trap",
+      "url": "https://www.youtube.com/watch?v=kldKPSBuqH0",
+      "published": "2026-09-09T12:00:27Z",
+      "thumbnail": "https://i.ytimg.com/vi/kldKPSBuqH0/hqdefault.jpg",
+      "summary": "If you earn over £100k in the UK, there's a band where your effective tax rate is 60% — not 40%. 🇬🇧 You lose £1 of tax-free allowance for every £2 over £100k. The fix: pension contributions pull your…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "id": "KLceCBu_TX8",
+      "platform": "youtube",
+      "title": "Under 6 hours = legally drunk",
+      "url": "https://www.youtube.com/watch?v=KLceCBu_TX8",
+      "published": "2026-09-08T12:00:12Z",
+      "thumbnail": "https://i.ytimg.com/vi/KLceCBu_TX8/hqdefault.jpg",
+      "summary": "Sleeping under 6 hours makes your brain perform like you're legally drunk. 😴 And most people do it every single night. A neuroscientist's research says your sleep setup is the single highest-return…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en"
+    },
+    {
+      "id": "vRjH-qdMicU",
+      "platform": "youtube",
+      "title": "8 Money Lessons I Wish I Knew at 22 (Instead of 34)",
+      "url": "https://www.youtube.com/watch?v=vRjH-qdMicU",
+      "published": "2026-09-06T12:10:30Z",
+      "thumbnail": "https://i.ytimg.com/vi/vRjH-qdMicU/hqdefault.jpg",
+      "summary": "This is one of the most requested videos we've had on this channel, and it's one I'm really happy to finally record and upload! The information in this video should cover the financial basics that…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "duration": 674
     },
     {
       "id": "20c91230b9d676dd82c784258fb98a6c",
@@ -3947,6 +6307,19 @@
       "source": "ТРУ БИЗНЕС СТОРИ",
       "topic": "Бизнес",
       "lang": "ru"
+    },
+    {
+      "id": "0kjLltEkW6Q",
+      "platform": "youtube",
+      "title": "Экономист из Стэнфорда: ИИ сделает следующие 10 лет лучшими или худшими в истории",
+      "url": "https://www.youtube.com/watch?v=0kjLltEkW6Q",
+      "published": "2026-09-04T13:00:22Z",
+      "thumbnail": "https://i.ytimg.com/vi/0kjLltEkW6Q/hqdefault.jpg",
+      "summary": "10 навыков, которые сделают вас незаменимыми в эпоху ИИ: https://marinamogilko.ru/10-skills?utm_source=youtube&utm_medium=video&utm_campaign=10-skills&utm_content=04092026 В этом выпуске подкаста…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 3106
     },
     {
       "id": "a9f5966b3da8b10ef07ede771d010d90",
@@ -4000,6 +6373,19 @@
       "lang": "en"
     },
     {
+      "id": "wWDNed_KUcE",
+      "platform": "youtube",
+      "title": "Как УБЕДИТЬ ЛЮБОГО Человека? | Нина Зверева",
+      "url": "https://www.youtube.com/watch?v=wWDNed_KUcE",
+      "published": "2026-08-31T16:16:59Z",
+      "thumbnail": "https://i.ytimg.com/vi/wWDNed_KUcE/hqdefault.jpg",
+      "summary": "Почему одних людей хочется слушать часами, а других перестаёшь слышать уже через минуту? В этом выпуске говорю с Ниной Зверевой, журналистом, телеведущей и одним из самых известных экспертов по…",
+      "source": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 3643
+    },
+    {
       "id": "b66a260f48e1e9a5fbc5fe586f016b61",
       "platform": "rutube",
       "title": "Прибыльный ли бизнес?",
@@ -4013,6 +6399,45 @@
       "lang": "ru"
     },
     {
+      "id": "sqWc9l9XaYM",
+      "platform": "youtube",
+      "title": "When to QUIT your job (6 RULES)",
+      "url": "https://www.youtube.com/watch?v=sqWc9l9XaYM",
+      "published": "2026-08-30T12:33:33Z",
+      "thumbnail": "https://i.ytimg.com/vi/sqWc9l9XaYM/hqdefault.jpg",
+      "summary": "How to replace your salary with investing (reserve your seat here): https://link.nischa.me/investtoquit When should you quit your job? This is one of the most common questions I get asked, so I…",
+      "source": "Nischa",
+      "topic": "Деньги",
+      "lang": "en",
+      "duration": 916
+    },
+    {
+      "id": "gYNdfXSntqg",
+      "platform": "youtube",
+      "title": "Профессор MIT: Возможно, мы уже внутри чёрной дыры",
+      "url": "https://www.youtube.com/watch?v=gYNdfXSntqg",
+      "published": "2026-08-29T08:09:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/gYNdfXSntqg/hqdefault.jpg",
+      "summary": "▶︎Смотрите сериал «Большая фарма» в онлайн-кинотеатре Okko по ссылке - https://vk.cc/d0T96U. С промокодом FARMA подписка за 1 рубль на 60 дней. ▶︎Тюменские смарт-часы CaseGuru —…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 5616
+    },
+    {
+      "id": "rxeFwpklZg8",
+      "platform": "youtube",
+      "title": "Как предотвратить болезнь за 5 лет до симптомов | Соосновательница крупнейшей в мире базы ДНК",
+      "url": "https://www.youtube.com/watch?v=rxeFwpklZg8",
+      "published": "2026-08-28T13:00:03Z",
+      "thumbnail": "https://i.ytimg.com/vi/rxeFwpklZg8/hqdefault.jpg",
+      "summary": "30 повседневных задач, которые я отдала ИИ: https://marinamogilko.ru/30-ai-tasks?utm_source=youtube&utm_medium=video&utm_campaign=30-ai-tasks&utm_content=28082026 В этом выпуске Марина Могилко…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 3605
+    },
+    {
       "id": "6b508e6f7623b831b70451df62b3765b",
       "platform": "rutube",
       "title": "Слил выручку в пик сезона",
@@ -4024,6 +6449,19 @@
       "source": "Бизнес и мышление",
       "topic": "Мотивация",
       "lang": "ru"
+    },
+    {
+      "id": "PzqcMkL95X4",
+      "platform": "youtube",
+      "title": "Всё, что нужно знать про будущее c ИИ. Компании-монополисты, ИИ вместо бизнесменов и войны роботов",
+      "url": "https://www.youtube.com/watch?v=PzqcMkL95X4",
+      "published": "2026-08-26T14:00:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/PzqcMkL95X4/hqdefault.jpg",
+      "summary": "► Развивайте розничный бизнес с решением от Сбера: аналитика, поиск места для новых точек и программа лояльности. Подробнее по ссылке: https://s.sber.ru/6NmVSZ ► Итальянские брендированные резиденции…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 8598
     },
     {
       "id": "ff3d136536cb5a1be3da465cf96faa1f",
@@ -4091,6 +6529,32 @@
       "lang": "ru"
     },
     {
+      "id": "5RM215WB8IA",
+      "platform": "youtube",
+      "title": "ВЫКИДЫВАЙ продукты, если видишь ЭТО! Биолог МГУ Михаил Вишневский про грибы.",
+      "url": "https://www.youtube.com/watch?v=5RM215WB8IA",
+      "published": "2026-08-21T19:57:07Z",
+      "thumbnail": "https://i.ytimg.com/vi/5RM215WB8IA/hqdefault.jpg",
+      "summary": "▶︎Мой закрытый телеграм-канал — https://t.me/gleb_solomin/4107 Продюсирование от Глеба Соломина: https://t.me/solomin_pr ▶︎ Почему микробы становятся устойчивыми к лекарствам и откуда может прийти…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 5657
+    },
+    {
+      "id": "9Ol7BqVaSFI",
+      "platform": "youtube",
+      "title": "Главные возможности ИИ совсем не там, где вы думаете | Салман Хан, создатель Академии Хана",
+      "url": "https://www.youtube.com/watch?v=9Ol7BqVaSFI",
+      "published": "2026-08-21T17:00:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/9Ol7BqVaSFI/hqdefault.jpg",
+      "summary": "10 навыков, которые делают тебя незаменимым в эпоху ИИ: https://marinamogilko.ru/10-skills?utm_source=youtube&utm_medium=video&utm_campaign=10-skills&utm_content=21082026 Салман Хан основал Академию…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 2594
+    },
+    {
       "id": "0e678832d71f345141725e30f0cf2b55",
       "platform": "rutube",
       "title": "Робот — это не кнопка “бабло”. Можно ли ими зарабатывать?. #инвестиции #крипта #торговыероботы",
@@ -4156,6 +6620,19 @@
       "lang": "ru"
     },
     {
+      "id": "wEtM1OuXAbM",
+      "platform": "youtube",
+      "title": "Лучшие БИЗНЕСЫ на 2 года | Арена Единорогов 9",
+      "url": "https://www.youtube.com/watch?v=wEtM1OuXAbM",
+      "published": "2026-08-17T19:59:09Z",
+      "thumbnail": "https://i.ytimg.com/vi/wEtM1OuXAbM/hqdefault.jpg",
+      "summary": "В новой серии Арены Единорогов три предпринимателя выходят на сцену, чтобы за несколько минут доказать инвесторам, что их бизнес способен стать большим. Clean Engine предлагает СТО технологию очистки…",
+      "source": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 3992
+    },
+    {
       "id": "86f213571441a9ce0816627c8928b7c8",
       "platform": "rutube",
       "title": "Зачем тебе крипта ? #криптовалюта #крипта",
@@ -4169,6 +6646,19 @@
       "lang": "ru"
     },
     {
+      "id": "juZXUCV7g5c",
+      "platform": "youtube",
+      "title": "Лишний вес, курение или алкоголь? Что сильнее всего сокращает жизнь",
+      "url": "https://www.youtube.com/watch?v=juZXUCV7g5c",
+      "published": "2026-08-16T12:00:30Z",
+      "thumbnail": "https://i.ytimg.com/vi/juZXUCV7g5c/hqdefault.jpg",
+      "summary": "► Бронируйте жилье на Авито Путешествиях безопасно и со скидками до 50%* — https://bit.ly/3S8EoWd. Дополнительная скидка 10% по промокоду СОКОЛОВСКИЙ без ограничений. ► «Плати по миру» — карта для…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 8281
+    },
+    {
       "id": "skc2T5fcoLY",
       "platform": "youtube",
       "title": "When Compounding Works Against You",
@@ -4179,6 +6669,19 @@
       "source": "Ben Felix",
       "topic": "Деньги",
       "lang": "en"
+    },
+    {
+      "id": "jcbPJstbRuw",
+      "platform": "youtube",
+      "title": "Что я везу из России в США. Последние дни в Петербурге",
+      "url": "https://www.youtube.com/watch?v=jcbPJstbRuw",
+      "published": "2026-08-14T14:15:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/jcbPJstbRuw/hqdefault.jpg",
+      "summary": "📌 Подписывайся на мою русскоязычную рассылку — рассказываю там, всё, что знаю об ИИ…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1941
     },
     {
       "id": "26a87d4258c6cd146f0ffe1cf40b8c72",
@@ -4194,6 +6697,71 @@
       "lang": "ru"
     },
     {
+      "id": "cZEJpSYmKDU",
+      "platform": "youtube",
+      "title": "Молодой Марк Цукерберг и ИНВЕСТИЦИИ на 50 МЛН | Арена Единорогов 8",
+      "url": "https://www.youtube.com/watch?v=cZEJpSYmKDU",
+      "published": "2026-08-09T06:51:46Z",
+      "thumbnail": "https://i.ytimg.com/vi/cZEJpSYmKDU/hqdefault.jpg",
+      "summary": "► Билеты на шоу 22 сентября в Москве: https://arena.unicornfellowship.ru/?utm_source=youtube0908&utm_medium=video&utm_campaign=promo&utm_content=link&utm_term=youtube0908&erid=2W5zFHRggqF ► Заявка на…",
+      "source": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 5868
+    },
+    {
+      "id": "ebxvRUAYVoA",
+      "platform": "youtube",
+      "title": "ИИ вырвался из клетки: почему это опасно  | Роман Ямпольский",
+      "url": "https://www.youtube.com/watch?v=ebxvRUAYVoA",
+      "published": "2026-08-07T15:55:35Z",
+      "thumbnail": "https://i.ytimg.com/vi/ebxvRUAYVoA/hqdefault.jpg",
+      "summary": "10 навыков, которые делают тебя незаменимым в эроху ИИ https://marinamogilko.ru/10-skills?utm_source=youtube&utm_medium=video&utm_campaign=10-skills&utm_content=07082026 Роман Ямпольский — один из…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 2758
+    },
+    {
+      "id": "hLKtFtJiCyc",
+      "platform": "youtube",
+      "title": "Продакт-лид Microsoft и Meta: как одному построить бизнес с ИИ",
+      "url": "https://www.youtube.com/watch?v=hLKtFtJiCyc",
+      "published": "2026-08-04T13:00:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/hLKtFtJiCyc/hqdefault.jpg",
+      "summary": "Ссылка на мой бесплатный гайд \"Как создать контент-агента в Claude за вечер\" https://marinamogilko.ru/content-agent?utm_source=youtube&utm_medium=video&utm_campaign=content-agent&utm_content=24072026…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1872
+    },
+    {
+      "id": "t8pUK9-ARZE",
+      "platform": "youtube",
+      "title": "САМЫЙ ПРИБЫЛЬНЫЙ БИЗНЕС | Арена Единорогов 7",
+      "url": "https://www.youtube.com/watch?v=t8pUK9-ARZE",
+      "published": "2026-08-02T17:16:46Z",
+      "thumbnail": "https://i.ytimg.com/vi/t8pUK9-ARZE/hqdefault.jpg",
+      "summary": "В новом выпуске Арены Единорогов предприниматели защищают три совершенно разных бизнеса перед ведущими инвесторами. Музыкальная AI-платформа уже зарабатывает 150 млн рублей прибыли в год, но хочет…",
+      "source": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 4441
+    },
+    {
+      "id": "XoCcLTqarik",
+      "platform": "youtube",
+      "title": "Где будут следующие миллиардные компании? ИИ прямо сейчас меняет одну из ключевых индустрий",
+      "url": "https://www.youtube.com/watch?v=XoCcLTqarik",
+      "published": "2026-08-02T12:00:20Z",
+      "thumbnail": "https://i.ytimg.com/vi/XoCcLTqarik/hqdefault.jpg",
+      "summary": "► Узнайте больше про аккредитив Сбера для покупки и продажи недвижимости: https://s.sber.ru/5RWHms ► Умножайте свои инвестиции с БКС.Мир инвестиций. Открыть счет и принять участие в акции для новых…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 7802
+    },
+    {
       "id": "00c0c3a9ef4c57b362cd71878dc0ef7d",
       "platform": "rutube",
       "title": "Почему вас не зовут на собеседования: 1380 откликов, ИИ-фильтры и ошибки резюме",
@@ -4207,6 +6775,19 @@
       "lang": "ru"
     },
     {
+      "id": "7lQTfrOTROo",
+      "platform": "youtube",
+      "title": "НЛО: что учёные НЕ МОГУТ объяснить? — Сабина Хоссенфельдер",
+      "url": "https://www.youtube.com/watch?v=7lQTfrOTROo",
+      "published": "2026-07-31T00:08:35Z",
+      "thumbnail": "https://i.ytimg.com/vi/7lQTfrOTROo/hqdefault.jpg",
+      "summary": "▶︎Мой закрытый телеграм-канал — https://t.me/gleb_solomin/4107 Правда ли, что Вселенная могла возникнуть не так, как мы привыкли представлять, а сам Большой взрыв — лишь часть гораздо более сложной…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 4316
+    },
+    {
       "id": "3u-mP3C26mg",
       "platform": "youtube",
       "title": "The Biggest Myths in Personal Finance",
@@ -4217,6 +6798,19 @@
       "source": "Ben Felix",
       "topic": "Деньги",
       "lang": "en"
+    },
+    {
+      "id": "EfBIaq2ez4I",
+      "platform": "youtube",
+      "title": "Как прошел перелет в Россию, адаптация, первые дни",
+      "url": "https://www.youtube.com/watch?v=EfBIaq2ez4I",
+      "published": "2026-07-24T14:15:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/EfBIaq2ez4I/hqdefault.jpg",
+      "summary": "Подписывайся на мою русскоязычную рассылку — там даю пошаговые гайды, как сделать AI частью ежедневного рабочего процесса…",
+      "source": "Marina Mogilko",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "duration": 1505
     },
     {
       "id": "9d38adfab75959c35632e379211db9b3",
@@ -4271,6 +6865,19 @@
       "lang": "ru"
     },
     {
+      "id": "x2SXxihBsz0",
+      "platform": "youtube",
+      "title": "Какую ошибку люди совершают всю жизнь? Нейробиолог Василий Ключарёв",
+      "url": "https://www.youtube.com/watch?v=x2SXxihBsz0",
+      "published": "2026-07-19T12:00:05Z",
+      "thumbnail": "https://i.ytimg.com/vi/x2SXxihBsz0/hqdefault.jpg",
+      "summary": "► Бронируйте жилье на Авито Путешествиях безопасно и со скидками до 50%* — https://bit.ly/4poaWYA. Дополнительная скидка 10% по промокоду СОКОЛОВСКИЙ без ограничений.** ► Дополнительный миллион на…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 7818
+    },
+    {
       "id": "tCFcNmVfYzs",
       "platform": "youtube",
       "title": "How to fix your f***ed brain",
@@ -4281,6 +6888,19 @@
       "source": "Better Ideas",
       "topic": "Мотивация",
       "lang": "en"
+    },
+    {
+      "id": "Qejmj5srmk8",
+      "platform": "youtube",
+      "title": "МИР Никогда НЕ БУДЕТ ПРЕЖНИМ | PandaDoc, Микита Микадо",
+      "url": "https://www.youtube.com/watch?v=Qejmj5srmk8",
+      "published": "2026-07-16T15:17:33Z",
+      "thumbnail": "https://i.ytimg.com/vi/Qejmj5srmk8/hqdefault.jpg",
+      "summary": "► На весь модельный ряд Ли Авто / Li Auto сейчас действуют специальные условия. Узнавайте подробности у официальных дилеров в России…",
+      "source": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 3189
     },
     {
       "id": "c2ce9ddcbd42b816acd9bae8dee29fc9",
@@ -4294,6 +6914,19 @@
       "source": "Малый бизнес Москвы",
       "topic": "Бизнес",
       "lang": "ru"
+    },
+    {
+      "id": "mPtfW2CEKvk",
+      "platform": "youtube",
+      "title": "90% человечества исчезнет за 50 лет? — Цзян Сюэцинь",
+      "url": "https://www.youtube.com/watch?v=mPtfW2CEKvk",
+      "published": "2026-07-15T20:56:00Z",
+      "thumbnail": "https://i.ytimg.com/vi/mPtfW2CEKvk/hqdefault.jpg",
+      "summary": "▶︎WB Банк - банк, где не нужно что-то делать ради выгоды: https://lnk.wb.ru/fBI59 ▶︎Переходите по ссылке и изучайте мир трейдинга вместе с АльфаФорекс — https://clck.ru/3URmHb ▶︎Мой закрытый…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 5200
     },
     {
       "id": "f1ae7b567323b6bab2cb363c54f4ef3c",
@@ -4410,6 +7043,45 @@
       "lang": "ru"
     },
     {
+      "id": "q7jH9N94mbM",
+      "platform": "youtube",
+      "title": "«Большинство бизнесов провалит ИИ-трансформацию». Андрей Дороничев — о будущем технологий",
+      "url": "https://www.youtube.com/watch?v=q7jH9N94mbM",
+      "published": "2026-07-05T12:00:31Z",
+      "thumbnail": "https://i.ytimg.com/vi/q7jH9N94mbM/hqdefault.jpg",
+      "summary": "► При открытии ИП в Точка Банке — счёт и бухгалтерия за 0 ₽: https://tchk.me/3bFPSI ► «ФОРУМ» — клубный дом делюкс-класса в центре Москвы от MR Private. Записаться на просмотр: https://clck.ru/3UTAzV…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 9822
+    },
+    {
+      "id": "eg39pElde44",
+      "platform": "youtube",
+      "title": "Как ПОТЕРЯТЬ ВСЕ и НЕ СЛОМАТЬСЯ | Максим Ноготков",
+      "url": "https://www.youtube.com/watch?v=eg39pElde44",
+      "published": "2026-07-04T18:11:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/eg39pElde44/hqdefault.jpg",
+      "summary": "► Венчурная лаборатория Оскара Хартманна - Unicorn Lab…",
+      "source": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 4551
+    },
+    {
+      "id": "c6lndNFsi0k",
+      "platform": "youtube",
+      "title": "Профессор Кембриджа: 3 ПРАВИЛА похудения — Джайлс Йео",
+      "url": "https://www.youtube.com/watch?v=c6lndNFsi0k",
+      "published": "2026-06-30T02:54:45Z",
+      "thumbnail": "https://i.ytimg.com/vi/c6lndNFsi0k/hqdefault.jpg",
+      "summary": "▶︎ Подать заявку на участие в закрытом форуме: https://forms.yandex.ru/u/6a3bbb7c5056907f67a7c05d/ Какие продукты реально вредят ЖКТ и чего стоит избегать? Это мы обсудили в выпуске с…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 4490
+    },
+    {
       "id": "31395b75dc4fea0b5c9be2ffc33368bd",
       "platform": "rutube",
       "title": "Видеозапись вебинара «Вывод команды на новый уровень»",
@@ -4434,6 +7106,45 @@
       "source": "Цифровой «Сенеж»",
       "topic": "Карьера",
       "lang": "ru"
+    },
+    {
+      "id": "2xBwfBIdHlQ",
+      "platform": "youtube",
+      "title": "Как ИИ ОБМАНЫВАЕТ ЛЮДЕЙ? | Роман Ямпольский",
+      "url": "https://www.youtube.com/watch?v=2xBwfBIdHlQ",
+      "published": "2026-06-21T18:07:27Z",
+      "thumbnail": "https://i.ytimg.com/vi/2xBwfBIdHlQ/hqdefault.jpg",
+      "summary": "► Венчурная лаборатория Оскара Хартманна - Unicorn Lab…",
+      "source": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 3754
+    },
+    {
+      "id": "jlTkpLfdN78",
+      "platform": "youtube",
+      "title": "Как хакеры работают на государство? Большой подкаст про кибербезопасность",
+      "url": "https://www.youtube.com/watch?v=jlTkpLfdN78",
+      "published": "2026-06-21T12:00:35Z",
+      "thumbnail": "https://i.ytimg.com/vi/jlTkpLfdN78/hqdefault.jpg",
+      "summary": "► Бронируйте жилье на Авито Путешествиях безопасно и со скидками до 50%* — https://bit.ly/4uHRKpA. Дополнительная скидка 10% по промокоду СОКОЛОВСКИЙ без ограничений.** ► Специальное предложение ко…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 6539
+    },
+    {
+      "id": "m1T37LErJws",
+      "platform": "youtube",
+      "title": "Физиолог №1: Это видео сэкономит ГОДЫ в зале. Майкл Израэтель",
+      "url": "https://www.youtube.com/watch?v=m1T37LErJws",
+      "published": "2026-06-13T21:16:07Z",
+      "thumbnail": "https://i.ytimg.com/vi/m1T37LErJws/hqdefault.jpg",
+      "summary": "▶︎WB Банк - банк, где не нужно что-то делать ради выгоды: https://lnk.wb.ru/fBI59 ▶︎Мой закрытый телеграм-канал — https://t.me/gleb_solomin/4107 Фитнес давно окружён мифами: кто-то уверен, что без…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 3991
     },
     {
       "id": "e3tXybpViHY",
@@ -4461,6 +7172,58 @@
       "lang": "ru"
     },
     {
+      "id": "9NAO1PH_qvE",
+      "platform": "youtube",
+      "title": "Средний класс исчезнет? Глобальный СЕО Яндекса - о будущем бизнеса, нейросетях и новом мире",
+      "url": "https://www.youtube.com/watch?v=9NAO1PH_qvE",
+      "published": "2026-06-07T12:00:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/9NAO1PH_qvE/hqdefault.jpg",
+      "summary": "► Роскошный максимум для вашего бизнеса от Сбера — оформляйте премиальную бизнес-карту за 0₽ на год с доступом в бизнес-залы аэропортов на ИЗЗЗИ: https://s.sber.ru/CsjFkl ► Узнайте больше о…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 7966
+    },
+    {
+      "id": "1vUMgifZiHA",
+      "platform": "youtube",
+      "title": "ИИ-ДЕБАТЫ: Что будет с Бизнесом, Работой и Человеком? | Либерманы, Давид Ян",
+      "url": "https://www.youtube.com/watch?v=1vUMgifZiHA",
+      "published": "2026-06-05T22:55:18Z",
+      "thumbnail": "https://i.ytimg.com/vi/1vUMgifZiHA/hqdefault.jpg",
+      "summary": "► Автоматизируйте до 70% рутины и освободите время для стратегии с курсом «Нейросети для бизнес-процессов» от Эдюсон: https://www.eduson.tv/~hartmannyt ► Билеты на шоу \"Арена Единорогов\" 20 июня в…",
+      "source": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 4497
+    },
+    {
+      "id": "H9vNVmUBAc0",
+      "platform": "youtube",
+      "title": "Коучи, которые “проработали всё” – почему у них низкий доход",
+      "url": "https://www.youtube.com/watch?v=H9vNVmUBAc0",
+      "published": "2026-06-05T11:27:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/H9vNVmUBAc0/hqdefault.jpg",
+      "summary": "Коллеги, представьте таĸую ĸартину: ĸоуч, ĸоторый прошел ĸучу обучений, проработал все свои блоĸи – и всё равно сидит без ĸлиентов… По-прежнему, для многих это знакомо. По такому поводу я создал это…",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 1474
+    },
+    {
+      "id": "MRszWm0D4GM",
+      "platform": "youtube",
+      "title": "Эти 50 минут изменят ваше понимание Вселенной. Астрофизик Брайан Китинг",
+      "url": "https://www.youtube.com/watch?v=MRszWm0D4GM",
+      "published": "2026-05-30T16:45:55Z",
+      "thumbnail": "https://i.ytimg.com/vi/MRszWm0D4GM/hqdefault.jpg",
+      "summary": "▶︎Мой закрытый телеграм-канал — https://t.me/gleb_solomin/4107 Правда ли, что мы изучаем космос почти вслепую — и видим только ограниченное пространство? Об этом и многом другом мы поговорили с Ави…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 2988
+    },
+    {
       "id": "w04nPpz3KmU",
       "platform": "youtube",
       "title": "You were never supposed to think this much",
@@ -4486,6 +7249,32 @@
       "lang": "ru"
     },
     {
+      "id": "OVBdt6wpuF8",
+      "platform": "youtube",
+      "title": "Их торты возили на личных самолётах в Дубай. Всё про ресторанный бизнес мирового уровня. Артём Логин",
+      "url": "https://www.youtube.com/watch?v=OVBdt6wpuF8",
+      "published": "2026-05-24T12:00:19Z",
+      "thumbnail": "https://i.ytimg.com/vi/OVBdt6wpuF8/hqdefault.jpg",
+      "summary": "► Откройте бизнес-счёт в Сбере и получите до 10 000 бонусов ко Дню предпринимателя: https://s.sber.ru/293Rbg ► Бронируйте жилье на Авито Путешествиях безопасно и со скидками до 50%* —…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 9837
+    },
+    {
+      "id": "ve32kiUut0Y",
+      "platform": "youtube",
+      "title": "Я Был Готов к СДЕЛКЕ, но Один Вопрос РАЗРУШИЛ ВСЕ | Арена Единорогов 6",
+      "url": "https://www.youtube.com/watch?v=ve32kiUut0Y",
+      "published": "2026-05-23T13:11:41Z",
+      "thumbnail": "https://i.ytimg.com/vi/ve32kiUut0Y/hqdefault.jpg",
+      "summary": "► Билеты на шоу 20 июня в Сочи: https://arena.unicornfellowship.ru/?utm_source=youtube2205&utm_medium=video&utm_campaign=promo&utm_content=link&utm_term=youtube2205&erid=2W5zFH4t8NV ► Заявка на…",
+      "source": "Оскар Хартманн",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 5355
+    },
+    {
       "id": "5731d1efa23dac4e59e5c3d7e1bfe0e6",
       "platform": "rutube",
       "title": "Разница поколений «Зумеров» и «Миллениалов»: как управлять теми, кто моложе, и теми, кто опытнее",
@@ -4497,6 +7286,19 @@
       "source": "C-level: мысли в режиме CEO",
       "topic": "Мотивация",
       "lang": "ru"
+    },
+    {
+      "id": "lH0UXDopsB8",
+      "platform": "youtube",
+      "title": "Астрофизик: Что скрывали 70 лет в архивах Пентагона? Ави Леб",
+      "url": "https://www.youtube.com/watch?v=lH0UXDopsB8",
+      "published": "2026-05-14T20:16:10Z",
+      "thumbnail": "https://i.ytimg.com/vi/lH0UXDopsB8/hqdefault.jpg",
+      "summary": "Куда затягивает нашу галактику, есть ли границы у Вселенной, и как далеко нас может завести современная космология? Об этом мы поговорили в выпуске с Владимиром Сурдиным: https://youtu.be/OBEPshDa7DA…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 3130
     },
     {
       "id": "eaf9249d73025aca64f7060361bf07fe",
@@ -4536,6 +7338,19 @@
       "source": "ЖИВОЕ ДЕЛО Ленинградской области",
       "topic": "Бизнес",
       "lang": "ru"
+    },
+    {
+      "id": "-y1W9C0Uhrw",
+      "platform": "youtube",
+      "title": "«Люди ушли в кайфы» - Евгения Волянская. Что изменилось в головах зумеров и каким будет их мир?",
+      "url": "https://www.youtube.com/watch?v=-y1W9C0Uhrw",
+      "published": "2026-05-11T12:00:03Z",
+      "thumbnail": "https://i.ytimg.com/vi/-y1W9C0Uhrw/hqdefault.jpg",
+      "summary": "► Лично – онлайн-сервис по подбору психологов. Воспользуйся моим промокодом SOKOLOVSKIY и получи скидку 20% на первую сессию: https://lichno.ru/go/sokolovskiy ► Спланировать отпуск помог Островок!…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 7334
     },
     {
       "id": "57192f71cc6ef180080ae96208e3179f",
@@ -4589,6 +7404,18 @@
       "lang": "en"
     },
     {
+      "id": "cTpjKdo75Lw",
+      "platform": "youtube",
+      "title": "Первые 3 месяца после родов #мурадян #здоровье #советыврача",
+      "url": "https://www.youtube.com/watch?v=cTpjKdo75Lw",
+      "published": "2026-04-29T07:00:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/cTpjKdo75Lw/hqdefault.jpg",
+      "summary": "",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
       "id": "368d0c5511faa363acd5824e757799bb",
       "platform": "rutube",
       "title": "Завершение программы: итоги, результаты и дальнейшие шаги",
@@ -4612,6 +7439,92 @@
       "summary": "Запись трансляции «Поиск задач для решения при помощи ИИ», которая состоялась 10 апреля в 16:00.",
       "source": "Цифровой «Сенеж»",
       "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "SrgirFb09V0",
+      "platform": "youtube",
+      "title": "Что делать, чтобы еда была лекарством? #мурадян #здоровье #здоровоепитание #питание",
+      "url": "https://www.youtube.com/watch?v=SrgirFb09V0",
+      "published": "2026-04-27T07:00:32Z",
+      "thumbnail": "https://i.ytimg.com/vi/SrgirFb09V0/hqdefault.jpg",
+      "summary": "",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "xTIRYKW1kiw",
+      "platform": "youtube",
+      "title": "Яндекс копировал его бизнес? Основатель 2GIS о том, как построить IT-монополию в регионе",
+      "url": "https://www.youtube.com/watch?v=xTIRYKW1kiw",
+      "published": "2026-04-26T12:01:30Z",
+      "thumbnail": "https://i.ytimg.com/vi/xTIRYKW1kiw/hqdefault.jpg",
+      "summary": "► Открыть счёт в Точка Банке и получить 3 месяца обслуживания и Онлайн-бухгалтерию бесплатно до 17 мая: https://tchk.me/P9nIbC ► Получите закрытое предложения для инвестиций от 35 млн руб. в ЖК…",
+      "source": "Александр Соколовский",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 6534
+    },
+    {
+      "id": "_EXxCuHfKsA",
+      "platform": "youtube",
+      "title": "Как слова говорят о человеке? #мурадян #психология #лингвистика",
+      "url": "https://www.youtube.com/watch?v=_EXxCuHfKsA",
+      "published": "2026-04-25T07:00:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/_EXxCuHfKsA/hqdefault.jpg",
+      "summary": "",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "TcACFcpItSA",
+      "platform": "youtube",
+      "title": "Как планировать беременность? #мурадян #здоровье #беременность",
+      "url": "https://www.youtube.com/watch?v=TcACFcpItSA",
+      "published": "2026-04-22T07:00:25Z",
+      "thumbnail": "https://i.ytimg.com/vi/TcACFcpItSA/hqdefault.jpg",
+      "summary": "",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "i-XfDUEpjFs",
+      "platform": "youtube",
+      "title": "Юрий Мурадян и Виталий Булавин про учителей. Как учить детей? #мурадян #булавин",
+      "url": "https://www.youtube.com/watch?v=i-XfDUEpjFs",
+      "published": "2026-04-20T07:00:40Z",
+      "thumbnail": "https://i.ytimg.com/vi/i-XfDUEpjFs/hqdefault.jpg",
+      "summary": "",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "7YLLXkHrrUM",
+      "platform": "youtube",
+      "title": "Как долго мозг живет после смерти? — судмедэксперт Эдуард Туманов",
+      "url": "https://www.youtube.com/watch?v=7YLLXkHrrUM",
+      "published": "2026-04-19T21:05:44Z",
+      "thumbnail": "https://i.ytimg.com/vi/7YLLXkHrrUM/hqdefault.jpg",
+      "summary": "▶︎Мой закрытый телеграм-канал — https://t.me/gleb_solomin/4107 ▶︎ Что происходит с мозгом при депрессии и почему это состояние нельзя сводить к плохому настроению? Эту тему разобрали с нейробиологом…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 3269
+    },
+    {
+      "id": "YbbKpvEwsGo",
+      "platform": "youtube",
+      "title": "Как не портить себе день? #мурадян #психология #такси",
+      "url": "https://www.youtube.com/watch?v=YbbKpvEwsGo",
+      "published": "2026-04-18T07:00:29Z",
+      "thumbnail": "https://i.ytimg.com/vi/YbbKpvEwsGo/hqdefault.jpg",
+      "summary": "",
+      "source": "Юра Мурадян",
+      "topic": "Мотивация",
       "lang": "ru"
     },
     {
@@ -4654,6 +7567,19 @@
       "lang": "ru"
     },
     {
+      "id": "W-3ZOqm-Ozk",
+      "platform": "youtube",
+      "title": "«Вы даже не представляете масштаб катастрофы» — Роман Ямпольский про ИИ",
+      "url": "https://www.youtube.com/watch?v=W-3ZOqm-Ozk",
+      "published": "2026-04-07T19:08:33Z",
+      "thumbnail": "https://i.ytimg.com/vi/W-3ZOqm-Ozk/hqdefault.jpg",
+      "summary": "Правда ли, что ИИ делает знания дешёвыми — и в чём теперь наша ценность? Эту тему мы обсудили с Андреем Дороничевым: https://youtu.be/QFTq22wZxNo ▶︎Мой закрытый телеграм-канал —…",
+      "source": "Глеб Соломин",
+      "topic": "Карьера",
+      "lang": "ru",
+      "duration": 3281
+    },
+    {
       "id": "eeff9b91d16591777a6f7aeabd79dae3",
       "platform": "rutube",
       "title": "ИИ для базовых задач: практика работы с языковыми моделями",
@@ -4664,6 +7590,79 @@
       "summary": "Запись трансляции «ИИ для базовых задач: практика работы с языковыми моделями», которая состоялась 6 апреля в 16:00.",
       "source": "Цифровой «Сенеж»",
       "topic": "Карьера",
+      "lang": "ru"
+    },
+    {
+      "id": "VPZ0L8Aq9kA",
+      "platform": "youtube",
+      "title": "Почему умные люди живут не своей жизнью? #интеллект #выбор #психология #мысливслух #соколовский",
+      "url": "https://www.youtube.com/watch?v=VPZ0L8Aq9kA",
+      "published": "2026-03-18T16:40:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/VPZ0L8Aq9kA/hqdefault.jpg",
+      "summary": "Разбираемся, почему высокий интеллект часто становится главным препятствием на пути к переменам. Наш мозг настолько виртуозно просчитывает риски, что любое действие начинает казаться опаснее…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "bkBrvf6ob7g",
+      "platform": "youtube",
+      "title": "Почему цифры убивают твою самооценку? #самооценка #психология #мышление",
+      "url": "https://www.youtube.com/watch?v=bkBrvf6ob7g",
+      "published": "2026-03-16T18:06:52Z",
+      "thumbnail": "https://i.ytimg.com/vi/bkBrvf6ob7g/hqdefault.jpg",
+      "summary": "Мы привыкли измерять свою жизнь в цифрах — доходе, подписчиках, процентах роста. Но проблема в том, что цифры никогда не спрашивают о контексте: сколько у вас сил и через что вы проходите прямо…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "8ngUYGR9LE8",
+      "platform": "youtube",
+      "title": "Почему свобода делает нас несчастными? #свобода #выбор #психология #мысливслух #соколовский",
+      "url": "https://www.youtube.com/watch?v=8ngUYGR9LE8",
+      "published": "2026-03-11T16:06:36Z",
+      "thumbnail": "https://i.ytimg.com/vi/8ngUYGR9LE8/hqdefault.jpg",
+      "summary": "Разбираемся, почему в эпоху безграничных возможностей мы чувствуем больше тревоги, чем когда-либо. Постоянное сравнение себя с тысячами чужих жизней в соцсетях создает иллюзию того, что мы всегда…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "GDNvOxAvo2g",
+      "platform": "youtube",
+      "title": "Первый час дня решает всё?",
+      "url": "https://www.youtube.com/watch?v=GDNvOxAvo2g",
+      "published": "2026-03-10T14:10:39Z",
+      "thumbnail": "https://i.ytimg.com/vi/GDNvOxAvo2g/hqdefault.jpg",
+      "summary": "Вспомните сегодняшнее утро. Какое первое действие вы выбрали сами и в какой момент отвлеклись на чужую задачу?",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 760
+    },
+    {
+      "id": "orQnrc_KOCc",
+      "platform": "youtube",
+      "title": "Почему стабильность больше не успокаивает, а пугает? #тревога #стабильность #психология #мысливслух",
+      "url": "https://www.youtube.com/watch?v=orQnrc_KOCc",
+      "published": "2026-03-09T16:26:26Z",
+      "thumbnail": "https://i.ytimg.com/vi/orQnrc_KOCc/hqdefault.jpg",
+      "summary": "Разбираемся, почему в эпоху внешней стабильности нас не покидает чувство тревоги. Мы привыкли думать, что стабильность — это надежность, но сегодня она превратилась в хрупкую цепочку зависимостей…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "fQ4anpteNY4",
+      "platform": "youtube",
+      "title": "Почему мы так боимся быть обычными? #успех #психология #счастье #мысливслух #соколовский",
+      "url": "https://www.youtube.com/watch?v=fQ4anpteNY4",
+      "published": "2026-03-04T16:25:43Z",
+      "thumbnail": "https://i.ytimg.com/vi/fQ4anpteNY4/hqdefault.jpg",
+      "summary": "Разбираемся, почему понятие «средний» превратилось из социальной нормы в жизненный приговор. Мы привыкли мерить успех крайностями, забывая, что именно в «середине» кроется баланс здоровья и…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
       "lang": "ru"
     },
     {
@@ -4745,6 +7744,30 @@
       "lang": "ru"
     },
     {
+      "id": "AQW6oBzT9RE",
+      "platform": "youtube",
+      "title": "Почему мы больше не верим даже хорошим новостям? #доверие #медиа #психология #мысливслух",
+      "url": "https://www.youtube.com/watch?v=AQW6oBzT9RE",
+      "published": "2026-03-02T17:44:47Z",
+      "thumbnail": "https://i.ytimg.com/vi/AQW6oBzT9RE/hqdefault.jpg",
+      "summary": "Разбираемся, почему в современном мире даже позитивные новости вызывают у нас подозрение и скепсис. Это не просто черта характера, а сложная системная реакция нашего мозга на избыток информации и…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "SvMhhsSrfew",
+      "platform": "youtube",
+      "title": "Куда исчезают наши истинные желания? #желания #психология #осознанность #мысливслух #соколовский",
+      "url": "https://www.youtube.com/watch?v=SvMhhsSrfew",
+      "published": "2026-02-26T08:41:54Z",
+      "thumbnail": "https://i.ytimg.com/vi/SvMhhsSrfew/hqdefault.jpg",
+      "summary": "Разбираемся, почему с возрастом наше «хочу» заменяется бесконечным «надо» и куда уходит былая жажда жизни. Мы задыхаемся в шуме микрорешений и хронического стресса, теряя способность слышать…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
       "id": "337599b789c7e71e803323cf77c96c50",
       "platform": "rutube",
       "title": "КОМАНДА НЕ ВЫДАЁТ МАКСИМУМ? Вы не там ищете проблему",
@@ -4756,6 +7779,56 @@
       "source": "Рост бизнеса | Юлия Комарова",
       "topic": "Бизнес",
       "lang": "ru"
+    },
+    {
+      "id": "0Ev7Bd9wIVg",
+      "platform": "youtube",
+      "title": "5 проклятий современности. Или почему жить стало тяжелее?",
+      "url": "https://www.youtube.com/watch?v=0Ev7Bd9wIVg",
+      "published": "2026-02-24T14:00:01Z",
+      "thumbnail": "https://i.ytimg.com/vi/0Ev7Bd9wIVg/hqdefault.jpg",
+      "summary": "🎁 Бесплатный мини-курс по крипте: https://t.me/falcon_course_bot?start=course 🟢 Мое бесплатное крипто-сообщество: База знаний, Обучение, Чат, Разборы: https://t.me/falconcrypto_bot?start=study ❤️‍🔥…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 750
+    },
+    {
+      "id": "FoqsRd1OuBI",
+      "platform": "youtube",
+      "title": "Почему рост всегда начинается с одиночества? #одиночество #рост #психология #мысливслух #соколовский",
+      "url": "https://www.youtube.com/watch?v=FoqsRd1OuBI",
+      "published": "2026-02-23T16:12:39Z",
+      "thumbnail": "https://i.ytimg.com/vi/FoqsRd1OuBI/hqdefault.jpg",
+      "summary": "Разбираем, почему на пути к большой цели вы неизбежно останетесь одни. Рост — это не просто новые цифры на счету, это смена всей системы координат, где старые темы и люди больше не резонируют с вашей…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "87XnwS9RESo",
+      "platform": "youtube",
+      "title": "Свобода — это ловушка? Почему выбор утомляет сильнее работы #выбор #психология #энергия #мысливслух",
+      "url": "https://www.youtube.com/watch?v=87XnwS9RESo",
+      "published": "2026-02-19T09:54:20Z",
+      "thumbnail": "https://i.ytimg.com/vi/87XnwS9RESo/hqdefault.jpg",
+      "summary": "Мы привыкли винить нагрузку в своей усталости, но на деле наш мозг истощается от бесконечной свободы выбора. Каждый раз, когда мы листаем ленту или выбираем завтрак, ресурс внимания сгорает, оставляя…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru"
+    },
+    {
+      "id": "IB_V0mbVbSw",
+      "platform": "youtube",
+      "title": "Стратегия бедных - работать много!? И что делать, когда уперся в потолок?",
+      "url": "https://www.youtube.com/watch?v=IB_V0mbVbSw",
+      "published": "2026-02-17T14:00:33Z",
+      "thumbnail": "https://i.ytimg.com/vi/IB_V0mbVbSw/hqdefault.jpg",
+      "summary": "🎁 Бесплатный мини-курс по крипте: https://t.me/falcon_course_bot?start=course 🟢 Мое бесплатное крипто-сообщество: База знаний, Обучение, Чат, Разборы: https://t.me/falconcrypto_bot?start=study ❤️‍🔥…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 739
     },
     {
       "id": "92c3123464fb932cd3d4b7449a8c3ccd",
@@ -4808,6 +7881,19 @@
       "source": "Татьяна Минаева | КАРЬЕРА | РЕЗЮМЕ",
       "topic": "Карьера",
       "lang": "ru"
+    },
+    {
+      "id": "DY_6CWziXxI",
+      "platform": "youtube",
+      "title": "4 главных МИНУСА успеха, к которым ты не готов",
+      "url": "https://www.youtube.com/watch?v=DY_6CWziXxI",
+      "published": "2026-02-08T12:00:31Z",
+      "thumbnail": "https://i.ytimg.com/vi/DY_6CWziXxI/hqdefault.jpg",
+      "summary": "🎁 Бесплатный мини-курс по крипте: https://t.me/falcon_course_bot?start=course 🟢 Мое бесплатное крипто-сообщество: База знаний, Обучение, Чат, Разборы: https://t.me/falconcrypto_bot?start=study ❤️‍🔥…",
+      "source": "Соколовский | Мысли Вслух",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "duration": 482
     },
     {
       "id": "9a83bc83d6ff2d3d7fc2f7859f77ed90",
