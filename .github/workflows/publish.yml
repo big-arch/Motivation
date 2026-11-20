@@ -21,14 +21,37 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
+      - name: Check calendar synchronization and feed retention
+        run: |
+          node --test scripts/test_google_calendar.cjs
+          python -m unittest discover -s scripts -p test_update_feeds.py
       - name: Refresh news, video, audio and book catalogs using the last published snapshots as fallback
         run: python scripts/update_feeds.py --previous-url https://big-arch.github.io/Motivation/
       - name: Prepare static site
+        env:
+          CALENDAR_CLIENT_ID: ${{ vars.GOOGLE_CALENDAR_CLIENT_ID }}
         run: |
           mkdir _site
           cp index.html manifest.json sw.js _site/
           cp -R assets css js data _site/
-          sed -i "s/founder-shell-dev/founder-shell-${GITHUB_SHA}/" _site/sw.js
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          client = os.environ.get('CALENDAR_CLIENT_ID', '').strip()
+          version = os.environ['GITHUB_SHA']
+          if client:
+              if not re.fullmatch(r'[0-9]+-[a-zA-Z0-9-]+\.apps\.googleusercontent\.com', client):
+                  raise ValueError('GOOGLE_CALENDAR_CLIENT_ID must be a public web OAuth client ID')
+              config = Path('_site/js/google-calendar-config.js')
+              config.write_text('window.FOUNDER_GOOGLE_CALENDAR_CLIENT_ID = ' + json.dumps(client) + ';\n')
+              version += '-' + hashlib.sha256(client.encode()).hexdigest()[:12]
+          worker = Path('_site/sw.js')
+          worker.write_text(worker.read_text().replace('founder-shell-dev', 'founder-shell-' + version))
+          PY
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

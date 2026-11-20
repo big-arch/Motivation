@@ -10,7 +10,7 @@
   const sections = {
     journal: ['Журнал', 'grid'], stories: ['Истории', 'layers'], museum: ['Музей провалов', 'archive'],
     library: ['Библиотека', 'book'], media: ['Медиа', 'film'], support: ['Точка опоры', 'sun'],
-    journey: ['Мой путь', 'check'], saved: ['Личный уголок', 'bookmark'], resources: ['Ресурсы', 'write'], archive: ['Все материалы', 'layers'], about: ['О журнале', 'star']
+    journey: ['Мой путь', 'check'], saved: ['Личный кабинет', 'bookmark'], resources: ['Ресурсы', 'write'], archive: ['Все материалы', 'layers'], about: ['О журнале', 'star']
   };
   const descriptions = {
     stories: 'Люди, компании и решения, которые изменили их путь.',
@@ -35,6 +35,9 @@
     }});
   const motion = createJournalMotion(main);
   const studio = createThoughtStudio({esc,icon,readState,writeState,notify,onCollectionChange:refreshShelf});
+  const planner = createPlannerData({esc,icon,dateKey,notify});
+  const notebook = createNotebook(planner,{byId,studio,onChange:()=>calendar.paint()});
+  const calendar = createCabinetCalendar(planner,notebook);
   journey = createJourney({esc,icon,readState,writeState,notify,byId,moods,audio,
     onUpdate:()=>render(),syncStep,completeStep});
   let featureIndex = 0;
@@ -249,7 +252,7 @@
     const takeaway = item.takeaway || originalTakeaways[item.id];
     const body = item.ideas ? `<h2>Для кого эта книга</h2><p>${esc(item.audience)}</p><h2>Главные мысли</h2>
       <ol class="ideas">${item.ideas.map((idea,i) => `<li>${esc(idea)}<button class="text-link" data-idea="${item.id}" data-index="${i}">${icon('layers')} Карточка мысли</button></li>`).join('')}</ol>
-      ${inlineImage}<h2>Попробуйте сегодня</h2><p class="lead-note">${esc(item.exercise)}</p>` :
+      ${inlineImage}<div class="book-diary"><span>${icon('write')} Мой дневник</span><h2>Цитата на память</h2><p>Выпишите фрагмент, к которому хотите вернуться. Книга и автор уже заполнены.</p><button type="button" class="button secondary" data-book-quote="${esc(item.id)}">${icon('plus')} Записать цитату</button></div><h2>Попробуйте сегодня</h2><p class="lead-note">${esc(item.exercise)}</p>` :
       `<ul class="timeline">${item.timeline.map(([year,event]) => `<li><b>${esc(year)}</b>${esc(event)}</li>`).join('')}</ul>
       ${item.paragraphs.map(([title,paras],i) => `<section><h2>${esc(title)}</h2>${paras.map(p => `<p>${esc(p)}</p>`).join('')}</section>${i===0?inlineImage:''}`).join('')}
       <aside class="article-thought"><div class="panel-label">${icon('write')} Для своего дела</div><blockquote>${esc(takeaway)}</blockquote>
@@ -266,7 +269,7 @@
   }
   function savedPage() {
     const ids = Array.from(savedIds()).reverse();
-    return `<div class="page-main">${pageHeading('Личный уголок','Ваши закладки, карточки мыслей и шаги на сегодня хранятся в этом браузере.')}
+    return `<div class="page-main cabinet cabinet-shelf">${planner.header('','Личный кабинет','Здесь ваша полка, дневник и календарь.')}
       <div class="section-head"><div class="section-title"><h2>Мои закладки</h2></div></div>
       ${ids.length ? `<div class="card-grid">${ids.map(id => card(byId.get(id))).join('')}</div>` :
         `<div class="empty-state"><h2>Пока пусто</h2><p>Нажмите на закладку у любой истории или книги, чтобы вернуться к ней здесь.</p><a class="button secondary" href="#archive">Найти материал ${icon('arrow')}</a></div>`}
@@ -296,6 +299,7 @@
       <div class="reading about"><h2>Как устроен журнал</h2><p>В историях мы восстанавливаем путь от первого опыта до поворотного решения. В «Музее провалов» разбираем, где перестала работать бизнес-модель. В конце материалов стоят ссылки на документы компаний, архивы и страницы издателей.</p>
       <p>Книжные конспекты и заметки «Точки опоры» написаны редакцией. Лекции и подкасты поступают из официальных RSS, аудиокниги — из LibriVox, открытые издания — из Open Library и Internet Archive. Виджеты Spotify и Яндекс Музыки принадлежат соответствующим площадкам.</p><p>В «Моём пути» можно поставить цель, взять задание из материала, выбрать маршрут и записать итог. Позиция аудио, прогресс чтения, закладки, план и коллекция карточек хранятся только на вашем устройстве.</p>
       <h2>На экране телефона</h2><p>В Safari откройте меню «Поделиться» и выберите «На экран Домой». В Chrome на Android выберите «Установить приложение» или «Добавить на главный экран». После первой загрузки истории и книги можно читать офлайн.</p>
+      <h2>Данные личного кабинета</h2><p>Дневник и события с пометкой «В этом браузере» сохраняются в хранилище сайта на устройстве. Каждую запись можно скачать. При очистке данных сайта браузер удалит местную копию.</p><p>После входа через Google журнал показывает события основного календаря. Если в форме выбрать «В Google Календаре», название, время и описание события отправятся в ваш Google-аккаунт. Доступ действует в текущей вкладке. Его можно отозвать кнопкой «Отключить» или в настройках аккаунта Google. Записи дневника хранятся отдельно.</p>
       <h2>Изображения</h2><p>В каждой статье есть две документальные фотографии. Под снимками указаны автор, лицензия и ссылка на оригинал. Файлы уменьшены и переведены в WebP для быстрой загрузки. Фотография Фицроя на обложке взята с Unsplash. Предметные обложки Nike, Kodak и книги Джеймса Клира на главной созданы с помощью ImageGen.</p>
       <div class="sources"><a href="https://unsplash.com/photos/150fZ07GQqs">Фицрой на рассвете · Andrew Svk ↗</a><a href="https://unsplash.com/photos/B5BTFxsZ92M">Компьютер Apple · Marissa Lewis ↗</a><a href="https://unsplash.com/photos/KN9FYaoAAik">Пицца в печи · Brad ↗</a><a href="https://unsplash.com/photos/lIipHR8mi3o">Офис · Fer Troulik ↗</a></div></div></div>`;
   }
@@ -347,13 +351,17 @@
     if (section === 'journal') view = home();
     else if (item) view = readArticle(item);
     else if (Object.hasOwn(descriptions,section)) view = catalog(section,param);
-    else if (section === 'saved') view = savedPage();
+    else if (section === 'saved') {
+      if (param==='diary') { title='Мой дневник'; view=notebook.view(subparam); }
+      else if (param==='calendar') { title='Мой календарь'; view=calendar.view(subparam); }
+      else view=savedPage();
+    }
     else if (section === 'journey') {
       if (param === 'routes') { title='Маршруты'; view=`<div class="page-main">${pageHeading('Маршруты','Последовательные программы от первого шага до устойчивых изменений.')}${journey.routesPage()}</div>`; }
       else if (param === 'route' && journeyRoutes.some(route=>route.id===subparam)) {
         const selected=journeyRoutes.find(route=>route.id===subparam); title=selected.title;
         view=`<div class="page-main">${pageHeading(selected.title,selected.description)}${journey.routePage(selected.id)}</div>`;
-      } else view=`<div class="page-main">${pageHeading('Мой путь','Цель на неделю, действия из материалов и спокойный прогресс без штрафов за паузы.')}<div id="journey-view">${journey.page()}</div></div>`;
+      } else view=`<div class="page-main">${pageHeading('Мой путь','Цель на неделю, действия из материалов и спокойный прогресс без штрафов за паузы.')}<nav class="journey-cab" aria-label="Личный кабинет"><a href="#saved/calendar">${icon('calendar')} Мой календарь</a><a href="#saved/diary">${icon('write')} Мой дневник</a></nav><div id="journey-view">${journey.page()}</div></div>`;
     }
     else if (section === 'support') {
       if (activeRoute !== 'support') noteIndex = Math.floor(Math.random() * moods[moodIndex].notes.length);
@@ -371,6 +379,8 @@
     if (document.getElementById('audio-dialog').open && activeMediaPath!==mediaPath) document.getElementById('audio-dialog').close();
     activeMediaPath = mediaPath;
     main.innerHTML = view;
+    if (section==='saved' && param==='diary') notebook.results();
+    if (section==='saved' && param==='calendar') calendar.mount();
     if (audioEdition) audio.openEpisode(audioEdition.audioId);
     const tabs = main.querySelector('.media-page>.media-tabs');
     if (tabs && tabs.scrollWidth > tabs.clientWidth) {
@@ -544,7 +554,7 @@
       (searchDialog.open ? searchDialog : menuDialog).close();
       return;
     }
-    if (document.querySelector('#thought-dialog[open], #media-dialog[open], #audio-dialog[open]')) return;
+    if (document.querySelector('dialog[open]:not(#search-dialog)')) return;
     const typing = event.target.matches('input,textarea,[contenteditable="true"]');
     if ((event.key === '/' && !typing || (event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') && !searchDialog.open) {
       event.preventDefault(); openSearch();
@@ -580,7 +590,9 @@
     if (persisted) notify(done ? 'Шаг за сегодня отмечен' : 'Теперь шаг можно изменить');
   });
   window.addEventListener('storage',event => {
-    if (event.key === null || Object.values(storageKeys).includes(event.key)) render();
+    if (event.key?.startsWith(planner.prefix)) {
+      notebook.syncVisible(); calendar.paint();
+    } else if (event.key === null || Object.values(storageKeys).includes(event.key)) render();
   });
   function refreshDay() {
     if (document.hidden) return;
@@ -596,7 +608,7 @@
   window.addEventListener('hashchange',() => {
     if (searchDialog.open) searchDialog.close();
     if (menuDialog.open) menuDialog.close();
-    document.querySelectorAll('#thought-dialog[open],#media-dialog[open],#audio-dialog[open]').forEach(dialog=>dialog.close());
+    document.querySelectorAll('dialog[open]').forEach(dialog=>dialog.close());
     render({focus:true});
   });
   render();
