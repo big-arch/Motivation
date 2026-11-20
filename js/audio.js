@@ -228,12 +228,29 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
     document.getElementById('audio-rate').value = String(engine.playbackRate || 1);
     updateDock();
   }
+  function currentPlayerStatus() {
+    const button = detail.querySelector('[data-audio-play]');
+    return button?.dataset.audioPlay === current?.item.id && Number(button?.dataset.audioChapter) === current?.chapter
+      ? detail.querySelector('.player-status') : null;
+  }
+  function playCurrent() {
+    const key = current.key;
+    engine.play().catch(error => {
+      if (error.name === 'AbortError' || current?.key !== key) return;
+      const message = error.name === 'NotAllowedError'
+        ? 'Браузер просит ещё раз нажать кнопку воспроизведения.'
+        : 'Не удалось запустить поток. Проверьте связь или откройте оригинал.';
+      const status = currentPlayerStatus();
+      if (status) status.textContent = message;
+      notify(message);
+    });
+  }
   function playItem(id,chapter = 0,forcePlay = true) {
     const item = findItem(id);
     if (!item?.audio) return;
     chapter = Math.max(0,Math.min(Number(chapter)||0,(item.chapters?.length||1)-1));
     if (current?.item.id===id && current.chapter===chapter) {
-      if (engine.paused) engine.play().catch(()=>notify('Браузер не разрешил запустить аудио. Нажмите воспроизведение ещё раз.'));
+      if (engine.paused) playCurrent();
       else engine.pause();
       updateDock();
       return;
@@ -246,11 +263,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
     engine.load();
     showCurrent();
     patchAudio({recent:{id,chapter}});
-    if (forcePlay) engine.play().catch(()=>{
-      const status = detail.querySelector('.player-status');
-      if (status) status.textContent = 'Не удалось запустить поток. Проверьте связь или откройте оригинал.';
-      notify('Аудио не запустилось. Можно открыть оригинал выпуска.');
-    });
+    if (forcePlay) playCurrent();
     if ('mediaSession' in navigator && 'MediaMetadata' in window) {
       navigator.mediaSession.metadata = new MediaMetadata({title:item.chapters?.[chapter]?.title || item.title,artist:item.author || item.source,album:item.chapters?item.title:'FOUNDER.',artwork:item.thumbnail?[{src:external(item.thumbnail),sizes:'512x512'}]:[]});
     }
@@ -330,6 +343,7 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
   });
   engine.addEventListener('timeupdate',()=>{ updateDock(); persistPosition(); });
   engine.addEventListener('play',updateDock);
+  engine.addEventListener('playing',()=>{ const status = currentPlayerStatus(); if (status) status.textContent=''; });
   engine.addEventListener('pause',()=>{ persistPosition(true); updateDock(); });
   engine.addEventListener('ended',()=>{
     if (!current) return;
@@ -342,8 +356,8 @@ function createAudioLibrary({esc, icon, external, readState, writeState, notify,
     nextItem();
   });
   engine.addEventListener('error',()=>{
-    if (!current || !engine.src) return;
-    const status = detail.querySelector('.player-status');
+    if (!current || !engine.src || !engine.error) return;
+    const status = currentPlayerStatus();
     if (status) status.textContent = 'Площадка не отдала аудиопоток. Попробуйте позже или откройте оригинал.';
     updateDock();
   });
