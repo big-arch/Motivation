@@ -38,7 +38,7 @@
   const motion = createJournalMotion(main);
   const studio = createThoughtStudio({esc,icon,readState,writeState,notify,onCollectionChange:refreshShelf});
   const planner = createPlannerData({esc,icon,dateKey,notify});
-  const notebook = createNotebook(planner,{byId,studio,onPlan:task=>journey.add(task),onChange:()=>{calendar.paint();const door=document.getElementById('home-cabinet');if (door) door.innerHTML=cabinetDoor();if (route()[0]==='saved'&&!route()[1]) render();}});
+  const notebook = createNotebook(planner,{byId,external,studio,onPlan:task=>journey.add(task),onChange:()=>{calendar.paint();const door=document.getElementById('home-cabinet');if (door) door.innerHTML=cabinetDoor();if (route()[0]==='saved'&&!route()[1]) render();}});
   const calendar = createCabinetCalendar(planner,notebook);
   journey = createJourney({esc,icon,readState,writeState,notify,byId,moods,audio,
     onUpdate:()=>render(),syncStep,completeStep});
@@ -582,7 +582,7 @@
     }
     if (button.hasAttribute('data-video-note')||button.hasAttribute('data-listening-note')) {
       const video=button.hasAttribute('data-video-note'),item=video?media.currentVideo():audio.itemById(button.dataset.listeningNote);
-      if (item) notebook.fromMaterial({format:video?'video':'audio',title:item.title,author:item.source,href:external(item.url)});
+      if (item) notebook.fromMaterial({format:video?'video':'audio',title:item.title,author:item.source,href:item.url});
       return;
     }
     if (journey.click(button)) return;

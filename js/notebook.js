@@ -1,6 +1,6 @@
 'use strict';
 
-function createNotebook(data,{byId,onChange,onPlan,studio}) {
+function createNotebook(data,{byId,external,onChange,onPlan,studio}) {
   const {kinds,list,save,remove,uid,dayLabel,dateOf,dateKey,esc,icon,notify,download,stem}=data;
   const dialog=document.getElementById('notebook-dialog');
   let query='', filter='', day='', editing=null;
@@ -14,7 +14,7 @@ function createNotebook(data,{byId,onChange,onPlan,studio}) {
   function sourceLink(origin) {
     if (!origin || typeof origin.href!=='string') return '';
     if (/^#(?:read|audio|library|video)\//.test(origin.href)) return origin.href;
-    try {const url=new URL(origin.href);return url.protocol==='https:'?url.href:'';} catch {return '';}
+    return external(origin.href);
   }
   function sourceAddress(origin) {
     const link=sourceLink(origin);
