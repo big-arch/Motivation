@@ -77,10 +77,10 @@ function createNotebook(data,{byId,external,onChange,onPlan,studio}) {
   function formField(label,name,value='',options={}) {
     return `<label class="cab-field" ${options.group?`data-entry-group="${options.group}"`:''}><span>${label}</span><input name="${name}" value="${esc(value)}" maxlength="${options.max||240}" ${options.required?'required':''} ${options.placeholder?`placeholder="${esc(options.placeholder)}"`:''}></label>`;
   }
-  function open({id,kind='note',selectedDay,book,author,title,origin}={}) {
+  function open({id,kind='note',selectedDay,book,author,title,origin,body=''}={}) {
     const row=id?find(id):null;
     if (id&&!row) { notify('Запись уже удалена.'); return; }
-    editing=row || {id:uid(),created:new Date().toISOString(),kind,day:selectedDay || day || dateKey(),book:book||'',author:author||'',title:title||'',origin,body:'',tags:[]};
+    editing=row || {id:uid(),created:new Date().toISOString(),kind,day:selectedDay || day || dateKey(),book:book||'',author:author||'',title:title||'',origin,body,tags:[]};
     const e=editing;
     dialog.innerHTML=`<form id="notebook-form"><div class="dialog-head"><h2 id="notebook-title">${row?'Запись дневника':prompts[e.origin?.format]?.[0]||'Новая запись'}</h2><button type="button" class="icon-btn" data-entry-close aria-label="Закрыть редактор">${icon('close')}</button></div>
       <div class="cab-fields">${sourceMarkup(e.origin)}<div class="cab-pair"><label class="cab-field"><span>Что записываете?</span><select name="kind">${Object.entries(kinds).map(([k,v])=>`<option value="${k}" ${k===e.kind?'selected':''}>${v.label}</option>`).join('')}</select></label>
@@ -186,9 +186,9 @@ function createNotebook(data,{byId,external,onChange,onPlan,studio}) {
     else if (d.entryCard!==undefined) {const row=formRow(dialog.querySelector('form'));dialog.close();studio.open({quote:row.body,credit:credit(row)||row.title||'Из моего дневника'});}
   });
   return {view,entries,heading,results,syncVisible,
-    fromMaterial(origin) {
+    fromMaterial(origin,body='') {
       if (!prompts[origin?.format] || !sourceLink(origin)) return;
-      open({kind:'idea',origin,selectedDay:dateKey(),title:origin.title});
+      open({kind:'idea',origin,selectedDay:dateKey(),title:origin.title,body});
     }
   };
 }

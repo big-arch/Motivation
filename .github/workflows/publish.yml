@@ -24,9 +24,20 @@ jobs:
       - name: Check calendar synchronization and feed retention
         run: |
           node --test scripts/test_google_calendar.cjs
-          python -m unittest discover -s scripts -p test_update_feeds.py
+          python -m unittest discover -s scripts -p 'test_*.py'
       - name: Refresh news, video, audio and book catalogs using the last published snapshots as fallback
         run: python scripts/update_feeds.py --previous-url https://big-arch.github.io/Motivation/
+      - name: Restore published analyses
+        run: python scripts/build_video_analysis.py --limit 0 --previous-url https://big-arch.github.io/Motivation/
+      - name: Generate new video analyses on the runner
+        timeout-minutes: 12
+        continue-on-error: true
+        run: |
+          python -m pip install -q youtube-transcript-api==1.2.4
+          docker run -d --name founder-model -p 127.0.0.1:11434:11434 ollama/ollama:0.40.17
+          for i in {1..30}; do curl -fsS http://127.0.0.1:11434/api/version && break || sleep 2; done
+          docker exec founder-model ollama pull qwen2.5:7b
+          python scripts/build_video_analysis.py --limit 8
       - name: Prepare static site
         env:
           CALENDAR_CLIENT_ID: ${{ vars.GOOGLE_CALENDAR_CLIENT_ID }}

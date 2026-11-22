@@ -439,6 +439,7 @@
     if (section==='saved' && param==='diary') notebook.results();
     if (section==='saved' && param==='calendar') calendar.mount();
     if (audioEdition) audio.openEpisode(audioEdition.audioId);
+    if (section==='media' && param==='videos') media.openLinked();
     const tabs = main.querySelector('.media-page>.media-tabs');
     if (tabs && tabs.scrollWidth > tabs.clientWidth) {
       const active = tabs.querySelector('[aria-current]');
@@ -484,6 +485,7 @@
     const [section, param, subparam] = route();
     if (['news','videos'].includes(kind)) {
       media.set(kind,data);
+      if (kind==='videos' && param==='videos') media.openLinked();
       if (section === 'journal' && kind === 'news') document.getElementById('home-news').innerHTML = media.homeNews();
       if (section === 'media' && kind === (param || 'news')) document.getElementById('media-panel').innerHTML = media.panel(kind);
     } else {
@@ -586,6 +588,12 @@
     if (button.hasAttribute('data-material-note')) {
       const item=byId.get(button.dataset.materialNote);
       if (item) notebook.fromMaterial({format:item.ideas?'book':item.section==='museum'?'failure':'story',title:item.title,author:item.author||'',href:'#read/'+item.id});
+      return;
+    }
+    if (button.matches('[data-guide-note],[data-guide-extract-note]')) {
+      const item=media.currentVideo();
+      const body=button.hasAttribute('data-guide-extract-note')?button.closest('.guide-result').dataset.draft:media.guideDraft();
+      if(item && body) notebook.fromMaterial({format:'video',title:item.title,author:item.source,href:item.url},body);
       return;
     }
     if (button.hasAttribute('data-video-note')||button.hasAttribute('data-listening-note')) {

@@ -27,6 +27,7 @@ function createMedia({esc, icon, external}) {
     if (item.platform==='rutube' && item.duration>0) return 'shorts';
     return '';
   }
+  const videoGuide=createVideoGuide({esc,external,icon});
   let youtubeReady;
   let youtubePlayer;
 
@@ -165,7 +166,7 @@ function createMedia({esc, icon, external}) {
   }
   function playerUrl(item, start = 0) {
     if (item.platform==='vimeo' && /^\d{1,12}$/.test(item.id)) return `https://player.vimeo.com/video/${item.id}?autoplay=1&playsinline=1&dnt=1${start?'#t='+start+'s':''}`;
-    if (item.platform==='rutube' && /^[a-f0-9]{32}$/.test(item.id)) return `https://rutube.ru/play/embed/${item.id}?autostart=true`;
+    if (item.platform==='rutube' && /^[a-f0-9]{32}$/.test(item.id)) return `https://rutube.ru/play/embed/${item.id}?autostart=true${start?'&t='+start:''}`;
     if (item.platform==='youtube' && /^[\w-]{11}$/.test(item.id)) return `https://www.youtube.com/embed/${item.id}?autoplay=1&playsinline=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}${start ? '&start='+start : ''}`;
     return '';
   }
@@ -224,7 +225,7 @@ function createMedia({esc, icon, external}) {
     videoStart=start;
     const audioId = video && creatorProfiles.find(profile=>profile.episode.id===item.id)?.audioId;
     const stage = document.getElementById('media-detail');
-    const description = item.summary && item.summary !== item.title ? `<p class="detail-summary">${esc(item.summary)}</p>` : '';
+    const description = video ? '<section class="video-guide" aria-label="Разбор видео"><p role="status">Загружаем материалы выпуска…</p></section>' : item.summary && item.summary !== item.title ? `<p class="detail-summary">${esc(item.summary)}</p>` : '';
     stage.innerHTML = `${video && url ? '<div class="player-frame"></div>' : `<figure class="news-detail-visual">${poster(item,kind,true)}${newsCredit(newsIllustration(item))}</figure>`}
       ${video && url ? `<div class="player-help"><p class="player-status" role="status"></p>${item.platform==='youtube' ? `<button type="button" class="button secondary" data-video-retry>${icon('play')} Повторить в плеере</button>` : ''}</div>` : ''}
       <div class="detail-copy"><p class="media-byline">${esc(item.source)} ${newMark(item,kind)}</p><h2 id="media-detail-title">${esc(item.title)}</h2>
@@ -233,6 +234,10 @@ function createMedia({esc, icon, external}) {
     dialog.dataset.playing='false';
     if (video) document.getElementById('audio-engine')?.pause();
     if (!dialog.open) dialog.showModal();
+    if (video) {
+      const fullItem=feeds.videos?.items.find(row=>row.platform===item.platform && row.id===item.id);
+      videoGuide.mount(stage.querySelector('.video-guide'),fullItem||item);
+    }
     if (video && url) loadVideo(item,start);
   }
   window.addEventListener('message',event=>{
@@ -265,12 +270,33 @@ function createMedia({esc, icon, external}) {
   function releasePlayer() {
     dialog.dataset.playing='false';
     openVideo=null;
+    videoGuide.stop();
     destroyPlayer();
     document.getElementById('media-detail').replaceChildren();
   }
-  dialog.addEventListener('close',()=>{ if(!dialog.open) releasePlayer(); });
+  dialog.addEventListener('close',()=>{
+    if(dialog.open) return;
+    releasePlayer();
+    const [path,query='']=location.hash.split('?'), params=new URLSearchParams(query);
+    if(path==='#video' && params.has('watch')) {
+      params.delete('watch');
+      history.replaceState(history.state,'',path+(params.size?'?'+params:''));
+    }
+  });
   dialog.addEventListener('cancel',releasePlayer);
   dialog.addEventListener('click',event=>{
+    const moment=event.target.closest('[data-guide-time]');
+    if (moment && openVideo) {
+      videoStart=Number(moment.dataset.guideTime);
+      loadVideo(openVideo,videoStart);
+      dialog.querySelector('.player-frame').scrollIntoView({block:'start'});
+      return;
+    }
+    const generate=event.target.closest('[data-guide-generate]');
+    if(generate && openVideo) {videoGuide.generate(generate,openVideo);return;}
+    const extract=event.target.closest('[data-guide-extract]');
+    if(extract) { videoGuide.extract(extract); return; }
+    if (event.target.closest('[data-guide-related]')) { dialog.close(); return; }
     if (event.target.closest('[data-video-retry]') && openVideo?.platform==='youtube') {
       loadVideo(openVideo,videoStart);
       return;
@@ -313,6 +339,15 @@ function createMedia({esc, icon, external}) {
   return {
     panel, homeNews, poster, instant, duration, newMark,
     currentVideo:()=>openVideo,
+    guideDraft:videoGuide.draft,
+    openLinked() {
+      const [path,params='']=location.hash.split('?');
+      if(path!=='#video') return;
+      const key=new URLSearchParams(params).get('watch');
+      if(!key || (dialog.open && openVideo && key===openVideo.platform+':'+openVideo.id)) return;
+      const item=feeds.videos?.items.find(row=>row.platform+':'+row.id===key);
+      if(item) openItem('videos',item);
+    },
     watch(item, start = 0) { openItem('videos', item, Math.max(0, Math.floor(Number(start) || 0))); },
     selectVideos({mine=false,source='',onlyPlatform='',format='full',...values}={}) {
       mineOnly=mine;channel=source;videoPlatform=onlyPlatform;videoFormat=format;delete filters.videos;Object.assign(settings('videos'),values);

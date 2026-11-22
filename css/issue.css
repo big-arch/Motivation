@@ -172,6 +172,31 @@
   .format-tabs a {font-size:13px}
   .cabinet-door {height:auto}
 }
+.video-guide { margin:24px 0 8px; padding:20px 0 12px; border-block-start:1px solid var(--line); overflow-wrap:anywhere }
+.guide-heading { display:flex; align-items:baseline; flex-wrap:wrap; gap:5px 16px; margin-bottom:12px }
+.guide-heading h3 { font:500 clamp(24px,4vw,32px)/1.18 var(--serif); margin:0 }
+.guide-heading small,.guide-muted,.guide-input small { color:var(--muted); font-size:13px }
+.video-guide p,.video-guide li { line-height:1.6 }
+.guide-lead { max-width:72ch; color:var(--ink); margin:0 0 18px }
+.video-guide h4 { margin:18px 0 5px; font-size:15px; color:var(--ink) }
+.video-guide ul { padding-inline-start:1.2em; margin:6px 0 16px }
+.guide-points li+li { margin-top:10px }
+.guide-time { font:600 13px/1.5 var(--sans,Inter,sans-serif); font-variant-numeric:tabular-nums; color:var(--gold); background:var(--raised); border:1px solid var(--line); border-radius:5px; padding:3px 7px; cursor:pointer }
+.guide-fold { border-block-end:1px solid var(--line); padding:0 2px }
+.guide-fold summary { padding:12px 0; cursor:pointer; font-weight:600 }
+.guide-fold summary small { color:var(--muted); margin-inline-start:5px }
+.guide-fold a { color:var(--gold); text-decoration:underline; text-underline-offset:3px }
+.guide-chapters { list-style:none; margin:0 0 12px; padding:0; display:grid; gap:6px }
+.guide-chapters li { display:flex; align-items:baseline; gap:10px }
+.guide-practice { margin-top:18px; padding:2px 16px 12px; border-inline-start:2px solid var(--gold); background:var(--raised) }
+.guide-practice h4 { color:var(--gold); margin-top:10px }
+.guide-practice p,.guide-result p { margin:4px 0; white-space:pre-line }
+.guide-input { margin-top:14px }
+.guide-input label,.guide-input small { display:block }
+.guide-input textarea { width:100%; margin:5px 0; border:1px solid var(--line); background:var(--bg); color:var(--ink); padding:9px; border-radius:6px; font:inherit }
+.guide-result:not(:empty) { padding:12px 0 }
+.guide-model .button[hidden] { display:none }
+.guide-time:focus-visible,.guide-fold summary:focus-visible { outline:2px solid var(--gold); outline-offset:2px }
 @media(max-width:365px){
   .issue-opening .cover {--pad:14px}
   .slide-meter {gap:6px}

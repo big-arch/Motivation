@@ -17,6 +17,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlencode, urljoin, urlsplit
 
+from video_evidence import extract as video_evidence
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ATOM = "{http://www.w3.org/2005/Atom}"
@@ -176,6 +178,7 @@ def youtube_entries(data: bytes, source: dict) -> list[dict]:
             "published": stamp(node.findtext(ATOM + "published", "")),
             "thumbnail": "https://i.ytimg.com/vi/" + video + "/hqdefault.jpg",
             "summary": Excerpt(node.findtext(MEDIA + "group/" + MEDIA + "description", "")).text(200),
+            **video_evidence(node.findtext(MEDIA + "group/" + MEDIA + "description", "")),
         })
     return entries
 
@@ -230,6 +233,7 @@ def rutube_entries(data: bytes, source: dict) -> list[dict]:
             "published": stamp(row.get("publication_ts", ""), MOSCOW),
             "thumbnail": public_url(row["thumbnail_url"]), "duration": int(row.get("duration") or 0),
             "summary": Excerpt(row.get("description", "")).text(200),
+            **video_evidence(row.get("description", "")),
         })
     return entries
 
