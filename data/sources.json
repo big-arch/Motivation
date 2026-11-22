@@ -1,6 +1,24 @@
 {
   "videos": [
     {
+      "id": "32079931",
+      "name": "Михаил Гребенюк · RUTUBE",
+      "topic": "Бизнес",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/channel/32079931/",
+      "creatorChannel": "UCL-HTw4Wfi9Igh9r1CBrrDA"
+    },
+    {
+      "id": "42282419",
+      "name": "Оскар Хартманн · RUTUBE",
+      "topic": "Мотивация",
+      "lang": "ru",
+      "platform": "rutube",
+      "url": "https://rutube.ru/u/oskarhartmann/",
+      "creatorChannel": "UCFJnZHIusOlHr-pbYVHmr-A"
+    },
+    {
       "id": "23838056",
       "name": "Школа управления СКОЛКОВО",
       "topic": "Бизнес",

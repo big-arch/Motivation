@@ -8,13 +8,13 @@ function createMedia({esc, icon, external}) {
   const day = 86400000;
   const pageSize = 9;
   let current = 'news';
-  let mineOnly=false, channel='', openVideo=null;
+  let mineOnly=false, channel='', videoPlatform='', openVideo=null, videoStart=0;
   const authorsById=new Map(creatorProfiles.map(p=>[p.id,p]));
   const authorsByName=new Map(creatorProfiles.map(p=>[p.name,p]));
   let sourceAuthors=new Map();
-  const authorOf=item=>item.platform==='youtube' && sourceAuthors.get(item.source);
+  const authorOf=item=>sourceAuthors.get(item.source);
   function sourcesFor(kind) {
-    return (feeds[kind]?.sources||[]).filter(s=>kind!=='videos'||((!mineOnly||sourceAuthors.has(s.name)) && (!channel||s.name===channel)));
+    return (feeds[kind]?.sources||[]).filter(s=>kind!=='videos'||((!videoPlatform || s.platform===videoPlatform) && (!mineOnly||sourceAuthors.has(s.name)) && (!channel||sourceAuthors.get(s.name)?.name===channel)));
   }
   let youtubeReady;
   let youtubePlayer;
@@ -45,7 +45,7 @@ function createMedia({esc, icon, external}) {
   function available(kind, omitSource = false) {
     const state = settings(kind);
     return (feeds[kind]?.items || []).filter(item =>
-      (kind !== 'videos' || ((!mineOnly || authorOf(item)) && (!channel || item.source===channel))) &&
+      (kind !== 'videos' || ((!videoPlatform || item.platform===videoPlatform) && (!mineOnly || authorOf(item)) && (!channel || authorOf(item)?.name===channel))) &&
       (!state.topic || item.topic === state.topic) && (omitSource || !state.source || item.source === state.source) &&
       (!state.lang || item.lang === state.lang) && (!state.platform || item.platform === state.platform) &&
       (!state.fresh || isNew(item,kind)));
@@ -71,7 +71,7 @@ function createMedia({esc, icon, external}) {
       `<button type="button" class="chip" aria-pressed="${state.topic === t}" data-media-topic="${esc(t)}">${esc(t || 'Все темы')}</button>`).join('')}</div>
       <div class="media-tools">${pinned?'':field('source',kind === 'videos' ? 'Канал' : 'Редакция',option('',kind === 'videos' ? 'Все каналы' : 'Все источники',state.source)+rows.filter(s=>names.has(s.name) || s.name === state.source).map(s=>option(s.name,s.name,state.source)).join(''))}
       ${field('lang','Язык',option('','Все языки',state.lang)+option('ru','Русский',state.lang)+option('en','Английский',state.lang))}
-      ${kind === 'videos' && !pinned ? field('platform','Площадка',option('','Все площадки',state.platform)+option('rutube','RUTUBE',state.platform)+option('youtube','YouTube',state.platform)) : ''}
+      ${kind === 'videos' && new Set(rows.map(row=>row.platform)).size>1 ? field('platform','Площадка',option('','Все площадки',state.platform)+option('rutube','RUTUBE',state.platform)+option('youtube','YouTube',state.platform)) : ''}
       <label class="fresh-filter"><input type="checkbox" data-media-field="fresh"${state.fresh?' checked':''}><span>Только новое</span></label></div></div>`;
   }
   function newsIllustration(item) {
@@ -153,8 +153,18 @@ function createMedia({esc, icon, external}) {
   }
   function playerUrl(item, start = 0) {
     if (item.platform==='rutube' && /^[a-f0-9]{32}$/.test(item.id)) return `https://rutube.ru/play/embed/${item.id}?autostart=true`;
-    if (item.platform==='youtube' && /^[\w-]{11}$/.test(item.id)) return `https://www.youtube-nocookie.com/embed/${item.id}?autoplay=1&playsinline=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}${start ? '&start='+start : ''}`;
+    if (item.platform==='youtube' && /^[\w-]{11}$/.test(item.id)) return `https://www.youtube.com/embed/${item.id}?autoplay=1&playsinline=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}${start ? '&start='+start : ''}`;
     return '';
+  }
+  function videoStatus(message) {
+    dialog.querySelector('.player-status').textContent=message;
+  }
+  function youtubeError(code) {
+    dialog.dataset.playing='false';
+    if (code===153) videoStatus('YouTube не получил адрес журнала от браузера. Повторите запуск в обычной вкладке FOUNDER.');
+    else if (code===100) videoStatus('YouTube сообщает, что видео удалено или доступ ограничен.');
+    else if (code===101 || code===150) videoStatus('YouTube остановил показ в этом окне. Если плеер просит войти, проверьте, что YouTube и FOUNDER открыты в одном профиле браузера, затем повторите запуск.');
+    else videoStatus('YouTube не смог воспроизвести ролик. Можно повторить запуск в этом окне.');
   }
   function connectYouTube(frame) {
     if (!youtubeReady) youtubeReady = new Promise(resolve=>{
@@ -169,41 +179,65 @@ function createMedia({esc, icon, external}) {
       if (!api || !dialog.open || !frame.isConnected) return;
       youtubePlayer=new api.Player(frame,{events:{
         onReady:event=>{ if(dialog.open && frame.isConnected) event.target.playVideo(); },
-        onStateChange:event=>{ if(frame.isConnected) dialog.dataset.playing=String(event.data===1); },
-        onError:()=>{ if(frame.isConnected) dialog.querySelector('.player-status').textContent='YouTube ограничил просмотр выпуска во встроенном плеере.'; }
+        onStateChange:event=>{
+          if (!frame.isConnected) return;
+          dialog.dataset.playing=String(event.data===1);
+          if (event.data===1) videoStatus('');
+        },
+        onAutoplayBlocked:()=>{ if(frame.isConnected && !dialog.querySelector('.player-status').textContent) videoStatus('Нажмите ▶ в плеере, чтобы начать просмотр.'); },
+        onError:event=>{ if(frame.isConnected) youtubeError(event.data); }
       }});
     });
+  }
+  function destroyPlayer() {
+    youtubePlayer?.destroy();
+    youtubePlayer=null;
+  }
+  function loadVideo(item, start) {
+    const container=dialog.querySelector('.player-frame');
+    if (!container) return;
+    destroyPlayer();
+    dialog.dataset.playing='false';
+    videoStatus('');
+    container.innerHTML=`<iframe title="${esc(item.title)}" src="${esc(playerUrl(item,start))}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    if (item.platform==='youtube') connectYouTube(container.firstElementChild);
   }
   function openItem(kind, item, start = 0) {
     if (!item) return;
     const url = playerUrl(item, start);
+    if (youtubePlayer) destroyPlayer();
     const video = kind === 'videos';
     openVideo=video?item:null;
+    videoStart=start;
     const audioId = video && creatorProfiles.find(profile=>profile.episode.id===item.id)?.audioId;
     const stage = document.getElementById('media-detail');
     const description = item.summary && item.summary !== item.title ? `<p class="detail-summary">${esc(item.summary)}</p>` : '';
-    stage.innerHTML = `${video && url ? `<div class="player-frame"><iframe title="${esc(item.title)}" src="${esc(url)}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>` : `<figure class="news-detail-visual">${poster(item,kind,true)}${newsCredit(newsIllustration(item))}</figure>`}
+    stage.innerHTML = `${video && url ? '<div class="player-frame"></div>' : `<figure class="news-detail-visual">${poster(item,kind,true)}${newsCredit(newsIllustration(item))}</figure>`}
+      ${video && url ? `<div class="player-help"><p class="player-status" role="status"></p>${item.platform==='youtube' ? `<button type="button" class="button secondary" data-video-retry>${icon('play')} Повторить в плеере</button>` : ''}</div>` : ''}
       <div class="detail-copy"><p class="media-byline">${esc(item.source)} ${newMark(item,kind)}</p><h2 id="media-detail-title">${esc(item.title)}</h2>
       <p class="media-meta">Опубликовано ${instant(item.published)} · ${esc(item.topic)}</p>${description}
-      <p class="player-status" role="status"></p>${audioId ? `<a class="button secondary" href="#audio/podcasts/${esc(audioId)}" data-audio-edition>${icon('audio')} Аудиоверсия этого выпуска</a>` : ''} ${video?`<button type="button" class="button secondary" data-video-note>${icon('write')} Записать вывод</button>`:''} <a class="button secondary" href="${esc(external(start ? item.url+'&t='+start+'s' : item.url))}" target="_blank" rel="noopener noreferrer">${video?'Открыть в '+nameOf(item.platform):'Читать у издателя'} ${icon('out')}</a>${item.platform==='youtube' ? `<button class="text-link related-rutube" data-related-rutube="${esc(item.topic)}">По этой теме на RUTUBE ${icon('arrow')}</button>` : ''}</div>`;
+      ${audioId ? `<a class="button secondary" href="#audio/podcasts/${esc(audioId)}" data-audio-edition>${icon('audio')} Аудиоверсия этого выпуска</a>` : ''} ${video?`<button type="button" class="button secondary" data-video-note>${icon('write')} Записать вывод</button>`:''} <a class="button secondary" href="${esc(external(start ? item.url+'&t='+start+'s' : item.url))}" target="_blank" rel="noopener noreferrer">${video?'Открыть в '+nameOf(item.platform):'Читать у издателя'} ${icon('out')}</a>${item.platform==='youtube' ? `<button class="text-link related-rutube" data-related-rutube="${esc(item.topic)}">По этой теме на RUTUBE ${icon('arrow')}</button>` : ''}</div>`;
     dialog.dataset.playing='false';
     if (video) document.getElementById('audio-engine')?.pause();
-    dialog.showModal();
-    if (video && item.platform==='youtube' && url) connectYouTube(stage.querySelector('iframe'));
+    if (!dialog.open) dialog.showModal();
+    if (video && url) loadVideo(item,start);
   }
   window.addEventListener('message',event=>{
-    if (!dialog.open || !['https://www.youtube-nocookie.com','https://www.youtube.com','https://rutube.ru'].includes(event.origin)) return;
-    if (event.source !== dialog.querySelector('iframe')?.contentWindow) return;
+    const frame=dialog.querySelector('.player-frame iframe');
+    if (!dialog.open || !frame || event.source!==frame.contentWindow || event.origin!==new URL(frame.src).origin) return;
     let data = event.data;
     if (typeof data === 'string') { try { data = JSON.parse(data); } catch { return; } }
     if (event.origin === 'https://rutube.ru' && data?.type === 'player:ready') {
       event.source.postMessage(JSON.stringify({type:'player:play',data:{}}),event.origin);
     }
-    if (data?.type === 'player:changeState') dialog.dataset.playing=String(data.data?.state==='playing');
-    if (data?.event === 'onStateChange') dialog.dataset.playing=String(data.info===1);
-    if (data?.event === 'onError' || data?.type === 'player:error') {
-      dialog.querySelector('.player-status').textContent = 'Площадка ограничила просмотр этого выпуска. Его можно открыть по ссылке ниже.';
+    if (event.origin==='https://www.youtube.com' && data?.event==='onError') youtubeError(data.info);
+    if (event.origin!=='https://rutube.ru') return;
+    if (data?.type==='player:changeState') {
+      const playing=data.data?.state==='playing';
+      dialog.dataset.playing=String(playing);
+      if (playing) videoStatus('');
     }
+    if (data?.type==='player:error') videoStatus('RUTUBE не смог воспроизвести этот выпуск.');
   });
   document.addEventListener('error',event=>{
     const image=event.target;
@@ -218,12 +252,16 @@ function createMedia({esc, icon, external}) {
   function releasePlayer() {
     dialog.dataset.playing='false';
     openVideo=null;
-    if (youtubePlayer) { youtubePlayer.destroy(); youtubePlayer=null; }
+    destroyPlayer();
     document.getElementById('media-detail').replaceChildren();
   }
   dialog.addEventListener('close',()=>{ if(!dialog.open) releasePlayer(); });
   dialog.addEventListener('cancel',releasePlayer);
   dialog.addEventListener('click',event=>{
+    if (event.target.closest('[data-video-retry]') && openVideo?.platform==='youtube') {
+      loadVideo(openVideo,videoStart);
+      return;
+    }
     const related=event.target.closest('[data-related-rutube]');
     if (related) {
       releasePlayer(); dialog.close();
@@ -263,12 +301,12 @@ function createMedia({esc, icon, external}) {
     panel, homeNews, poster, instant, duration, newMark,
     currentVideo:()=>openVideo,
     watch(item, start = 0) { openItem('videos', item, Math.max(0, Math.floor(Number(start) || 0))); },
-    selectVideos({mine=false,source='',...values}={}) {
-      mineOnly=mine;channel=source;delete filters.videos;Object.assign(settings('videos'),values);
+    selectVideos({mine=false,source='',onlyPlatform='',...values}={}) {
+      mineOnly=mine;channel=source;videoPlatform=onlyPlatform;delete filters.videos;Object.assign(settings('videos'),values);
     },
     set(kind,data) {
       if (kind==='videos') {
-        sourceAuthors=new Map((data.sources||[]).filter(s=>s.platform==='youtube').map(s=>[s.name,authorsById.get(s.id)||authorsByName.get(s.name)]).filter(([,profile])=>profile));
+        sourceAuthors=new Map((data.sources||[]).map(s=>[s.name,authorsById.get(s.creatorChannel||s.id)||(s.platform==='youtube'&&authorsByName.get(s.name))]).filter(([,profile])=>profile));
         for (const profile of creatorProfiles) if (!sourceAuthors.has(profile.name)) sourceAuthors.set(profile.name,profile);
       }
       feeds[kind]=data;

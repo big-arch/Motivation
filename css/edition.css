@@ -79,8 +79,11 @@
 .load-row { display:flex; align-items:center; justify-content:center; gap:14px; margin:25px auto 0; }
 .media-dialog { width:min(850px,calc(100% - 26px)); padding:0; max-height:90dvh; }
 .detail-bar { display:flex; align-items:center; justify-content:space-between; padding:3px 12px 3px 20px; border-bottom:1px solid var(--line); color:var(--muted); font-size:12px; letter-spacing:.06em; }
-.player-frame { width:100%; aspect-ratio:16/9; background:#10110f; }
+.player-frame { width:100%; min-height:200px; aspect-ratio:16/9; background:#10110f; }
 .player-frame iframe { display:block; width:100%; height:100%; border:0; }
+.player-help { display:flex; flex-wrap:wrap; align-items:center; column-gap:16px; padding-inline:clamp(16px,4vw,36px); }
+.player-help .player-status { flex:1 1 260px; margin-bottom:0; }
+.player-help .button { margin-top:12px; }
 #media-detail>.media-poster { border-radius:0; max-height:340px; }
 #media-detail>.news img { object-fit:contain; }
 .detail-copy { padding:clamp(16px,3vw,30px); }

@@ -352,7 +352,8 @@
     const profile=isVideo && creators.profile(handle);
     const mine=kind==='authors'||handle==='channels'||Boolean(profile);
     const title=isVideo?'Видео':'Аудио';
-    const options=isVideo?[['#video','Все видео',!mine],['#video/channels','Мои 16 каналов',mine]]:
+    const rutube=isVideo && handle.startsWith('rutube-');
+    const options=isVideo?[['#video','Все видео',!mine&&!rutube],['#video/channels','Мои 16 каналов',mine],['#video/rutube','RUTUBE',rutube]]:
       [['#audio','Всё аудио',kind==='all-audio'],['#audio/lectures','Лекции',kind==='lectures'],['#audio/podcasts','Подкасты',kind==='podcasts'],['#audio/audiobooks','Аудиокниги',kind==='audiobooks']];
     const tabs=`<nav class="format-tabs" aria-label="Выбор подборки">${options.map(([url,label,active])=>`<a href="${url}" ${active?'aria-current="page"':''}>${label}</a>`).join('')}</nav>`;
     let panel;
@@ -382,7 +383,7 @@
       const profile = audioEdition || creators.profile(subparam);
       if (section==='media' && param==='videos') {
         if (profile) media.selectVideos({source:profile.name,mine:true});
-        else if (subparam.startsWith('rutube-')) media.selectVideos({platform:'rutube',topic:subparam.slice(7)});
+        else if (subparam.startsWith('rutube-')) media.selectVideos({onlyPlatform:'rutube',topic:subparam.slice(7)});
         else media.selectVideos({mine:subparam==='channels'});
       }
       if (section==='media' && param==='podcasts') {
