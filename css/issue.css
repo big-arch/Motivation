@@ -84,6 +84,10 @@
 .reading .paired-reading h2 {font-size:clamp(23px,3vw,31px);line-height:1.15;margin:5px 0}
 .paired-reading h2 a:hover {text-decoration:underline;text-underline-offset:3px}
 .reading .paired-reading p {margin:0;font-size:16px}
+.video-filters,.video-platforms {display:flex;align-items:center;gap:6px 12px;flex-wrap:wrap;margin:0 0 10px}
+.video-filters .chip {padding-inline:12px}
+.video-platforms a {color:var(--muted);font-size:13px;padding:7px 0}
+.video-platforms a[aria-current] {color:var(--soft-gold);text-decoration:underline;text-underline-offset:4px}
 .filter-drawer {border-bottom:1px solid var(--line)}
 .filter-drawer>summary,.chosen-directory summary {cursor:pointer;gap:8px;min-height:42px;list-style:none;font-size:13px;font-weight:550;color:var(--ink)}
 .filter-drawer>summary::-webkit-details-marker,.chosen-directory summary::-webkit-details-marker {display:none}

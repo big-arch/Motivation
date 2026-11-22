@@ -345,30 +345,36 @@
       <div class="sources"><a href="https://unsplash.com/photos/150fZ07GQqs">Фицрой на рассвете · Andrew Svk ↗</a><a href="https://unsplash.com/photos/B5BTFxsZ92M">Компьютер Apple · Marissa Lewis ↗</a><a href="https://unsplash.com/photos/KN9FYaoAAik">Пицца в печи · Brad ↗</a><a href="https://unsplash.com/photos/lIipHR8mi3o">Офис · Fer Troulik ↗</a></div></div></div>`;
   }
   const mediaTitles = {news:'Новости',videos:'Видео',authors:'Гид по авторам','all-audio':'Аудио',lectures:'Лекции',podcasts:'Подкасты',audiobooks:'Аудиокниги',services:'Яндекс Музыка и Spotify'};
-  function mediaPage(kind,handle) {
+  function mediaPage(kind,handle,format) {
     if (kind==='news') return `<div class="page-main media-page">${pageHeading('Новости','Деловая лента по времени публикации. Новое за последние сутки.')}<section id="media-panel" aria-label="Новости">${media.panel('news')}</section></div>`;
     if (kind==='services') return `<div class="page-main media-page">${pageHeading(mediaTitles.services,'')}${audio.servicesPanel()}</div>`;
     const isVideo=kind==='videos' || kind==='authors';
     const profile=isVideo && creators.profile(handle);
     const mine=kind==='authors'||handle==='channels'||Boolean(profile);
     const title=isVideo?'Видео':'Аудио';
-    const rutube=isVideo && handle.startsWith('rutube-');
-    const options=isVideo?[['#video','Все видео',!mine&&!rutube],['#video/channels','Мои 16 каналов',mine],['#video/rutube','RUTUBE',rutube]]:
+    const alternative=isVideo && (handle.startsWith('rutube-') || ['vimeo','without-youtube'].includes(handle));
+    const options=isVideo?[['#video','Все каналы',!mine&&!alternative],['#video/channels','Мои 16 каналов',mine],['#video/without-youtube','Без YouTube',alternative]]:
       [['#audio','Всё аудио',kind==='all-audio'],['#audio/lectures','Лекции',kind==='lectures'],['#audio/podcasts','Подкасты',kind==='podcasts'],['#audio/audiobooks','Аудиокниги',kind==='audiobooks']];
     const tabs=`<nav class="format-tabs" aria-label="Выбор подборки">${options.map(([url,label,active])=>`<a href="${url}" ${active?'aria-current="page"':''}>${label}</a>`).join('')}</nav>`;
+    const path=location.hash.split('?')[0]||'#video';
+    const formats=kind==='videos'?`<nav class="video-filters" aria-label="Формат видео">${[['full','Полные видео'],['shorts','Короткие / Shorts'],['all','Все форматы']].map(([key,label])=>`<a class="chip" href="${esc(path+(key==='full'?'':'?format='+key))}" ${key===format?'aria-current="page"':''}>${label}</a>`).join('')}</nav>`:'';
+    const platforms=alternative?`<nav class="video-platforms" aria-label="Площадка">${[['#video/without-youtube','Все площадки',handle==='without-youtube'],['#video/rutube','RUTUBE',handle.startsWith('rutube-')],['#video/vimeo','Vimeo',handle==='vimeo']].map(([url,label,active])=>`<a href="${url}" ${active?'aria-current="page"':''}>${label}</a>`).join('')}</nav>`:'';
     let panel;
     if (kind==='authors') panel=profile?`<h2 class="channel-heading">${esc(profile.name)}</h2>${creators.detail(profile)}`:creators.index(handle);
     else if (isVideo) panel=`${mine?creators.channelList(profile):''}<section id="media-panel" aria-label="Выпуски">${media.panel('videos')}</section>`;
     else panel=`<section id="audio-panel" aria-label="${esc(mediaTitles[kind])}">${audio.panel(kind)}</section>`;
-    return `<div class="page-main media-page format-page">${pageHeading(title,isVideo?'Свежие выпуски на YouTube и RUTUBE.':'Лекции, разговоры и книги в одном плеере.')}${isVideo?tabs:`<div class="format-desk">${tabs}<a class="text-link" href="#journal/players">Яндекс Музыка и Spotify ${icon('arrow')}</a></div>`}${panel}</div>`;
+    return `<div class="page-main media-page format-page">${pageHeading(title,isVideo?'Выпуски и документальные фильмы о бизнесе, карьере и деньгах.':'Лекции, разговоры и книги в одном плеере.')}${isVideo?tabs+platforms+formats:`<div class="format-desk">${tabs}<a class="text-link" href="#journal/players">Яндекс Музыка и Spotify ${icon('arrow')}</a></div>`}${panel}</div>`;
   }
   function route() {
     try {
-      const [section,part='',detail='']=location.hash.slice(1).split('/').map(decodeURIComponent);
+      const [path, query='']=location.hash.slice(1).split('?');
+      const [section,part='',detail='']=path.split('/').map(decodeURIComponent);
       if (section==='news') return ['media','news',''];
       if (section==='video') {
         if (part==='authors') return ['media','authors',detail];
-        return ['media','videos',part==='channel'?detail:part==='rutube'?'rutube-'+detail:part==='channels'?'channels':''];
+        const format=new URLSearchParams(query).get('format');
+        const scope=part==='channel'?detail:part==='rutube'?'rutube-'+detail:['channels','vimeo','without-youtube'].includes(part)?part:'';
+        return ['media','videos',scope,['shorts','all'].includes(format)?format:'full'];
       }
       if (section==='audio') return ['media',['lectures','podcasts','audiobooks'].includes(part)?part:'all-audio',detail];
       if (section==='media') return ['media',Object.hasOwn(mediaTitles,part)?part:'news',detail];
@@ -376,15 +382,16 @@
     } catch {return ['missing','',''];}
   }
   function render({focus = false} = {}) {
-    const [section,param,subparam] = route();
+    const [section,param,subparam,format='full'] = route();
     const audioEdition = section==='media' && param==='podcasts' && subparam.startsWith('audio-') && creatorProfiles.find(p=>p.audioId===subparam);
-    const mediaPath = section==='media' ? [param || 'news', subparam].join('/') : '';
+    const mediaPath = section==='media' ? [param || 'news', subparam, ...(param==='videos'?[format]:[])].join('/') : '';
     if (mediaPath !== activeMediaPath) {
       const profile = audioEdition || creators.profile(subparam);
       if (section==='media' && param==='videos') {
-        if (profile) media.selectVideos({source:profile.name,mine:true});
-        else if (subparam.startsWith('rutube-')) media.selectVideos({onlyPlatform:'rutube',topic:subparam.slice(7)});
-        else media.selectVideos({mine:subparam==='channels'});
+        if (profile) media.selectVideos({source:profile.name,mine:true,format});
+        else if (subparam.startsWith('rutube-')) media.selectVideos({onlyPlatform:'rutube',topic:subparam.slice(7),format});
+        else if (['vimeo','without-youtube'].includes(subparam)) media.selectVideos({onlyPlatform:subparam,format});
+        else media.selectVideos({mine:subparam==='channels',format});
       }
       if (section==='media' && param==='podcasts') {
         if (profile?.podcast) audio.selectPodcast(profile.podcast);
@@ -417,7 +424,7 @@
       if (activeRoute !== 'support') noteIndex = Math.floor(Math.random() * moods[moodIndex].notes.length);
       view = supportPage();
     }
-    else if (section === 'media') view = mediaPage(param || 'news', subparam);
+    else if (section === 'media') view = mediaPage(param || 'news', subparam, format);
     else if (section === 'resources') view = resourcePage();
     else if (section === 'about') view = aboutPage();
     else {

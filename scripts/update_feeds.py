@@ -30,20 +30,20 @@ FEED_ERRORS = (OSError, ValueError, ET.ParseError, http.client.HTTPException)
 MAX_DOWNLOAD = 20_000_000
 
 
-def download(url: str) -> bytes:
+def download(url: str, *, timeout=30, attempts=2) -> bytes:
     request = urllib.request.Request(url, headers={
         "User-Agent": "FounderJournal/3.0 (+https://github.com/big-arch/Motivation)",
         "Accept": "*/*",
     })
-    for attempt in range(2):
+    for attempt in range(attempts):
         try:
-            with urllib.request.urlopen(request, timeout=30) as response:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
                 data = response.read(MAX_DOWNLOAD + 1)
             if len(data) > MAX_DOWNLOAD:
                 raise ValueError("Feed exceeds size limit")
             return data
         except FEED_ERRORS:
-            if attempt:
+            if attempt + 1 == attempts:
                 raise
             time.sleep(0.4)
     raise ValueError("Download failed")
@@ -178,6 +178,40 @@ def youtube_entries(data: bytes, source: dict) -> list[dict]:
             "summary": Excerpt(node.findtext(MEDIA + "group/" + MEDIA + "description", "")).text(200),
         })
     return entries
+
+
+def youtube_uploads(source: dict) -> list[dict]:
+    base = "https://www.youtube.com/feeds/videos.xml?"
+    channel = source["id"]
+    typed = {}
+    for prefix, kind in (("UULF", "full"), ("UUSH", "shorts")):
+        try:
+            data = download(base + "playlist_id=" + prefix + channel[2:], timeout=8, attempts=1)
+            typed.update({row["id"]: {**row, "format": kind} for row in youtube_entries(data, source)})
+        except FEED_ERRORS:
+            continue
+    try:
+        mixed = youtube_entries(download(base + "channel_id=" + channel, timeout=12, attempts=1), source)
+    except FEED_ERRORS:
+        if not typed:
+            raise
+        return list(typed.values())
+    for row in mixed:
+        # Use the upload feed's publication date when both feeds include the video.
+        typed[row["id"]] = {**typed.get(row["id"], {}), **row}
+    return list(typed.values())
+
+
+def keep_recent_formats(rows: list[dict], per_format: int) -> list[dict]:
+    counts = {}
+    selected = []
+    for row in rows:
+        kind = row.get("format", "")
+        count = counts.get(kind, 0)
+        if count < per_format:
+            selected.append(row)
+            counts[kind] = count + 1
+    return selected
 
 
 def rutube_entries(data: bytes, source: dict) -> list[dict]:
@@ -316,8 +350,7 @@ def openlibrary_entries(data: bytes, source: dict, now: str) -> list[dict]:
 def collect(source: dict, now: str) -> list[dict]:
     platform = source.get("platform")
     if platform == "youtube":
-        url = "https://www.youtube.com/feeds/videos.xml?channel_id=" + source["id"]
-        rows = youtube_entries(download(url), source)
+        rows = youtube_uploads(source)
     elif platform == "rutube":
         url = "https://rutube.ru/api/video/person/" + source["id"] + "/?format=json"
         rows = rutube_entries(download(url), source)
@@ -345,7 +378,8 @@ def collect(source: dict, now: str) -> list[dict]:
     if not valid:
         raise ValueError("No published entries with an original date")
     ordered = sorted(valid, key=lambda item: item["published"], reverse=True)
-    return list({item["url"]: item for item in ordered}.values())[:6]
+    unique = list({item["url"]: item for item in ordered}.values())
+    return keep_recent_formats(unique, 6) if platform == "youtube" else unique[:6]
 
 
 def collect_source(source, now, previous):
@@ -384,7 +418,9 @@ def prior_sources(path: Path, base_url: str) -> dict:
             prior = result.setdefault(name, {"checked": "", "items": []})
             merged = {row["url"]: row for row in prior["items"]}
             checked = entry.get("checked") or ""
-            for row in (rows[:24] if index else rows):
+            if index:
+                rows = keep_recent_formats(rows, 24) if entry.get("platform") == "youtube" else rows[:24]
+            for row in rows:
                 existing = merged.get(row["url"], {})
                 if path.stem in {"audio", "open-books"} and existing and (row.get("chapters") or row.get("embed")):
                     row = {**row, "published": existing["published"]}

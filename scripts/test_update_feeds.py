@@ -19,6 +19,27 @@ class CollectionRefreshTest(unittest.TestCase):
         self.assertEqual(row["summary"], "Guest Career plans")
         self.assertEqual(row["thumbnail"], "https://example.org/cover.jpg")
 
+    def test_youtube_uploads_separate_formats_and_keep_unclassified_videos(self):
+        channel = "UCbk_QsfaFZG6PdQeCvaYXJQ"
+
+        def atom(video_id, date):
+            return f'''<feed xmlns="{feeds.ATOM[1:-1]}" xmlns:yt="{feeds.YT[1:-1]}">
+            <entry><yt:videoId>{video_id}</yt:videoId><yt:channelId>{channel}</yt:channelId>
+            <title>Example</title><published>{date}</published></entry></feed>'''.encode()
+
+        full, short, unclassified = "h4V7-RZjq5c", "sV9Dq8eE68k", "undecided0_"
+        original = "2026-11-20T14:30:00Z"
+        with patch.object(feeds, "download", side_effect=[
+            atom(full, "2026-11-21T09:00:00Z"), atom(short, original), atom(full, original)
+        ]):
+            rows = {row["id"]: row for row in feeds.youtube_uploads({"id": channel})}
+        self.assertEqual(rows[full]["format"], "full")
+        self.assertEqual(rows[full]["published"], original)
+        self.assertEqual(rows[short]["format"], "shorts")
+        with patch.object(feeds, "download", side_effect=[OSError(), OSError(), atom(unclassified, original)]):
+            fallback, = feeds.youtube_uploads({"id": channel})
+        self.assertNotIn("format", fallback)
+
     def test_release_and_previous_deployment_survive_rotation(self):
         source = {"name": "Journal", "topic": "Career", "lang": "en"}
         def item(name):
