@@ -1,5 +1,5 @@
 /* Publisher notes and an extractive reading of reader-supplied subtitles stay separate. */
-function videoExcerpt(text) {
+function videoExcerpt(text,limit=4) {
   const stop = new Set('это что как для или есть так этом этих они она его при чем уже все ещё был было вот когда после the and that for with from this you your have they are was were will about into can but'.split(' '));
   const cleaned = text.slice(0,180000).replace(/^WEBVTT.*$|^\d+\s*$|^[\d:.,]+\s+-->.*$|^\s*(?:\d+:)?\d+:\d+(?:[.,]\d+)?\s*$/gm,' ')
     .replace(/<[^>]{1,160}>|\[(?:музыка|music|аплодисменты|applause)\]|>>/gi,' ').trim();
@@ -23,7 +23,7 @@ function videoExcerpt(text) {
   const chosen=[];
   for(const index of best) {
     if(chosen.every(other=>graph[index][other]<0.72)) chosen.push(index);
-    if(chosen.length===4) break;
+    if(chosen.length===limit) break;
   }
   return chosen.sort((a,b)=>a-b).map(i=>sentences[i]);
 }
@@ -47,12 +47,16 @@ function createVideoGuide({esc,external,icon}) {
     const href=external(url);
     return href?'<li><a href="'+esc(href)+'" target="_blank" rel="noopener noreferrer">'+esc(label)+' ↗</a></li>':'';
   }
-  const basisLabels={asr:'По автоматическим субтитрам',transcript:'По субтитрам автора',publisher:'По материалам издателя',notes:'По описанию и главам автора'};
+  const basisLabels={outline:'Ключевые фрагменты из материалов автора',asr:'По автоматическим субтитрам',transcript:'По субтитрам автора',publisher:'По материалам издателя',notes:'По описанию и главам автора'};
   function draw(host,item,entry) {
     const guide=item.guide||{};
-    const chapters=(guide.chapters||[]).filter(([s])=>Number.isSafeInteger(s)&&s>=0&&(!item.duration||s<item.duration));
+    const fullChapters=guide.chapters||[];
+    const short=item.format==='shorts'||(item.platform==='rutube' && item.duration>0 && item.duration<=180);
+    const ownChapters=short && fullChapters.some(([s])=>s>=(item.duration||180))?[]:fullChapters;
+    const chapters=ownChapters.filter(([s])=>Number.isSafeInteger(s)&&s>=0&&(!item.duration||s<item.duration));
     const profile=creatorProfiles.find(p=>p.episode.platform===item.platform && p.episode.id===item.id);
-    const outline=guide.notes || profile?.intro || '';
+    const boilerplate=/настоящий материал.{0,110}произвед|иностранн\S* агент|смотрите полный выпуск|полный выпуск.{0,30}(?:ссылк|канал)|check out (?:the|my|our)|wherever you get your podcasts|watch the full/i;
+    const outline=(guide.notes||profile?.intro||'').split(/(?<=[.!?])\s+/).filter(s=>!boilerplate.test(s)).join(' ');
     const excerpts=outline?videoExcerpt(outline):[];
     const lead=entry?.summary || excerpts[0] || (outline && outline.length<=350?outline:'');
     const keyPoints=entry?.points||[];
@@ -64,10 +68,11 @@ function createVideoGuide({esc,external,icon}) {
     const extraLinks=(entry?.resources||[]).filter(ref=>ref.kind!=='mentioned').map(ref=>resource(ref.label,ref.url)).join('');
     const related=profile?'<li><a href="#video/authors/'+encodeURIComponent(profile.handle)+'" data-guide-related>Книги и материалы из гида по автору →</a></li>':'';
     lastDraft=entry?[entry.summary,...keyPoints.map(p=>p.text+(Number.isSafeInteger(p.start)?' ('+clock(p.start)+')':'')),entry.practice||''].filter(Boolean).join('\n\n'):'';
-    sourceText.set(host,[guide.notes||profile?.intro||'',...chapters.map(([s,label])=>clock(s)+' '+label)].filter(Boolean).join('\n'));
-    host.innerHTML='<div class="guide-heading"><h3>'+(entry?'ИИ-разбор':'О выпуске')+'</h3><small>'+esc(basisLabels[entry?.basis] || (chapters.length?'Главы автора':lead?'Описание автора':'Источник выпуска'))+'</small></div>'+
-      (lead?'<p class="guide-lead">'+esc(lead)+'</p>':!chapters.length?'<p class="guide-muted">Для пересказа нужна речь из выпуска. Можно вставить текст субтитров ниже.</p>':'')+
-      (keyPoints.length?'<h4>Выводы</h4><ul class="guide-points">'+keyPoints.map(p=>'<li>'+esc(p.text)+' '+timeLink(p.start)+'</li>').join('')+'</ul>':'')+
+    sourceText.set(host,[outline,...chapters.map(([s,label])=>clock(s)+' '+label)].filter(Boolean).join('\n'));
+    host.innerHTML='<div class="guide-heading"><h3>'+(entry?.basis==='outline'?'ИИ-выжимка':entry?'ИИ-разбор':'О выпуске')+'</h3><small>'+esc(basisLabels[entry?.basis] || (chapters.length?'Главы автора':lead?'Описание автора':'Источник выпуска'))+'</small></div>'+
+      (lead?'<p class="guide-lead">'+esc(lead)+(Number.isSafeInteger(entry?.start)?' '+timeLink(entry.start):'')+'</p>':!chapters.length?'<p class="guide-muted">Для пересказа нужна речь из выпуска. Можно вставить текст субтитров ниже.</p>':'')+
+      (!entry && excerpts.length>1?'<details class="guide-fold"><summary>Ключевые фрагменты описания</summary><ul>'+excerpts.slice(1,4).map(line=>'<li>'+esc(line)+'</li>').join('')+'</ul></details>':'')+
+      (keyPoints.length?'<h4>'+(entry.basis==='outline'?'На что обратить внимание':'Выводы')+'</h4><ul class="guide-points">'+keyPoints.map(p=>'<li>'+esc(p.text)+' '+timeLink(p.start)+'</li>').join('')+'</ul>':'')+
       (chapters.length?'<details class="guide-fold"><summary>Главы и таймкоды <small>'+chapters.length+'</small></summary><ol class="guide-chapters">'+chapters.map(([s,title])=>'<li>'+timeLink(s)+' <span>'+esc(title)+'</span></li>').join('')+'</ol></details>':'')+
       '<details class="guide-fold"><summary>Источники и ссылки</summary><h4>Первоисточник</h4><ul>'+resource(item.source+' · оригинал выпуска',item.url)+'</ul>'+
       (mentioned?'<h4>Упомянуто в выпуске</h4><ul>'+mentioned+'</ul>':'')+
@@ -79,15 +84,14 @@ function createVideoGuide({esc,external,icon}) {
       '<details class="guide-fold guide-input"><summary>Сделать выжимку из своих субтитров</summary><label>Текст расшифровки<textarea rows="5" maxlength="180000" placeholder="Вставьте речь или субтитры в формате SRT или VTT"></textarea></label><small>Текст обрабатывается в этом браузере.</small><button class="button secondary" type="button" data-guide-extract>Выделить главное</button><div class="guide-result" role="status"></div>'+localModel(true)+'</details>';
   }
   function localModel(personal) {
-    return '<details class="guide-fold guide-model"><summary>Получить ИИ-разбор на устройстве</summary><p class="guide-muted">'+(personal?'Модель использует вставленные вами субтитры.':'Модель использует доступные главы и описание автора.')+' При первом запуске браузер скачает модель объёмом около 790 МБ. Текст обрабатывается на устройстве.</p><button type="button" class="button secondary" data-guide-generate>Запустить ИИ</button> <button type="button" class="button secondary" data-guide-cancel hidden>Отменить</button><div class="guide-result" role="status"></div></details>';
+    return '<details class="guide-fold guide-model"><summary>Выделить главное с ИИ на устройстве</summary><p class="guide-muted">'+(personal?'Модель выбирает ключевые фрагменты из ваших субтитров.':'Модель выбирает ключевые фрагменты из глав и описания автора.')+' При первом запуске браузер скачает модель объёмом около 120 МБ. Текст обрабатывается на устройстве.</p><button type="button" class="button secondary" data-guide-generate>Запустить ИИ</button> <button type="button" class="button secondary" data-guide-cancel hidden>Отменить</button><div class="guide-result" role="status"></div></details>';
   }
   function generate(button,item) {
     const pane=button.closest('.guide-model'), host=button.closest('.video-guide'), input=pane.closest('.guide-input');
     const result=pane.querySelector('.guide-result'),cancel=pane.querySelector('[data-guide-cancel]');
     const text=(input?input.querySelector('textarea').value:sourceText.get(host)||'').trim();
     if(text.length<65){result.textContent='Добавьте текст речи хотя бы из нескольких фраз.';return;}
-    const context=text.length>4500?videoExcerpt(text).join(' '):text;
-    if(!context){result.textContent='Добавьте фразы с пробелами и знаками препинания.';return;}
+    const context=text;
     if(worker){result.textContent='Дождитесь текущего разбора или отмените его.';return;}
     button.disabled=true; cancel.hidden=false;
     result.textContent='Загружаем модель…';
@@ -107,10 +111,11 @@ function createVideoGuide({esc,external,icon}) {
           const save=document.createElement('button');
           save.type='button';save.className='button secondary';save.dataset.guideExtractNote='';save.textContent='В дневник';result.append(save);
         } else if(data.error) finish('Не удалось запустить модель. Проверьте подключение и доступную память устройства.');
-        else if(data.running) result.textContent='Модель составляет пересказ…';
+        else if(data.running) result.textContent='Модель отбирает ключевые фрагменты…';
         else if(Number.isFinite(data.progress)) result.textContent='Загрузка модели · '+data.progress+' %';
       };
-      worker.postMessage({title:item.title,source:input?'Субтитры читателя':'Описание и главы автора',text:context});
+      const fragments=videoExcerpt(context,28);
+      worker.postMessage({title:item.title,source:input?'Субтитры читателя':'Описание и главы автора',fragments:fragments.length?fragments:[context.slice(0,650)]});
     } catch { finish('Браузеру не удалось запустить модель.'); }
   }
   async function mount(host,item) {

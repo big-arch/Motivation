@@ -17,7 +17,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlencode, urljoin, urlsplit
 
-from video_evidence import extract as video_evidence
+from video_evidence import extract as video_evidence, usable_excerpt
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -457,6 +457,12 @@ def refresh(kind: str, sources: list[dict], base_url: str) -> None:
                 print(f"{name}: retaining last snapshot ({error})", file=sys.stderr)
                 backup = previous.get(name, {})
                 rows, checked = backup.get("items", []), backup.get("checked", "")
+            if kind == "videos":
+                for row in rows:
+                    if not row.get("guide"):
+                        excerpt = usable_excerpt(row.get("summary"), row["title"])
+                        if excerpt:
+                            row["guide"] = {"notes": excerpt}
             if kind == "audio":
                 for row in rows:
                     row["summary"] = audio_summary(row.get("summary", ""))

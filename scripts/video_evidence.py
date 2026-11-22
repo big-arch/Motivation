@@ -10,6 +10,13 @@ PROMO = re.compile(r"промокод|скидк|реклам|рассрочк|�
 LINK_LABEL = re.compile(r"книг|исследован|стать[яиюе]|материал|слайд|репозитор|документац|ссылк. (?:на|из)|сайт (?:гостя|проекта)|linkedin|research|study|paper|book|slides|resources?|mentioned|documentation|article", re.I)
 
 
+BOILERPLATE = re.compile(r"настоящий материал.{0,110}произвед|иностранн\w* агент|смотрите (?:наш |полный |новый )?(?:выпуск|подкаст) (?:на|по)|полный (?:выпуск|подкаст|ролик).{0,35}(?:по ссылк|на канал|смотрите|ссылк)|автор проекта.{0,50}предпринимател|по вопросам сотруднич|watch (?:the|this) full|check out (?:the|my|our)|listen to (?:the|this|our) full|wherever you get your podcasts|full (?:episode|interview) (?:here|on|at)|all rights reserved", re.I)
+
+
+def editorial_text(text):
+    return not (PROMO.search(text) or BOILERPLATE.search(text))
+
+
 class Lines(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -29,6 +36,16 @@ class Lines(HTMLParser):
 
     def handle_data(self, data):
         self.parts.append(data)
+
+
+def usable_excerpt(summary, title):
+    # A retained feed may contain only a short lead and an ellipsis.
+    text = re.split(r"(?:https?://|[#@]|[►▶])", summary or "", maxsplit=1)[0].strip()
+    if text.endswith("…"):
+        text = re.sub(r"[^.!?]*…$", "", text)
+    sentences = re.findall(r"[^.!?]+[.!?]+", text)
+    complete = " ".join(s.strip() for s in sentences if editorial_text(s))
+    return complete if len(complete) >= 65 and complete.casefold() != title.strip().casefold() else ""
 
 
 def extract(value):

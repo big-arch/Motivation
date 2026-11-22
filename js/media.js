@@ -234,6 +234,7 @@ function createMedia({esc, icon, external}) {
     dialog.dataset.playing='false';
     if (video) document.getElementById('audio-engine')?.pause();
     if (!dialog.open) dialog.showModal();
+    dialog.scrollTop=0;
     if (video) {
       const fullItem=feeds.videos?.items.find(row=>row.platform===item.platform && row.id===item.id);
       videoGuide.mount(stage.querySelector('.video-guide'),fullItem||item);

@@ -8,7 +8,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 
 from update_feeds import download, FEED_ERRORS
-from video_evidence import PROMO
+from video_evidence import PROMO, editorial_text
 
 ROOT = Path(__file__).resolve().parents[1]
 FILE = ROOT / "data/video-analysis.json"
@@ -24,9 +24,13 @@ def spaced(rows, maximum):
 
 def notes(item):
     guide = item.get("guide", {})
-    rows = [{"text": label, "start": pos} for pos, label in guide.get("chapters", [])
-            if 6 <= len(label) <= 230 and not PROMO.search(label)]
-    excerpt = guide.get("notes", "")
+    chapters = guide.get("chapters", [])
+    short = item.get("format") == "shorts" or (item.get("platform") == "rutube" and 0 < item.get("duration",0) <= 180)
+    if short and any(pos >= (item.get("duration") or 180) for pos, _ in chapters):
+        chapters = []
+    rows = [{"text": label, "start": pos} for pos, label in chapters
+            if 6 <= len(label) <= 230 and editorial_text(label)]
+    excerpt = " ".join(p for p in re.split(r"(?<=[.!?])\s+",guide.get("notes", "")) if editorial_text(p))
     if len(excerpt) >= 75 and not PROMO.search(excerpt):
         rows.insert(0, {"text": excerpt})
     return spaced(rows, 24)
@@ -128,7 +132,10 @@ def refresh(previous, limit):
                 entries.update(saved)
         except FEED_ERRORS:
             pass
-    entries.update(fixed)
+    for key, value in fixed.items():
+        published = entries.get(key, {})
+        if not published or "fingerprint" not in value or (value.get("basis") != "outline" and published.get("basis") == "outline"):
+            entries[key] = value
     def save():
         temp = FILE.with_suffix(".tmp")
         temp.write_text(json.dumps(entries, ensure_ascii=False, indent=2)+"\n", "utf8")
@@ -143,7 +150,8 @@ def refresh(previous, limit):
         key = item["platform"]+":"+item["id"]
         rows = notes(item)
         signature = hashlib.sha256(json.dumps(rows, ensure_ascii=False).encode()).hexdigest()[:16]
-        if (key in fixed and "fingerprint" not in fixed[key]) or entries.get(key, {}).get("fingerprint") == signature:
+        saved = entries.get(key, {})
+        if saved and ("fingerprint" not in saved or (saved.get("basis") != "outline" and saved.get("fingerprint") == signature)):
             continue
         pending.append((item, key, rows, signature))
     # Reserve capacity for archive items as well as newly published releases.

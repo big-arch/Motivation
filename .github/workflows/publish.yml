@@ -29,6 +29,11 @@ jobs:
         run: python scripts/update_feeds.py --previous-url https://big-arch.github.io/Motivation/
       - name: Restore published analyses
         run: python scripts/build_video_analysis.py --limit 0 --previous-url https://big-arch.github.io/Motivation/
+      - name: Select key passages for every video with source materials
+        continue-on-error: true
+        run: |
+          python -m pip install -q onnxruntime==1.32.0 tokenizers==0.23.3 numpy==2.5.5
+          python scripts/index_video_notes.py "$RUNNER_TEMP/founder-encoder"
       - name: Generate new video analyses on the runner
         timeout-minutes: 12
         continue-on-error: true
