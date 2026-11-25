@@ -16,7 +16,8 @@ class TestAutonomousEdition(unittest.TestCase):
                 return dict(source=source,title=title,url=f'https://example.org/p/{n}?utm_medium=feed',
                             published="2024-01-01T00:00:00Z",lang="en")
             news=[article("Inc.","Vendor files for bankruptcy",1),article("Zen Habits","Sustaining a habit",2),
-                  article("Entrepreneur","How to start a company",3),article("Press","Unrelated event",4)]
+                  article("Entrepreneur","How to start a company",3),article("Press","Unrelated event",4),
+                  article("Fast Company","Spotify Wrapped: How to find your song",8)]
             for kind,rows in {"news":news,"audio":[article("Основатели","Как команда построила бизнес",5)],
                               "videos":[article("Video","Film",6)],"open-books":[article("Books","Book",7)]}.items():
                 sections.write(base/(kind+".json"),dict(items=rows,updated="2024-01-02",sources=[]))
@@ -33,6 +34,7 @@ class TestAutonomousEdition(unittest.TestCase):
             self.assertEqual(first,(base/"sections.json").read_bytes())
             actual=json.loads(first)["sections"]
             self.assertEqual(len(actual["museum"]),2)
+            self.assertEqual([r["title"] for r in actual["resources"]],["How to start a company"])
             self.assertTrue(all("utm_" not in x["url"] for rows in actual.values() for x in rows))
             self.assertFalse(json.loads((base/"site-status.json").read_text())["editorialSources"][0]["ok"])
 

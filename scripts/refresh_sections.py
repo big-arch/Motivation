@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 
 from update_feeds import ROOT, FEED_ERRORS, clean_text, download, news_entries, public_url, stamp
 
-SECTION_LABELS = {"stories": "Интервью", "museum": "Разбор", "resources": "Практика", "support": "Точка опоры"}
+SECTIONS = ("stories", "museum", "resources", "support")
 FEEDS = [
     ("Y Combinator", "stories", "https://www.ycombinator.com/blog/rss"),
     ("Cloudflare", "museum", "https://blog.cloudflare.com/tag/post-mortem/rss/"),
@@ -17,6 +17,12 @@ FEEDS = [
 INCIDENT = re.compile(r"банкрот|обанкрот|ликвидаци[яию].{0,25}(?:компани|бренд)|(?:компания|стартап|завод).{1,35}закрыл[ас]|file[ds]? for bankruptcy|in administration|chapter 11 bankrupt|shuts down|went bankrupt", re.I)
 FOUNDERS = re.compile(r"how .+ (?:built|became|founded|launched|turned|started|went|forced|cold.emailed)|founder|founding engineer|истори[яию]|основател|конкурент|как .+ (?:открыл|построил|начал|созда|стал|стала|вырос)", re.I)
 GUIDE = re.compile(r"how to |guide to |framework for |как (?:начать|проверить|нанять|найти|запустить|построить|провести|управлять|выбрать)|пошагов", re.I)
+BUSINESS_TOPIC = re.compile(
+    r"\b(?:business\w*|compan(?:y|ies)|startups?|founders?|entrepreneur\w*|customers?|market(?:ing|s)?|"
+    r"sales|pricing|productivity|work(?:force|place)?|hiring|careers?|teams?|manag(?:e|ement)|leadership|"
+    r"invest(?:ing|ment|or)?s?|financ\w*|savings?|budget\w*|negotiat\w*|seo|ipo)\b|"
+    r"бизнес|предпринимател|компани[яиюей]|стартап|продаж|клиент|маркетинг|финанс|бюджет|доход|"
+    r"карьер|найм|собеседован|управлен|команд[аыуойе]|инвести[цр]|производительност|работу|ваканси|професси", re.I)
 SKIP = re.compile(r"promo code|gift guide|gifts for |exciting news:|подборка подарков|промокод|анонс|трейлер", re.I)
 
 
@@ -32,6 +38,8 @@ def canonical(url):
 
 def insert(groups, group, row, label):
     url = canonical(row["url"])
+    if group == "resources" and not BUSINESS_TOPIC.search(row["title"]):
+        return
     if not url or not row["published"] or not row["title"] or SKIP.search(row["title"]):
         return
     item = {k:row[k] for k in ("title","source","published","lang")}
@@ -70,7 +78,7 @@ def write(path, data):
 
 def refresh(data_dir, previous_dir=None):
     now = stamp(datetime.now(timezone.utc).isoformat())
-    sections = {group:{} for group in SECTION_LABELS}
+    sections = {group:{} for group in SECTIONS}
     checks = {}
     dirs = [data_dir] + ([previous_dir] if previous_dir else [])
     for directory in dirs:
@@ -78,7 +86,8 @@ def refresh(data_dir, previous_dir=None):
         if path.exists():
             for group, items in json.loads(path.read_text("utf8"))["sections"].items():
                 if group in sections:
-                    sections[group].update({row["url"]:row for row in items})
+                    for row in items:
+                        insert(sections, group, row, row["label"])
         status = directory/"site-status.json"
         if status.exists():
             checks.update({r["name"]:r.get("checked","") for r in json.loads(status.read_text("utf8")).get("editorialSources",[])})
