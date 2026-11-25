@@ -25,10 +25,12 @@ jobs:
         run: |
           node --test scripts/test_google_calendar.cjs
           python -m unittest discover -s scripts -p 'test_*.py'
+      - name: Restore the last published edition
+        run: python scripts/restore_publication.py "$RUNNER_TEMP/founder-previous/data"
       - name: Refresh news, video, audio and book catalogs using the last published snapshots as fallback
-        run: python scripts/update_feeds.py --previous-url https://big-arch.github.io/Motivation/
+        run: python scripts/update_feeds.py --previous-url "file://$RUNNER_TEMP/founder-previous"
       - name: Restore published analyses
-        run: python scripts/build_video_analysis.py --limit 0 --previous-url https://big-arch.github.io/Motivation/
+        run: python scripts/build_video_analysis.py --limit 0 --previous-url "file://$RUNNER_TEMP/founder-previous"
       - name: Select key passages for every video with source materials
         continue-on-error: true
         run: |
@@ -43,6 +45,15 @@ jobs:
           for i in {1..30}; do curl -fsS http://127.0.0.1:11434/api/version && break || sleep 2; done
           docker exec founder-model ollama pull qwen2.5:7b
           python scripts/build_video_analysis.py --limit 8
+      - name: Update source collections and publish freshness report
+        run: python scripts/refresh_sections.py --previous-dir "$RUNNER_TEMP/founder-previous/data"
+      - name: Preserve the editorial archive for the scheduled backup
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-archive
+          path: data/sections.json
+          retention-days: 1
       - name: Prepare static site
         env:
           CALENDAR_CLIENT_ID: ${{ vars.GOOGLE_CALENDAR_CLIENT_ID }}
@@ -84,3 +95,31 @@ jobs:
       - name: Deploy
         id: publish
         uses: actions/deploy-pages@v4
+
+  backup:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: deploy
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: editorial-archive
+          path: ${{ runner.temp }}/edition
+      - name: Save changed source collections at most once per week
+        run: |
+          [ "$(git rev-parse HEAD)" = "$GITHUB_SHA" ] || exit 0
+          last=$(git log -1 --format=%ct -- data/sections.json)
+          if [ "$GITHUB_EVENT_NAME" = schedule ] && [ $(( $(date +%s) - ${last:-0} )) -lt 604800 ]; then exit 0; fi
+          cp "$RUNNER_TEMP/edition/sections.json" data/sections.json
+          git diff --quiet -- data/sections.json && exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/sections.json
+          git commit -m "Archive the published FOUNDER source collections"
+          git push origin HEAD:main

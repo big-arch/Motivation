@@ -9,7 +9,7 @@ const fontFiles = ['inter-cyrillic-wght-normal','inter-latin-wght-normal',
   'playfair-display-cyrillic-wght-normal','playfair-display-cyrillic-wght-italic'];
 const assets = [
   'index.html','css/style.css','css/edition.css','js/app.js','js/content.js','js/edition.js','js/creator-edition.js','js/creator-profiles.js','js/creators.js','js/photos.js','js/news-photos.js','js/editorial-videos.js','js/video-guide.js','js/video-model-worker.js','data/video-analysis.json','js/media.js','js/journey-data.js','js/journey.js','js/audio.js','js/cards.js','js/motion.js','manifest.json','data/news.json','data/videos.json','data/audio.json','data/open-books.json',
-  'css/issue.css','js/ai-stories.js','css/cabinet.css','js/planner-data.js','js/notebook.js','js/google-calendar-config.js','js/google-calendar.js','js/calendar.js',
+  'css/issue.css','js/live-sections.js','data/sections.json','data/site-status.json','js/ai-stories.js','css/cabinet.css','js/planner-data.js','js/notebook.js','js/google-calendar-config.js','js/google-calendar.js','js/calendar.js',
   ...['waymo','yandex-alice','nvidia-cuda'].map(id=>'assets/archive/'+id+'-1.webp'),
   ...['waymo','yandex-alice','mistral-ai'].map(id=>'assets/archive/'+id+'-card.webp'),
   ...['markets','bank','trade','factory','press','office','tech','retail'].map(id=>'assets/news/'+id+'.webp'),
@@ -30,7 +30,7 @@ self.addEventListener('fetch', event => {
   if (request.method !== 'GET' || url.origin !== ROOT.origin || !url.pathname.startsWith(ROOT.pathname)) return;
   if (request.mode === 'navigate' && (url.pathname === ROOT.pathname || url.href.split('?')[0] === indexUrl)) {
     event.respondWith(caches.open(CACHE).then(async cache => (await cache.match(indexUrl)) || fetch(request)));
-  } else if (['news','videos','audio','open-books','video-analysis'].some(kind=>url.pathname===ROOT.pathname+'data/'+kind+'.json')) {
+  } else if (['news','videos','audio','open-books','video-analysis','sections','site-status'].some(kind=>url.pathname===ROOT.pathname+'data/'+kind+'.json')) {
     event.respondWith(caches.open(CACHE).then(async cache => {
       try {
         const response = await fetch(request, {cache:'no-cache'});

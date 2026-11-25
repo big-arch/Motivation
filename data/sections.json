@@ -1,0 +1,796 @@
+{
+  "schema": 1,
+  "sections": {
+    "stories": [
+      {
+        "title": "How Steven Basart forced his way into Beacon Health and became its first engineer",
+        "source": "Y Combinator",
+        "published": "2026-11-25T06:21:58Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-steven-basart-forced-his-way-into-beacon-health-and-became-its-first-engineer/",
+        "label": "История команды",
+        "summary": "From dropping out of a YC batch to building an internal programming language at a healthcare startup, Steven does whatever it takes."
+      },
+      {
+        "title": "How Daniel Zeltser cold-emailed his way to employee #2 at Beacon Health",
+        "source": "Y Combinator",
+        "published": "2026-11-25T06:20:57Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-daniel-zeltser-cold-emailed-his-way-to-employee-2-at-beacon-health/",
+        "label": "История команды",
+        "summary": "Daniel Zeltser left Duke to join Beacon Health as its first engineer hire, building AI agents that keep patient care from falling through the cracks."
+      },
+      {
+        "title": "Rothy's: Roth Martin. The Art Dealer Who Built a $1B Shoe Brand from Plastic Bottles",
+        "source": "How I Built This",
+        "published": "2026-11-23T08:10:00Z",
+        "lang": "en",
+        "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP9564565828.mp3",
+        "label": "Интервью",
+        "summary": "Roth Martin was running a San Francisco design gallery when he and Stephen Hawthornthwaite decided to make a better women's shoe. Neither had worked in footwear. Their idea: a soft, comfortable flat that could do for shoes what…"
+      },
+      {
+        "title": "Jensen Huang: The Personal Cost of Building NVIDIA (April 2026)",
+        "source": "How I Built This",
+        "published": "2026-11-19T05:00:00Z",
+        "lang": "en",
+        "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP8419655880.mp3",
+        "label": "Интервью",
+        "summary": "Given recent news about Jensen Huang, we're revisiting this unusually personal conversation with the Nvidia co-founder and former CEO. Recorded in April 2026, before the revelations that led to his resignation, the interview…"
+      },
+      {
+        "title": "Good Culture: How Jesse Merrill Made Cottage Cheese Cool",
+        "source": "How I Built This",
+        "published": "2026-11-16T08:10:00Z",
+        "lang": "en",
+        "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7035807570.mp3",
+        "label": "Интервью",
+        "summary": "Jesse Merrill wanted to make movies. Instead, he made cottage cheese cool—and built a business with more than $200 million in annual sales. Jesse got his start fetching coffee on the set of Jackass and handing out product samples…"
+      },
+      {
+        "title": "Panera: Ron Shaich. The Big Bet That Changed Fast Food (2018)",
+        "source": "How I Built This",
+        "published": "2026-11-12T05:00:00Z",
+        "lang": "en",
+        "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7917788157.mp3",
+        "label": "Интервью",
+        "summary": "In the early 1980s, Ron Shaich took over Au Bon Pain, a struggling group of Boston bakeries, and helped grow it into a national chain with 250 locations. But Ron saw an even bigger opportunity in a small bakery chain in St.…"
+      },
+      {
+        "title": "Dr. Squatch: Jack Haldrup. From a Closet Full of Soap to a $1.5 Billion Brand",
+        "source": "How I Built This",
+        "published": "2026-11-09T08:10:00Z",
+        "lang": "en",
+        "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP1750831437.mp3",
+        "label": "Интервью",
+        "summary": "Jack Haldrup didn’t set out to build a billion-dollar company. He just wanted a way out of consulting and a bar of soap he actually liked. After developing psoriasis, Jack started paying closer attention to the products he used…"
+      },
+      {
+        "title": "Dell Computers: Michael Dell. The College Dropout Who Took on IBM (2018)",
+        "source": "How I Built This",
+        "published": "2026-11-05T08:10:00Z",
+        "lang": "en",
+        "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP4247798433.mp3",
+        "label": "Интервью",
+        "summary": "Michael Dell was building a tech business in his dorm room long before it became a familiar startup story. In 1983, the UT Austin student began selling PC upgrade kits. Within months, he left college to devote himself to the…"
+      },
+      {
+        "title": "Самый загадочный миллиардер России: история Алишера Усманова",
+        "source": "Основатели",
+        "published": "2026-11-02T10:28:18Z",
+        "lang": "ru",
+        "url": "https://osnovateli.mave.digital/ep-120",
+        "label": "Интервью",
+        "summary": "Как бывший заключённый прошёл путь от долга в 26 миллионов долларов до миллиардной империи? В этом выпуске история Алишера Усманова: сына узбекского прокурора, выпускник МГИМО и предприниматель, чью карьеру в 27 лет оборвал…"
+      },
+      {
+        "title": "Как парень из Владимирской области стал конкурентом IKEA | Макаров",
+        "source": "Основатели",
+        "published": "2026-10-31T19:12:05Z",
+        "lang": "ru",
+        "url": "https://osnovateli.mave.digital/ep-118",
+        "label": "Интервью",
+        "summary": "Как программист построил бизнес с выручкой 10 млрд рублей? Провёл день с Антоном Макаровым, основателем «Диван.ру»: поговорили о росте бизнеса, дорогих ошибках и страхе потерять всё. 📍Закрытый телеграм-канал Кухня «Основателей» –…"
+      },
+      {
+        "title": "How Harsh Vardhan Goenka became founding engineer #1 at Kalpa Labs",
+        "source": "Y Combinator",
+        "published": "2026-10-30T18:31:21Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-harsh-vardhan-goenka-became-founding-engineer-1-at-kalpa-labs/",
+        "label": "История команды",
+        "summary": "From ICPC World Finals to competitive programming clubs to building generalist audio models as the first engineer at a YC startup."
+      },
+      {
+        "title": "How Dylan Anderson became founding engineer at Adam",
+        "source": "Y Combinator",
+        "published": "2026-10-30T18:29:49Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-dylan-anderson-became-founding-engineer-at-adam/",
+        "label": "История команды",
+        "summary": "Dylan left Minnesota for San Francisco to build AI agents for CAD software as the first engineer at Adam (W25)."
+      },
+      {
+        "title": "How Andrew HunzekerHesed became Employee #1 at 10x Science",
+        "source": "Y Combinator",
+        "published": "2026-10-30T18:27:50Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-andrew-hunzekerhesed-became-employee-1-at-10x-science/",
+        "label": "История команды",
+        "summary": "A principal engineer left consumer-scale software to build AI-native scientific analysis tools as the founding engineer at 10x Science."
+      },
+      {
+        "title": "How Max Friedlander became founding operations at Petrarch",
+        "source": "Y Combinator",
+        "published": "2026-10-30T18:26:08Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-max-friedlander-became-founding-operations-at-petrarch/",
+        "label": "История команды",
+        "summary": "A math major who turned down safe internships to lead high-stakes deals at a YC S26 startup supplying data for frontier AI labs."
+      },
+      {
+        "title": "How David Mount became employee #2 (for the second time) at 10x Science",
+        "source": "Y Combinator",
+        "published": "2026-10-30T18:23:22Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-david-mount-became-employee-2-for-the-second-time-at-10x-science/",
+        "label": "История команды",
+        "summary": "A veteran engineer finds his next act helping scientists discover cures, one amino acid at a time, at YC W26 startup 10x Science."
+      },
+      {
+        "title": "How Yair Alon went from building Portrait Mode at Google to founding researcher at Poetiq",
+        "source": "Y Combinator",
+        "published": "2026-10-30T18:21:48Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-yair-alon-went-from-building-portrait-mode-at-google-to-founding-researcher-at-poetiq/",
+        "label": "История команды",
+        "summary": "After 10 years at Google Research and DeepMind, Yair Alon joined Poetiq to build an AI that improves itself."
+      },
+      {
+        "title": "How Varsha Parthasarathy became engineer #1 at Flex — solving a problem she'd experienced",
+        "source": "Y Combinator",
+        "published": "2026-10-30T18:17:26Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-varsha-parthasarathy-became-engineer-1-at-flex-four-months-postpartum-chasing-a-problem-shed-lived/",
+        "label": "История команды",
+        "summary": "From Lyft's self-driving division to fixing HSA/FSA payments, Varsha joined Flex as its first engineer and built from scratch."
+      },
+      {
+        "title": "How Sherif Amer went from electronics engineer to employee #1 at Indemni",
+        "source": "Y Combinator",
+        "published": "2026-10-30T18:12:49Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-sherif-amer-went-from-electronics-engineer-to-employee-1-at-indemni/",
+        "label": "История команды",
+        "summary": "A layoff, two years of travel, and a self-taught pivot to software led Sherif Amer to become the founding engineer at Indemni."
+      },
+      {
+        "title": "How Alex Lee became the first engineer at Magic Patterns",
+        "source": "Y Combinator",
+        "published": "2026-10-28T02:59:08Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-alex-lee-became-the-first-engineer-at-magic-patterns/",
+        "label": "История команды",
+        "summary": "Alex Lee left his own startup to join Magic Patterns as founding engineer — and built a slide deck feature in a weekend."
+      },
+      {
+        "title": "How Vin Bui became engineer #1 at Nowadays — and started treating it like his own company",
+        "source": "Y Combinator",
+        "published": "2026-10-20T15:30:50Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-vin-bui-became-engineer-1-at-nowadays-and-started-treating-it-like-his-own-company/",
+        "label": "История команды",
+        "summary": "Vin found Nowadays on Work at a Startup, saw a codebase he could fix, and joined as the first engineer. Now he builds AI voice tools and mentors the team."
+      },
+      {
+        "title": "How Ryder Kemper became employee #7 at Corgi Insurance — and never left San Francisco",
+        "source": "Y Combinator",
+        "published": "2026-10-19T18:58:11Z",
+        "lang": "en",
+        "url": "https://www.ycombinator.com/blog/how-ryder-kemper-became-employee-7-at-corgi-insurance-and-never-left-san-francisco/",
+        "label": "История команды",
+        "summary": "Ryder flew to SF for a work trial, moved furniture in a Mystery Machine bus, and decided to stay. Here's what building from day one looks like."
+      },
+      {
+        "title": "Как парень из Владимирской области стал конкурентом IKEA | Макаров",
+        "source": "Основатели",
+        "published": "2026-10-15T15:00:15Z",
+        "lang": "ru",
+        "url": "https://www.youtube.com/watch?v=sjEvMZK48d4",
+        "label": "Видеоинтервью",
+        "summary": "🚀 Откройте счет с предсказуемыми условиями в Т-Бизнесе — https://l.tbank.ru/osnovateli_ Реклама. АО «ТБАНК», ИНН 7710140679 Лицензия №2673 erid: 2W5zFHqWaXB 🚀 Современные технопарки в Новой Москве…"
+      },
+      {
+        "title": "LIMÉ: от дешёвого масс-маркета к ценам люкса | История",
+        "source": "Основатели",
+        "published": "2026-10-08T17:28:02Z",
+        "lang": "ru",
+        "url": "https://osnovateli.mave.digital/ep-110",
+        "label": "Интервью",
+        "summary": "Как бренд из Самары смог превратить обычный масс-маркет в империю с ценами, которые сегодня вызывают споры по всей стране? В этом выпуске история Lime: от палаток на вещевом рынке и турецких баулов до сотен магазинов, миллиардных…"
+      },
+      {
+        "title": "Первое большое интервью VOIS: про зарплату креаторов, пожар на WB, конкурентов и 100 млрд",
+        "source": "Бизнес на салфетке",
+        "published": "2026-10-07T14:32:23Z",
+        "lang": "ru",
+        "url": "https://www.youtube.com/watch?v=VPPttQ6yVA4",
+        "label": "Видеоинтервью",
+        "summary": "Всем привет! Я Михаил Кучмент – предприниматель, сооснователь Hoff, инвестор. Как за пять лет вырасти от первой партии патчей до миллиардного бизнеса? Зачем бьюти-бренду сотни креаторов? И почему…"
+      },
+      {
+        "title": "Первое большое интервью основателя DDX Fitness: как построить бизнес, который меняет рынок",
+        "source": "Основатели",
+        "published": "2026-10-07T10:48:16Z",
+        "lang": "ru",
+        "url": "https://osnovateli.mave.digital/ep-109",
+        "label": "Интервью",
+        "summary": "Как DDX Fitness удалось всего за несколько лет превратить доступный фитнес в бизнес с оборотом в десятки миллиардов рублей? В этом выпуске первое большое интервью основателя DDX Fitness и история компании, которая отказалась от…"
+      },
+      {
+        "title": "Как DDX Fitness меняет индустрию фитнеса в России/ Иван Ситников основатель DDX Fitness",
+        "source": "Бизнес на салфетке",
+        "published": "2026-08-25T14:00:23Z",
+        "lang": "ru",
+        "url": "https://www.youtube.com/watch?v=K0XQB59znNM",
+        "label": "Видеоинтервью",
+        "summary": "🔹Анкета для вступления в бизнес-сообщество ЭВОЛЮТ: https://evolutclub.com 🔹Инсайты из выпуска с Иваном Ситниковым в моем ТГ-канале - сохраняйте и применяйте Всем привет! Я Михаил Кучмент -…"
+      },
+      {
+        "title": "Первое большое интервью основателя DDX Fitness: как построить бизнес, который меняет рынок",
+        "source": "Основатели",
+        "published": "2026-08-06T16:17:58Z",
+        "lang": "ru",
+        "url": "https://www.youtube.com/watch?v=ZNBiji4rdV0",
+        "label": "Видеоинтервью",
+        "summary": "🚀Откройте счет с предсказуемыми условиями в Т-Бизнесе — https://l.tbank.ru/osnovateli_ Реклама. АО «ТБАНК», ИНН 7710140679 Лицензия №2673 erid:2W5zFK1ERLD 🚀 VOYAH ТАЙШАН / TAISHAN — 6-местный…"
+      },
+      {
+        "title": "Как заработать миллиарды, когда у людей нет денег | История Пятёрочки",
+        "source": "Основатели",
+        "published": "2026-07-29T12:49:14Z",
+        "lang": "ru",
+        "url": "https://osnovateli.mave.digital/ep-100",
+        "label": "Интервью",
+        "summary": "Как обычный продуктовый магазин смог изменить повседневную жизнь целой страны? В этом выпуске рассказываем историю Пятёрочки — сети, которая появилась после дефолта 1998 года, победила рынки, пережила собственный кризис и…"
+      },
+      {
+        "title": "SHIK cosmetics: как Наталья Шик построила бренд на 5,6 МЛРД",
+        "source": "Бизнес на салфетке",
+        "published": "2026-07-28T14:00:16Z",
+        "lang": "ru",
+        "url": "https://www.youtube.com/watch?v=i2Suj_VZL8k",
+        "label": "Видеоинтервью",
+        "summary": "ДАРИМ 🎁 10 бьюти-боксов от SHIK Что нужно сделать? - Оставить под выпуском на YouTube комментарий с идеей, которая может быть полезна SHIK Cosmetics. 🔹 Анкета для вступления в бизнес-сообщество…"
+      },
+      {
+        "title": "КАК Я ПРОВЁЛ ОДИН ДЕНЬ С МИЛЛИАРДЕРОМ | Максим Каширин х Основатели",
+        "source": "Основатели",
+        "published": "2026-03-26T14:04:17Z",
+        "lang": "ru",
+        "url": "https://www.youtube.com/watch?v=yxloFb99nJw",
+        "label": "Видеоинтервью",
+        "summary": "🚀 Получи деньги от Фонда немалого бизнеса. Альфа-Банк раздаст 100 миллионов рублей предпринимателям по всей стране: https://alfa.me/pMmHrR Реклама. АО «Альфа-Банк», ИНН 7728168971, ген. лицензия ЦБ…"
+      },
+      {
+        "title": "Как превратить советский завод-аутсайдер в мировой нишевый бренд | История бренда «Ракета»",
+        "source": "Основатели",
+        "published": "2026-02-12T15:00:13Z",
+        "lang": "ru",
+        "url": "https://www.youtube.com/watch?v=9Vo5CZFFlag",
+        "label": "Видеоинтервью",
+        "summary": "🚀Получи деньги от Фонда немалого бизнеса. Альфа-Банк раздаст 100 миллионов рублей предпринимателям по всей стране: https://alfa.me/pMmHrR Реклама. АО «Альфа-Банк», ИНН 7728168971, ген. лицензия ЦБ РФ…"
+      }
+    ],
+    "museum": [
+      {
+        "title": "2 Domino’s Franchisees Just Filed for Bankruptcy. Cheap Pizza Isn’t Their Biggest Problem",
+        "source": "Inc.",
+        "published": "2026-11-24T20:59:39Z",
+        "lang": "en",
+        "url": "https://www.inc.com/amaya-nichole/dominos-franchisees-just-filed-bankruptcy-cheap-pizza-is-not-biggest-problem/91442144",
+        "label": "Деловая пресса",
+        "summary": "Performance Pizza is the latest operator to seek Chapter 11 protection as franchisees contend with debt, heavy discounting, and changing delivery habits."
+      },
+      {
+        "title": "Another Texas Hotel Group With Big-Name Brands Files for Bankruptcy",
+        "source": "Inc.",
+        "published": "2026-11-23T02:30:37Z",
+        "lang": "en",
+        "url": "https://www.inc.com/kevin-haynes/another-texas-hotel-group-with-big-name-brands-files-for-bankruptcy/91441107",
+        "label": "Деловая пресса",
+        "summary": "Magnolia Hospitality Group, a McKinney-based operator of nearly 3 dozen properties, including Homewood Suites and Courtyard by Marriott, is the state’s latest hotelier to seek Chapter 11…"
+      },
+      {
+        "title": "A Papa Johns Franchisee Opened Its 6,000th Restaurant. Now the Business Is in Chapter 11 Bankruptcy",
+        "source": "Inc.",
+        "published": "2026-11-22T23:45:38Z",
+        "lang": "en",
+        "url": "https://www.inc.com/amaya-nichole/papa-johns-franchisee-opened-6000-restaurant-now-chapter-11-bankruptcy/91440604",
+        "label": "Деловая пресса",
+        "summary": "Papa ZHS filed for Chapter 11 with up to $10 million in liabilities. An expert says it’s a warning for operators whose bills remain fixed when revenue falls."
+      },
+      {
+        "title": "Code Orange: Fail Small is complete. The result is a stronger Cloudflare network",
+        "source": "Cloudflare",
+        "published": "2026-05-01T21:07:30Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/code-orange-fail-small-complete/",
+        "label": "Разбор команды",
+        "summary": "We have completed a massive engineering effort to make our infrastructure more resilient. Through new tools like Snapstone and the Engineering Codex, we've implemented safer configuration…"
+      },
+      {
+        "title": "Cloudflare outage on February 20, 2026",
+        "source": "Cloudflare",
+        "published": "2026-02-21T00:00:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/cloudflare-outage-february-20-2026/",
+        "label": "Разбор команды",
+        "summary": "Cloudflare suffered a service outage on February 20, 2026. A subset of customers who use Cloudflare’s Bring Your Own IP (BYOIP) service saw their routes to the Internet withdrawn via Border…"
+      },
+      {
+        "title": "Route leak incident on January 22, 2026",
+        "source": "Cloudflare",
+        "published": "2026-01-23T14:00:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/route-leak-incident-january-22-2026/",
+        "label": "Разбор команды",
+        "summary": "An automated routing policy configuration error caused us to leak some Border Gateway Protocol prefixes unintentionally from a router at our Miami data center. We discuss the impact and the…"
+      },
+      {
+        "title": "What came first: the CNAME or the A record?",
+        "source": "Cloudflare",
+        "published": "2026-01-14T00:00:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/cname-a-record-order-dns-standards/",
+        "label": "Разбор команды",
+        "summary": "A recent change to 1.1.1.1 accidentally altered the order of CNAME records in DNS responses, breaking resolution for some clients. This post explores the technical root cause, examines the…"
+      },
+      {
+        "title": "Code Orange: Fail Small — our resilience plan following recent incidents",
+        "source": "Cloudflare",
+        "published": "2025-12-19T22:35:30Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/fail-small-resilience-plan/",
+        "label": "Разбор команды",
+        "summary": "We have declared “Code Orange: Fail Small” to focus everyone at Cloudflare on a set of high-priority workstreams with one simple goal: ensure that the cause of our last two global outages never…"
+      },
+      {
+        "title": "Cloudflare outage on December 5, 2025",
+        "source": "Cloudflare",
+        "published": "2025-12-05T00:00:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/5-december-2025-outage/",
+        "label": "Разбор команды",
+        "summary": "Cloudflare experienced a significant traffic outage on December 5, 2025, starting approximately at 8:47 UTC. The incident lasted approximately 25 minutes before resolution. We are sorry for the…"
+      },
+      {
+        "title": "Cloudflare outage on November 18, 2025",
+        "source": "Cloudflare",
+        "published": "2025-11-18T00:00:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/18-november-2025-outage/",
+        "label": "Разбор команды",
+        "summary": "Cloudflare suffered a service outage on November 18, 2025. The outage was triggered by a bug in generation logic for a Bot Management feature file causing many Cloudflare services to be affected."
+      },
+      {
+        "title": "Cloudflare outage on November 18, 2025",
+        "source": "Cloudflare",
+        "published": "2025-11-18T00:00:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/18-november-2025-outage-uk-ua/",
+        "label": "Разбор команды",
+        "summary": "Cloudflare suffered a service outage on November 18, 2025. The outage was triggered by a bug in generation logic for a Bot Management feature file causing many Cloudflare services to be affected."
+      },
+      {
+        "title": "A deep dive into Cloudflare’s September 12, 2025 dashboard and API outage",
+        "source": "Cloudflare",
+        "published": "2025-09-13T07:19:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/",
+        "label": "Разбор команды",
+        "summary": "Cloudflare’s Dashboard and a set of related APIs were unavailable or partially available for an hour starting on Sep 12, 17:57 UTC. The outage did not affect the serving of cached files via the"
+      },
+      {
+        "title": "The impact of the Salesloft Drift breach on Cloudflare and our customers",
+        "source": "Cloudflare",
+        "published": "2025-09-02T17:10:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/response-to-salesloft-drift-incident/",
+        "label": "Разбор команды",
+        "summary": "An advanced threat actor, GRUB1, exploited the integration between Salesloft’s Drift chat agent and Salesforce to gain unauthorized access to Salesforce tenants of Cloudflare and many other…"
+      },
+      {
+        "title": "Cloudflare incident on August 21, 2025",
+        "source": "Cloudflare",
+        "published": "2025-08-22T00:58:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/cloudflare-incident-on-august-21-2025/",
+        "label": "Разбор команды",
+        "summary": "On August 21, 2025, an influx of traffic directed toward clients hosted in AWS us-east-1 caused severe congestion on links between Cloudflare and us-east-1. In this post, we explain the details."
+      },
+      {
+        "title": "Redesigning Workers KV for increased availability and faster performance",
+        "source": "Cloudflare",
+        "published": "2025-08-08T13:00:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/rearchitecting-workers-kv-for-redundancy/",
+        "label": "Разбор команды",
+        "summary": "Workers KV is Cloudflare's global key-value store. After the incident on June 12, we re-architected KV’s redundant storage backend, remove single points of failure, and make substantial…"
+      },
+      {
+        "title": "Cloudflare service outage June 12, 2025",
+        "source": "Cloudflare",
+        "published": "2025-06-12T22:00:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/",
+        "label": "Разбор команды",
+        "summary": "Multiple Cloudflare services, including Workers KV, Access, WARP and the Cloudflare dashboard, experienced an outage for up to 2 hours and 28 minutes on June 12, 2025."
+      },
+      {
+        "title": "Cloudflare incident on March 21, 2025",
+        "source": "Cloudflare",
+        "published": "2025-03-25T01:40:38Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/cloudflare-incident-march-21-2025/",
+        "label": "Разбор команды",
+        "summary": "On March 21, 2025, multiple Cloudflare services, including R2 object storage experienced an elevated rate of error responses. Here’s what caused the incident, the impact, and how we are making…"
+      },
+      {
+        "title": "Cloudflare incident on February 6, 2025",
+        "source": "Cloudflare",
+        "published": "2025-02-07T00:00:00Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/cloudflare-incident-on-february-6-2025/",
+        "label": "Разбор команды",
+        "summary": "On Thursday, February 6, 2025, we experienced an outage with our object storage service (R2) and products that rely on it. Here's what happened and what we're doing to fix this going forward."
+      },
+      {
+        "title": "Cloudflare incident on June 20, 2024",
+        "source": "Cloudflare",
+        "published": "2024-06-26T13:00:22Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/cloudflare-incident-on-june-20-2024/",
+        "label": "Разбор команды",
+        "summary": "A new DDoS rule resulted in an increase in error responses and latency for Cloudflare customers. Here’s how it went wrong, and what we’ve learned"
+      },
+      {
+        "title": "Major data center power failure (again): Cloudflare Code Orange tested",
+        "source": "Cloudflare",
+        "published": "2024-04-08T13:00:15Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/major-data-center-power-failure-again-cloudflare-code-orange-tested/",
+        "label": "Разбор команды",
+        "summary": "Just four months after a complete power outage at a critical data center we were hit with the exact same scenario. Here’s how we did this time, and what’s next"
+      },
+      {
+        "title": "Post mortem on the Cloudflare Control Plane and Analytics Outage",
+        "source": "Cloudflare",
+        "published": "2023-11-04T06:18:55Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/post-mortem-on-cloudflare-control-plane-and-analytics-outage/",
+        "label": "Разбор команды",
+        "summary": "Beginning on Thursday, November 2, 2023, at 11:43 UTC Cloudflare's control plane and analytics services experienced an outage. Here are the details"
+      },
+      {
+        "title": "Cloudflare incident on October 30, 2023",
+        "source": "Cloudflare",
+        "published": "2023-11-01T16:39:43Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/cloudflare-incident-on-october-30-2023/",
+        "label": "Разбор команды",
+        "summary": "Multiple Cloudflare services were unavailable for 37 minutes on October 30, 2023, due to the misconfiguration of a deployment tool used by Workers KV."
+      },
+      {
+        "title": "How Cloudflare mitigated yet another Okta compromise",
+        "source": "Cloudflare",
+        "published": "2023-10-20T21:39:13Z",
+        "lang": "en",
+        "url": "https://blog.cloudflare.com/how-cloudflare-mitigated-yet-another-okta-compromise/",
+        "label": "Разбор команды",
+        "summary": "On Wednesday, October 18, 2023, we discovered attacks on our system that we were able to trace back to Okta. We have verified that no Cloudflare customer information or systems were impacted by…"
+      },
+      {
+        "title": "Incident report: Some GOV.UK URLs blocked by deceptive site warning",
+        "source": "Inside GOV.UK",
+        "published": "2022-11-24T13:21:50Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2022/11/24/incident-report-some-gov-uk-urls-blocked-by-deceptive-site-warning/",
+        "label": "Разбор команды",
+        "summary": "On September 30th certain users were being prevented from accessing files hosted on GOV.UK. Here is an explanation of what happened and how we resolved the issue."
+      },
+      {
+        "title": "Incident report: Unable to subscribe and unsubscribe from email alerts on 30 to 31 May 2022",
+        "source": "Inside GOV.UK",
+        "published": "2022-06-17T08:12:51Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2022/06/17/incident-report-unable-to-subscribe-and-unsubscribe-from-email-alerts-on-30-to-31-may-2022/",
+        "label": "Разбор команды",
+        "summary": "On 30 to 31 May 2022 users of GOV.UK were unable to subscribe and unsubscribe from email alerts to page changes. Read to find out what happened and our response."
+      },
+      {
+        "title": "Incident report: increased error rate on GOV.UK on 5 January 2022",
+        "source": "Inside GOV.UK",
+        "published": "2022-02-25T09:12:49Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2022/02/25/incident-report-increased-error-rate-on-gov-uk-on-5-january-2022/",
+        "label": "Разбор команды",
+        "summary": "On 5 January 2022, some GOV.UK users saw errors when accessing the site. Here’s what happened and how we responded."
+      },
+      {
+        "title": "Incident report: GOV.UK outage on 8 June 2021",
+        "source": "Inside GOV.UK",
+        "published": "2021-06-11T15:08:08Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2021/06/11/incident-report-gov-uk-outage-on-8-june-2021/",
+        "label": "Разбор команды",
+        "summary": "On 8 June 2021 GOV.UK had an outage. Here’s what happened and how we responded."
+      },
+      {
+        "title": "Incident report: foreign travel advice email alerts not sent",
+        "source": "Inside GOV.UK",
+        "published": "2019-05-03T11:01:31Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2019/05/03/incident-report-foreign-travel-advice-email-alerts-not-sent/",
+        "label": "Разбор команды",
+        "summary": "We encountered an incident affecting travel advice email alerts in December 2018. Find out what happened and how we responded."
+      },
+      {
+        "title": "Incident roundup - August 2018",
+        "source": "Inside GOV.UK",
+        "published": "2019-04-03T11:00:15Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2019/04/03/incident-roundup-august-2018/",
+        "label": "Разбор команды",
+        "summary": "We're committed to blogging about every severity 1 or severity 2 incident on GOV.UK. Here's a roundup of 4 incidents that GOV.UK encountered in August 2018."
+      },
+      {
+        "title": "Incident roundup - June to July 2018",
+        "source": "Inside GOV.UK",
+        "published": "2019-03-12T13:20:29Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2019/03/12/incident-roundup-june-to-july-2018/",
+        "label": "Разбор команды",
+        "summary": "We're committed to blogging about every severity 1 or severity 2 incident on GOV.UK. Here's a roundup of 4 incidents that GOV.UK encountered between June and July 2018."
+      },
+      {
+        "title": "Data incident roundup - February 2018",
+        "source": "Inside GOV.UK",
+        "published": "2019-02-22T12:03:59Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2019/02/22/data-incident-roundup-february-2018/",
+        "label": "Разбор команды",
+        "summary": "We encountered 2 incidents affecting our analytics data in February 2018. This post shows how we responded to them."
+      },
+      {
+        "title": "Incident roundup - March to May 2018",
+        "source": "Inside GOV.UK",
+        "published": "2018-11-02T13:16:34Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2018/11/02/incident-roundup-march-to-may-2018/",
+        "label": "Разбор команды",
+        "summary": "We're committed to blogging about every severity 1 or severity 2 incident on GOV.UK. Here's a roundup of 5 incidents that GOV.UK encountered between March and May 2018."
+      },
+      {
+        "title": "Incident roundup - part 3",
+        "source": "Inside GOV.UK",
+        "published": "2018-04-26T12:05:45Z",
+        "lang": "en",
+        "url": "https://insidegovuk.blog.gov.uk/2018/04/26/incident-roundup-part-3/",
+        "label": "Разбор команды",
+        "summary": "This post is a roundup of 5 incidents that GOV.UK encountered between August 2017 and February 2018. It follows on from previous posts about: 3 incidents that happened between May and June 2016…"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Meet the Indigenous Founder and Investor Teaching People How to Manifest Their Dream Businesses: ‘The Folks Who Are Winning Are Thinking Differently’",
+        "source": "Entrepreneur",
+        "published": "2026-11-24T17:05:58Z",
+        "lang": "en",
+        "url": "https://www.entrepreneur.com/business-news/meet-the-indigenous-founder-and-investor-teaching-people-how-to-manifest-their-dream-businesses",
+        "label": "Практическая статья",
+        "summary": "Betsy Fore's entrepreneurial journey kicked off over 20 years ago."
+      },
+      {
+        "title": "Apple Put Apps on Your Mac’s Dock You Don’t Need. Here’s How to Remove Them",
+        "source": "Inc.",
+        "published": "2026-11-24T09:30:00Z",
+        "lang": "en",
+        "url": "https://www.inc.com/amanda-jefferson/apple-put-apps-on-your-macs-dock-you-dont-need-heres-how-to-remove-them/91440104",
+        "label": "Практическая статья",
+        "summary": "Learn how to remove unused pre-installed apps from your Dock, organize your favorites, and customize your macOS settings for peak productivity."
+      },
+      {
+        "title": "Spotify Wrapped 2026 is almost here. How to make sure you’re ready",
+        "source": "Fast Company",
+        "published": "2026-11-23T21:15:00Z",
+        "lang": "en",
+        "url": "https://www.fastcompany.com/91647779/spotify-wrapped-2026-is-almost-here-heres-how-to-make-sure-youre-ready",
+        "label": "Практическая статья",
+        "summary": "It’s that time of year again, when people flood social media with year-end reviews and music lovers start counting down to what may be the most anticipated of them all: Spotify Wrapped. Spotify…"
+      },
+      {
+        "title": "Apple Intelligence, decoded: How to make sense of Apple’s confusing AI lineup",
+        "source": "Fast Company",
+        "published": "2026-11-21T10:00:00Z",
+        "lang": "en",
+        "url": "https://www.fastcompany.com/91640406/apple-intelligence-decoded-how-to-make-sense-of-apples-confusing-ai-lineup",
+        "label": "Практическая статья",
+        "summary": "Apple has received much criticism for being late to the AI game. While OpenAI helped define the AI boom beginning in late 2021, and Google and other tech giants quickly jumped on the AI train…"
+      },
+      {
+        "title": "AI Is Fueling a New Startup Boom. Here’s How to Build a Business That Lasts.",
+        "source": "Entrepreneur",
+        "published": "2026-11-20T23:00:00Z",
+        "lang": "en",
+        "url": "https://www.entrepreneur.com/building-a-business/grow-your-business/ai-is-fueling-a-new-startup-boom-heres-how-to-build-a-business-that-lasts",
+        "label": "Практическая статья",
+        "summary": "AI is making it cheaper and easier than ever to launch a business, but the founders who succeed will be the ones who start lean and spend strategically."
+      },
+      {
+        "title": "How to Harness the Power of Human Interaction to Win Customers Over This Holiday Season",
+        "source": "Entrepreneur",
+        "published": "2026-11-20T19:30:00Z",
+        "lang": "en",
+        "url": "https://www.entrepreneur.com/building-a-business/how-to-harness-the-power-of-human-interaction-to-win-customers-over-this-holiday-season",
+        "label": "Практическая статья",
+        "summary": "Here's how you can win customers over this holiday season with genuine human connection."
+      },
+      {
+        "title": "How to manage a post-IPO workforce that just became fabulously wealthy",
+        "source": "Fast Company",
+        "published": "2026-11-19T21:30:00Z",
+        "lang": "en",
+        "url": "https://www.fastcompany.com/91645727/how-to-manage-a-post-ipo-workforce-that-just-became-fabulously-wealthy",
+        "label": "Практическая статья",
+        "summary": "Anthropic’s $1.5 trillion initial public offering instantly turned thousands of its roughly 5,300 employees into multimillionaires. Like other companies that have undergone massive IPOs…"
+      },
+      {
+        "title": "SEO Isn’t Over, But Google Is Losing Its Monopoly. Here’s How to Adapt.",
+        "source": "Entrepreneur",
+        "published": "2026-11-19T19:30:00Z",
+        "lang": "en",
+        "url": "https://www.entrepreneur.com/building-a-business/seo-isnt-over-but-google-is-losing-its-monopoly-heres-how-to-adapt",
+        "label": "Практическая статья",
+        "summary": "The shift from traditional search to AI-powered discovery is changing the future of digital marketing."
+      },
+      {
+        "title": "Виза невесты в США: как найти мужа-американца на сайте знакомств и переехать. Маргарита Сессомс",
+        "source": "Prodcast: Поиск работы и иммиграция в США",
+        "published": "2026-06-15T23:56:00Z",
+        "lang": "ru",
+        "url": "https://www.youtube.com/watch?v=QGEJvBISbmY",
+        "label": "Практический выпуск",
+        "summary": "Развод, ребёнок, почти 40 лет - и понимание, что российский рынок не для тебя. Ни рабочий, ни мужской. Маргарита подошла к поиску мужа как аналитик: mind map, три сайта, чёткие критерии отбора и…"
+      }
+    ],
+    "support": [
+      {
+        "title": "How to be happier in 2027, and the Question Everyone Forgets to Ask",
+        "source": "Gretchen Rubin",
+        "published": "2026-11-24T18:56:48Z",
+        "lang": "en",
+        "url": "https://gretchenrubin.com/articles/how-to-be-happier/",
+        "label": "Колонка автора",
+        "summary": "The start of a new year brings fresh possibilities—a chance to reflect, reset, and focus on what matters most. When it comes to happiness, however, research shows that we’re not always good at…"
+      },
+      {
+        "title": "Letting Go of Regrets",
+        "source": "Zen Habits",
+        "published": "2026-11-20T00:00:00Z",
+        "lang": "en",
+        "url": "https://zenhabits.net/regrets/",
+        "label": "Колонка автора",
+        "summary": "By Leo Babauta Someone recently asked me about dealing with regrets — something from the past that bothers them on a daily basis. I’m asking about choices I made in the past that brought me to a…"
+      },
+      {
+        "title": "Sacred Bow: My Yearly Intentional Ritual",
+        "source": "Zen Habits",
+        "published": "2026-11-16T00:00:00Z",
+        "lang": "en",
+        "url": "https://zenhabits.net/sacred-bow/",
+        "label": "Колонка автора",
+        "summary": "By Leo Babauta Every year for the last 7 years, I’ve done a year-end ritual called Sacred Bow … and I’ve invited members of my Fearless Living Academy to do it with me every year. It’s one of…"
+      },
+      {
+        "title": "Do Less, But Care More",
+        "source": "Zen Habits",
+        "published": "2026-11-13T00:00:00Z",
+        "lang": "en",
+        "url": "https://zenhabits.net/less-more/",
+        "label": "Колонка автора",
+        "summary": "By Leo Babauta Most of us feel spread too thin, overwhelmed, with not enough time for all the things we care about. It might be that we’re spreading our care too thin — we’re trying to care…"
+      },
+      {
+        "title": "You Don’t Have to Earn Your Rest",
+        "source": "Zen Habits",
+        "published": "2026-11-06T00:00:00Z",
+        "lang": "en",
+        "url": "https://zenhabits.net/earn-rest/",
+        "label": "Колонка автора",
+        "summary": "By Leo Babauta Something I’ve noticed is that a lot of us have an ingrained belief that we can take some time off to rest if we’ve worked hard enough. Or often it’s like, “I’ll rest now so I can…"
+      },
+      {
+        "title": "Why I Celebrate Minor Holidays (And How You Can Use Them to Boost Happiness)",
+        "source": "Gretchen Rubin",
+        "published": "2026-10-30T16:11:20Z",
+        "lang": "en",
+        "url": "https://gretchenrubin.com/articles/why-i-celebrate-leap-day-other-minor-holidays/",
+        "label": "Колонка автора",
+        "summary": "An earlier version of this article appeared Feb. 29, 2016 One of my favorite resolutions — and I write about it in my books The Happiness Project and Happier at Home — is to celebrate minor…"
+      },
+      {
+        "title": "The Joy of Falling Behind",
+        "source": "Zen Habits",
+        "published": "2026-10-30T00:00:00Z",
+        "lang": "en",
+        "url": "https://zenhabits.net/falling-behind/",
+        "label": "Колонка автора",
+        "summary": "By Leo Babauta A lot of people right now are feeling like they just can’t keep up with everything — it’s just too much. And it feels like the pace of everything we have to keep up with is…"
+      },
+      {
+        "title": "My Favorite Children’s & Young-Adult Books",
+        "source": "Gretchen Rubin",
+        "published": "2026-10-28T19:06:53Z",
+        "lang": "en",
+        "url": "https://gretchenrubin.com/articles/my-81-favorite-childrens-young-adult-books/",
+        "label": "Колонка автора",
+        "summary": "Updated October, 2026 I’m a huge fan of children’s literature and young-adult literature. I read these books as a child, and I continue to read them as an adult. In fact, I’m in three—that’s…"
+      },
+      {
+        "title": "How to Be Mentally Flexible",
+        "source": "Zen Habits",
+        "published": "2026-10-23T00:00:00Z",
+        "lang": "en",
+        "url": "https://zenhabits.net/mentally-flexible/",
+        "label": "Колонка автора",
+        "summary": "By Leo Babauta A flexible approach to life is far more valuable than most people realize. Our minds can become too rigid. We want to be right, we want to do things a certain way, we want things…"
+      },
+      {
+        "title": "Get Support When You’re Stuck in Your Life",
+        "source": "Zen Habits",
+        "published": "2026-10-18T00:00:00Z",
+        "lang": "en",
+        "url": "https://zenhabits.net/fla-support/",
+        "label": "Колонка автора",
+        "summary": "By Leo Babauta Most people I know are unwilling to ask for help when they’re stuck, because it’s a bit embarrassing. That’s understandable. But we all get stuck sometimes — we want to get out of…"
+      },
+      {
+        "title": "How to Overcome Creative Block Using Indirect Prompts",
+        "source": "Gretchen Rubin",
+        "published": "2026-10-08T19:30:43Z",
+        "lang": "en",
+        "url": "https://gretchenrubin.com/articles/spotlight-on-the-muse-machine/",
+        "label": "Колонка автора",
+        "summary": "An earlier version of this article appeared October 30, 2023 Sometimes, when I’m working on a project, I hit a roadblock. Then, as I’m struggling to move forward, I hear an offhand comment, or I…"
+      },
+      {
+        "title": "The Secret to Happiness Is Self-Knowledge: How to Know Yourself Better",
+        "source": "Gretchen Rubin",
+        "published": "2026-10-01T19:40:32Z",
+        "lang": "en",
+        "url": "https://gretchenrubin.com/articles/spotlight-on-my-new-journal-to-get-to-know-yourself/",
+        "label": "Колонка автора",
+        "summary": "An earlier version of this article appeared October 18, 2021 People often ask me, “What’s the secret to happiness? If you had to choose one thing, what would you choose?” Depending on your…"
+      },
+      {
+        "title": "How to Stick to a Morning Routine",
+        "source": "Gretchen Rubin",
+        "published": "2026-09-24T19:13:43Z",
+        "lang": "en",
+        "url": "https://gretchenrubin.com/articles/how-to-stick-to-a-morning-routine/",
+        "label": "Колонка автора",
+        "summary": "An earlier version of this article appeared November 4, 2021 A morning routine is easier to keep when it’s treated as a set of individual habits rather than one large aim. Some quick tips: Break…"
+      },
+      {
+        "title": "How to Tackle a Nagging Task: Power Hour!",
+        "source": "Gretchen Rubin",
+        "published": "2026-09-18T16:24:33Z",
+        "lang": "en",
+        "url": "https://gretchenrubin.com/articles/how-to-tackle-a-nagging-task-power-hour/",
+        "label": "Колонка автора",
+        "summary": "An earlier version of this article appeared February 21, 2014 What is Power Hour? “Power Hour” is a way to tackle the tasks that tend to sit at the bottom of your to-do list for months (or even…"
+      }
+    ]
+  }
+}

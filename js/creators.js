@@ -66,9 +66,8 @@ function createCreatorDesk({esc, icon, media, byId}) {
     return `<section class="creator-related"><h2>Смотреть вместе с материалом</h2><div class="link-list">${matches.map(p=>
       `<a class="link-row" href="${route(p)}"><span><span class="row-meta">${esc(p.name)} · ${esc(p.reading.find(([book])=>book===id)[1])}</span><strong>${esc(p.headline)}</strong></span>${icon('arrow')}</a>`).join('')}</div></section>`;
   }
-  function home() {
-    const handles=['BusinessNaSalfetke','ProdcastRU','MarinaMogilko'];
-    return `<div class="creator-grid home-creators">${handles.map(handle=>card(profiles.get(handle))).join('')}</div>`;
+  function home(selection) {
+    return `<div class="creator-grid home-creators">${selection.map(card).join('')}</div>`;
   }
   document.addEventListener('click', event => {
     const button=event.target.closest('[data-creator-play]');

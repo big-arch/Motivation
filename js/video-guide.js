@@ -29,7 +29,7 @@ function videoExcerpt(text,limit=4) {
 }
 
 function createVideoGuide({esc,external,icon}) {
-  let library, lastDraft='', worker;
+  let library, latestLibrary, checked=0, lastDraft='', worker;
   const sourceText=new WeakMap();
   function stop() {
     worker?.terminate();
@@ -122,12 +122,20 @@ function createVideoGuide({esc,external,icon}) {
     stop();
     lastDraft='';
     try {
-      library ||= fetch('./data/video-analysis.json',{cache:'no-cache'}).then(r=>{if(!r.ok) throw Error();return r.json();});
-      const entries=await library;
+      if(!latestLibrary || Date.now()-checked>=30*60000) {
+        library ||= fetch('./data/video-analysis.json',{cache:'no-cache'}).then(async response=>{
+          if(!response.ok) throw Error();
+          const data=await response.json();
+          if(!data || !Object.keys(data).length) throw Error();
+          latestLibrary=data;checked=Date.now();
+        }).finally(()=>{library=null;});
+        await library;
+      }
+      const entries=latestLibrary;
       if(host.isConnected) draw(host,item,entries[item.platform+':'+item.id]);
     } catch {
       library=null;
-      if(host.isConnected) draw(host,item,null);
+      if(host.isConnected) draw(host,item,latestLibrary?.[item.platform+':'+item.id]);
     }
   }
   function extract(button) {

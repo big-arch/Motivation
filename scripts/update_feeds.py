@@ -351,7 +351,7 @@ def openlibrary_entries(data: bytes, source: dict, now: str) -> list[dict]:
     return entries
 
 
-def collect(source: dict, now: str) -> list[dict]:
+def collect(source: dict, now: str, page: int = 1) -> list[dict]:
     platform = source.get("platform")
     if platform == "youtube":
         rows = youtube_uploads(source)
@@ -362,13 +362,13 @@ def collect(source: dict, now: str) -> list[dict]:
         rows = audio_entries(download(source["feed"]), source)
     elif platform == "librivox":
         query = urlencode({"genre": source["genre"], "format": "json", "extended": 1,
-                           "coverart": 1, "limit": 50, "sort_order": "desc"})
+                           "coverart": 1, "limit": 12, "sort_order": "desc","offset":(page-1)*12})
         rows = librivox_entries(download("https://librivox.org/api/feed/audiobooks/?" + query), source, now)
     elif platform == "openlibrary":
         query = urlencode({
             "q": "subject:" + source["query"] + " ebook_access:public",
             "fields": "key,title,author_name,first_publish_year,cover_i,ia,public_scan_b,language,ebook_access",
-            "sort": "new", "limit": 50,
+            "sort": "new", "limit": 24, "page": page,
         })
         rows = openlibrary_entries(download("https://openlibrary.org/search.json?" + query), source, now)
     else:
@@ -389,6 +389,13 @@ def collect(source: dict, now: str) -> list[dict]:
 def collect_source(source, now, previous):
     rows = collect(source, now)
     if source.get("platform") in {"librivox", "openlibrary"}:
+        # Check recent listings on every run, and explore one catalog page per UTC day.
+        day = datetime.fromisoformat(now.replace("Z","+00:00")).date().toordinal()
+        page = 2 + day % 14
+        try:
+            rows.extend(collect(source, now, page))
+        except FEED_ERRORS:
+            pass  # The subject may have fewer pages, or the archive request failed.
         known = {row["url"]: row["published"] for row in previous.get("items", [])}
         for row in rows:
             row["published"] = known.get(row["url"], row["published"])
@@ -407,8 +414,8 @@ def prior_sources(path: Path, base_url: str) -> dict:
         except FEED_ERRORS as error:
             print(f"{path.name}: previous deployment unavailable ({type(error).__name__})", file=sys.stderr)
     result = {}
-    # Keep the checked-in collection and a rolling window from Pages.
-    for index, snapshot in enumerate(snapshots):
+    # Merge both baselines before choosing how much to retain for a responding source.
+    for snapshot in snapshots:
         if snapshot.get("schema") != 2:
             continue
         by_source = {}
@@ -422,8 +429,6 @@ def prior_sources(path: Path, base_url: str) -> dict:
             prior = result.setdefault(name, {"checked": "", "items": []})
             merged = {row["url"]: row for row in prior["items"]}
             checked = entry.get("checked") or ""
-            if index:
-                rows = keep_recent_formats(rows, 24) if entry.get("platform") == "youtube" else rows[:24]
             for row in rows:
                 existing = merged.get(row["url"], {})
                 if path.stem in {"audio", "open-books"} and existing and (row.get("chapters") or row.get("embed")):
@@ -437,6 +442,7 @@ def prior_sources(path: Path, base_url: str) -> dict:
 def refresh(kind: str, sources: list[dict], base_url: str) -> None:
     path = ROOT / "data" / (kind + ".json")
     previous = prior_sources(path, base_url)
+    seeded = {row["url"] for row in json.loads(path.read_text(encoding="utf-8-sig"))["items"]} if path.exists() else set()
     now = stamp(datetime.now(timezone.utc).isoformat())
     items, directory = [], []
     successes = 0
@@ -446,8 +452,15 @@ def refresh(kind: str, sources: list[dict], base_url: str) -> None:
             source = pending[future]
             name = source["name"]
             try:
-                merged = {row["url"]: row for row in previous.get(name, {}).get("items", [])}
-                for row in future.result():
+                incoming = future.result()
+                prior = previous.get(name, {}).get("items", [])
+                if source.get("platform") not in {"openlibrary", "librivox"}:
+                    ordered = sorted(prior, key=lambda row: (row["published"], row["url"]), reverse=True)
+                    window = keep_recent_formats(ordered, 24) if source.get("platform") == "youtube" else ordered[:24]
+                    retained = seeded.union(row["url"] for row in window)
+                    prior = [row for row in prior if row["url"] in retained]
+                merged = {row["url"]: row for row in prior}
+                for row in incoming:
                     # Preserve fields such as the verified running time of a YouTube episode.
                     merged[row["url"]] = {**merged.get(row["url"], {}), **row}
                 rows = list(merged.values())
@@ -472,7 +485,7 @@ def refresh(kind: str, sources: list[dict], base_url: str) -> None:
     if not items:
         raise RuntimeError(f"No usable {kind} to publish")
     items = sorted(items, key=lambda row: (row["published"], row["url"]), reverse=True)
-    snapshot = {"schema": 2, "updated": max(row["checked"] for row in directory),
+    snapshot = {"schema": 2, "attempted": now, "updated": max(row["checked"] for row in directory),
                 "sources": sorted(directory, key=lambda row: (row["lang"] != "ru", row["name"].casefold())),
                 "items": list({row["url"]: row for row in items}.values())}
     temporary = path.with_suffix(".tmp")

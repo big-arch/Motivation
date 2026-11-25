@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "built": "2026-11-25T21:06:44Z",
+  "catalogs": {
+    "news": {
+      "count": 986,
+      "checked": "2026-11-25T08:26:02Z",
+      "attempted": "2026-11-25T08:26:02Z",
+      "total": 38,
+      "fresh": 37,
+      "retained": [
+        "Банки.ру"
+      ]
+    },
+    "videos": {
+      "count": 1582,
+      "checked": "2026-11-25T08:26:14Z",
+      "attempted": "2026-11-25T08:26:14Z",
+      "total": 78,
+      "fresh": 78,
+      "retained": []
+    },
+    "audio": {
+      "count": 178,
+      "checked": "2026-11-25T08:26:28Z",
+      "attempted": "2026-11-25T08:26:28Z",
+      "total": 15,
+      "fresh": 13,
+      "retained": [
+        "LibriVox · Бизнес и экономика",
+        "LibriVox · Саморазвитие"
+      ]
+    },
+    "open-books": {
+      "count": 18,
+      "checked": "2026-11-25T08:27:09Z",
+      "attempted": "2026-11-25T08:27:09Z",
+      "total": 3,
+      "fresh": 3,
+      "retained": []
+    }
+  },
+  "guides": 1291,
+  "sections": {
+    "stories": 31,
+    "museum": 33,
+    "resources": 9,
+    "support": 14
+  },
+  "editorialSources": [
+    {
+      "name": "Y Combinator",
+      "checked": "2026-11-25T21:06:44Z",
+      "ok": true
+    },
+    {
+      "name": "Cloudflare",
+      "checked": "2026-11-25T21:06:44Z",
+      "ok": true
+    },
+    {
+      "name": "Inside GOV.UK",
+      "checked": "2026-11-25T21:06:44Z",
+      "ok": true
+    }
+  ]
+}

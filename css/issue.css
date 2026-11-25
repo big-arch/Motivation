@@ -172,6 +172,11 @@
   .format-tabs a {font-size:13px}
   .cabinet-door {height:auto}
 }
+.source-picks { margin:clamp(18px,3vw,34px) 0; padding:18px 0; border-block:1px solid var(--line) }
+.source-picks h2 { font:500 clamp(22px,3vw,30px)/1.16 var(--serif); margin:0 0 12px }
+.source-picks .row-meta { display:block; margin-bottom:5px; color:var(--muted) }
+.source-picks .text-link { margin-top:12px }
+.source-picks li { margin:6px 0 }
 .video-guide { margin:24px 0 8px; padding:20px 0 12px; border-block-start:1px solid var(--line); overflow-wrap:anywhere }
 .guide-heading { display:flex; align-items:baseline; flex-wrap:wrap; gap:5px 16px; margin-bottom:12px }
 .guide-heading h3 { font:500 clamp(24px,4vw,32px)/1.18 var(--serif); margin:0 }
